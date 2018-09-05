@@ -8,7 +8,7 @@ logo:               'assets/img/LuizPizzato.jpg'
 background:         'assets/img/wall.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
-url:                http://127.0.0.1:4000/
+url:                https://pizzato.github.io
 
 # Jekyll
 permalink:          /:title/
