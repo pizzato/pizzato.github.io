@@ -9,6 +9,7 @@ title: Teaching Data Science in Hong Kong
 wordpress_id: 264
 categories:
 - Blog
+
 ---
 
 You never know where life takes you, so I normally say yes to interesting opportunities. From mid June to the end of September I agreed to teach a 12-week, full-time data science course in Hong Kong. This was the first cohort for the [Data Science Immersive at General Assembly](https://generalassemb.ly/education/data-science-immersive).
@@ -21,6 +22,6 @@ I am very happy with the final outcome of the course, and I am confident that st
 
 Below is a presentation I gave to a number of industry guests and the students on graduation day. It gives an idea of the course and the projects they worked on.
 
-[gallery ids="328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366,367,368,369,370,371,372,373" type="slideshow" link="none"]
+<iframe width="560" height="315" src="https://www.youtube.com/embed/roA2Y8QxCRI?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 So my Hong Kong experience was an example of one such challenge to which I said yes. It was not easy but it was highly rewarding. Not only did I meet and help shape a group of excellent data scientists but also I made some good friends along the way.
