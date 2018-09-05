@@ -1,0 +1,30 @@
+---
+author: luizpizzatocc
+comments: true
+date: 2015-03-17 22:37:17+00:00
+layout: post
+link: http://luiz.pizzato.cc/2015/03/17/on-702-abc-sydney/
+slug: on-702-abc-sydney
+title: On 702 ABC Sydney
+feature: /assets/img/posts/2015-03-17-on-702-abc-sydney/abc702.png
+wordpress_id: 42
+categories:
+- Blog
+- Presentations
+tags:
+- friends
+- interview
+- online dating
+- radio
+---
+
+On 702 ABC Sydney, talking about the ethics of online dating.
+
+
+
+> ![702ABCSydney](/assets/img/posts/2015-03-17-on-702-abc-sydney/abc702.png)
+>
+>
+> .[@matthewtbeard](https://twitter.com/matthewtbeard) and [@luizpizzato](https://twitter.com/luizpizzato) joining us to talk about the ethics and algorithms of online dating. Swipe right? [pic.twitter.com/egCTY3VqMT](http://t.co/egCTY3VqMT)
+>
+> — 702 ABC Sydney (@702sydney) [March 17, 2015](https://twitter.com/702sydney/status/577775347321552896)

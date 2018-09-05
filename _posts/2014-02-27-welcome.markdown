@@ -1,0 +1,30 @@
+---
+author: luizpizzatocc
+comments: true
+date: 2014-02-27 22:16:17+00:00
+layout: post
+link: http://luiz.pizzato.cc/2014/02/27/welcome/
+slug: welcome
+title: Welcome
+wordpress_id: 35
+categories:
+- Blog
+tags:
+- friends
+- life
+- social
+---
+
+Welcome to my newly created blog and website.
+
+In this blog I will document my journey through the development of my next big project, which is building my own startup. Finally after many years of working on exciting research projects, I decided to quit my job at the University of Sydney and purse a dream that I always had - to become an entrepreneur.
+
+At the University of Sydney, I was part of a very successful project, in which I built reciprocal recommendations algorithms for a major Australian online dating website. This project was very fulfilling as it showed me that maths and algorithms can have a real positive impact in people's lives. I know that because of our system, the rejection rate declined considerably and people were more successful in getting dates. I do not know how many people got married in the end, but I would like to think that it is a big number :-)
+
+The startup I am building focus on a related problem - to help people make new friends. The way we will achieve this will be very different to online dating. To start, it will also be suitable for couples and families, and it will be very useful for people who just moved to a new city.
+
+Our startup website is [Octosocial.com](http://www.octosocial.com/#utm_source=LuizPizzatoCC&utm_medium=Blog&utm_content=201402Welcome). We are using lean-methodology to building our product and we are constantly running experiments. We experimented with the idea of social lunches and dinners and have so far run four events. We also signed up nearly one hundred users. So the idea of social lunches and dinners are very promising, but there are quite a few difficulties there. For instance, what is the best way to match people? Is it age, interests, background, location, education, or is it something else? What is the best way to invite people to an event? And, how to guarantee commitment from people to attend an event? We had an overwhelming positive feedback from the social meetings we organised. We also learned a lot about the expectations of people of different age groups, personalities and backgrounds.
+
+With all that we learned so far, we are right now in full development mode. We are building the next generation social discovery start-up with one main goal in mind: helping people making new friends.
+
+Stay tuned and sign up on the website if you want to join in the fun!
