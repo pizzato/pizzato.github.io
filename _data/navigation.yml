@@ -1,10 +1,10 @@
 # Site navigation links
 
-- title: Publications
-  url: /about/publications/
-
-- title: Research Activities
+- title: Academic Activities
   url: /about/academy/
+
+- title: Publications
+  url: /about/publications/  
 
 - title: Personal
   url: /about/personal/
