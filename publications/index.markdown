@@ -3,7 +3,7 @@ author: luizpizzatocc
 comments: false
 date: 2015-09-27 11:23:46+00:00
 layout: page
-link: http://luiz.pizzato.cc/about/publications/
+link: http://luiz.pizzato.cc/publications/
 slug: publications
 title: Publications
 feature: assets/img/publications.jpg

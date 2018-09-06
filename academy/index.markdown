@@ -3,8 +3,8 @@ author: luizpizzatocc
 comments: false
 date: 2015-09-27 11:22:32+00:00
 layout: page
-link: http://luiz.pizzato.cc/about/research-activities/
-slug: research-activities
+link: http://luiz.pizzato.cc/academy/
+slug: academic-activities
 title: Academic activities
 feature: assets/img/academy.jpg
 wordpress_id: 15

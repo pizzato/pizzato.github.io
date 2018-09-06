@@ -3,7 +3,7 @@ author: luizpizzatocc
 comments: false
 date: 2015-09-27 11:18:51+00:00
 layout: page
-link: http://luiz.pizzato.cc/about/personal/
+link: http://luiz.pizzato.cc/personal/
 slug: personal
 title: Personal
 feature: assets/img/personal.jpg
@@ -28,4 +28,4 @@ Here are some words that I identify myself with:
     Travelling, Photography
 
 
-Check out my photos at [kinho.pizzato.cc](http://kinho.pizzato.cc) or at [500px](http://500px.com/kinho) and [Flickr](http://www.flickr.com/photos/kinho) or Instagram (link)
+Check out my photos at [500px](http://500px.com/kinho) and [Flickr](http://www.flickr.com/photos/kinho) or [Instagram](https://www.instagram.com/kinhopizzato/)
