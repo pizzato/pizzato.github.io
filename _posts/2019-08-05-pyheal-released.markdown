@@ -12,5 +12,4 @@ categories:
 ---
 
 PyHeal is out! Our open source Python library that makes any development with homomorphic encryption super easy.
-
 [https://github.com/Accenture/pyheal/](https://github.com/Accenture/pyheal/)
