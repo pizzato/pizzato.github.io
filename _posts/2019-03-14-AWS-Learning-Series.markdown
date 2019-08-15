@@ -1,12 +1,13 @@
 ---
 author: luizpizzatocc
 comments: true
-date: 2016-10-02 12:08:26+00:00
+date: 2019-03-14 12:00:00+00:00
 layout: post
 link: http://luiz.pizzato.cc/2019/03/14/AWS-Learning-Series
 slug: AWS-Learning-Series
 title: AWS Learning Series: Collaborating on Data and AI Models
 feature: /assets/img/posts/2019-03-14-AWS-Learning-Series/aws2.jpeg
+wordpress_id: 1001
 categories:
 - Blog
 ---
