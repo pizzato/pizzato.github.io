@@ -12,4 +12,4 @@ categories:
 - Blog
 ---
 
-<iframe src="/assets/pdf/2019-06-25-how-to-build-he-ml/BuildingMLWithHE.pdf" width="700px" height="392px"></iframe>
+<iframe width="560" height="315" src="/assets/pdf/2019-06-25-how-to-build-he-ml/BuildingMLWithHE.pdf" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
