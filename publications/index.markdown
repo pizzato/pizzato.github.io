@@ -33,6 +33,7 @@ UMAP 2012, Montreal, Canada, July 16, 2012
 
 
 
+
 **Proceedings of the First Workshop on Community Mining and People Recommenders**
 Edited by: _Panagiotis Papapetrou, Luiz Augusto Pizzato, Aristides Gioni, Xiongcai Cai_
 IEEE ICDM 2011, Vancouver, Canada, 2011
@@ -45,6 +46,17 @@ IEEE ICDM 2011, Vancouver, Canada, 2011
 Edited by: _Luiz Pizzato and Rolf Schwitter_
 Sydney, Australia, 2009
 [(PDF)](http://sydney.edu.au/engineering/it/~pizzato/publications/pdf/ALTA2009.pdf) [(ALTA)](http://www.alta.asn.au/events/alta2009/ALTA2009.pdf) [(HTML)](http://www.alta.asn.au/events/alta2009/alta-2009-proceedings.html) [(Bib)](http://www.alta.asn.au/events/alta2009/bib/ALTA2009_FrontMatter.bib)
+
+
+
+
+## Under review
+
+
+
+**Beyond Personalization: Research Directions in Multistakeholder Recommendation.**
+_Himan Abdollahpouri, Gediminas Adomavicius, Robin Burke, Ido Guy, Dietmar Jannach, Toshihiro Kamishima, Jan Krasnodebski, and Luiz Pizzato_. 
+Jornal (under review). arXiv e-prints. May 2019. [arXiv:1905.01986](https://arxiv.org/abs/1905.01986)
 
 
 
