@@ -125,17 +125,17 @@ The Visual Computer: International Journal of Computer Graphics (TVC) -- 2008
 
 
 
-International World Wide Web Conference (WWW) 2017, 2018
+International World Wide Web Conference (WWW) 2017, The Web Conference 2018, 2019
 
 
 
 
-Conference on User Modelling, Adaptation and Personalization (UMAP) 2014, 2015, 2016, 2017, 2018
+ACM Recommender Systems -- 2014, 2015, 2016, 2017, 2018, 2019
 
 
 
 
-ACM Recommender Systems -- 2014, 2015, 2016, 2017
+Conference on User Modelling, Adaptation and Personalization (UMAP) 2014, 2015, 2016, 2017, 2018, 2019
 
 
 
