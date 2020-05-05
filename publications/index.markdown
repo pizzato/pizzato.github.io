@@ -50,13 +50,6 @@ Sydney, Australia, 2009
 
 
 
-## Under review
-
-
-
-**Beyond Personalization: Research Directions in Multistakeholder Recommendation.**
-_Himan Abdollahpouri, Gediminas Adomavicius, Robin Burke, Ido Guy, Dietmar Jannach, Toshihiro Kamishima, Jan Krasnodebski, and Luiz Pizzato_. 
-Jornal (under review). arXiv e-prints. May 2019. [arXiv:1905.01986](https://arxiv.org/abs/1905.01986)
 
 
 
@@ -64,12 +57,15 @@ Jornal (under review). arXiv e-prints. May 2019. [arXiv:1905.01986](https://arxi
 ## Peer-reviewed
 
 
+**Beyond Personalization: Research Directions in Multistakeholder Recommendation.**
+_Himan Abdollahpouri, Gediminas Adomavicius, Robin Burke, Ido Guy, Dietmar Jannach, Toshihiro Kamishima, Jan Krasnodebski, and Luiz Pizzato_. 
+In User Modeling and User-Adapted Interaction (UMUAI). January 2020, Volume 30, Issue 1, pp 127-158 https://doi.org/10.1007/s11257-019-09256-1 [(Springer)](https://doi.org/10.1007/s11257-019-09256-1)
 
 
 **Recommending people to people: The nature of reciprocal recommenders with a case study in online dating.**
 _Luiz Augusto Pizzato, Tomasz Rej, Joshua Akehurst, Irena Koprinska, Kalina Yacef, and Judy Kay_
 In User Modeling and User-Adapted Interaction (UMUAI). November 2013, Volume 23, Issue 5, pp 447-488 doi:10.1007/s11257-012-9125-0
-[(PDF)](http://sydney.edu.au/engineering/it/~pizzato/publications/pdf/Pizzato_etalUMUAI2012.pdf) [(Springer)](http://dx.doi.org/10.1007/s11257-012-9125-0) [(Bib)](http://sydney.edu.au/engineering/it/~pizzato/publications/bibtex/Pizzato_etalUMUAI2012.bib)
+[(Springer)](http://dx.doi.org/10.1007/s11257-012-9125-0) 
 
 
 
@@ -84,7 +80,7 @@ Proceedings of the 21st International Conference on User Modeling, Adaptation an
 **The effect of suspicious profiles on people recommenders.**
 _Luiz Augusto Pizzato, Joshua Akehurst, Cameron Silvestrini, Irena Koprinska, Kalina Yacef, and Judy Kay_
 Proceedings of the 20th International Conference on User Modeling, Adaptation and Personalization (UMAP 2012). Montreal, Canada. 16-20 July 2012. LNCS 7379, pp. 225--236. Springer, Heidelberg (2012)
-[(PDF)](http://sydney.edu.au/engineering/it/~pizzato/publications/pdf/Pizzato_etalUMAP2012.pdf) [(Springer)](http://dx.doi.org/10.1007/978-3-642-31454-4_19) [(Bib)](http://sydney.edu.au/engineering/it/~pizzato/publications/bibtex/Pizzato_etalUMAP2012.bib)
+[(Springer)](http://dx.doi.org/10.1007/978-3-642-31454-4_19) 
 
 
 
@@ -100,7 +96,7 @@ IEEE Transactions on Learning Technologies, vol. 5, no. 3, pp. 251-263, Third Qu
 **Explicit and implicit user preferences in online dating.**
 _Joshua Akehurst, Irena Koprinska, Kalina Yacef, Luiz Pizzato, Judy Kay, and Tomasz Rej_
 New Frontiers in Applied Data Mining, volume 7104 of Lecture Notes in Computer Science, pages 15–27. Springer Berlin / Heidelberg, 2012. ISBN 978-3-642-28319-2. doi:10.1007/978-3-642-28320-8_2.
-[(Springer)](http://dx.doi.org/10.1007/978-3-642-28320-8_2) [(Bib)](http://sydney.edu.au/engineering/it/~pizzato/publications/bibtex/Akehurst_etalLNCS2012.bib)
+[(Springer)](http://dx.doi.org/10.1007/978-3-642-28320-8_2) 
 
 
 
@@ -108,7 +104,7 @@ New Frontiers in Applied Data Mining, volume 7104 of Lecture Notes in Computer S
 **Stochastic Matching and Collaborative Filtering to Recommend People to People**
 _Luiz Augusto Pizzato, and Cameron Silvestrini_
 RecSys '11: Proceedings of the Fifth ACM Conference on Recommender Systems. Chicago, 23-27 October 2011
-[(PDF)](http://dl.acm.org/authorize?62534) [(ACM)](http://doi.acm.org/10.1145/2043932.2043998) [(Bib)](http://sydney.edu.au/engineering/it/~pizzato/publications/bibtex/PizzatoSilvestriniRecSys2011.bib)
+[(PDF)](http://dl.acm.org/authorize?62534) [(ACM)](http://doi.acm.org/10.1145/2043932.2043998) 
 
 
 
@@ -116,7 +112,7 @@ RecSys '11: Proceedings of the Fifth ACM Conference on Recommender Systems. Chic
 **CCR - A Content-Collaborative Reciprocal Recommender for Online Dating**
 _Joshua Akehurst, Irena Koprinska, Kalina Yacef, Luiz Pizzato, Judy Kay, and Tomasz Rej_
 Proceedings of the 22nd International International Joint Conference on Artificial Intelligence (IJCAI 2011). Barcelona, Spain. 16-22 July 2011
-[(PDF)](http://sydney.edu.au/engineering/it/~pizzato/publications/pdf/Akehurst_etalIJCAI2011.pdf) [(IJCAI)](http://ijcai.org/papers11/Papers/IJCAI11-367.pdf)
+[(IJCAI)](http://ijcai.org/papers11/Papers/IJCAI11-367.pdf)
 
 
 
@@ -124,7 +120,7 @@ Proceedings of the 22nd International International Joint Conference on Artifici
 **Finding someone you will like and who won't reject you.**
 _Luiz Pizzato, Tomasz Rej, Kalina Yacef, Irena Koprinska and Judy Kay_
 Proceedings of the 19th International Conference on User Modeling, Adaptation and Personalization (UMAP 2011). Girona, Spain. 11-15 July 2011. LNCS 6787, pp. 269--280. Springer, Heidelberg (2012)
-[(Springer)](http://dx.doi.org/10.1007/978-3-642-22362-4_23) [(Bib)](http://sydney.edu.au/engineering/it/~pizzato/publications/bibtex/Pizzato_etalUMAP2011.bib)
+[(Springer)](http://dx.doi.org/10.1007/978-3-642-22362-4_23) 
 
 
 
@@ -132,7 +128,7 @@ Proceedings of the 19th International Conference on User Modeling, Adaptation an
 **Learning User Preferences in Online Dating.**
 _Luiz Pizzato, Thomas Chung, Tomasz Rej, Kalina Yacef, Irena Koprinska and Judy Kay_
 Proceedings of the Workshop on Preference Learning (PL-10) at the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD). Barcelona, Spain. 24 September 2010
-[(PL10)](http://www.ke.tu-darmstadt.de/events/PL-10/papers/8-Pizzato.pdf) [(Bib)](http://sydney.edu.au/engineering/it/~pizzato/publications/bibtex/Pizzato_etalPL10ECML2010.bib)
+[(PL10)](http://www.ke.tu-darmstadt.de/events/PL-10/papers/8-Pizzato.pdf) 
 
 
 
@@ -140,7 +136,7 @@ Proceedings of the Workshop on Preference Learning (PL-10) at the European Confe
 **RECON: A Reciprocal Recommender for Online Dating.**
 _Luiz Pizzato, Tomek Rej, Thomas Chung, Irena Koprinska and Judy Kay_
 RecSys '10: Proceedings of the Fourth ACM Conference on Recommender Systems. Barcelona, 26-30 September 2010
-[(ACM)](http://doi.acm.org/10.1145/1864708.1864747) [(PDF)](http://dl.acm.org/authorize?N82406) [(Bib)](http://sydney.edu.au/engineering/it/~pizzato/publications/bibtex/Pizzato_etalRecSys2010.bib)
+[(ACM)](http://doi.acm.org/10.1145/1864708.1864747) [(PDF)](http://dl.acm.org/authorize?N82406) 
 
 
 
@@ -148,7 +144,7 @@ RecSys '10: Proceedings of the Fourth ACM Conference on Recommender Systems. Bar
 **Reciprocal Recommender System for Online Dating**
 _Luiz Pizzato, Tomek Rej, Thomas Chung, Irena Koprinska and Judy Kay_
 RecSys '10 (demonstration session): Proceedings of the Forth ACM Conference on Recommender Systems. Barcelona, 26-30 September 2010
-[(ACM)](http://doi.acm.org/10.1145/1864708.1864787) (PDF) [(Bib)](http://sydney.edu.au/engineering/it/~pizzato/publications/bibtex/Pizzato_etalRECSYS10Demo.bib)
+[(ACM)](http://doi.acm.org/10.1145/1864708.1864787) 
 
 
 
@@ -156,7 +152,7 @@ RecSys '10 (demonstration session): Proceedings of the Forth ACM Conference on R
 **Reciprocal Recommenders.**
 _Luiz Pizzato, Tomek Rej, Thomas Chung, Kalina Yacef, Irena Koprinska and Judy Kay_
 Proceedings of the Workshop on Intelligent Techniques for Web Personalization & Recommender Systems (ITWP'10) at User Modeling, Adaptation and Personalization (UMAP 2010), Big Island of Hawaii. 2010.
-[(PDF)](http://sydney.edu.au/engineering/it/~pizzato/publications/pdf/Pizzato_etalITWPUMAP2010.pdf) [(ITWP)](http://ls13-www.cs.uni-dortmund.de/homepage/ITWP2010/papers/ReciprocalRecommender.pdf)
+[(ITWP)](http://ls13-www.cs.uni-dortmund.de/homepage/ITWP2010/papers/ReciprocalRecommender.pdf)
 
 
 
@@ -172,7 +168,7 @@ Proceedings of the Coling 2008 Workshop Information Retrieval for Question Answe
 **Question Prediction Language Model.**
 _Luiz Pizzato and Diego Molla_
 Proceedings Australasian Language Technology Workshop 2007, Melbourne, December 2007.
-[(ALTA)](http://www.alta.asn.au/events/altw2007/cdrom/pdf/ALTA2007_14.pdf) [(Bib)](http://sydney.edu.au/engineering/it/~pizzato/publications/bibtex/PizzatoMollaALTW2007.bib)
+[(ALTA)](http://www.alta.asn.au/events/altw2007/cdrom/pdf/ALTA2007_14.pdf) 
 
 
 
@@ -180,7 +176,7 @@ Proceedings Australasian Language Technology Workshop 2007, Melbourne, December 
 **AnswerFinder at TREC 2006.**
 _Menno van Zaanen, Diego Molla and Luiz Pizzato_
 The Fifteenth Text REtrieval Conference (TREC 2006)
-[(PDF)](http://sydney.edu.au/engineering/it/~pizzato/publications/pdf/VanZaanenMollaPizzatoTREC2006.pdf) [(Bib)](http://sydney.edu.au/engineering/it/~pizzato/publications/bibtex/VanZaanenMollaPizzatoTREC2006.bib)
+
 
 
 
@@ -188,7 +184,6 @@ The Fifteenth Text REtrieval Conference (TREC 2006)
 **Pseudo Relevance Feedback Using Named Entities for Question Answering.**
 _Luiz Pizzato, Diego Molla and Cecile Paris_
 In Proceedings of the Australasian Language Technology Workshop 2006. Sydney University, November 2006.
-[(PDF)](http://sydney.edu.au/engineering/it/~pizzato/publications/pdf/PizzatoMollaParisALTW2006.pdf) [(Bib)](http://sydney.edu.au/engineering/it/~pizzato/publications/bibtex/PizzatoMollaParisALTW2006.bib)
 
 
 
@@ -196,7 +191,6 @@ In Proceedings of the Australasian Language Technology Workshop 2006. Sydney Uni
 **Extracting Exact Answers using a Meta Question Answering System.**
 _Luiz Pizzato and Diego Molla_
 Proceedings of the Australasian Language Technology Workshop 2005. The University of Sydney, Australia, December 10-11, 2005
-[(PDF)](http://sydney.edu.au/engineering/it/~pizzato/publications/pdf/PizzatoMollaALTW2005.pdf) [(Bib)](http://sydney.edu.au/engineering/it/~pizzato/publications/bibtex/PizzatoMollaALTW2005.bib)
 
 
 
@@ -204,7 +198,7 @@ Proceedings of the Australasian Language Technology Workshop 2005. The Universit
 **Classifying Sentences using Induced Structure.**
 _Menno van Zaanen, Luiz Pizzato and Diego Molla_
 Proceedings of the Twelfth Symposium on String Processing and Information Retrieval (SPIRE-2005). Buenos Aires, Argentina, 2-4 November 2005.
-[(Springer)](http://dx.doi.org/10.1007/11575832_15) [(Bib)](http://sydney.edu.au/engineering/it/~pizzato/publications/bibtex/VanZaanenPizzatoMollaSPIRE2005.bib) Slides: [(PPT)](http://sydney.edu.au/engineering/it/~pizzato/publications/presentations/PizzatoSPIRE2005.ppt) [(HTML)](http://sydney.edu.au/engineering/it/~pizzato/publications/presentations/SPIRE2005/index.html)
+[(Springer)](http://dx.doi.org/10.1007/11575832_15) 
 
 
 
@@ -212,7 +206,6 @@ Proceedings of the Twelfth Symposium on String Processing and Information Retrie
 **Question Classification by Structure Induction.**
 _Menno van Zaanen, Luiz Pizzato and Diego Molla_
 Proceedings of the Nineteenth International Joint Conference on Artificial Intelligence (IJCAI-2005). Edinburgh, Scotland, 30 July - 5 August 2005.
-[(PDF)](http://sydney.edu.au/engineering/it/~pizzato/publications/pdf/VanZaanenPizzatoMollaIJCAI2005.pdf) [(Bib)](http://sydney.edu.au/engineering/it/~pizzato/publications/bibtex/VanZaanenPizzatoMollaIJCAI2005.bib)
 
 
 
@@ -220,7 +213,6 @@ Proceedings of the Nineteenth International Joint Conference on Artificial Intel
 **Using a Trie-based Structure for Question Analysis.**
 _Luiz Pizzato_
 Proceedings of the Australasian Language Technology Workshop 2004. Macquarie University, Sydney, Australia, December 8, 2004. pp. 25-31. Published by ASSTA.
-[(PDF)](http://sydney.edu.au/engineering/it/~pizzato/publications/pdf/PizzatoALTW2004.pdf) [(Bib)](http://sydney.edu.au/engineering/it/~pizzato/publications/bibtex/PizzatoALTW2004.bib) Slides: [(PPT)](http://sydney.edu.au/engineering/it/~pizzato/publications/presentations/PizzatoALTW2004.ppt) [(HTML)](http://sydney.edu.au/engineering/it/~pizzato/publications/presentations/ALTW2004/index.htm)
 
 
 
@@ -228,7 +220,6 @@ Proceedings of the Australasian Language Technology Workshop 2004. Macquarie Uni
 **Intrinsic and Extrinsic Evaluation of a Thesaurus-Based Query Expansion Technique.**
 _Luiz Pizzato, Paulo Quaresma and Vera Lúcia Strube de Lima_
 Presented at the 2004 IEEE/WIC/ACM International Conference on Web Intelligence (WI'04). Beijing, China, September 21-24, 2004.
-Poster: [(PDF)](http://sydney.edu.au/engineering/it/~pizzato/publications/presentations/PizzatoWI2004.pdf)
 
 
 
@@ -236,15 +227,14 @@ Poster: [(PDF)](http://sydney.edu.au/engineering/it/~pizzato/publications/prese
 **Evaluation of a Thesaurus-Based Query Expansion Technique.**
 _Luiz Pizzato and Vera Lúcia Strube de Lima_
 Proceedings of the 6th Workshop on Computational Processing of the Portuguese Language - Written and Spoken. Lecture Notes in Computer Science. Universidade do Algarve-FCHS, Faro, Portugal. June 26-27, 2003. Springer-Verlag, 2003.
-[(Springer)](http://dx.doi.org/10.1007/3-540-45011-4_39) [(Bib)](http://sydney.edu.au/engineering/it/~pizzato/publications/bibtex/PizzatoPROPOR.bib)
-
+[(Springer)](http://dx.doi.org/10.1007/3-540-45011-4_39)
 
 
 
 **Query Expansion Based on Thesaurus Relations: Evaluation over Internet.**
 _Luiz Pizzato and Vera Lúcia Strube de Lima_
 Computational Linguistics and Intelligent Text Processing, Lecture Notes in Computer Science. Vol. 2588. ISBN 3-540-00532-3. Springer-Verlag, 2003. pp, 553-556.
-[(Springer)](http://dx.doi.org/10.1007/3-540-36456-0_59) [(Bib)](http://sydney.edu.au/engineering/it/~pizzato/publications/bibtex/PizzatoCICLing.bib)
+[(Springer)](http://dx.doi.org/10.1007/3-540-36456-0_59) 
 
 
 
@@ -252,7 +242,6 @@ Computational Linguistics and Intelligent Text Processing, Lecture Notes in Comp
 **Desenvolvimento e Avaliação de uma Estrutura Multitesauro para a Recuperação de Informações.**
 _Luiz Pizzato and Vera Lúcia Strube de Lima_
 Proceedings of the XXVIII Conferencia Latinoamericana de Informática (CLEI 2002). Montevideo, Uruguay. 25-29 November 2002
-[(PDF)](http://sydney.edu.au/engineering/it/~pizzato/publications/pdf/PizzatoCLEI.pdf) [(Bib)](http://sydney.edu.au/engineering/it/~pizzato/publications/bibtex/PizzatoCLEI.bib) Slides: [(PPT)](http://sydney.edu.au/engineering/it/~pizzato/publications/presentations/PizzatoCLEI.ppt) [(HTML)](http://sydney.edu.au/engineering/it/~pizzato/publications/presentations/CLEI/index.html)
 
 
 
@@ -260,7 +249,6 @@ Proceedings of the XXVIII Conferencia Latinoamericana de Informática (CLEI 2002
 **Desenvolvimento e Avaliação de uma Estrutura Multitesauro para Recuperação de Informações.**
 _Luiz Pizzato and Vera Lúcia Strube de Lima_
 Proceedings of the I Workshop de Teses e Dissertações em Inteligência Artificial (WTDIA), XVI Brazilian Symposium on Artificial Intelligence (SBIA'02). Porto de Galinhas, PE, Brazil. 11-14 November 2002.
-[(PDF)](http://sydney.edu.au/engineering/it/~pizzato/publications/pdf/PizzatoWTDIA.pdf) [(Bib)](http://sydney.edu.au/engineering/it/~pizzato/publications/bibtex/PizzatoWTDIA.bib) Slides: [(PPT)](http://sydney.edu.au/engineering/it/~pizzato/publications/presentations/PizzatoWTDIA.ppt) [(HTML)](http://sydney.edu.au/engineering/it/~pizzato/publications/presentations/WTDIA/index.html)
 
 
 
@@ -268,7 +256,6 @@ Proceedings of the I Workshop de Teses e Dissertações em Inteligência Artific
 **Estrutura Multitesauro para Recuperação de Informações.**
 _Luiz Pizzato and Vera Lúcia Strube de Lima_
 Anais do XIII Simpósio Brasileiro em Informática na Educação (SBIE'02), Workshop de Ontologias (WONTO). São Leopoldo, RS, Brazil. 12-14 November 2002.
-[(PDF)](http://sydney.edu.au/engineering/it/~pizzato/publications/pdf/PizzatoWONTO.pdf) [(Bib)](http://sydney.edu.au/engineering/it/~pizzato/publications/bibtex/PizzatoWONTO.bib) Slides: [(PPT)](http://sydney.edu.au/engineering/it/~pizzato/publications/presentations/PizzatoWONTO.ppt) [(HTML)](http://sydney.edu.au/engineering/it/~pizzato/publications/presentations/WONTO/index.html)
 
 
 
@@ -282,7 +269,6 @@ Anais do XIII Simpósio Brasileiro em Informática na Educação (SBIE'02), Work
 _Luiz Pizzato_
 PhD Thesis. Macquarie University, Australia. 2008.
 Supervised Dr. Diego Molla. Submitted on: 12 December 2008
-[(PDF)](http://sydney.edu.au/engineering/it/~pizzato/publications/pdf/PizzatoPhDThesis.pdf) [(Bib)](http://sydney.edu.au/engineering/it/~pizzato/publications/bibtex/PizzatoPhDThesis.bib)
 
 
 
@@ -291,4 +277,12 @@ Supervised Dr. Diego Molla. Submitted on: 12 December 2008
 _Luiz Pizzato_
 Master Thesis. Pontifícia Universidade Católica do Rio Grande do Sul (PUCRS). 2003.
 Supervised Profa. Vera Lúcia Strube de Lima Defended on: 8th January 2003 Examiners: Dr. Paulo Quaresma, University of Évora, Portugal; Dr. João Batista de Oliveira, PUCRS, Brazil; and Dr. Paulo Fernandes, PUCRS, Brazil.
-[(PDF)](http://sydney.edu.au/engineering/it/~pizzato/publications/pdf/PizzatoDissertacao.pdf) [(Bib)](http://sydney.edu.au/engineering/it/~pizzato/publications/bibtex/PizzatoDissertacao.bib) Slides: [(PPT)](http://sydney.edu.au/engineering/it/~pizzato/publications/presentations/PizzatoDissertacao.ppt) [(HTML)](http://sydney.edu.au/engineering/it/~pizzato/publications/presentations/dissertacao/index.html)
+
+
+## Pre-prints
+
+
+
+**Beyond Personalization: Research Directions in Multistakeholder Recommendation.**
+_Himan Abdollahpouri, Gediminas Adomavicius, Robin Burke, Ido Guy, Dietmar Jannach, Toshihiro Kamishima, Jan Krasnodebski, and Luiz Pizzato_. 
+Jornal (under review). arXiv e-prints. May 2019. [arXiv:1905.01986](https://arxiv.org/abs/1905.01986)
