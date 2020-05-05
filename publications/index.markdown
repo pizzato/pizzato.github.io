@@ -57,9 +57,9 @@ Sydney, Australia, 2009
 ## Peer-reviewed
 
 
-**Beyond Personalization: Research Directions in Multistakeholder Recommendation.**
+**Multistakeholder recommendation: Survey and research directions.**
 _Himan Abdollahpouri, Gediminas Adomavicius, Robin Burke, Ido Guy, Dietmar Jannach, Toshihiro Kamishima, Jan Krasnodebski, and Luiz Pizzato_. 
-In User Modeling and User-Adapted Interaction (UMUAI). January 2020, Volume 30, Issue 1, pp 127-158 https://doi.org/10.1007/s11257-019-09256-1 [(Springer)](https://doi.org/10.1007/s11257-019-09256-1)
+In User Modeling and User-Adapted Interaction (UMUAI). January 2020, Volume 30, Issue 1, pp 127-158 doi:10.1007/s11257-019-09256-1 [(Springer)](https://doi.org/10.1007/s11257-019-09256-1)
 
 
 **Recommending people to people: The nature of reciprocal recommenders with a case study in online dating.**
