@@ -125,22 +125,22 @@ The Visual Computer: International Journal of Computer Graphics (TVC) -- 2008
 
 
 
-International World Wide Web Conference (WWW) 2017, The Web Conference 2018, 2019
+International World Wide Web Conference (WWW) 2017, The Web Conference 2018-2020
 
 
 
 
-ACM Recommender Systems -- 2014, 2015, 2016, 2017, 2018, 2019
+ACM Recommender Systems 2014-2020
 
 
 
 
-Conference on User Modelling, Adaptation and Personalization (UMAP) 2014, 2015, 2016, 2017, 2018, 2019
+Conference on User Modelling, Adaptation and Personalization (UMAP) 2014-2020
 
 
 
 
-International Conference on Computational Processing of Portuguese Language (PROPOR) 2010, 2012, 2014
+International Conference on Computational Processing of Portuguese Language (PROPOR) 2010-2014
 
 
 
@@ -150,27 +150,27 @@ International Conference on Intelligent User Interfaces (IUI) 2014
 
 
 
-Workshop on Social Recommender Systems (SRS) 2012, 2013, 2014, 2015
+Workshop on Social Recommender Systems (SRS) 2012-2015
 
 
 
 
-Workshop on Social News on the Web (SNOW) 2013, 2014, 2016
+Workshop on Social News on the Web (SNOW) 2013-2016
 
 
 
 
-Workshop on Recommender Systems and the Social Web 2011, 2012, and 2013
+Workshop on Recommender Systems and the Social Web 2011-2013
 
 
 
 
-Australasian Document Computing Symposium (ADCS) 2011, 2012 and 2013
+Australasian Document Computing Symposium (ADCS) 2011-2013
 
 
 
 
-Australasian Language Technology Workshop (ALTA) 2010, 2011, 2012 and 2013
+Australasian Language Technology Workshop (ALTA) 2010-2013
 
 
 
