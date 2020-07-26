@@ -13,6 +13,15 @@ wordpress_id: 17
 For a comprehensive publication list with citations, check my [Google Scholar profile](http://scholar.google.com.au/citations?user=3q9NOYYAAAAJ&hl=en).
 
 
+## Patents
+
+**Cryptographic datashare control for blockchain**
+Inventors: _David Treat, John Velissarios, Teresa Tung, Luiz Pizzato, Deborah Garand, Atieh Ranjbar Kermany, Chia Jung Chang, and Arjun Sitaraman Krishnan_.
+Applicant: _Accenture Global Solutions Limited_
+United States Patent No 10,721,217. 21 July 2020
+[(USPTO)](https://pdfpiw.uspto.gov/.piw?Docid=10721217)
+
+
 ## Edited
 
 
