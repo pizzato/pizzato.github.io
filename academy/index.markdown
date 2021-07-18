@@ -80,6 +80,11 @@ $24,000 — International Program Development Fund — 2013-2014
 
 
 
+ACM Transactions on the Web (TWEB) -- 2021
+
+
+
+
 IEEE Transactions on Knowledge and Data Engineering (TKDE) -- 2012, 2014, 2016
 
 
@@ -125,17 +130,17 @@ The Visual Computer: International Journal of Computer Graphics (TVC) -- 2008
 
 
 
-International World Wide Web Conference (WWW) 2017, The Web Conference 2018-2020
+International World Wide Web Conference (WWW) 2017, The Web Conference 2018-2021
 
 
 
 
-ACM Recommender Systems 2014-2020
+ACM Recommender Systems 2014-2021
 
 
 
 
-Conference on User Modelling, Adaptation and Personalization (UMAP) 2014-2020
+Conference on User Modelling, Adaptation and Personalization (UMAP) 2014-2021
 
 
 
