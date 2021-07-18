@@ -66,14 +66,30 @@ Sydney, Australia, 2009
 ## Peer-reviewed
 
 
+
+**Reciprocal Recommender Systems: Analysis of state-of-art literature, challenges and opportunities towards social recommendation**
+_Iván Palomares, Carlos Porcel, Luiz Pizzato, Ido Guy, and Enrique Herrera-Viedma_
+Information Fusion, Volume 69, 2021, Pages 103-127, ISSN 1566-2535, doi:10.1016/j.inffus.2020.12.001.
+[(ScienceDirect)](https://www.sciencedirect.com/science/article/pii/S1566253520304267)
+
+
+
+**An Ethical Multi-Stakeholder Recommender System Based on Evolutionary Multi-Objective Optimization**
+_N. R. Kermany, W. Zhao, J. Yang, J. Wu and L. Pizzato_
+2020 IEEE International Conference on Services Computing (SCC), 2020, pp. 478-480, doi:10.1109/SCC49832.2020.00074.
+[(IEEE)](https://ieeexplore.ieee.org/abstract/document/9284606)
+
+
+
 **Multistakeholder recommendation: Survey and research directions.**
 _Himan Abdollahpouri, Gediminas Adomavicius, Robin Burke, Ido Guy, Dietmar Jannach, Toshihiro Kamishima, Jan Krasnodebski, and Luiz Pizzato_. 
 In User Modeling and User-Adapted Interaction (UMUAI). January 2020, Volume 30, Issue 1, pp 127-158 doi:10.1007/s11257-019-09256-1 [(Springer)](https://doi.org/10.1007/s11257-019-09256-1)
 
 
+
 **Recommending people to people: The nature of reciprocal recommenders with a case study in online dating.**
 _Luiz Augusto Pizzato, Tomasz Rej, Joshua Akehurst, Irena Koprinska, Kalina Yacef, and Judy Kay_
-In User Modeling and User-Adapted Interaction (UMUAI). November 2013, Volume 23, Issue 5, pp 447-488 doi:10.1007/s11257-012-9125-0
+User Modeling and User-Adapted Interaction (UMUAI). November 2013, Volume 23, Issue 5, pp 447-488 doi:10.1007/s11257-012-9125-0
 [(Springer)](http://dx.doi.org/10.1007/s11257-012-9125-0) 
 
 
