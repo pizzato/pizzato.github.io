@@ -65,6 +65,10 @@ Sydney, Australia, 2009
 
 ## Peer-reviewed
 
+**A fairness-aware multi-stakeholder recommender system**
+_Naime Ranjbar Kermany, Weiliang Zhao, Jian Yang, Jia Wu, Luiz Pizzato_
+World Wide Web (2021). doi:10.1007/s11280-021-00946-8 [Springer](https://link.springer.com/article/10.1007/s11280-021-00946-8)
+
 
 
 **Reciprocal Recommender Systems: Analysis of state-of-art literature, challenges and opportunities towards social recommendation**
