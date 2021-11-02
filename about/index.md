@@ -28,6 +28,6 @@ Luiz is an academic at heart with a strong commercially-focused mind. His postdo
 
 Luiz has consulted for a large number of clients in a wide range of industries both within his own consultancy practice and during his employment at Accenture. At Accenture Liquid Studio, Luiz has led an expert team of data scientists and full stack engineers in solving very hard problems. One example of such problems were developing machine learning systems and libraries to work with homomorphically encrypted data. This work led to the development of PyHEAL and HEML (another library soon to be open sourced).
 
-He is now the executive manager at the Commonwealth Bank of Australia leading the AI Labs. A team that focuses on improving the financial wellbeing of our clients and society while bringing innovations in AI/ML.
+He is now the executive manager at the Commonwealth Bank of Australia leading the AI Labs. A team that focuses on improving the financial wellbeing of our clients and society while bringing innovations in AI/ML. Some of the work led by his team involved the [detection of abuse using AI](https://www.afr.com/technology/cba-turns-to-ai-to-root-out-abusive-payments-20211009-p58ykg) and the [weather data model](https://www.itnews.com.au/news/cba-runs-its-smart-data-model-during-mass-downpour-562494).
 
 See more on research and publications
