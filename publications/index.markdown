@@ -65,6 +65,25 @@ Sydney, Australia, 2009
 
 ## Peer-reviewed
 
+**PD-SRS: Personalized Diversity for a Fair Session-Based Recommendation System**
+_Naime Ranjbar Kermany, Luiz Pizzato, Jian Yang, Shan Xue, Jia Wu_
+Service-Oriented Computing. ICSOC 2022. Lecture Notes in Computer Science, vol 13740. Springer, Cham. 
+doi:10.1007/978-3-031-20984-0_23 [Springer](https://doi.org/10.1007/978-3-031-20984-0_23)
+
+
+
+**A Multi-Stakeholder Recommender System for Rewards Recommendations**
+_Naime Ranjbar Kermany, Luiz Pizzato, Thireindar Min, Callum Scott, and Anna Leontjeva_
+Proceedings of the 16th ACM Conference on Recommender Systems (RecSys '22). Association for Computing Machinery, New York, NY, USA, 484–487. 
+doi:0.1145/3523227.3547388 [ACM](https://doi.org/10.1145/3523227.3547388)
+
+
+**Fair-SRS: A Fair Session-based Recommendation System**
+_Naime Ranjbar Kermany, Jian Yang, Jia Wu, and Luiz Pizzato_ 
+Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining (WSDM '22). Association for Computing Machinery, New York, NY, USA, 1601–1604. 
+doi:10.1145/3488560.3502191 [ACM](https://doi.org/10.1145/3488560.3502191)
+
+
 **A fairness-aware multi-stakeholder recommender system**
 _Naime Ranjbar Kermany, Weiliang Zhao, Jian Yang, Jia Wu, Luiz Pizzato_
 World Wide Web (2021). doi:10.1007/s11280-021-00946-8 [Springer](https://link.springer.com/article/10.1007/s11280-021-00946-8)
@@ -311,7 +330,11 @@ Supervised Profa. Vera Lúcia Strube de Lima Defended on: 8th January 2003 Exami
 ## Pre-prints
 
 
+**Detection of Abuse in Financial Transaction Descriptions Using Machine Learning.**
+_Anna Leontjeva and Genevieve Richards and Kaavya Sriskandaraja and Jessica Perchman and Luiz Pizzato_
+arXiv e-prints. March 2023. [arXiv](https://arxiv.org/abs/2303.08016)
+
 
 **Beyond Personalization: Research Directions in Multistakeholder Recommendation.**
 _Himan Abdollahpouri, Gediminas Adomavicius, Robin Burke, Ido Guy, Dietmar Jannach, Toshihiro Kamishima, Jan Krasnodebski, and Luiz Pizzato_. 
-Jornal (under review). arXiv e-prints. May 2019. [arXiv:1905.01986](https://arxiv.org/abs/1905.01986)
+arXiv e-prints. May 2019. [arXiv](https://arxiv.org/abs/1905.01986)
