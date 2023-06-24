@@ -335,6 +335,11 @@ _Anna Leontjeva and Genevieve Richards and Kaavya Sriskandaraja and Jessica Perc
 arXiv e-prints. March 2023. [arXiv](https://arxiv.org/abs/2303.08016)
 
 
+**Reciprocal Recommender Systems: Analysis of State-of-Art Literature, Challenges and Opportunities towards Social Recommendation**
+_Ivan Palomares and Carlos Porcel and Luiz Pizzato and Ido Guy and Enrique Herrera-Viedma_
+arXiv e-prints. Jul 2020. [arXiv](https://arxiv.org/abs/2007.16120)
+
+
 **Beyond Personalization: Research Directions in Multistakeholder Recommendation.**
 _Himan Abdollahpouri, Gediminas Adomavicius, Robin Burke, Ido Guy, Dietmar Jannach, Toshihiro Kamishima, Jan Krasnodebski, and Luiz Pizzato_. 
 arXiv e-prints. May 2019. [arXiv](https://arxiv.org/abs/1905.01986)
