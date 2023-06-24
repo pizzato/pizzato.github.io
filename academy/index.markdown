@@ -19,8 +19,6 @@ Please follow [this link for publications](/publications/), or check out my [Go
 ## Tutorials
 
 
-
-
 Ido Guy and Luiz Pizzato. 2016. People Recommendation Tutorial. In _Proceedings of the 10th ACM Conference on Recommender Systems_ (RecSys '16). pp 431-432. Boston, Massachusetts, USA — September 15 - 19, 2016 DOI: http://dx.doi.org/10.1145/2959100.2959196
 
 
@@ -37,7 +35,12 @@ $24,000 — International Program Development Fund — 2013-2014
 
 
 
-## Program Chair
+## Organising
+
+
+[17th ACM Conference on Recommender Systems, Singapore, 18th-22nd September 2023](https://recsys.acm.org/recsys23/)
+
+
 
 
 [Value-Aware and Multi-Stakeholder Recommendation Workshop (VAMS 2017)](https://vams2017.wordpress.com/)
@@ -128,20 +131,16 @@ The Visual Computer: International Journal of Computer Graphics (TVC) -- 2008
 ## Program Committee
 
 
+ACM Recommender Systems 2014-2023
 
 
-International World Wide Web Conference (WWW) 2017, The Web Conference 2018-2021
+ACM SIGIR Conference on Research and Development in Information Retrieval, 2023
 
 
+Conference on User Modelling, Adaptation and Personalization (UMAP) 2014-2022
 
 
-ACM Recommender Systems 2014-2021
-
-
-
-
-Conference on User Modelling, Adaptation and Personalization (UMAP) 2014-2021
-
+International World Wide Web Conference (WWW) 2017, The Web Conference 2018-2022
 
 
 
