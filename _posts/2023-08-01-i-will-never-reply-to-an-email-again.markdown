@@ -7,6 +7,7 @@ link: http://luiz.pizzato.cc/2023/08/01/i-will-never-reply-to-an-email-again/
 slug: i-will-never-reply-to-an-email-again
 title: I will never reply to an email again
 wordpress_id: 1099
+feature: /assets/img/posts/2023-08-01-i-will-never-reply-to-an-email-again/header.jpg
 categories:
 - Blog
 tags:
