@@ -3,12 +3,17 @@ author: luizpizzatocc
 comments: true
 date: 2023-08-01 12:00:00+00:00
 layout: post
-link: http://luiz.pizzato.cc/2023/08/01/i-will-never-reply-to-an-email-again
-slug: llmme-released
+link: http://luiz.pizzato.cc/2023/08/01/i-will-never-reply-to-an-email-again/
+slug: i-will-never-reply-to-an-email-again
 title: I will never reply to an email again
-wordpress_id: 1010
+wordpress_id: 1099
 categories:
 - Blog
+tags:
+- ai
+- llm
+- bot
+- released
 ---
 
 # I will never reply to an email again
