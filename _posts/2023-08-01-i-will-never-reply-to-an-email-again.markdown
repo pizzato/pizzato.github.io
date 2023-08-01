@@ -1,6 +1,15 @@
 ---
 layout: post
 title: I will never reply to an email again
+date: 2023-08-01 12:00:00+00:00
+feature: /assets/img/posts/2023-08-01-i-will-never-reply-to-an-email-again/header.jpg
+categories:
+  - Blog
+tags:
+  - ai
+  - llm
+  - bot
+  - released
 ---
 
 **I created a bot that is pretty good at being me.**
