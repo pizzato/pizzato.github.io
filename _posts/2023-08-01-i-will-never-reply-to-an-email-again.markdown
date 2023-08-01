@@ -16,9 +16,9 @@ tags:
 - released
 ---
 
-# I will never reply to an email again
+### I will never reply to an email again
 
-## I created a bot that is pretty good at being me.
+**I created a bot that is pretty good at being me.**
 
 ![](https://luiz.pizzato.cc/assets/img/posts/2023-08-01-i-will-never-reply-to-an-email-again/header.jpg)
 
