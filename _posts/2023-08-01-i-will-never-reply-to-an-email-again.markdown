@@ -16,8 +16,6 @@ tags:
 - released
 ---
 
-### I will never reply to an email again
-
 **I created a bot that is pretty good at being me.**
 
 ![](https://luiz.pizzato.cc/assets/img/posts/2023-08-01-i-will-never-reply-to-an-email-again/header.jpg)
@@ -25,7 +23,7 @@ tags:
 I am an inbox zero type of person. Unfortunately the rate in which I receive emails have recently exceeded my capacity to respond to them. Both due to increased number of emails but also reduced amount of time. So I created a small project named LLMMe that allows anyone to build their own large language model (LLM) and connect it to a Gmail auto-reply bot. Giving anyone their own personal AI email assistant.
 Check it out as I made it open source. Just follow the instructions to create your own: https://github.com/pizzato/LLMMe
 
-### LuizBot in Action
+**LuizBot in Action**
 
 My bot is named LuizBot and here is what it does.
 
