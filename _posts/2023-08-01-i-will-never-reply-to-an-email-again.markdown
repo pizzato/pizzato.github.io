@@ -3,10 +3,9 @@ author: luizpizzatocc
 comments: true
 date: 2023-08-01 12:00:00+00:00
 layout: post
-link: http://luiz.pizzato.cc/2023/08/01/i-will-never-reply-to-an-email-again/
+link: https://luiz.pizzato.cc/2023/08/01/i-will-never-reply-to-an-email-again/
 slug: i-will-never-reply-to-an-email-again
 title: I will never reply to an email again
-wordpress_id: 1099
 feature: /assets/img/posts/2023-08-01-i-will-never-reply-to-an-email-again/header.jpg
 categories:
 - Blog
