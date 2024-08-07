@@ -15,6 +15,19 @@ For a comprehensive publication list with citations, check my [Google Scholar pr
 
 ## Patents
 
+
+**Systems and methods for translating non-natural language data into natural language data** 
+Inventors: _Dan Jermyn, Luiz Pizzato, Anna Leontjeva, Kaavya Sriskandaraja, Sandeepa Kannangara, Jack Elliott_ 
+Applicant: _Commonwealth Bank of Australia_ 
+Provisional Australian Patent Filled on 27 June 2024 
+[(IP Australia)](https://ipsearch.ipaustralia.gov.au/patents/2024901967)
+
+**A vector embedder for non-natural language data** 
+Inventors: _Dan Jermyn, Luiz Pizzato, Anna Leontjeva, Naomi Ranjbar Kermany, Patrick Songco, Jack Elliott_ 
+Applicant: _Commonwealth Bank of Australia_ 
+Australian Patent Filled on 28 Mar 2024 
+[(IP Australia)](https://ipsearch.ipaustralia.gov.au/patents/2024202048)
+
 **Cryptographic datashare control for blockchain**
 Inventors: _David Treat, John Velissarios, Teresa Tung, Luiz Pizzato, Deborah Garand, Atieh Ranjbar Kermany, Chia Jung Chang, and Arjun Sitaraman Krishnan_.
 Applicant: _Accenture Global Solutions Limited_
