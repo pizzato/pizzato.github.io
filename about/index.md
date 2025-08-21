@@ -10,7 +10,7 @@ feature: assets/img/about.jpg
 wordpress_id: 6
 ---
 
-Executive AI Leader at [Commonwealth Bank of Australia](https://www.commbank.com.au/)
+Distinguished AI Scientist at [Commonwealth Bank of Australia](https://www.commbank.com.au/)
 
 Data Science Executive - Problem Solver - Driving AI Innovation
 
