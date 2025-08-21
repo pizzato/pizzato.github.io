@@ -38,6 +38,10 @@ United States Patent No 10,721,217. 21 July 2020
 ## Edited
 
 
+**RecSys '23: Proceedings of the 17th ACM Conference on Recommender Systems**
+Editors: _Jie Zhang, Li Chen, Shlomo Berkovsky, Min Zhang, Tommaso di Noia, Justin Basilico, Luiz Pizzato, Yang Song_
+Singapore, September 18-22, 2023. ISBN: 979-8-4007-0241-9
+[(ACM)](https://dl.acm.org/doi/proceedings/10.1145/3604915#)
 
 
 **Proceedings of the Second Workshop on Community Mining and People Recommenders**
@@ -77,6 +81,19 @@ Sydney, Australia, 2009
 
 
 ## Peer-reviewed
+
+**Synthetic Voices: Evaluating the Fidelity of LLM-Generated Personas in Representing People’s Financial Wellbeing**
+_Arshnoor Kaur, Amanda Aird, Harris Borman, Andrea Nicastro, Anna Leontjeva, Luiz Pizzato, and Dan Jermyn_
+Proceedings of the 33rd ACM Conference on User Modeling, Adaptation and Personalization (UMAP '25). 
+Association for Computing Machinery, New York, NY, USA, 185–193. 
+[(ACM)](https://doi.org/10.1145/3699682.3728339)
+
+
+**Do LLM Personas Dream of Bull Markets? Comparing Human and AI Investment Strategies Through the Lens of the Five-Factor Model**
+_H Borman, A Leontjeva, L Pizzato, MK Jiang, D Jermyn_
+NeurIPS 2024 Workshop Open-World Agents
+[(PDF)](https://openreview.net/pdf?id=b2lFzaGlan)
+
 
 **PD-SRS: Personalized Diversity for a Fair Session-Based Recommendation System**
 _Naime Ranjbar Kermany, Luiz Pizzato, Jian Yang, Shan Xue, Jia Wu_
@@ -342,6 +359,13 @@ Supervised Profa. Vera Lúcia Strube de Lima Defended on: 8th January 2003 Exami
 
 ## Pre-prints
 
+**A Robust and Efficient Pipeline for Enterprise-Level Large-Scale Entity Resolution**
+_Sandeepa Kannangara, Arman Abrahamyan, Daniel Elias, Thomas Kilby, Nadav Dar, Luiz Pizzato, Anna Leontjeva, Dan Jermyn_
+arXiv preprint. August 2025 [arXiv](https://arxiv.org/abs/2508.03767)
+
+**FeatureCuts: Feature Selection for Large Data by Optimizing the Cutoff**
+_Andy Hu, Devika Prasad, Luiz Pizzato, Nicholas Foord, Arman Abrahamyan, Anna Leontjeva, Cooper Doyle, Dan Jermyn_
+arXiv preprint. August 2025 [arXiv](https://arxiv.org/abs/2508.00954)
 
 **Detection of Abuse in Financial Transaction Descriptions Using Machine Learning.**
 _Anna Leontjeva and Genevieve Richards and Kaavya Sriskandaraja and Jessica Perchman and Luiz Pizzato_
