@@ -24,16 +24,9 @@ The project starting point was Apple’s [FastVLM repository](https://github.com
 
 The image generation is done with [Apple Intelligence Playground](https://developer.apple.com/machine-learning/apple-intelligence-playground/) enabling a fully offline, on-device AI experience.
 
-## Screenshots
+## Open Source
 
-<table>
-    <tr>
-        <td><img src="docs/GAC1.PNG" alt="GenAICam - Photo taking and live descriptions" figcaption="Photo taking and live descriptions"></td>
-        <td><img src="docs/GAC2.PNG" alt="GenAICam - Generating photo with short description" figcaption="Generating photo with short description"></td>
-        <td><img src="docs/GAC3.PNG" alt="GenAICam - Generated photo" figcaption="Generated photo"></td>
-        <td><img src="docs/GAC4.PNG" alt="GenAICam - More screen with short and long description" figcaption="More screen with short and long description"></td>
-    </tr>
-</table>
+As usual, the project is open-sourced, go ahead and build upon it or suggest any features and changes! https://github.com/pizzato/genaicam
 
 ## Disclaimer
 
@@ -41,7 +34,7 @@ This project is provided **as is**, without warranty of any kind. Use at your ow
 
 ## Open source and Software Licenses
 
-This project was built on top of Apple's [FastVLM](https://github.com/apple/ml-fastvlm), see the [README](https://github.com/pizzato/ml-fastvlm/blob/main/README.md) for more details. I have removed the uplink to the main repository as it is not relevant to the original repository, that is, changes here should not create pull-requests over there.
+This project was built on top of Apple's [FastVLM](https://github.com/apple/ml-fastvlm), see the [README](https://github.com/pizzato/genaicam/blob/main/README.md) for more details. I have removed the uplink to the main repository as it is not relevant to the original repository, that is, changes here should not create pull-requests over there.
 
 ## Support
 
