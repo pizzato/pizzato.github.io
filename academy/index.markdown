@@ -136,7 +136,10 @@ The Visual Computer: International Journal of Computer Graphics (TVC) -- 2008
 ## Program Committee
 
 
-ACM Recommender Systems 2014-2023
+The IJCAI Special Track on AI4Tech, 2025
+
+
+ACM Recommender Systems 2014-2023, Industry 2025
 
 
 ACM SIGIR Conference on Research and Development in Information Retrieval, 2023
