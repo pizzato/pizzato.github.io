@@ -38,6 +38,11 @@ $24,000 — International Program Development Fund — 2013-2014
 ## Organising
 
 
+[AAAI'26 Workshop on Agentic AI in Financial Services, 26 January 2026, Singapore ](https://ai-4-finance.pages.dev/)
+
+
+
+
 [17th ACM Conference on Recommender Systems, Singapore, 18th-22nd September 2023](https://recsys.acm.org/recsys23/)
 
 
