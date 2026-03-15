@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Redirecting to Home Assistant...</title></head>
+<body>
+<script>
+  // Forward Tesla OAuth callback to local Home Assistant
+  var params = window.location.search;
+  var haUrl = "http://192.168.4.220:8123/auth/external/callback" + params;
+  window.location.replace(haUrl);
+</script>
+<p>Redirecting to Home Assistant... <a id="link">click here if not redirected</a></p>
+<script>
+  document.getElementById('link').href = haUrl;
+</script>
+</body>
+</html>
