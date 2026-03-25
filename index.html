@@ -1,5 +1,502 @@
 ---
-layout: home
-title: Home
-comments: false
+layout: null
 ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Luiz Pizzato, PhD — Distinguished AI Scientist, Data Science Executive, and AI Innovator at Commonwealth Bank of Australia.">
+  <meta name="author" content="Luiz Pizzato">
+  <meta property="og:title" content="Luiz Pizzato, PhD">
+  <meta property="og:description" content="Distinguished AI Scientist. Problem Solver. Driving AI Innovation.">
+  <meta property="og:image" content="/assets/img/LuizPizzato.jpg">
+  <title>Luiz Pizzato, PhD</title>
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/revamp.css">
+</head>
+<body>
+
+  <!-- ── NAV ──────────────────────────────────────────────── -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <a class="nav-link" href="#about"        data-section="about">About</a>
+    <a class="nav-link" href="#projects"     data-section="projects">Projects</a>
+    <a class="nav-link" href="#writing"      data-section="writing">Writing</a>
+    <a class="nav-link" href="#publications" data-section="publications">Research</a>
+    <a class="nav-link" href="#contact"      data-section="contact">Contact</a>
+  </nav>
+
+  <!-- ── HERO ─────────────────────────────────────────────── -->
+  <section class="hero" id="home">
+    <div class="hero-mesh"></div>
+    <div class="hero-grid"></div>
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="dot"></span>
+        Distinguished AI Scientist
+      </div>
+
+      <h1 class="hero-name">
+        Luiz
+        <span class="hero-name-last">Pizzato</span>
+      </h1>
+
+      <p class="hero-role">PhD · AI Leader · Commonwealth Bank of Australia</p>
+      <p class="hero-tagline">Data Science Executive &nbsp;·&nbsp; Problem Solver &nbsp;·&nbsp; Driving AI Innovation</p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"/></svg>
+          Explore Projects
+        </a>
+        <a href="#about" class="btn btn-ghost">About me</a>
+      </div>
+
+      <div class="social-bar">
+        <!-- GitHub -->
+        <a href="https://github.com/pizzato" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://linkedin.com/in/pizzato" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <!-- Google Scholar -->
+        <a href="https://scholar.google.com.au/citations?user=3q9NOYYAAAAJ" target="_blank" rel="noopener" class="social-link" aria-label="Google Scholar">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 110-14 7 7 0 010 14zm0-24L0 9.5l4.838 3.94A8 8 0 0112 10a8 8 0 017.162 3.44L24 9.5z"/></svg>
+          Scholar
+        </a>
+        <!-- Twitter/X -->
+        <a href="https://twitter.com/luizpizzato" target="_blank" rel="noopener" class="social-link" aria-label="Twitter">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          Twitter
+        </a>
+        <!-- Medium -->
+        <a href="https://medium.com/@pizzato" target="_blank" rel="noopener" class="social-link" aria-label="Medium">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+          Medium
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ─────────────────────────────────────────────── -->
+  <section class="section" id="about" data-section="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">01</span>
+        <h2 class="section-title">About</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="reveal">
+            I'm a Data Scientist and AI leader with over 20 years of experience building intelligent systems. Currently a <strong>Distinguished AI Scientist</strong> at <a href="https://www.commbank.com.au/" target="_blank" rel="noopener">Commonwealth Bank of Australia</a>, where I lead teams delivering some of Australia's most impactful AI solutions.
+          </p>
+          <p class="reveal reveal-delay-1">
+            My expertise spans Natural Language Processing, Recommender Systems, Machine Learning, and Generative AI. I'm an academic at heart with a commercially-focused mind — my postdoctoral research at the University of Sydney was directly applied at one of Australia's largest online dating platforms, and the principles behind that work led to the founding of Octosocial Labs.
+          </p>
+          <p class="reveal reveal-delay-2">
+            At CBA, I led the development of the first Generative AI implementations including the <a href="https://gizmodo.com.au/2023/05/commbank-gen-ai-tool/" target="_blank" rel="noopener">CommBank Gen.ai Studio</a>, the award-winning <a href="https://www.afr.com/technology/cba-turns-to-ai-to-root-out-abusive-payments-20211009-p58ykg" target="_blank" rel="noopener">detection of abuse using AI</a> in financial transactions, and a cutting-edge <a href="https://www.itnews.com.au/news/cba-runs-its-smart-data-model-during-mass-downpour-562494" target="_blank" rel="noopener">weather data model</a>.
+          </p>
+          <p class="reveal reveal-delay-3">
+            Before CBA, I consulted for large enterprises at Accenture Liquid Studio, where I led teams solving extraordinarily hard ML problems — including developing machine learning systems for <strong>homomorphically encrypted data</strong>, published as the open-source <a href="https://github.com/Accenture/pyheal" target="_blank" rel="noopener">PyHEAL</a> library.
+          </p>
+        </div>
+
+        <div class="about-sidebar">
+          <div class="avatar-card reveal">
+            <img src="/assets/img/LuizPizzato.jpg" alt="Luiz Pizzato" loading="lazy">
+            <div class="avatar-name">Luiz Pizzato</div>
+            <div class="avatar-role">PhD, Computer Science</div>
+          </div>
+
+          <div class="stat-card reveal reveal-delay-1">
+            <div class="stat-label">Current role</div>
+            <div class="stat-value" style="font-size:16px; line-height:1.3">Distinguished AI Scientist</div>
+            <div class="stat-sub">Commonwealth Bank of Australia</div>
+          </div>
+
+          <div class="stat-card reveal reveal-delay-2">
+            <div class="stat-label">Experience</div>
+            <div class="stat-value">20+</div>
+            <div class="stat-sub">years in AI &amp; Machine Learning</div>
+          </div>
+
+          <div class="stat-card reveal reveal-delay-3">
+            <div class="stat-label">Contact</div>
+            <div class="stat-value" style="font-size:14px; line-height:1.4">luiz@pizzato.cc</div>
+            <div class="stat-sub">Macquarie University PhD · PUCRS MSc</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ──────────────────────────────────────────── -->
+  <section class="section" id="projects" data-section="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- LLMMe — featured -->
+        <a href="https://github.com/pizzato/LLMMe" target="_blank" rel="noopener"
+           class="project-card featured reveal">
+          <div>
+            <div class="project-tag tag-ai">🤖 AI · Open Source</div>
+            <div class="project-name">LLMMe</div>
+            <p class="project-desc">
+              A personal AI email assistant that learns to write exactly like you. Built by training an LLM on every message you ever composed, it connects to Gmail and auto-drafts replies — so you can review rather than write from scratch. Because the rate of emails had exceeded my capacity to respond.
+            </p>
+            <div class="project-links">
+              <span class="project-link">
+                <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                GitHub
+              </span>
+              <span class="project-link">
+                <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Blog post
+              </span>
+            </div>
+          </div>
+          <div class="project-icon">✉️</div>
+          <div class="project-arrow">↗</div>
+        </a>
+
+        <!-- GenAICam -->
+        <a href="https://github.com/pizzato/genaicam" target="_blank" rel="noopener"
+           class="project-card reveal reveal-delay-1">
+          <div class="project-tag tag-ios">📱 iOS · On-Device AI</div>
+          <div class="project-name">GenAICam</div>
+          <p class="project-desc">
+            A privacy-focused iOS camera app powered by Apple's FastVLM. Describes what it sees and generates images from those descriptions — entirely on-device, no internet required. A vibe-coding experiment that became a CVPR-inspired demo.
+          </p>
+          <div class="project-links">
+            <span class="project-link">GitHub</span>
+            <span class="project-link">Medium</span>
+          </div>
+          <div class="project-arrow">↗</div>
+        </a>
+
+        <!-- PyHEAL -->
+        <a href="https://github.com/Accenture/pyheal" target="_blank" rel="noopener"
+           class="project-card reveal reveal-delay-2">
+          <div class="project-tag tag-ml">🔐 ML · Cryptography</div>
+          <div class="project-name">PyHEAL</div>
+          <p class="project-desc">
+            Open-source Python library that makes machine learning on homomorphically encrypted data accessible. Developed at Accenture Liquid Studio, enabling ML models to operate on encrypted data without ever decrypting it.
+          </p>
+          <div class="project-links">
+            <span class="project-link">GitHub (Accenture)</span>
+            <span class="project-link">Blog post</span>
+          </div>
+          <div class="project-arrow">↗</div>
+        </a>
+
+        <!-- Octosocial -->
+        <div class="project-card reveal reveal-delay-3">
+          <div class="project-tag tag-social">🌐 Social · RecSys</div>
+          <div class="project-name">Octosocial Labs</div>
+          <p class="project-desc">
+            A startup built on reciprocal recommender systems research — focusing on friendship and people recommendation. Spun out of postdoctoral research at the University of Sydney applied to real-world social platforms.
+          </p>
+          <div class="project-links">
+            <span class="project-link">Research paper</span>
+          </div>
+          <div class="project-arrow">↗</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WRITING ──────────────────────────────────────────── -->
+  <section class="section" id="writing" data-section="writing">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Writing</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="posts-list">
+
+        <div class="post-item reveal"
+             data-href="/genaicam/">
+          <span class="post-date">2025</span>
+          <span class="post-title">GenAICam — Privacy-first, on-device AI camera for iOS</span>
+          <div class="post-tags">
+            <span class="post-tag">iOS</span>
+            <span class="post-tag">AI</span>
+          </div>
+          <span class="post-arrow">→</span>
+        </div>
+
+        <div class="post-item reveal reveal-delay-1"
+             data-href="/i-will-never-reply-to-an-email-again/">
+          <span class="post-date">2023</span>
+          <span class="post-title">I will never reply to an email again — Building LLMMe, my personal AI email bot</span>
+          <div class="post-tags">
+            <span class="post-tag">LLM</span>
+            <span class="post-tag">AI</span>
+          </div>
+          <span class="post-arrow">→</span>
+        </div>
+
+        <div class="post-item reveal reveal-delay-2"
+             data-href="/pyheal-released/">
+          <span class="post-date">2019</span>
+          <span class="post-title">PyHeal is released — Open-source homomorphic encryption ML library</span>
+          <div class="post-tags">
+            <span class="post-tag">ML</span>
+            <span class="post-tag">Crypto</span>
+          </div>
+          <span class="post-arrow">→</span>
+        </div>
+
+        <div class="post-item reveal reveal-delay-3"
+             data-href="/how-to-build-he-ml/">
+          <span class="post-date">2019</span>
+          <span class="post-title">How to Build Machine Learning Algorithms using Homomorphic Encryption</span>
+          <div class="post-tags">
+            <span class="post-tag">ML</span>
+            <span class="post-tag">Talk</span>
+          </div>
+          <span class="post-arrow">→</span>
+        </div>
+
+        <div class="post-item reveal"
+             data-href="/aws-learning-series/">
+          <span class="post-date">2019</span>
+          <span class="post-title">AWS Learning Series — Building AI at scale</span>
+          <div class="post-tags">
+            <span class="post-tag">AWS</span>
+            <span class="post-tag">AI</span>
+          </div>
+          <span class="post-arrow">→</span>
+        </div>
+
+        <div class="post-item reveal reveal-delay-1"
+             data-href="/teaching-data-science-in-hong-kong/">
+          <span class="post-date">2016</span>
+          <span class="post-title">Teaching Data Science in Hong Kong</span>
+          <div class="post-tags">
+            <span class="post-tag">Education</span>
+          </div>
+          <span class="post-arrow">→</span>
+        </div>
+
+        <div class="post-item reveal reveal-delay-2"
+             data-href="/path-from-research-to-industry/">
+          <span class="post-date">2014</span>
+          <span class="post-title">The Path from Research to Industry</span>
+          <div class="post-tags">
+            <span class="post-tag">Career</span>
+          </div>
+          <span class="post-arrow">→</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PUBLICATIONS ──────────────────────────────────────── -->
+  <section class="section" id="publications" data-section="publications">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Research</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="pubs-hero reveal">
+        <div class="pubs-hero-text">
+          <h3>20+ years of academic research</h3>
+          <p>
+            Spanning NLP, Recommender Systems, Data Mining, and Generative AI. Program chair of RecSys '23.
+            See the full list on Google Scholar.
+          </p>
+          <br>
+          <a href="https://scholar.google.com.au/citations?user=3q9NOYYAAAAJ" target="_blank" rel="noopener"
+             class="btn btn-ghost" style="display:inline-flex">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 110-14 7 7 0 010 14zm0-24L0 9.5l4.838 3.94A8 8 0 0112 10a8 8 0 017.162 3.44L24 9.5z"/></svg>
+            Google Scholar Profile
+          </a>
+        </div>
+        <div class="pubs-stats">
+          <div class="pub-stat">
+            <div class="pub-stat-num">3</div>
+            <div class="pub-stat-label">Patents</div>
+          </div>
+          <div class="pub-stat">
+            <div class="pub-stat-num">30+</div>
+            <div class="pub-stat-label">Papers</div>
+          </div>
+          <div class="pub-stat">
+            <div class="pub-stat-num">5</div>
+            <div class="pub-stat-label">Proceedings<br>Edited</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-categories reveal reveal-delay-1">
+        <div class="pub-cat">
+          <div class="pub-cat-icon">⚖️</div>
+          <div class="pub-cat-name">Patents</div>
+          <div class="pub-cat-count">3 granted &amp; filed</div>
+        </div>
+        <div class="pub-cat">
+          <div class="pub-cat-icon">🎓</div>
+          <div class="pub-cat-name">Peer-reviewed</div>
+          <div class="pub-cat-count">ACM, IEEE, Springer &amp; more</div>
+        </div>
+        <div class="pub-cat">
+          <div class="pub-cat-icon">📄</div>
+          <div class="pub-cat-name">Pre-prints</div>
+          <div class="pub-cat-count">arXiv &amp; workshops</div>
+        </div>
+      </div>
+
+      <div class="pubs-recent-title reveal">Recent highlights</div>
+
+      <div class="pub-item reveal">
+        <div class="pub-title">Synthetic Voices: Evaluating the Fidelity of LLM-Generated Personas in Representing People's Financial Wellbeing</div>
+        <div class="pub-meta">
+          Kaur et al. · <em>UMAP '25</em> ·
+          <a href="https://doi.org/10.1145/3699682.3728339" target="_blank" rel="noopener">ACM →</a>
+        </div>
+      </div>
+
+      <div class="pub-item reveal reveal-delay-1">
+        <div class="pub-title">Do LLM Personas Dream of Bull Markets? Comparing Human and AI Investment Strategies Through the Lens of the Five-Factor Model</div>
+        <div class="pub-meta">
+          Borman, Leontjeva, Pizzato et al. · <em>NeurIPS 2024 Workshop</em> ·
+          <a href="https://openreview.net/pdf?id=b2lFzaGlan" target="_blank" rel="noopener">PDF →</a>
+        </div>
+      </div>
+
+      <div class="pub-item reveal reveal-delay-2">
+        <div class="pub-title">A Robust and Efficient Pipeline for Enterprise-Level Large-Scale Entity Resolution</div>
+        <div class="pub-meta">
+          Kannangara, Abrahamyan, Pizzato et al. · <em>arXiv 2025</em> ·
+          <a href="https://arxiv.org/abs/2508.03767" target="_blank" rel="noopener">arXiv →</a>
+        </div>
+      </div>
+
+      <div class="pub-item reveal reveal-delay-3">
+        <div class="pub-title">Multistakeholder recommendation: Survey and research directions</div>
+        <div class="pub-meta">
+          Abdollahpouri, Adomavicius, Burke, …Pizzato · <em>UMUAI 2020</em> ·
+          <a href="https://doi.org/10.1007/s11257-019-09256-1" target="_blank" rel="noopener">Springer →</a>
+        </div>
+      </div>
+
+      <div class="pub-item reveal">
+        <div class="pub-title">Recommending people to people: The nature of reciprocal recommenders with a case study in online dating</div>
+        <div class="pub-meta">
+          Pizzato, Rej, Akehurst et al. · <em>UMUAI 2013</em> ·
+          <a href="http://dx.doi.org/10.1007/s11257-012-9125-0" target="_blank" rel="noopener">Springer →</a>
+        </div>
+      </div>
+
+      <div style="margin-top: 28px;" class="reveal">
+        <a href="/publications/" class="btn btn-ghost">View all publications →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── CONTACT ──────────────────────────────────────────── -->
+  <section class="section" id="contact" data-section="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">05</span>
+        <h2 class="section-title">Contact</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="contact-inner">
+        <div class="contact-text reveal">
+          <h3>Let's build something together.</h3>
+          <p>
+            Whether it's AI strategy, research collaboration, speaking engagements, or just a conversation about the future of machine learning — I'm always open to connecting.
+          </p>
+          <a href="mailto:luiz@pizzato.cc" class="contact-email">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            luiz@pizzato.cc
+          </a>
+        </div>
+
+        <div class="contact-links reveal reveal-delay-1">
+          <a href="https://github.com/pizzato" target="_blank" rel="noopener" class="contact-link-item">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span class="contact-link-label">GitHub</span>
+            <span class="contact-link-handle">@pizzato</span>
+            <span class="contact-link-arrow">→</span>
+          </a>
+
+          <a href="https://linkedin.com/in/pizzato" target="_blank" rel="noopener" class="contact-link-item">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <span class="contact-link-label">LinkedIn</span>
+            <span class="contact-link-handle">/in/pizzato</span>
+            <span class="contact-link-arrow">→</span>
+          </a>
+
+          <a href="https://twitter.com/luizpizzato" target="_blank" rel="noopener" class="contact-link-item">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            <span class="contact-link-label">Twitter / X</span>
+            <span class="contact-link-handle">@luizpizzato</span>
+            <span class="contact-link-arrow">→</span>
+          </a>
+
+          <a href="https://medium.com/@pizzato" target="_blank" rel="noopener" class="contact-link-item">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+            <span class="contact-link-label">Medium</span>
+            <span class="contact-link-handle">@pizzato</span>
+            <span class="contact-link-arrow">→</span>
+          </a>
+
+          <a href="https://scholar.google.com.au/citations?user=3q9NOYYAAAAJ" target="_blank" rel="noopener" class="contact-link-item">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 110-14 7 7 0 010 14zm0-24L0 9.5l4.838 3.94A8 8 0 0112 10a8 8 0 017.162 3.44L24 9.5z"/></svg>
+            <span class="contact-link-label">Google Scholar</span>
+            <span class="contact-link-handle">Luiz Pizzato</span>
+            <span class="contact-link-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ────────────────────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-name">Luiz Pizzato</span>
+        <span>Built with craft &amp; curiosity · <a href="https://github.com/pizzato/pizzato.github.io" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline; text-underline-offset:3px;">Source</a></span>
+        <span>&copy; 2025</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/revamp.js" defer></script>
+</body>
+</html>
