@@ -10,8 +10,9 @@
   const ctx = canvas.getContext('2d');
 
   let W, H, particles, animFrame;
-  const PARTICLE_COUNT = 70;
-  const COLORS = ['99,102,241', '34,211,238', '245,158,11'];
+  const PARTICLE_COUNT = 65;
+  // Dark/colored particles that read on the light background
+  const COLORS = ['79,70,229', '8,145,178', '100,100,100'];
 
   function resize() {
     W = canvas.width  = canvas.offsetWidth;
@@ -25,8 +26,8 @@
       y: Math.random() * H,
       vx: (Math.random() - 0.5) * 0.3,
       vy: (Math.random() - 0.5) * 0.3,
-      r: Math.random() * 1.5 + 0.5,
-      alpha: Math.random() * 0.5 + 0.1,
+      r: Math.random() * 1.4 + 0.4,
+      alpha: Math.random() * 0.35 + 0.08,
       color,
     };
   }
@@ -45,7 +46,7 @@
         if (dist < MAX_DIST) {
           const opacity = (1 - dist / MAX_DIST) * 0.12;
           ctx.beginPath();
-          ctx.strokeStyle = `rgba(99,102,241,${opacity})`;
+          ctx.strokeStyle = `rgba(79,70,229,${opacity})`;
           ctx.lineWidth = 0.5;
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
