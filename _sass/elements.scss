@@ -1,24 +1,38 @@
 // Buttons
 %btnextend {
 	display: inline-block;
-	border: 1px solid;
-	border-color: rgba($color_mercury,0.5) rgba($color_bon_jour,0.5) $color_mischka;
-	border-radius: 3px;
+	border: 1px solid rgba($color_bon_jour, 0.6);
+	border-radius: 9999px;
 	text-decoration: none;
-	background: $white;
+	background: rgba(255,255,255,0.5);
 	color: $color_shark;
+	transition: background 0.18s, border-color 0.18s, color 0.18s, transform 0.15s, box-shadow 0.18s;
 	&:hover {
-		box-shadow: 0 0 1px 0 rgba($color_shark,0.5);
-		color: $red;
+		background: rgba(255,255,255,0.8);
+		border-color: rgba($color_mischka, 0.8);
+		color: darken($color_shark, 10%);
+		box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+		transform: translateY(-1px);
 	}
 }
 .social-btn {
-	padding: 10px;
-	margin: 10px;
-	@extend %btnextend;
+	padding: 8px;
+	margin: 6px;
+	border-radius: 50% !important;
+	border-color: transparent !important;
+	background: rgba(0,0,0,0.05) !important;
+	color: $color_tuatara !important;
+	transition: background 0.18s, transform 0.15s !important;
+	&:hover {
+		background: rgba(0,0,0,0.12) !important;
+		color: $color_shark !important;
+		transform: translateY(-2px) !important;
+		box-shadow: none !important;
+		border-color: transparent !important;
+	}
 }
 .btn {
-	padding: 10px 18px;
+	padding: 10px 22px;
 	@include font-rem(14);
 	margin: 4px auto;
 	@extend %btnextend;
@@ -120,8 +134,10 @@ img {
 .img-circle {
 	border-radius: 50%;
 	border: 3px solid $white;
-	height: 150px;
-	width: 150px;
+	height: 160px;
+	width: 160px;
+	box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+	margin-bottom: 6px;
 }
 .author-photo {
     background-color: $white;
