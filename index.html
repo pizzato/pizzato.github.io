@@ -13,469 +13,211 @@ layout: null
   <title>Luiz Pizzato, PhD</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    :root {
-      --bg: #ffffff;
-      --border: #eee;
-      --text: #111;
-      --secondary: #666;
-      --tertiary: #999;
-      --accent: #0070f3;
-      --max-w: 680px;
-      --pad: 24px;
-    }
-
-    html { scroll-behavior: smooth; font-size: 16px; }
+    html, body { height: 100%; }
 
     body {
-      background: var(--bg);
-      color: var(--text);
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      font-size: 1rem;
-      line-height: 1.7;
       -webkit-font-smoothing: antialiased;
-    }
-
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; text-underline-offset: 3px; }
-
-    .container {
-      max-width: var(--max-w);
-      margin: 0 auto;
-      padding: 0 var(--pad);
-    }
-
-    /* ── Header ──────────────────────────────────────────── */
-
-    header {
-      position: sticky;
-      top: 0;
-      background: rgba(255,255,255,0.9);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      z-index: 100;
-      transition: border-color 0.2s;
-    }
-
-    header.scrolled {
-      border-bottom: 1px solid var(--border);
-    }
-
-    .header-inner {
-      max-width: var(--max-w);
-      margin: 0 auto;
-      padding: 16px var(--pad);
+      background-image: url('assets/img/wall.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      min-height: 100vh;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
+      padding: 40px 20px;
     }
 
-    .header-name {
-      font-weight: 600;
-      font-size: 0.95rem;
-      color: var(--text);
-      text-decoration: none;
-    }
-    .header-name:hover { text-decoration: none; color: var(--accent); }
+    /* ── Card ────────────────────────────────────────────── */
 
-    nav {
-      display: flex;
-      gap: 24px;
-    }
-
-    nav a {
-      font-size: 0.875rem;
-      color: var(--secondary);
-      font-weight: 400;
-    }
-
-    nav a:hover { color: var(--text); text-decoration: none; }
-
-    /* ── Main sections ───────────────────────────────────── */
-
-    main {
-      padding-bottom: 80px;
-    }
-
-    section {
-      padding: 80px 0;
-      border-top: 1px solid var(--border);
-    }
-
-    section:first-child {
-      border-top: none;
-      padding-top: 72px;
-    }
-
-    h1 {
-      font-size: 3rem;
-      font-weight: 600;
-      letter-spacing: -0.03em;
-      line-height: 1.1;
-      margin-bottom: 24px;
-      color: var(--text);
-    }
-
-    h2 {
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: var(--text);
-      margin-bottom: 32px;
-      letter-spacing: -0.01em;
-    }
-
-    .intro-tagline {
-      font-size: 1.1rem;
-      color: var(--secondary);
-      margin-bottom: 24px;
-      font-weight: 400;
-    }
-
-    .bio {
-      color: var(--secondary);
-      font-size: 0.95rem;
-      line-height: 1.8;
-    }
-
-    .bio p + p {
-      margin-top: 16px;
-    }
-
-    .bio a { color: var(--accent); }
-
-    /* ── Projects ────────────────────────────────────────── */
-
-    .project-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 28px;
-    }
-
-    .project-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 16px;
-    }
-
-    .project-body {
-      flex: 1;
-    }
-
-    .project-title {
-      font-weight: 600;
-      font-size: 0.95rem;
-      color: var(--text);
-    }
-
-    .project-title a {
-      color: var(--text);
-    }
-
-    .project-title a:hover { color: var(--accent); text-decoration: none; }
-
-    .project-desc {
-      font-size: 0.875rem;
-      color: var(--secondary);
-      margin-top: 2px;
-    }
-
-    .project-year {
-      font-size: 0.8rem;
-      color: var(--tertiary);
-      flex-shrink: 0;
-    }
-
-    /* ── Writing ─────────────────────────────────────────── */
-
-    .post-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .post-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 16px;
-      padding: 12px 0;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .post-item:first-child {
-      border-top: 1px solid var(--border);
-    }
-
-    .post-title {
-      font-size: 0.9rem;
-      color: var(--text);
-      font-weight: 400;
-    }
-
-    .post-title a {
-      color: var(--text);
-    }
-
-    .post-title a:hover { color: var(--accent); text-decoration: none; }
-
-    .post-date {
-      font-size: 0.8rem;
-      color: var(--tertiary);
-      flex-shrink: 0;
-    }
-
-    /* ── Research ────────────────────────────────────────── */
-
-    .pub-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .pub-item {
-      font-size: 0.9rem;
-    }
-
-    .pub-title {
-      color: var(--text);
-      font-weight: 500;
-    }
-
-    .pub-title a { color: var(--text); }
-    .pub-title a:hover { color: var(--accent); text-decoration: none; }
-
-    .pub-meta {
-      color: var(--secondary);
-      font-size: 0.83rem;
-      margin-top: 2px;
-    }
-
-    /* ── Contact ─────────────────────────────────────────── */
-
-    .contact-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 4px 0;
-      font-size: 0.95rem;
-      color: var(--secondary);
-    }
-
-    .contact-links a {
-      color: var(--text);
-      font-weight: 500;
-    }
-
-    .contact-sep {
-      color: var(--border);
-      padding: 0 12px;
-    }
-
-    /* ── Footer ──────────────────────────────────────────── */
-
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 24px var(--pad);
+    .card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-radius: 20px;
+      box-shadow:
+        0 8px 40px rgba(0, 0, 0, 0.22),
+        0 1px 3px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.7);
+      padding: 48px 40px 40px;
+      max-width: 420px;
+      width: 100%;
       text-align: center;
-      font-size: 0.8rem;
-      color: var(--tertiary);
+    }
+
+    /* ── Profile photo ───────────────────────────────────── */
+
+    .avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+      box-shadow: 0 2px 16px rgba(0, 0, 0, 0.18);
+      margin-bottom: 20px;
+    }
+
+    /* ── Name & subtitle ─────────────────────────────────── */
+
+    .name {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #111;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 0.875rem;
+      font-weight: 400;
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    /* ── Divider ─────────────────────────────────────────── */
+
+    .divider {
+      width: 36px;
+      height: 1px;
+      background: rgba(0, 0, 0, 0.12);
+      margin: 0 auto 24px;
+    }
+
+    /* ── Social icons ────────────────────────────────────── */
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+    }
+
+    .social-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.05);
+      color: #555;
+      text-decoration: none;
+      transition: background 0.18s, color 0.18s, transform 0.15s;
+    }
+
+    .social-icons a:hover {
+      background: rgba(0, 0, 0, 0.12);
+      color: #111;
+      transform: translateY(-2px);
+    }
+
+    .social-icons svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+      display: block;
+    }
+
+    /* ── Nav buttons ─────────────────────────────────────── */
+
+    .nav-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 30px;
+      border-radius: 9999px;
+      font-family: inherit;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: #333;
+      background: rgba(0, 0, 0, 0.06);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      text-decoration: none;
+      letter-spacing: 0.01em;
+      transition: background 0.18s, border-color 0.18s, color 0.18s, transform 0.15s;
+    }
+
+    .nav-btn:hover {
+      background: rgba(0, 0, 0, 0.12);
+      border-color: rgba(0, 0, 0, 0.18);
+      color: #111;
+      transform: translateY(-1px);
+      text-decoration: none;
     }
 
     /* ── Responsive ──────────────────────────────────────── */
 
-    @media (max-width: 520px) {
-      h1 { font-size: 2.2rem; }
-      nav { gap: 16px; }
-      .project-item, .post-item { flex-wrap: wrap; gap: 4px; }
+    @media (max-width: 480px) {
+      .card { padding: 36px 24px 32px; }
+      .name { font-size: 1.35rem; }
+      body { background-attachment: scroll; }
     }
   </style>
 </head>
 <body>
 
-<header id="site-header">
-  <div class="header-inner">
-    <a href="#" class="header-name">Luiz Pizzato</a>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#writing">Writing</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+<div class="card">
 
-<main>
-  <div class="container">
+  <img src="assets/img/LuizPizzato.jpg" alt="Luiz Pizzato" class="avatar">
 
-    <!-- About -->
-    <section id="about">
-      <h1>Hi, I'm Luiz.</h1>
-      <p class="intro-tagline">Distinguished AI Scientist &amp; Data Science Executive. Problem Solver. Driving AI Innovation.</p>
-      <div class="bio">
-        <p>I'm a Data Scientist and Entrepreneur with more than 20 years of experience in Artificial Intelligence. I hold a PhD and MSc in Computer Science, both focused on Natural Language Processing and Information Retrieval. My expertise spans Recommender Systems, Machine Learning, and Data Mining.</p>
-        <p>I'm an academic at heart with a strong commercially-focused mind. My postdoctoral research at the University of Sydney was applied directly at one of the largest online dating platforms in Australia, and led to the creation of <a href="https://github.com/pizzato">Octosocial Labs</a>, focused on friendship recommendations. I was also the first data scientist at 1-Page Ltd (San Francisco HR tech), working on employee recommendation and NLP problems for major financial institutions.</p>
-        <p>At Accenture Liquid Studio, I led expert teams solving hard problems — including machine learning systems for <a href="https://github.com/Accenture/pyheal">homomorphically encrypted data (PyHEAL)</a>. I'm now a senior AI leader at <a href="https://www.commbank.com.au/">Commonwealth Bank of Australia</a>, leading data science teams across all business areas — including the first Generative AI implementations like <a href="https://gizmodo.com.au/2023/05/commbank-gen-ai-tool/">CommBank Gen.ai Studio</a>, the award-winning <a href="https://www.afr.com/technology/cba-turns-to-ai-to-root-out-abusive-payments-20211009-p58ykg">detection of financial abuse using AI</a>, and a weather data model for real-time risk.</p>
-      </div>
-    </section>
+  <div class="name">Luiz Pizzato, PhD</div>
+  <div class="subtitle">Distinguished AI Scientist at<br>Commonwealth Bank of Australia</div>
 
-    <!-- Projects -->
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul class="project-list">
-        <li class="project-item">
-          <div class="project-body">
-            <div class="project-title"><a href="https://github.com/pizzato/llmme">LLMMe</a></div>
-            <div class="project-desc">An AI agent trained on your own writing — emails, notes, documents — to respond as you.</div>
-          </div>
-          <span class="project-year">2023</span>
-        </li>
-        <li class="project-item">
-          <div class="project-body">
-            <div class="project-title"><a href="https://apps.apple.com/app/genaicam">GenAICam</a></div>
-            <div class="project-desc">iOS camera app using generative AI for on-device scene understanding, with a strong focus on privacy.</div>
-          </div>
-          <span class="project-year">2025</span>
-        </li>
-        <li class="project-item">
-          <div class="project-body">
-            <div class="project-title"><a href="https://github.com/Accenture/pyheal">PyHEAL</a></div>
-            <div class="project-desc">Python library for machine learning on homomorphically encrypted data — privacy-preserving ML at scale.</div>
-          </div>
-          <span class="project-year">2019</span>
-        </li>
-        <li class="project-item">
-          <div class="project-body">
-            <div class="project-title"><a href="https://github.com/pizzato">Octosocial</a></div>
-            <div class="project-desc">Friendship and people recommendation platform spun out of postdoctoral research at the University of Sydney.</div>
-          </div>
-          <span class="project-year">2014</span>
-        </li>
-      </ul>
-    </section>
+  <div class="divider"></div>
 
-    <!-- Writing -->
-    <section id="writing">
-      <h2>Writing</h2>
-      <ul class="post-list">
-        <li class="post-item">
-          <span class="post-title"><a href="/genaicam/">GenAICam</a></span>
-          <span class="post-date">Aug 2025</span>
-        </li>
-        <li class="post-item">
-          <span class="post-title"><a href="/genaicam-privacy/">GenAICam — Privacy</a></span>
-          <span class="post-date">Aug 2025</span>
-        </li>
-        <li class="post-item">
-          <span class="post-title"><a href="/i-will-never-reply-to-an-email-again/">I will never reply to an email again</a></span>
-          <span class="post-date">Aug 2023</span>
-        </li>
-        <li class="post-item">
-          <span class="post-title"><a href="/pyheal-released/">PyHEAL is released</a></span>
-          <span class="post-date">Aug 2019</span>
-        </li>
-        <li class="post-item">
-          <span class="post-title"><a href="/how-to-build-he-ml/">How to build Machine Learning using Homomorphic Encryption</a></span>
-          <span class="post-date">Jun 2019</span>
-        </li>
-        <li class="post-item">
-          <span class="post-title"><a href="/aws-learning-series/">AWS Learning Series — Collaborating on Data and AI Models</a></span>
-          <span class="post-date">Mar 2019</span>
-        </li>
-        <li class="post-item">
-          <span class="post-title"><a href="/watch-the-people-recommender-tutorial-recsys-2016/">Watch the People Recommender Tutorial @ RecSys 2016</a></span>
-          <span class="post-date">Apr 2017</span>
-        </li>
-        <li class="post-item">
-          <span class="post-title"><a href="/pathways-from-a-phd-at-the-macquarie-minds-showcase/">Pathways from a PhD at the Macquarie Minds Showcase</a></span>
-          <span class="post-date">Dec 2016</span>
-        </li>
-        <li class="post-item">
-          <span class="post-title"><a href="/people-recommendation-tutorial/">People Recommendation Tutorial</a></span>
-          <span class="post-date">Oct 2016</span>
-        </li>
-        <li class="post-item">
-          <span class="post-title"><a href="/teaching-data-science-in-hong-kong/">Teaching Data Science in Hong Kong</a></span>
-          <span class="post-date">Oct 2016</span>
-        </li>
-        <li class="post-item">
-          <span class="post-title"><a href="/the-ethics-of-online-dating-panel/">The Ethics of Online Dating Panel</a></span>
-          <span class="post-date">Apr 2015</span>
-        </li>
-        <li class="post-item">
-          <span class="post-title"><a href="/on-702-abc-sydney/">On 702 ABC Sydney</a></span>
-          <span class="post-date">Mar 2015</span>
-        </li>
-        <li class="post-item">
-          <span class="post-title"><a href="/path-from-research-to-industry/">Path from Research to Industry</a></span>
-          <span class="post-date">Jun 2014</span>
-        </li>
-        <li class="post-item">
-          <span class="post-title"><a href="/negotiate-like-a-billionaire/">Negotiate like a Billionaire</a></span>
-          <span class="post-date">Feb 2014</span>
-        </li>
-      </ul>
-    </section>
+  <div class="social-icons">
 
-    <!-- Research -->
-    <section id="research">
-      <h2>Research</h2>
-      <ul class="pub-list">
-        <li class="pub-item">
-          <div class="pub-title"><a href="https://arxiv.org/abs/2303.08016">Detection of Abusive Financial Transactions Using AI</a></div>
-          <div class="pub-meta">arXiv 2023 · Commonwealth Bank of Australia</div>
-        </li>
-        <li class="pub-item">
-          <div class="pub-title"><a href="https://github.com/Accenture/pyheal">HEML: Homomorphic Encryption Machine Learning Library</a></div>
-          <div class="pub-meta">Accenture Labs · 2019</div>
-        </li>
-        <li class="pub-item">
-          <div class="pub-title">People Recommendation in Social Networks</div>
-          <div class="pub-meta">RecSys 2016 Tutorial · Boston, MA</div>
-        </li>
-        <li class="pub-item">
-          <div class="pub-title">PhD: Natural Language Processing &amp; Information Retrieval</div>
-          <div class="pub-meta">University of New South Wales · Macquarie University</div>
-        </li>
-      </ul>
-      <p style="margin-top:24px; font-size:0.875rem; color:var(--secondary);">
-        Full publication list on <a href="https://scholar.google.com/citations?user=3q9NOYYAAAAJ">Google Scholar</a>.
-      </p>
-    </section>
+    <!-- Email -->
+    <a href="mailto:luiz@pizzato.cc" title="Email">
+      <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+    </a>
 
-    <!-- Contact -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <div class="contact-links">
-        <a href="mailto:luiz@pizzato.cc">Email</a>
-        <span class="contact-sep">·</span>
-        <a href="https://twitter.com/luizpizzato">Twitter</a>
-        <span class="contact-sep">·</span>
-        <a href="https://linkedin.com/in/pizzato">LinkedIn</a>
-        <span class="contact-sep">·</span>
-        <a href="https://github.com/pizzato">GitHub</a>
-        <span class="contact-sep">·</span>
-        <a href="https://scholar.google.com/citations?user=3q9NOYYAAAAJ">Google Scholar</a>
-      </div>
-    </section>
+    <!-- Twitter / X -->
+    <a href="https://twitter.com/luizpizzato" title="Twitter" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://linkedin.com/in/pizzato" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+    </a>
+
+    <!-- GitHub -->
+    <a href="https://github.com/pizzato" title="GitHub" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+    </a>
+
+    <!-- Google Scholar -->
+    <a href="https://scholar.google.com/citations?user=3q9NOYYAAAAJ" title="Google Scholar" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+    </a>
+
+    <!-- Medium -->
+    <a href="https://medium.com/@pizzato" title="Medium" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24"><path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+    </a>
 
   </div>
-</main>
 
-<footer>
-  <p>&copy; Luiz Pizzato</p>
-</footer>
+  <div class="nav-buttons">
+    <a href="/about" class="nav-btn">About</a>
+    <a href="/posts" class="nav-btn">Posts</a>
+  </div>
 
-<script>
-  const header = document.getElementById('site-header');
-  window.addEventListener('scroll', () => {
-    header.classList.toggle('scrolled', window.scrollY > 10);
-  }, { passive: true });
-</script>
+</div>
 
 </body>
 </html>
