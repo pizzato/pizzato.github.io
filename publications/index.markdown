@@ -13,6 +13,12 @@ wordpress_id: 17
 
 For a comprehensive publication list with citations, check my [Google Scholar profile](http://scholar.google.com.au/citations?user=3q9NOYYAAAAJ&hl=en).
 
+<div class="profile-links">
+  <a href="https://scholar.google.com.au/citations?user=3q9NOYYAAAAJ&hl=en" target="_blank" rel="noopener"><i class="fa-solid fa-graduation-cap"></i> Google Scholar</a>
+  <a href="https://dblp.org/pid/13/6023.html" target="_blank" rel="noopener"><i class="fa-solid fa-database"></i> DBLP</a>
+  <a href="https://aclanthology.org/people/luiz-augusto-pizzato/" target="_blank" rel="noopener"><i class="fa-solid fa-book-open"></i> ACL Anthology</a>
+</div>
+
 
 ## Patents
 
@@ -93,7 +99,7 @@ Association for Computing Machinery, New York, NY, USA, 185–193.
 **Do LLM Personas Dream of Bull Markets? Comparing Human and AI Investment Strategies Through the Lens of the Five-Factor Model**
 _H Borman, A Leontjeva, L Pizzato, MK Jiang, D Jermyn_
 NeurIPS 2024 Workshop Open-World Agents
-[(PDF)](https://openreview.net/pdf?id=b2lFzaGlan)
+[(PDF)](https://openreview.net/pdf?id=b2lFzaGlan) [(arXiv)](https://arxiv.org/abs/2411.05801)
 
 
 **PD-SRS: Personalized Diversity for a Fair Session-Based Recommendation System**
@@ -106,13 +112,13 @@ doi:10.1007/978-3-031-20984-0_23 [Springer](https://doi.org/10.1007/978-3-031-20
 **A Multi-Stakeholder Recommender System for Rewards Recommendations**
 _Naime Ranjbar Kermany, Luiz Pizzato, Thireindar Min, Callum Scott, and Anna Leontjeva_
 Proceedings of the 16th ACM Conference on Recommender Systems (RecSys '22). Association for Computing Machinery, New York, NY, USA, 484–487. 
-doi:10.1145/3523227.3547388 [ACM](https://doi.org/10.1145/3523227.3547388)
+doi:10.1145/3523227.3547388 [ACM (Open Access)](https://dl.acm.org/doi/10.1145/3523227.3547388?cid=81444607788)
 
 
 **Fair-SRS: A Fair Session-based Recommendation System**
 _Naime Ranjbar Kermany, Jian Yang, Jia Wu, and Luiz Pizzato_ 
 Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining (WSDM '22). Association for Computing Machinery, New York, NY, USA, 1601–1604. 
-doi:10.1145/3488560.3502191 [ACM](https://doi.org/10.1145/3488560.3502191)
+doi:10.1145/3488560.3502191 [ACM (Open Access)](https://dl.acm.org/doi/10.1145/3488560.3502191?cid=81444607788)
 
 
 **A fairness-aware multi-stakeholder recommender system**
@@ -199,7 +205,7 @@ Proceedings of the 22nd International Joint Conference on Artificial Intelligenc
 **Finding someone you will like and who won't reject you.**
 _Luiz Pizzato, Tomasz Rej, Kalina Yacef, Irena Koprinska and Judy Kay_
 Proceedings of the 19th International Conference on User Modeling, Adaptation and Personalization (UMAP 2011). Girona, Spain. 11-15 July 2011. LNCS 6787, pp. 269--280. Springer, Heidelberg (2012)
-[(Springer)](http://dx.doi.org/10.1007/978-3-642-22362-4_23) 
+[(Springer)](http://dx.doi.org/10.1007/978-3-642-22362-4_23) 🏆 [Best Paper Award](https://www.um.org/awards/best-paper-awards) 
 
 
 
@@ -223,7 +229,7 @@ RecSys '10: Proceedings of the Fourth ACM Conference on Recommender Systems. Bar
 **Reciprocal Recommender System for Online Dating**
 _Luiz Pizzato, Tomek Rej, Thomas Chung, Irena Koprinska and Judy Kay_
 RecSys '10 (demonstration session): Proceedings of the Fourth ACM Conference on Recommender Systems. Barcelona, 26-30 September 2010
-[(ACM)](http://doi.acm.org/10.1145/1864708.1864787) 
+[(ACM (Open Access))](https://dl.acm.org/doi/10.1145/1864708.1864787?cid=81444607788) 
 
 
 
@@ -239,7 +245,7 @@ Proceedings of the Workshop on Intelligent Techniques for Web Personalization & 
 **Indexing on Semantic Roles for Question Answering.**
 _Luiz Pizzato and Diego Molla_
 Proceedings of the Coling 2008 Workshop Information Retrieval for Question Answering (IR4QA-08). Manchester, August, 2008
-[(ACL)](http://www.aclweb.org/anthology-new/W/W08/W08-1810.pdf) [(Bib)](http://www.aclweb.org/anthology-new/W/W08/W08-1810.bib)
+[(PDF)](https://aclanthology.org/W08-0705.pdf) [(Bib)](http://www.aclweb.org/anthology-new/W/W08/W08-1810.bib)
 
 
 
@@ -247,7 +253,7 @@ Proceedings of the Coling 2008 Workshop Information Retrieval for Question Answe
 **Question Prediction Language Model.**
 _Luiz Pizzato and Diego Molla_
 Proceedings Australasian Language Technology Workshop 2007, Melbourne, December 2007.
-[(ALTA)](http://www.alta.asn.au/events/altw2007/cdrom/pdf/ALTA2007_14.pdf) 
+[(ALTA)](http://www.alta.asn.au/events/altw2007/cdrom/pdf/ALTA2007_14.pdf) [(PDF)](https://aclanthology.org/U07-1016.pdf)
 
 
 
@@ -263,6 +269,7 @@ The Fifteenth Text REtrieval Conference (TREC 2006)
 **Pseudo Relevance Feedback Using Named Entities for Question Answering.**
 _Luiz Pizzato, Diego Molla and Cecile Paris_
 In Proceedings of the Australasian Language Technology Workshop 2006. Sydney University, November 2006.
+[(PDF)](https://aclanthology.org/U06-1012.pdf)
 
 
 
@@ -270,6 +277,7 @@ In Proceedings of the Australasian Language Technology Workshop 2006. Sydney Uni
 **Extracting Exact Answers using a Meta Question Answering System.**
 _Luiz Pizzato and Diego Molla_
 Proceedings of the Australasian Language Technology Workshop 2005. The University of Sydney, Australia, December 10-11, 2005
+[(PDF)](https://aclanthology.org/U05-1014.pdf)
 
 
 
@@ -292,6 +300,7 @@ Proceedings of the Nineteenth International Joint Conference on Artificial Intel
 **Using a Trie-based Structure for Question Analysis.**
 _Luiz Pizzato_
 Proceedings of the Australasian Language Technology Workshop 2004. Macquarie University, Sydney, Australia, December 8, 2004. pp. 25-31. Published by ASSTA.
+[(PDF)](https://aclanthology.org/U04-1005.pdf)
 
 
 
@@ -367,6 +376,11 @@ arXiv preprint. August 2025 [arXiv](https://arxiv.org/abs/2508.03767)
 **FeatureCuts: Feature Selection for Large Data by Optimizing the Cutoff**
 _Andy Hu, Devika Prasad, Luiz Pizzato, Nicholas Foord, Arman Abrahamyan, Anna Leontjeva, Cooper Doyle, Dan Jermyn_
 arXiv preprint. August 2025 [arXiv](https://arxiv.org/abs/2508.00954)
+
+**ConCISE: A Reference-Free Conciseness Evaluation Metric for LLM-Generated Answers**
+_Luiz Pizzato et al._
+arXiv preprint. November 2025. [arXiv](https://arxiv.org/abs/2511.16846)
+
 
 **Detection of Abuse in Financial Transaction Descriptions Using Machine Learning.**
 _Anna Leontjeva and Genevieve Richards and Kaavya Sriskandaraja and Jessica Perchman and Luiz Pizzato_
