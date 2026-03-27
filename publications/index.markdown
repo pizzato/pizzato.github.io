@@ -13,6 +13,12 @@ wordpress_id: 17
 
 For a comprehensive publication list with citations, check my [Google Scholar profile](http://scholar.google.com.au/citations?user=3q9NOYYAAAAJ&hl=en).
 
+<div class="profile-links">
+  <a href="https://scholar.google.com/citations?user=tTBB3FEAAAAJ" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Google Scholar"></a>
+  <a href="https://dblp.org/pid/62/4764.html" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/DBLP-004F9F?style=for-the-badge&logo=dblp&logoColor=white" alt="DBLP"></a>
+  <a href="https://aclanthology.org/people/l/luiz-pizzato/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/ACL%20Anthology-red?style=for-the-badge" alt="ACL Anthology"></a>
+</div>
+
 
 ## Patents
 
@@ -85,15 +91,27 @@ Sydney, Australia, 2009
 
 **Synthetic Voices: Evaluating the Fidelity of LLM-Generated Personas in Representing People’s Financial Wellbeing**
 _Arshnoor Kaur, Amanda Aird, Harris Borman, Andrea Nicastro, Anna Leontjeva, Luiz Pizzato, and Dan Jermyn_
-Proceedings of the 33rd ACM Conference on User Modeling, Adaptation and Personalization (UMAP '25). 
-Association for Computing Machinery, New York, NY, USA, 185–193. 
+Proceedings of the 33rd ACM Conference on User Modeling, Adaptation and Personalization (UMAP ‘25).
+Association for Computing Machinery, New York, NY, USA, 185–193.
 [(ACM)](https://doi.org/10.1145/3699682.3728339)
+
+
+**FeatureCuts: Feature Selection for Large Data by Optimizing the Cutoff**
+_Andy Hu, Devika Prasad, Luiz Pizzato, Nicholas Foord, Arman Abrahamyan, Anna Leontjeva, Cooper Doyle, Dan Jermyn_
+2025 IEEE International Conference on Big Data (IEEE BigData), 2025, pp. 2308–2319.
+[[PDF](https://arxiv.org/pdf/2508.00954)] [arXiv](https://arxiv.org/abs/2508.00954)
+
+
+**A Robust and Efficient Pipeline for Enterprise-Level Large-Scale Entity Resolution**
+_Sandeepa Kannangara, Arman Abrahamyan, Daniel Elias, Thomas Kilby, Nadav Dar, Luiz Pizzato, Anna Leontjeva, Dan Jermyn_
+2025 IEEE International Conference on Big Data (IEEE BigData), 2025, pp. 2359–2368.
+[[PDF](https://arxiv.org/pdf/2508.03767)] [arXiv](https://arxiv.org/abs/2508.03767)
 
 
 **Do LLM Personas Dream of Bull Markets? Comparing Human and AI Investment Strategies Through the Lens of the Five-Factor Model**
 _H Borman, A Leontjeva, L Pizzato, MK Jiang, D Jermyn_
 NeurIPS 2024 Workshop Open-World Agents
-[(PDF)](https://openreview.net/pdf?id=b2lFzaGlan)
+[(PDF)](https://openreview.net/pdf?id=b2lFzaGlan) [(arXiv)](https://arxiv.org/abs/2411.05801) [[PDF](https://arxiv.org/pdf/2411.05801)]
 
 
 **PD-SRS: Personalized Diversity for a Fair Session-Based Recommendation System**
@@ -106,13 +124,13 @@ doi:10.1007/978-3-031-20984-0_23 [Springer](https://doi.org/10.1007/978-3-031-20
 **A Multi-Stakeholder Recommender System for Rewards Recommendations**
 _Naime Ranjbar Kermany, Luiz Pizzato, Thireindar Min, Callum Scott, and Anna Leontjeva_
 Proceedings of the 16th ACM Conference on Recommender Systems (RecSys '22). Association for Computing Machinery, New York, NY, USA, 484–487. 
-doi:10.1145/3523227.3547388 [ACM](https://doi.org/10.1145/3523227.3547388)
+doi:10.1145/3523227.3547388 [ACM (Open Access)](https://dl.acm.org/doi/10.1145/3523227.3547388?cid=81444607788)
 
 
 **Fair-SRS: A Fair Session-based Recommendation System**
 _Naime Ranjbar Kermany, Jian Yang, Jia Wu, and Luiz Pizzato_ 
 Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining (WSDM '22). Association for Computing Machinery, New York, NY, USA, 1601–1604. 
-doi:10.1145/3488560.3502191 [ACM](https://doi.org/10.1145/3488560.3502191)
+doi:10.1145/3488560.3502191 [ACM (Open Access)](https://dl.acm.org/doi/10.1145/3488560.3502191?cid=81444607788)
 
 
 **A fairness-aware multi-stakeholder recommender system**
@@ -183,7 +201,7 @@ New Frontiers in Applied Data Mining, volume 7104 of Lecture Notes in Computer S
 **Stochastic Matching and Collaborative Filtering to Recommend People to People**
 _Luiz Augusto Pizzato, and Cameron Silvestrini_
 RecSys '11: Proceedings of the Fifth ACM Conference on Recommender Systems. Chicago, 23-27 October 2011
-[(PDF)](http://dl.acm.org/authorize?62534) [(ACM)](http://doi.acm.org/10.1145/2043932.2043998) 
+[(PDF)](http://dl.acm.org/authorize?62534) [(ACM)](http://doi.acm.org/10.1145/2043932.2043998) \[[ACM Open Access](https://dl.acm.org/doi/10.1145/2043932.2043998?cid=81444607788)\] 
 
 
 
@@ -199,7 +217,7 @@ Proceedings of the 22nd International Joint Conference on Artificial Intelligenc
 **Finding someone you will like and who won't reject you.**
 _Luiz Pizzato, Tomasz Rej, Kalina Yacef, Irena Koprinska and Judy Kay_
 Proceedings of the 19th International Conference on User Modeling, Adaptation and Personalization (UMAP 2011). Girona, Spain. 11-15 July 2011. LNCS 6787, pp. 269--280. Springer, Heidelberg (2012)
-[(Springer)](http://dx.doi.org/10.1007/978-3-642-22362-4_23) 
+[(Springer)](http://dx.doi.org/10.1007/978-3-642-22362-4_23) 🏆 [Best Paper Award](https://www.um.org/awards/best-paper-awards) 
 
 
 
@@ -215,7 +233,7 @@ Proceedings of the Workshop on Preference Learning (PL-10) at the European Confe
 **RECON: A Reciprocal Recommender for Online Dating.**
 _Luiz Pizzato, Tomek Rej, Thomas Chung, Irena Koprinska and Judy Kay_
 RecSys '10: Proceedings of the Fourth ACM Conference on Recommender Systems. Barcelona, 26-30 September 2010
-[(ACM)](http://doi.acm.org/10.1145/1864708.1864747) [(PDF)](http://dl.acm.org/authorize?N82406) 
+[(ACM)](http://doi.acm.org/10.1145/1864708.1864747) \[[ACM Open Access](https://dl.acm.org/doi/10.1145/1864708.1864747?cid=81444607788)\] [(PDF)](http://dl.acm.org/authorize?N82406) 
 
 
 
@@ -223,7 +241,7 @@ RecSys '10: Proceedings of the Fourth ACM Conference on Recommender Systems. Bar
 **Reciprocal Recommender System for Online Dating**
 _Luiz Pizzato, Tomek Rej, Thomas Chung, Irena Koprinska and Judy Kay_
 RecSys '10 (demonstration session): Proceedings of the Fourth ACM Conference on Recommender Systems. Barcelona, 26-30 September 2010
-[(ACM)](http://doi.acm.org/10.1145/1864708.1864787) 
+[(ACM (Open Access))](https://dl.acm.org/doi/10.1145/1864708.1864787?cid=81444607788) 
 
 
 
@@ -239,7 +257,7 @@ Proceedings of the Workshop on Intelligent Techniques for Web Personalization & 
 **Indexing on Semantic Roles for Question Answering.**
 _Luiz Pizzato and Diego Molla_
 Proceedings of the Coling 2008 Workshop Information Retrieval for Question Answering (IR4QA-08). Manchester, August, 2008
-[(ACL)](http://www.aclweb.org/anthology-new/W/W08/W08-1810.pdf) [(Bib)](http://www.aclweb.org/anthology-new/W/W08/W08-1810.bib)
+[(PDF)](https://aclanthology.org/W08-0705.pdf) [(Bib)](http://www.aclweb.org/anthology-new/W/W08/W08-1810.bib)
 
 
 
@@ -247,7 +265,7 @@ Proceedings of the Coling 2008 Workshop Information Retrieval for Question Answe
 **Question Prediction Language Model.**
 _Luiz Pizzato and Diego Molla_
 Proceedings Australasian Language Technology Workshop 2007, Melbourne, December 2007.
-[(ALTA)](http://www.alta.asn.au/events/altw2007/cdrom/pdf/ALTA2007_14.pdf) 
+[(ALTA)](http://www.alta.asn.au/events/altw2007/cdrom/pdf/ALTA2007_14.pdf) [(PDF)](https://aclanthology.org/U07-1016.pdf)
 
 
 
@@ -263,6 +281,7 @@ The Fifteenth Text REtrieval Conference (TREC 2006)
 **Pseudo Relevance Feedback Using Named Entities for Question Answering.**
 _Luiz Pizzato, Diego Molla and Cecile Paris_
 In Proceedings of the Australasian Language Technology Workshop 2006. Sydney University, November 2006.
+[(PDF)](https://aclanthology.org/U06-1012.pdf)
 
 
 
@@ -270,6 +289,7 @@ In Proceedings of the Australasian Language Technology Workshop 2006. Sydney Uni
 **Extracting Exact Answers using a Meta Question Answering System.**
 _Luiz Pizzato and Diego Molla_
 Proceedings of the Australasian Language Technology Workshop 2005. The University of Sydney, Australia, December 10-11, 2005
+[(PDF)](https://aclanthology.org/U05-1014.pdf)
 
 
 
@@ -292,6 +312,7 @@ Proceedings of the Nineteenth International Joint Conference on Artificial Intel
 **Using a Trie-based Structure for Question Analysis.**
 _Luiz Pizzato_
 Proceedings of the Australasian Language Technology Workshop 2004. Macquarie University, Sydney, Australia, December 8, 2004. pp. 25-31. Published by ASSTA.
+[(PDF)](https://aclanthology.org/U04-1005.pdf)
 
 
 
@@ -360,24 +381,21 @@ Supervised Profa. Vera Lúcia Strube de Lima Defended on: 8th January 2003 Exami
 
 ## Pre-prints
 
-**A Robust and Efficient Pipeline for Enterprise-Level Large-Scale Entity Resolution**
-_Sandeepa Kannangara, Arman Abrahamyan, Daniel Elias, Thomas Kilby, Nadav Dar, Luiz Pizzato, Anna Leontjeva, Dan Jermyn_
-arXiv preprint. August 2025 [arXiv](https://arxiv.org/abs/2508.03767)
+**ConCISE: A Reference-Free Conciseness Evaluation Metric for LLM-Generated Answers**
+_Seyed Mohssen Ghafari, Ronny Kol, Juan C. Quiroz, Nella Luan, Monika Patial, Chanaka Rupasinghe, Herman Wandabwa, Luiz Pizzato_
+arXiv preprint. November 2025. [[PDF](https://arxiv.org/pdf/2511.16846)] [arXiv](https://arxiv.org/abs/2511.16846)
 
-**FeatureCuts: Feature Selection for Large Data by Optimizing the Cutoff**
-_Andy Hu, Devika Prasad, Luiz Pizzato, Nicholas Foord, Arman Abrahamyan, Anna Leontjeva, Cooper Doyle, Dan Jermyn_
-arXiv preprint. August 2025 [arXiv](https://arxiv.org/abs/2508.00954)
 
 **Detection of Abuse in Financial Transaction Descriptions Using Machine Learning.**
 _Anna Leontjeva and Genevieve Richards and Kaavya Sriskandaraja and Jessica Perchman and Luiz Pizzato_
-arXiv e-prints. March 2023. [arXiv](https://arxiv.org/abs/2303.08016)
+arXiv e-prints. March 2023. [[PDF](https://arxiv.org/pdf/2303.08016)] [arXiv](https://arxiv.org/abs/2303.08016)
 
 
 **Reciprocal Recommender Systems: Analysis of State-of-Art Literature, Challenges and Opportunities towards Social Recommendation**
 _Ivan Palomares and Carlos Porcel and Luiz Pizzato and Ido Guy and Enrique Herrera-Viedma_
-arXiv e-prints. Jul 2020. [arXiv](https://arxiv.org/abs/2007.16120)
+arXiv e-prints. Jul 2020. [[PDF](https://arxiv.org/pdf/2007.16120)] [arXiv](https://arxiv.org/abs/2007.16120)
 
 
 **Beyond Personalization: Research Directions in Multistakeholder Recommendation.**
 _Himan Abdollahpouri, Gediminas Adomavicius, Robin Burke, Ido Guy, Dietmar Jannach, Toshihiro Kamishima, Jan Krasnodebski, and Luiz Pizzato_. 
-arXiv e-prints. May 2019. [arXiv](https://arxiv.org/abs/1905.01986)
+arXiv e-prints. May 2019. [[PDF](https://arxiv.org/pdf/1905.01986)] [arXiv](https://arxiv.org/abs/1905.01986)
