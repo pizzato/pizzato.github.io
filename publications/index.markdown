@@ -6,6 +6,7 @@ layout: page
 link: http://luiz.pizzato.cc/publications/
 slug: publications
 title: Publications
+description: "Academic publications and research papers by Luiz Pizzato, PhD, covering AI, NLP, recommender systems and privacy-preserving machine learning."
 feature: assets/img/publications.jpg
 wordpress_id: 17
 ---
