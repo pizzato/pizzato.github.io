@@ -99,7 +99,7 @@ Association for Computing Machinery, New York, NY, USA, 185–193.
 **Do LLM Personas Dream of Bull Markets? Comparing Human and AI Investment Strategies Through the Lens of the Five-Factor Model**
 _H Borman, A Leontjeva, L Pizzato, MK Jiang, D Jermyn_
 NeurIPS 2024 Workshop Open-World Agents
-[(PDF)](https://openreview.net/pdf?id=b2lFzaGlan) [(arXiv)](https://arxiv.org/abs/2411.05801)
+[(PDF)](https://openreview.net/pdf?id=b2lFzaGlan) [(arXiv)](https://arxiv.org/abs/2411.05801) [[PDF](https://arxiv.org/pdf/2411.05801)]
 
 
 **PD-SRS: Personalized Diversity for a Fair Session-Based Recommendation System**
@@ -371,27 +371,27 @@ Supervised Profa. Vera Lúcia Strube de Lima Defended on: 8th January 2003 Exami
 
 **A Robust and Efficient Pipeline for Enterprise-Level Large-Scale Entity Resolution**
 _Sandeepa Kannangara, Arman Abrahamyan, Daniel Elias, Thomas Kilby, Nadav Dar, Luiz Pizzato, Anna Leontjeva, Dan Jermyn_
-arXiv preprint. August 2025 [arXiv](https://arxiv.org/abs/2508.03767)
+arXiv preprint. August 2025 [[PDF](https://arxiv.org/pdf/2508.03767)] [arXiv](https://arxiv.org/abs/2508.03767)
 
 **FeatureCuts: Feature Selection for Large Data by Optimizing the Cutoff**
 _Andy Hu, Devika Prasad, Luiz Pizzato, Nicholas Foord, Arman Abrahamyan, Anna Leontjeva, Cooper Doyle, Dan Jermyn_
-arXiv preprint. August 2025 [arXiv](https://arxiv.org/abs/2508.00954)
+arXiv preprint. August 2025 [[PDF](https://arxiv.org/pdf/2508.00954)] [arXiv](https://arxiv.org/abs/2508.00954)
 
 **ConCISE: A Reference-Free Conciseness Evaluation Metric for LLM-Generated Answers**
 _Luiz Pizzato et al._
-arXiv preprint. November 2025. [arXiv](https://arxiv.org/abs/2511.16846)
+arXiv preprint. November 2025. [[PDF](https://arxiv.org/pdf/2511.16846)] [arXiv](https://arxiv.org/abs/2511.16846)
 
 
 **Detection of Abuse in Financial Transaction Descriptions Using Machine Learning.**
 _Anna Leontjeva and Genevieve Richards and Kaavya Sriskandaraja and Jessica Perchman and Luiz Pizzato_
-arXiv e-prints. March 2023. [arXiv](https://arxiv.org/abs/2303.08016)
+arXiv e-prints. March 2023. [[PDF](https://arxiv.org/pdf/2303.08016)] [arXiv](https://arxiv.org/abs/2303.08016)
 
 
 **Reciprocal Recommender Systems: Analysis of State-of-Art Literature, Challenges and Opportunities towards Social Recommendation**
 _Ivan Palomares and Carlos Porcel and Luiz Pizzato and Ido Guy and Enrique Herrera-Viedma_
-arXiv e-prints. Jul 2020. [arXiv](https://arxiv.org/abs/2007.16120)
+arXiv e-prints. Jul 2020. [[PDF](https://arxiv.org/pdf/2007.16120)] [arXiv](https://arxiv.org/abs/2007.16120)
 
 
 **Beyond Personalization: Research Directions in Multistakeholder Recommendation.**
 _Himan Abdollahpouri, Gediminas Adomavicius, Robin Burke, Ido Guy, Dietmar Jannach, Toshihiro Kamishima, Jan Krasnodebski, and Luiz Pizzato_. 
-arXiv e-prints. May 2019. [arXiv](https://arxiv.org/abs/1905.01986)
+arXiv e-prints. May 2019. [[PDF](https://arxiv.org/pdf/1905.01986)] [arXiv](https://arxiv.org/abs/1905.01986)
