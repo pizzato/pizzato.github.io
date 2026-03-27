@@ -14,9 +14,9 @@ wordpress_id: 17
 For a comprehensive publication list with citations, check my [Google Scholar profile](http://scholar.google.com.au/citations?user=3q9NOYYAAAAJ&hl=en).
 
 <div class="profile-links">
-  <a href="https://scholar.google.com.au/citations?user=3q9NOYYAAAAJ&hl=en" target="_blank" rel="noopener"><i class="fa-solid fa-graduation-cap"></i> Google Scholar</a>
-  <a href="https://dblp.org/pid/13/6023.html" target="_blank" rel="noopener"><i class="fa-solid fa-database"></i> DBLP</a>
-  <a href="https://aclanthology.org/people/luiz-augusto-pizzato/" target="_blank" rel="noopener"><i class="fa-solid fa-book-open"></i> ACL Anthology</a>
+  <a href="https://scholar.google.com/citations?user=tTBB3FEAAAAJ" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Google Scholar"></a>
+  <a href="https://dblp.org/pid/62/4764.html" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/DBLP-004F9F?style=for-the-badge&logo=dblp&logoColor=white" alt="DBLP"></a>
+  <a href="https://aclanthology.org/people/l/luiz-pizzato/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/ACL%20Anthology-red?style=for-the-badge" alt="ACL Anthology"></a>
 </div>
 
 
@@ -189,7 +189,7 @@ New Frontiers in Applied Data Mining, volume 7104 of Lecture Notes in Computer S
 **Stochastic Matching and Collaborative Filtering to Recommend People to People**
 _Luiz Augusto Pizzato, and Cameron Silvestrini_
 RecSys '11: Proceedings of the Fifth ACM Conference on Recommender Systems. Chicago, 23-27 October 2011
-[(PDF)](http://dl.acm.org/authorize?62534) [(ACM)](http://doi.acm.org/10.1145/2043932.2043998) 
+[(PDF)](http://dl.acm.org/authorize?62534) [(ACM)](http://doi.acm.org/10.1145/2043932.2043998) \[[ACM Open Access](https://dl.acm.org/doi/10.1145/2043932.2043998?cid=81444607788)\] 
 
 
 
@@ -221,7 +221,7 @@ Proceedings of the Workshop on Preference Learning (PL-10) at the European Confe
 **RECON: A Reciprocal Recommender for Online Dating.**
 _Luiz Pizzato, Tomek Rej, Thomas Chung, Irena Koprinska and Judy Kay_
 RecSys '10: Proceedings of the Fourth ACM Conference on Recommender Systems. Barcelona, 26-30 September 2010
-[(ACM)](http://doi.acm.org/10.1145/1864708.1864747) [(PDF)](http://dl.acm.org/authorize?N82406) 
+[(ACM)](http://doi.acm.org/10.1145/1864708.1864747) \[[ACM Open Access](https://dl.acm.org/doi/10.1145/1864708.1864747?cid=81444607788)\] [(PDF)](http://dl.acm.org/authorize?N82406) 
 
 
 
