@@ -17,7 +17,7 @@ tags:
 
 Today I attended a workshop on negotiation by [Brad Rosser](http://www.bradrosser.com/) and [Simon Pinson](http://www.simonpinson.com/) from the [BSF Group](http://www.thebsfgroup.com/).
 
-Brad and Simon were the perfect hosts for the event. They shared with a small group of entrepreneurs the art and science of negotiation including a number of study cases of big negotiation (i.e. billion-dollar deals) that Brad conducted as part of the Virgin group.
+Brad and Simon were the perfect hosts for the event. They shared with a small group of entrepreneurs the art and science of negotiation including a number of case studies of big negotiation (i.e. billion-dollar deals) that Brad conducted as part of the Virgin group.
 
 A great deal of the workshop involved role playing and getting feedback from Simon and Brad. For the main exercise, we were divided into 4 groups where two groups played the part of entrepreneurs building a chain of gyms and the other two groups would be Virgin executives. We would negotiate the terms of our deal to get Virgin into the fitness business. Even though role playing does not reflect the situation perfectly as you have no real stakes, it was easy to see where you are making a mistake and how you should approach and behave under non-favourable conditions. 
 

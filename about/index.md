@@ -5,7 +5,8 @@ date: 2015-09-27 10:59:41+00:00
 layout: page
 link: http://luiz.pizzato.cc/
 slug: about
-title: Luiz Pizzato, PhD
+title: "About"
+description: "Luiz Pizzato is a Distinguished AI Scientist at Commonwealth Bank of Australia with 20+ years of experience in AI, NLP, and machine learning."
 feature: assets/img/about.jpg
 wordpress_id: 6
 ---

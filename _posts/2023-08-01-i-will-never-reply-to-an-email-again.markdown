@@ -34,9 +34,9 @@ It isn't perfect obviously, but the replies are fascinating. Check these ones:
 
 ![](https://luiz.pizzato.cc/assets/img/posts/2023-08-01-i-will-never-reply-to-an-email-again/shlomo.png)
 
-> In a entertaining way, LuizBot wrote a draft reply to Justin, one of the RecSys 2023 Industry Co-Chairs (in the same thread above) suggesting a program schedule for the poster sessions. It even suggested midday drinks! Not quite hitting the mark, but made me smile nonetheless.
+> In an entertaining way, LuizBot wrote a draft reply to Justin, one of the RecSys 2023 Industry Co-Chairs (in the same thread above) suggesting a program schedule for the poster sessions. It even suggested midday drinks! Not quite hitting the mark, but made me smile nonetheless.
 
 ![](https://luiz.pizzato.cc/assets/img/posts/2023-08-01-i-will-never-reply-to-an-email-again/justin.png)
 
 I am certainly not convinced that I can let LuizBot loose and take over my Gmail as yet, but I'm sure that with time I can perfect LuizBot to the point that a certain level of automation might be allowed.
-What do you think? Go ahead and experiment yourself by building you own LLM and bot: https://github.com/pizzato/LLMMe
+What do you think? Go ahead and experiment yourself by building your own LLM and bot: https://github.com/pizzato/LLMMe

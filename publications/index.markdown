@@ -6,6 +6,7 @@ layout: page
 link: http://luiz.pizzato.cc/publications/
 slug: publications
 title: Publications
+description: "Academic publications and research papers by Luiz Pizzato, PhD, covering AI, NLP, recommender systems and privacy-preserving machine learning."
 feature: assets/img/publications.jpg
 wordpress_id: 17
 ---
@@ -105,7 +106,7 @@ doi:10.1007/978-3-031-20984-0_23 [Springer](https://doi.org/10.1007/978-3-031-20
 **A Multi-Stakeholder Recommender System for Rewards Recommendations**
 _Naime Ranjbar Kermany, Luiz Pizzato, Thireindar Min, Callum Scott, and Anna Leontjeva_
 Proceedings of the 16th ACM Conference on Recommender Systems (RecSys '22). Association for Computing Machinery, New York, NY, USA, 484–487. 
-doi:0.1145/3523227.3547388 [ACM](https://doi.org/10.1145/3523227.3547388)
+doi:10.1145/3523227.3547388 [ACM](https://doi.org/10.1145/3523227.3547388)
 
 
 **Fair-SRS: A Fair Session-based Recommendation System**
@@ -189,7 +190,7 @@ RecSys '11: Proceedings of the Fifth ACM Conference on Recommender Systems. Chic
 
 **CCR - A Content-Collaborative Reciprocal Recommender for Online Dating**
 _Joshua Akehurst, Irena Koprinska, Kalina Yacef, Luiz Pizzato, Judy Kay, and Tomasz Rej_
-Proceedings of the 22nd International International Joint Conference on Artificial Intelligence (IJCAI 2011). Barcelona, Spain. 16-22 July 2011
+Proceedings of the 22nd International Joint Conference on Artificial Intelligence (IJCAI 2011). Barcelona, Spain. 16-22 July 2011
 [(IJCAI)](http://ijcai.org/papers11/Papers/IJCAI11-367.pdf)
 
 
@@ -221,7 +222,7 @@ RecSys '10: Proceedings of the Fourth ACM Conference on Recommender Systems. Bar
 
 **Reciprocal Recommender System for Online Dating**
 _Luiz Pizzato, Tomek Rej, Thomas Chung, Irena Koprinska and Judy Kay_
-RecSys '10 (demonstration session): Proceedings of the Forth ACM Conference on Recommender Systems. Barcelona, 26-30 September 2010
+RecSys '10 (demonstration session): Proceedings of the Fourth ACM Conference on Recommender Systems. Barcelona, 26-30 September 2010
 [(ACM)](http://doi.acm.org/10.1145/1864708.1864787) 
 
 

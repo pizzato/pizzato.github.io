@@ -17,7 +17,7 @@ tags:
 
 Welcome to my newly created blog and website.
 
-In this blog I will document my journey through the development of my next big project, which is building my own startup. Finally after many years of working on exciting research projects, I decided to quit my job at the University of Sydney and purse a dream that I always had - to become an entrepreneur.
+In this blog I will document my journey through the development of my next big project, which is building my own startup. Finally after many years of working on exciting research projects, I decided to quit my job at the University of Sydney and pursue a dream that I always had - to become an entrepreneur.
 
 At the University of Sydney, I was part of a very successful project, in which I built reciprocal recommendations algorithms for a major Australian online dating website. This project was very fulfilling as it showed me that maths and algorithms can have a real positive impact in people's lives. I know that because of our system, the rejection rate declined considerably and people were more successful in getting dates. I do not know how many people got married in the end, but I would like to think that it is a big number :-)
 
