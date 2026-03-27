@@ -202,6 +202,10 @@ header .entry-meta {
     float: right;
     text-align: right;
 }
+.share-container { text-align: center; margin: 2rem 0; }
+.share-container button { display:inline-flex;align-items:center;gap:8px;background:#3D2F1F;color:#F5F0EA;border:none;border-radius:999px;padding:10px 24px;font-family:inherit;font-size:14px;cursor:pointer;opacity:1;transition:opacity .15s; }
+.share-container button:hover { opacity:.8; }
+#share-msg { display:none;font-size:13px;color:#888;margin-left:12px; }
 .feature {
     @include transition(.5s);
     @media #{$small} {
