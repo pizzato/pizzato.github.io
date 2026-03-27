@@ -19,7 +19,7 @@
 	button {
 		top: 0;
 		left: 0;
-		background: $comp-color;
+		background: #3D2F1F;
 		border: none;
 		width: 48px;
 		height: 45px;
@@ -29,7 +29,7 @@
 		cursor: pointer;
 		outline: none;
 		@include border-radius(0,3px,0,0);
-		opacity: 0.6;
+		opacity: 0.85;
 		@media #{$notsmall} {
 			@include border-radius(3px,3px,3px,3px);
 		}
@@ -37,7 +37,7 @@
 	button:hover,
 	button.dl-active,
 	ul {
-		background: #aaa;
+		background: #2C2417;
 	}
 	button:after {
 		content: '';
@@ -67,6 +67,7 @@
 			margin:0;
 			padding: 15px 20px 0;
 			color: rgba($white,0.9);
+			font-family: 'Inter', sans-serif;
 		}
 		p {
 			margin: 0;
@@ -74,10 +75,12 @@
 			@include font-rem(14);
 			color: rgba($white,0.8);
 			font-weight: 300;
+			font-family: 'Inter', sans-serif;
 			a {
 				display: inline;
 				padding: 0;
 				@include font-rem(14);
+				font-family: 'Inter', sans-serif;
 			}
 		}
 		i {
@@ -90,9 +93,11 @@
 			@include font-rem(14);
 			line-height: 20px;
 			font-weight: 400;
-			color: $white;
+			font-family: 'Inter', sans-serif;
+			color: rgba($white, 0.92);
 			outline: none;
 			text-decoration: none;
+			letter-spacing: 0.01em;
 		}
 		&.dl-back > a {
 			padding-left: 30px;
@@ -156,6 +161,7 @@
 	}
 	.dl-submenu {
 		@include rounded(3px);
+		background: #2C2417;
 		box-shadow: 0 12px 24px rgba($black,0.4);
 		.btn {
 			margin-bottom: 0;
@@ -316,7 +322,7 @@ All this is done for any sub-level being entered.
 }
 /* No Touch Fallback */
 .no-touchevents .dl-menuwrapper li a:hover {
-	background: rgba(255,248,213,0.1);
+	background: rgba(245,240,234,0.12);
 }
 /* No JS Fallback */
 .no-js {
@@ -360,7 +366,7 @@ All this is done for any sub-level being entered.
 .dl-menuwrapper button:hover,
 .dl-menuwrapper button.dl-active,
 .dl-menuwrapper ul {
-	background: $comp-color;
+	background: #2C2417;
 }
 // Fix for IE
 .dl-menu li {

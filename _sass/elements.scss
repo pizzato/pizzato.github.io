@@ -15,14 +15,24 @@
 		transform: translateY(-1px);
 	}
 }
+.social-icons-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 2px;
+	margin: 6px 0;
+}
 .social-btn {
-	padding: 8px;
-	margin: 6px;
+	padding: 8px 9px;
+	margin: 0;
 	border-radius: 50% !important;
 	border-color: transparent !important;
 	background: rgba(0,0,0,0.05) !important;
 	color: $color_tuatara !important;
 	transition: background 0.18s, transform 0.15s !important;
+	font-size: 1rem;
+	line-height: 1;
 	&:hover {
 		background: rgba(0,0,0,0.12) !important;
 		color: $color_shark !important;
