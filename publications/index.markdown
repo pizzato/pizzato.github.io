@@ -382,7 +382,7 @@ Supervised Profa. Vera Lúcia Strube de Lima Defended on: 8th January 2003 Exami
 ## Pre-prints
 
 **ConCISE: A Reference-Free Conciseness Evaluation Metric for LLM-Generated Answers**
-_Luiz Pizzato et al._
+_Seyed Mohssen Ghafari, Ronny Kol, Juan C. Quiroz, Nella Luan, Monika Patial, Chanaka Rupasinghe, Herman Wandabwa, Luiz Pizzato_
 arXiv preprint. November 2025. [[PDF](https://arxiv.org/pdf/2511.16846)] [arXiv](https://arxiv.org/abs/2511.16846)
 
 
