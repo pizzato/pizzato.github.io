@@ -3,21 +3,19 @@
 fetch_photos.py — Aggregate public photos for pizzato.github.io /personal/
 
 Sources:
-  - Flickr REST API (requires FLICKR_API_KEY env var — free non-commercial key)
-  - 500px RSS feed (public, no auth)
-  - Instagram manual entries (_data/photos_manual.yml — populated by hand)
+  - Flickr public feed (no API key — uses the free public JSON feed endpoint)
+  - 500px: RSS feed is dead as of 2026; add photos manually to photos_manual.yml
+  - Instagram/manual entries (_data/photos_manual.yml — populated by hand)
 
 Output: _data/photos.json (sorted by date desc, capped at 100 items)
 
 Usage:
-  pip install requests feedparser PyYAML
-  FLICKR_API_KEY=your_key_here python scripts/fetch_photos.py
+  pip install requests PyYAML
+  python scripts/fetch_photos.py
 
-Setup:
-  1. Get a free Flickr API key: https://www.flickr.com/services/api/keys
-  2. Add it to GitHub repo Settings → Secrets → Actions → New secret: FLICKR_API_KEY
-  3. Trigger the workflow manually via GitHub Actions UI (or push a commit)
-  4. For Instagram: add entries to _data/photos_manual.yml
+No API keys or secrets needed for Flickr. The script discovers the user's
+NSID from their public profile page (one-time, cached in _data/flickr_nsid.txt)
+then fetches their 20 most recent public photos via the free public feed API.
 """
 
 import json
@@ -27,32 +25,27 @@ import sys
 from datetime import datetime
 
 try:
-    import feedparser
     import requests
     import yaml
 except ImportError as e:
     print(f"Missing dependency: {e}")
-    print("Run: pip3 install requests feedparser PyYAML")
+    print("Run: pip3 install requests PyYAML")
     sys.exit(1)
 
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
 
-FLICKR_USERNAME   = "kinho"
-FLICKR_API_BASE   = "https://www.flickr.com/services/rest/"
-FLICKR_API_KEY    = os.environ.get("FLICKR_API_KEY", "")
+FLICKR_USERNAME      = "kinho"
+FLICKR_PROFILE_URL   = f"https://www.flickr.com/photos/{FLICKR_USERNAME}/"
+FLICKR_FEED_BASE     = "https://www.flickr.com/services/feeds/photos_public.gne"
 
-FIVEPX_RSS_URL    = "https://500px.com/kinho/rss"
-# NOTE: As of 2026, 500px no longer returns a valid RSS feed (returns HTML).
-# 500px photos should be added manually to _data/photos_manual.yml instead.
+REPO_ROOT            = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MANUAL_YML           = os.path.join(REPO_ROOT, "_data", "photos_manual.yml")
+NSID_CACHE           = os.path.join(REPO_ROOT, "_data", "flickr_nsid.txt")
+OUTPUT_JSON          = os.path.join(REPO_ROOT, "_data", "photos.json")
 
-REPO_ROOT         = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MANUAL_YML        = os.path.join(REPO_ROOT, "_data", "photos_manual.yml")
-NSID_CACHE        = os.path.join(REPO_ROOT, "_data", "flickr_nsid.txt")
-OUTPUT_JSON       = os.path.join(REPO_ROOT, "_data", "photos.json")
-
-MAX_ITEMS         = 100
+MAX_ITEMS            = 100
 
 # ---------------------------------------------------------------------------
 # Helpers
@@ -60,14 +53,18 @@ MAX_ITEMS         = 100
 
 def iso_date(value):
     """Normalise various date formats to 'YYYY-MM-DD'."""
-    if isinstance(value, (datetime,)):
+    if isinstance(value, datetime):
         return value.strftime("%Y-%m-%d")
     if isinstance(value, str):
-        for fmt in ("%Y-%m-%d %H:%M:%S", "%Y-%m-%dT%H:%M:%SZ",
-                    "%Y-%m-%dT%H:%M:%S", "%Y-%m-%d",
-                    "%a, %d %b %Y %H:%M:%S %z", "%a, %d %b %Y %H:%M:%S %Z"):
+        for fmt in ("%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%dT%H:%M:%SZ",
+                    "%Y-%m-%dT%H:%M:%S", "%Y-%m-%d %H:%M:%S",
+                    "%Y-%m-%d", "%a, %d %b %Y %H:%M:%S %z"):
             try:
-                return datetime.strptime(value[:25].strip(), fmt).strftime("%Y-%m-%d")
+                s = value.strip()
+                # datetime.strptime can't handle ±HH:MM timezone in older Python;
+                # normalise to remove it for a best-effort parse
+                s_clean = re.sub(r'[+-]\d{2}:\d{2}$', '', s).strip()
+                return datetime.strptime(s_clean, fmt.replace('%z', '')).strftime("%Y-%m-%d")
             except ValueError:
                 pass
     if hasattr(value, "tm_year"):
@@ -76,97 +73,80 @@ def iso_date(value):
 
 
 # ---------------------------------------------------------------------------
-# Source: Flickr
+# Source: Flickr (public feed, no API key required)
 # ---------------------------------------------------------------------------
 
 def flickr_get_nsid():
-    """Look up Flickr NSID for FLICKR_USERNAME; cache in _data/flickr_nsid.txt."""
-    # Return cached value if available
+    """
+    Discover the Flickr NSID for FLICKR_USERNAME by scraping the profile page.
+    Result is cached in _data/flickr_nsid.txt so we only do this once.
+    """
     if os.path.exists(NSID_CACHE):
         with open(NSID_CACHE) as f:
             nsid = f.read().strip()
         if nsid:
             return nsid
 
-    print(f"[Flickr] Looking up NSID for '{FLICKR_USERNAME}'")
-    r = requests.get(FLICKR_API_BASE, params={
-        "method":   "flickr.people.findByUsername",
-        "api_key":  FLICKR_API_KEY,
-        "username": FLICKR_USERNAME,
-        "format":   "json",
-        "nojsoncallback": 1,
-    }, timeout=15)
+    print(f"[Flickr] Discovering NSID for '{FLICKR_USERNAME}' ...")
+    r = requests.get(
+        FLICKR_PROFILE_URL,
+        headers={"User-Agent": "Mozilla/5.0 (compatible; portfolio-builder/1.0)"},
+        timeout=15,
+    )
     r.raise_for_status()
-    data = r.json()
-    if data.get("stat") != "ok":
-        raise RuntimeError(f"Flickr API error: {data.get('message')}")
 
-    nsid = data["user"]["id"]
+    m = re.search(r'"nsid":"(\d+@N\d+)"', r.text)
+    if not m:
+        # Fallback pattern
+        m = re.search(r'flickr\.com/people/(\d+@N\d+)', r.text)
+    if not m:
+        raise RuntimeError(
+            f"Could not find NSID in Flickr profile page for '{FLICKR_USERNAME}'. "
+            "The page structure may have changed. Set NSID manually in _data/flickr_nsid.txt."
+        )
+
+    nsid = m.group(1)
     os.makedirs(os.path.dirname(NSID_CACHE), exist_ok=True)
     with open(NSID_CACHE, "w") as f:
         f.write(nsid)
-    print(f"[Flickr] NSID: {nsid}")
+    print(f"[Flickr] NSID: {nsid} (cached)")
     return nsid
 
 
 def fetch_flickr():
+    """
+    Fetch recent public photos using Flickr's free public feed endpoint.
+    No API key required. Returns up to 20 most recent public photos.
+    """
     items = []
-    if not FLICKR_API_KEY:
-        print("[Flickr] FLICKR_API_KEY not set — skipping. "
-              "Get a free key at https://www.flickr.com/services/api/keys "
-              "and set it as a GitHub Secret named FLICKR_API_KEY.")
-        return items
-
     try:
-        nsid   = flickr_get_nsid()
-        page   = 1
-        target = 100   # fetch up to this many photos
+        nsid = flickr_get_nsid()
 
-        while len(items) < target:
-            print(f"[Flickr] Fetching page {page}")
-            r = requests.get(FLICKR_API_BASE, params={
-                "method":        "flickr.people.getPublicPhotos",
-                "api_key":       FLICKR_API_KEY,
-                "user_id":       nsid,
-                "extras":        "url_z,url_m,date_taken,title",
-                "per_page":      100,
-                "page":          page,
-                "format":        "json",
-                "nojsoncallback": 1,
-            }, timeout=15)
-            r.raise_for_status()
-            data = r.json()
+        print(f"[Flickr] Fetching public feed for NSID {nsid}")
+        r = requests.get(
+            FLICKR_FEED_BASE,
+            params={"id": nsid, "format": "json", "nojsoncallback": "1"},
+            timeout=15,
+        )
+        r.raise_for_status()
+        data = r.json()
 
-            if data.get("stat") != "ok":
-                print(f"[Flickr] API error: {data.get('message')}")
-                break
+        for entry in data.get("items", []):
+            # Upgrade thumbnail URL from _m (240px) to _z (640px) for better quality
+            image = entry.get("media", {}).get("m", "")
+            image = re.sub(r'_m\.jpg$', '_z.jpg', image)
 
-            photos = data.get("photos", {}).get("photo", [])
-            if not photos:
-                break
+            date_str = iso_date(entry.get("date_taken") or entry.get("published") or "")
+            if not date_str or not image:
+                continue
 
-            for p in photos:
-                # Prefer 640px (url_z), fall back to 240px (url_m)
-                image = p.get("url_z") or p.get("url_m")
-                if not image:
-                    continue
-
-                date_str = iso_date(p.get("datetaken") or "")
-                if not date_str:
-                    continue
-
-                items.append({
-                    "source": "flickr",
-                    "title":  p.get("title") or "",
-                    "url":    f"https://www.flickr.com/photos/{FLICKR_USERNAME}/{p['id']}/",
-                    "image":  image,
-                    "date":   date_str,
-                })
-
-            total_pages = int(data.get("photos", {}).get("pages", 1))
-            if page >= total_pages:
-                break
-            page += 1
+            items.append({
+                "source": "flickr",
+                "title":  entry.get("title") or "",
+                "url":    entry.get("link") or "",
+                "image":  image,
+                "date":   date_str,
+            })
 
         print(f"[Flickr] {len(items)} photos")
     except Exception as e:
@@ -182,22 +162,22 @@ def fetch_flickr():
 def fetch_500px():
     """
     500px shut down their developer API in 2018 and their RSS feed now returns
-    HTML instead of XML (as of 2026). This function is kept as a no-op placeholder.
-    Add 500px photos manually via _data/photos_manual.yml using source: "500px".
+    HTML instead of XML (as of 2026). This function is a no-op.
+    Add 500px photos manually via _data/photos_manual.yml using source: '500px'.
     """
-    print("[500px] RSS feed is no longer functional (returns HTML). "
+    print("[500px] RSS feed is no longer functional (returns HTML as of 2026). "
           "Add 500px photos manually to _data/photos_manual.yml.")
     return []
 
 
 # ---------------------------------------------------------------------------
-# Source: Instagram (manual)
+# Source: Manual (Instagram, 500px, etc.)
 # ---------------------------------------------------------------------------
 
 def fetch_manual():
     items = []
     if not os.path.exists(MANUAL_YML):
-        print("[Instagram/manual] No photos_manual.yml found — skipping")
+        print("[Manual] No photos_manual.yml found — skipping")
         return items
     try:
         with open(MANUAL_YML) as f:
@@ -214,9 +194,9 @@ def fetch_manual():
                 "image":  e["image"],
                 "date":   d,
             })
-        print(f"[Instagram/manual] {len(items)} entries")
+        print(f"[Manual] {len(items)} entries")
     except Exception as e:
-        print(f"[Instagram/manual] Error: {e}")
+        print(f"[Manual] Error: {e}")
     return items
 
 
@@ -244,8 +224,6 @@ def main():
         json.dump(all_items, f, indent=2, ensure_ascii=False)
 
     print(f"\n✓ Wrote {len(all_items)} photos to {OUTPUT_JSON}")
-    if not FLICKR_API_KEY:
-        print("  ⚠  Flickr photos not included — set FLICKR_API_KEY env var or GitHub Secret")
 
 
 if __name__ == "__main__":

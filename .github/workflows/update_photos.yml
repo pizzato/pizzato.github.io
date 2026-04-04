@@ -24,8 +24,6 @@ jobs:
         run: pip install requests feedparser PyYAML
 
       - name: Fetch photos
-        env:
-          FLICKR_API_KEY: ${{ secrets.FLICKR_API_KEY }}
         run: python scripts/fetch_photos.py
 
       - name: Commit updated photos.json (if changed)
