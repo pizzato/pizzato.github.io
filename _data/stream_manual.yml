@@ -1,0 +1,17 @@
+# Manual stream entries for X (Twitter) and LinkedIn.
+#
+# After adding entries here, run the fetch script to rebuild stream.json:
+#   python scripts/fetch_stream.py
+#
+# Or just commit this file — the daily GitHub Action will pick it up.
+#
+# Entry format:
+#   - type:  twitter   (or: linkedin)
+#     title: "First line / caption of the post"
+#     url:   "https://x.com/luizpizzato/status/..."
+#     date:  "YYYY-MM-DD"
+#
+# To populate from a platform data export, share the export with Claude and
+# ask it to add the entries below in this format.
+
+entries: []
