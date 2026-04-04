@@ -1,0 +1,29 @@
+# Manual photo entries for Instagram, 500px, and any other source.
+#
+# After adding entries here, run the fetch script to rebuild photos.json:
+#   python scripts/fetch_photos.py
+#
+# Or just commit this file — the daily GitHub Action will pick it up.
+#
+# NOTE ON PLATFORMS:
+#   - Flickr: auto-fetched via REST API (set FLICKR_API_KEY GitHub Secret)
+#   - 500px:  RSS feed is dead as of 2026 — add photos here manually (source: "500px")
+#   - Instagram: requires OAuth setup — add photos here manually (source: "instagram")
+#
+# Entry format:
+#   - source: instagram           (or: 500px, flickr, other)
+#     title:  "Caption or description"
+#     url:    "https://www.instagram.com/p/..."   # link to the post/photo page
+#     image:  "https://..."                       # direct image URL (640px+ recommended)
+#     date:   "YYYY-MM-DD"
+#
+# How to get Instagram image URLs:
+#   Open the post in a browser, right-click the photo → "Copy image address".
+#   Or download your Instagram data archive and ask Claude to process
+#   the "content/posts_1.json" file from it.
+#
+# How to get 500px image URLs:
+#   Open a photo page, right-click the main image → "Copy image address".
+#   The photo page URL (e.g. https://500px.com/photo/12345/title) is the `url`.
+
+entries: []
