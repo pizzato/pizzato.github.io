@@ -3,27 +3,268 @@
 # After adding entries here, run the fetch script to rebuild photos.json:
 #   python scripts/fetch_photos.py
 #
-# Or just commit this file — the daily GitHub Action will pick it up.
-#
 # NOTE ON PLATFORMS:
-#   - Flickr: auto-fetched via REST API (set FLICKR_API_KEY GitHub Secret)
+#   - Flickr: auto-fetched via public feed (20 most recent); ALL photos via scrape_photos.py
 #   - 500px:  RSS feed is dead as of 2026 — add photos here manually (source: "500px")
 #   - Instagram: requires OAuth setup — add photos here manually (source: "instagram")
 #
 # Entry format:
-#   - source: instagram           (or: 500px, flickr, other)
+#   - source: flickr              (or: instagram, 500px, other)
 #     title:  "Caption or description"
-#     url:    "https://www.instagram.com/p/..."   # link to the post/photo page
-#     image:  "https://..."                       # direct image URL (640px+ recommended)
+#     url:    "https://www.flickr.com/photos/kinho/12345/"
+#     image:  "https://live.staticflickr.com/..."   # direct image URL
 #     date:   "YYYY-MM-DD"
 #
-# How to get Instagram image URLs:
-#   Open the post in a browser, right-click the photo → "Copy image address".
-#   Or download your Instagram data archive and ask Claude to process
-#   the "content/posts_1.json" file from it.
-#
-# How to get 500px image URLs:
-#   Open a photo page, right-click the main image → "Copy image address".
-#   The photo page URL (e.g. https://500px.com/photo/12345/title) is the `url`.
+# Auto-populated by: python scripts/scrape_photos.py
 
-entries: []
+entries:
+- source: flickr
+  title: the drums of the ninety nine
+  url: https://www.flickr.com/photos/kinho/6425250651/
+  image: https://live.staticflickr.com/7164/6425250651_85c8a75bfc_z.jpg
+  date: '2011-11-01'
+- source: flickr
+  title: We got a tail
+  url: https://www.flickr.com/photos/kinho/6146478567/
+  image: https://live.staticflickr.com/6076/6146478567_26eaab26a6_z.jpg
+  date: '2011-09-10'
+- source: flickr
+  title: Wanna go for a ride?
+  url: https://www.flickr.com/photos/kinho/6132542861/
+  image: https://live.staticflickr.com/6209/6132542861_974c6b136d_z.jpg
+  date: '2011-09-04'
+- source: flickr
+  title: Into the steam
+  url: https://www.flickr.com/photos/kinho/6034854805/
+  image: https://live.staticflickr.com/6204/6034854805_577654857c_z.jpg
+  date: '2011-08-01'
+- source: flickr
+  title: The most amazing sky
+  url: https://www.flickr.com/photos/kinho/6012923016/
+  image: https://live.staticflickr.com/6149/6012923016_d1a7a2daef_z.jpg
+  date: '2011-07-30'
+- source: flickr
+  title: Taking the shot
+  url: https://www.flickr.com/photos/kinho/6021214063/
+  image: https://live.staticflickr.com/6016/6021214063_069b81c10a_z.jpg
+  date: '2007-07-25'
+- source: flickr
+  title: Double the trouble
+  url: https://www.flickr.com/photos/kinho/6018025906/
+  image: https://live.staticflickr.com/6124/6018025906_757b49a6b6_z.jpg
+  date: '2007-03-26'
+- source: flickr
+  title: Grape juice flowing
+  url: https://www.flickr.com/photos/kinho/6037964411/
+  image: https://live.staticflickr.com/6128/6037964411_e35b6df163_z.jpg
+  date: '2007-02-14'
+- source: flickr
+  title: a baiana e o mar
+  url: https://www.flickr.com/photos/kinho/6869104949/
+  image: https://live.staticflickr.com/7176/6869104949_ffb7bef36e_z.jpg
+  date: '2007-02-05'
+- source: flickr
+  title: Riding the tram
+  url: https://www.flickr.com/photos/kinho/6155186041/
+  image: https://live.staticflickr.com/6090/6155186041_6efbd8dd32_z.jpg
+  date: '2007-02-02'
+- source: flickr
+  title: Jogging in Rio
+  url: https://www.flickr.com/photos/kinho/6152596641/
+  image: https://live.staticflickr.com/6202/6152596641_1db6b402dd_z.jpg
+  date: '2007-01-31'
+- source: flickr
+  title: Ready to board
+  url: https://www.flickr.com/photos/kinho/6053090996/
+  image: https://live.staticflickr.com/6181/6053090996_f6a8b9f21a_z.jpg
+  date: '2007-01-31'
+- source: flickr
+  title: clouds in the hill
+  url: https://www.flickr.com/photos/kinho/6896013653/
+  image: https://live.staticflickr.com/7205/6896013653_2c010dff25_z.jpg
+  date: '2007-01-26'
+- source: flickr
+  title: providing for the family
+  url: https://www.flickr.com/photos/kinho/6884741375/
+  image: https://live.staticflickr.com/7056/6884741375_caf80f04a9_z.jpg
+  date: '2007-01-26'
+- source: flickr
+  title: River swim
+  url: https://www.flickr.com/photos/kinho/6082529290/
+  image: https://live.staticflickr.com/6210/6082529290_549fa2ae46_z.jpg
+  date: '2007-01-24'
+- source: flickr
+  title: Hitting the green
+  url: https://www.flickr.com/photos/kinho/6165727555/
+  image: https://live.staticflickr.com/6173/6165727555_8dc1719bb0_z.jpg
+  date: '2006-10-14'
+- source: flickr
+  title: nothingness
+  url: https://www.flickr.com/photos/kinho/6923149965/
+  image: https://live.staticflickr.com/7067/6923149965_edd0e157da_z.jpg
+  date: '2006-09-24'
+- source: flickr
+  title: GPO archs
+  url: https://www.flickr.com/photos/kinho/6178118968/
+  image: https://live.staticflickr.com/6169/6178118968_61421aec7f_z.jpg
+  date: '2006-09-22'
+- source: flickr
+  title: City walk
+  url: https://www.flickr.com/photos/kinho/6176115351/
+  image: https://live.staticflickr.com/6157/6176115351_47803eef49_z.jpg
+  date: '2006-09-22'
+- source: flickr
+  title: Trophies
+  url: https://www.flickr.com/photos/kinho/236897048/
+  image: https://live.staticflickr.com/86/236897048_04923fc8b4_z.jpg
+  date: '2006-08-26'
+- source: flickr
+  title: Beautiful day
+  url: https://www.flickr.com/photos/kinho/236576572/
+  image: https://live.staticflickr.com/82/236576572_94bef8fa42_z.jpg
+  date: '2006-08-23'
+- source: flickr
+  title: Landing on the sand
+  url: https://www.flickr.com/photos/kinho/232497559/
+  image: https://live.staticflickr.com/88/232497559_98998e08a3_z.jpg
+  date: '2006-08-22'
+- source: flickr
+  title: Lake Mackenzie
+  url: https://www.flickr.com/photos/kinho/229308405/
+  image: https://live.staticflickr.com/88/229308405_5da4e508f7_z.jpg
+  date: '2006-08-22'
+- source: flickr
+  title: Flighing over a broccoli florest ;-)
+  url: https://www.flickr.com/photos/kinho/229298949/
+  image: https://live.staticflickr.com/87/229298949_fd9a9f15d7_z.jpg
+  date: '2006-08-22'
+- source: flickr
+  title: Aerial shot of Fraser Island
+  url: https://www.flickr.com/photos/kinho/228163556/
+  image: https://live.staticflickr.com/57/228163556_3eb487b8bb_z.jpg
+  date: '2006-08-22'
+- source: flickr
+  title: Great Sandy Highway
+  url: https://www.flickr.com/photos/kinho/225317286/
+  image: https://live.staticflickr.com/84/225317286_7fc2c49c06_z.jpg
+  date: '2006-08-22'
+- source: flickr
+  title: The Fluke of a Humpback underwater
+  url: https://www.flickr.com/photos/kinho/224841008/
+  image: https://live.staticflickr.com/81/224841008_8e58f4b1b4_z.jpg
+  date: '2006-08-21'
+- source: flickr
+  title: Fluke
+  url: https://www.flickr.com/photos/kinho/224365332/
+  image: https://live.staticflickr.com/80/224365332_2fb262be11_z.jpg
+  date: '2006-08-21'
+- source: flickr
+  title: Fluke - ahwc#3333
+  url: https://www.flickr.com/photos/kinho/224365320/
+  image: https://live.staticflickr.com/67/224365320_b708b175fc_z.jpg
+  date: '2006-08-21'
+- source: flickr
+  title: Why does she do that?
+  url: https://www.flickr.com/photos/kinho/224365246/
+  image: https://live.staticflickr.com/65/224365246_ae04b0ba87_z.jpg
+  date: '2006-08-21'
+- source: flickr
+  title: The jump of the humpback whale
+  url: https://www.flickr.com/photos/kinho/223561876/
+  image: https://live.staticflickr.com/68/223561876_5c157d2b13_z.jpg
+  date: '2006-08-21'
+- source: flickr
+  title: The jump of the humpback whale
+  url: https://www.flickr.com/photos/kinho/223561865/
+  image: https://live.staticflickr.com/75/223561865_e571ddcc0f_z.jpg
+  date: '2006-08-21'
+- source: flickr
+  title: Fraser Island
+  url: https://www.flickr.com/photos/kinho/223561852/
+  image: https://live.staticflickr.com/97/223561852_0fe6e5d2cd_z.jpg
+  date: '2006-08-21'
+- source: flickr
+  title: Into the light
+  url: https://www.flickr.com/photos/kinho/6041107175/
+  image: https://live.staticflickr.com/6191/6041107175_868de3b2bc_z.jpg
+  date: '2006-08-16'
+- source: flickr
+  title: The beach army
+  url: https://www.flickr.com/photos/kinho/198791908/
+  image: https://live.staticflickr.com/66/198791908_60b4fc2388_z.jpg
+  date: '2006-07-12'
+- source: flickr
+  title: The tree and the lake
+  url: https://www.flickr.com/photos/kinho/198791830/
+  image: https://live.staticflickr.com/57/198791830_457e9e1d2f_z.jpg
+  date: '2006-07-11'
+- source: flickr
+  title: Shapes on the shade
+  url: https://www.flickr.com/photos/kinho/198791787/
+  image: https://live.staticflickr.com/58/198791787_4692f181de_z.jpg
+  date: '2006-07-11'
+- source: flickr
+  title: The power of the full moon
+  url: https://www.flickr.com/photos/kinho/198838943/
+  image: https://live.staticflickr.com/78/198838943_601b1bc2af_z.jpg
+  date: '2006-07-10'
+- source: flickr
+  title: What a wonderful world
+  url: https://www.flickr.com/photos/kinho/198791610/
+  image: https://live.staticflickr.com/68/198791610_4f08d42aca_z.jpg
+  date: '2006-07-10'
+- source: flickr
+  title: We're so small in this world
+  url: https://www.flickr.com/photos/kinho/198791597/
+  image: https://live.staticflickr.com/72/198791597_733229e59c_z.jpg
+  date: '2006-07-10'
+- source: flickr
+  title: Coffs Harbour
+  url: https://www.flickr.com/photos/kinho/198791584/
+  image: https://live.staticflickr.com/34/198791584_2bb74e8dc7_z.jpg
+  date: '2006-07-10'
+- source: flickr
+  title: Coffs Harbour's Sunset
+  url: https://www.flickr.com/photos/kinho/198791565/
+  image: https://live.staticflickr.com/66/198791565_6a9601b169_z.jpg
+  date: '2006-07-10'
+- source: flickr
+  title: Buddhist Monk at the Beach
+  url: https://www.flickr.com/photos/kinho/6087875227/
+  image: https://live.staticflickr.com/6080/6087875227_1b528654e3_z.jpg
+  date: '2006-07-07'
+- source: flickr
+  title: cafe
+  url: https://www.flickr.com/photos/kinho/6928148577/
+  image: https://live.staticflickr.com/7042/6928148577_86518acdc7_z.jpg
+  date: '2006-07-05'
+- source: flickr
+  title: Follow the path
+  url: https://www.flickr.com/photos/kinho/6085180051/
+  image: https://live.staticflickr.com/6061/6085180051_603992f4c2_z.jpg
+  date: '2006-06-04'
+- source: flickr
+  title: One of the last Sydney trips of the Spirit of Tasmania
+  url: https://www.flickr.com/photos/kinho/6076143465/
+  image: https://live.staticflickr.com/6197/6076143465_4b56eb1c1c_z.jpg
+  date: '2006-05-21'
+- source: flickr
+  title: South Sea Island
+  url: https://www.flickr.com/photos/kinho/237599526/
+  image: https://live.staticflickr.com/88/237599526_7704e6c816_z.jpg
+  date: '2005-02-15'
+- source: flickr
+  title: not your average day
+  url: https://www.flickr.com/photos/kinho/6862146543/
+  image: https://live.staticflickr.com/7057/6862146543_55f1f54762_z.jpg
+  date: '2005-02-12'
+- source: flickr
+  title: A sunset in paradise
+  url: https://www.flickr.com/photos/kinho/237619233/
+  image: https://live.staticflickr.com/98/237619233_f945cff2e8_z.jpg
+  date: '2005-02-12'
+- source: flickr
+  title: Silhouette
+  url: https://www.flickr.com/photos/kinho/237619257/
+  image: https://live.staticflickr.com/98/237619257_af38478245_z.jpg
+  date: '2005-02-09'

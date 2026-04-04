@@ -175,6 +175,13 @@ def fetch_500px():
 # ---------------------------------------------------------------------------
 
 def fetch_manual():
+    """
+    Read _data/photos_manual.yml — used for:
+      - Instagram entries (source: instagram)
+      - 500px entries (source: 500px) — RSS feed is dead as of 2026
+      - Flickr bulk entries scraped via scrape_photos.py (source: flickr)
+    Entries without an image URL are skipped (can't show in grid).
+    """
     items = []
     if not os.path.exists(MANUAL_YML):
         print("[Manual] No photos_manual.yml found — skipping")
@@ -183,9 +190,11 @@ def fetch_manual():
         with open(MANUAL_YML) as f:
             data = yaml.safe_load(f) or {}
         entries = data.get("entries") or []
+        skipped = 0
         for e in entries:
             d = iso_date(e.get("date") or "")
             if not d or not e.get("image") or not e.get("url"):
+                skipped += 1
                 continue
             items.append({
                 "source": e.get("source", "instagram"),
@@ -194,7 +203,7 @@ def fetch_manual():
                 "image":  e["image"],
                 "date":   d,
             })
-        print(f"[Manual] {len(items)} entries")
+        print(f"[Manual] {len(items)} entries ({skipped} skipped — no image URL)")
     except Exception as e:
         print(f"[Manual] Error: {e}")
     return items
@@ -212,6 +221,16 @@ def main():
 
     # Filter items without required fields
     all_items = [i for i in all_items if i.get("image") and i.get("url") and i.get("date")]
+
+    # Deduplicate by URL (manual/scraped entries take priority over live feed)
+    seen_urls = set()
+    deduped = []
+    for item in all_items:
+        u = item["url"]
+        if u not in seen_urls:
+            seen_urls.add(u)
+            deduped.append(item)
+    all_items = deduped
 
     # Sort by date descending
     all_items.sort(key=lambda x: x.get("date", ""), reverse=True)
