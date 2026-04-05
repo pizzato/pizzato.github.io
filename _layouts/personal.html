@@ -22,10 +22,42 @@ layout: compress
         {{ content }}
       </div>
 
-      <!-- Photo gallery -->
+      <!-- YouTube videos -->
+      {% if site.data.videos and site.data.videos.videos and site.data.videos.videos.size > 0 %}
+      <section class="video-section">
+        <div class="photo-section-header">
+          <span class="label-sm">Videos</span>
+          <a href="https://www.youtube.com/@luizpizzato/videos" target="_blank" rel="noopener noreferrer" class="photo-source-links" style="font-size:13px; font-weight:500; color:var(--primary); text-decoration:underline; text-underline-offset:3px;">
+            <i class="fa-brands fa-youtube" style="font-size:12px"></i> YouTube
+          </a>
+        </div>
+        <div class="video-grid">
+          {% for video in site.data.videos.videos %}
+          <a class="video-card" href="https://www.youtube.com/watch?v={{ video.youtube_id }}"
+             target="_blank" rel="noopener noreferrer" title="{{ video.title }}">
+            <div class="video-thumb-wrap">
+              <img src="https://img.youtube.com/vi/{{ video.youtube_id }}/hqdefault.jpg"
+                   alt="{{ video.title }}" loading="lazy">
+              <div class="video-play-btn" aria-hidden="true">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="video-info">
+              <span class="video-title">{{ video.title }}</span>
+              {% if video.description and video.description != "" %}
+              <span class="video-desc">{{ video.description }}</span>
+              {% endif %}
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+      </section>
+      {% endif %}
+
+      <!-- Artistic creations / Photo gallery -->
       <section class="photo-section">
         <div class="photo-section-header">
-          <span class="label-sm">Photos</span>
+          <span class="label-sm">Artistic Creations</span>
           <div class="photo-source-links">
             <a href="https://www.flickr.com/photos/kinho" target="_blank" rel="noopener noreferrer">
               <i class="fa-brands fa-flickr" style="font-size:12px"></i> Flickr
