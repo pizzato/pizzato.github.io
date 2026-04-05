@@ -252,9 +252,9 @@ ul, ol { list-style: none; }
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto;
   grid-template-areas:
-    "hero     hero    photo"
-    "impact   writing writing"
-    "linkedin writing writing";
+    "hero    hero    photo"
+    "writing writing impact"
+    "writing writing linkedin";
   gap: var(--gap-bento);
 }
 
