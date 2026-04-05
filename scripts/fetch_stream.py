@@ -4,11 +4,12 @@ fetch_stream.py — Aggregate activity stream for pizzato.github.io
 
 Sources:
   - Medium RSS feed (public, no auth)
-  - Semantic Scholar papers (REST API, no auth)
+  - Publications page (parsed from publications/index.markdown)
+  - Semantic Scholar (REST API, supplemental — fills in exact pub dates)
   - Jekyll blog posts (local _posts/ directory)
   - Manual X / LinkedIn entries (_data/stream_manual.yml)
 
-Output: _data/stream.json (sorted by date desc, capped at 50 items)
+Output: _data/stream.json (sorted by date desc)
 
 Usage:
   pip install requests feedparser PyYAML python-frontmatter
@@ -43,9 +44,10 @@ SCHOLAR_AFFILIATION_HINT = "Commonwealth Bank"  # helps disambiguate
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 POSTS_DIR = os.path.join(REPO_ROOT, "_posts")
 MANUAL_YML = os.path.join(REPO_ROOT, "_data", "stream_manual.yml")
+PUBLICATIONS_MD = os.path.join(REPO_ROOT, "publications", "index.markdown")
 OUTPUT_JSON = os.path.join(REPO_ROOT, "_data", "stream.json")
 
-MAX_ITEMS = 50
+MAX_ITEMS = 500  # high cap — homepage uses `limit:6`, stream page shows all
 
 # ---------------------------------------------------------------------------
 # Helpers
@@ -115,8 +117,95 @@ def fetch_medium():
 
 
 # ---------------------------------------------------------------------------
-# Source: Semantic Scholar
+# Source: publications/index.markdown (authoritative paper list)
 # ---------------------------------------------------------------------------
+
+def fetch_publications():
+    """Parse peer-reviewed papers and pre-prints from publications/index.markdown."""
+    if not os.path.exists(PUBLICATIONS_MD):
+        print("[Publications] publications/index.markdown not found, skipping")
+        return []
+
+    with open(PUBLICATIONS_MD) as f:
+        content = f.read()
+
+    items = []
+    # Parse these sections only (skip Patents, Edited, Theses)
+    sections = [
+        ("## Peer-reviewed", "scholar"),
+        ("## Pre-prints",    "scholar"),
+    ]
+
+    for section_header, item_type in sections:
+        m = re.search(
+            rf'{re.escape(section_header)}\s*(.*?)(?=\n##|\Z)',
+            content, re.DOTALL
+        )
+        if not m:
+            continue
+        section_text = m.group(1)
+
+        # Each paper block starts with ** (bold title)
+        blocks = re.split(r'\n(?=\*\*)', section_text.strip())
+
+        for block in blocks:
+            block = block.strip()
+            if not block.startswith('**'):
+                continue
+
+            # Title
+            title_m = re.match(r'\*\*(.*?)\*\*', block)
+            if not title_m:
+                continue
+            title = title_m.group(1).strip()
+            if not title:
+                continue
+
+            # Year — first 4-digit year in the block
+            year_m = re.search(r'\b(20\d{2}|199\d|200\d)\b', block)
+            if not year_m:
+                continue
+            date_str = f"{year_m.group(1)}-01-01"
+
+            # URL — prefer doi.org, else first http link
+            urls = re.findall(r'\((https?://[^)]+)\)', block)
+            if not urls:
+                continue
+            doi_urls = [u for u in urls if 'doi.org' in u]
+            url = doi_urls[0] if doi_urls else urls[0]
+
+            # Venue — first non-title, non-author, non-link line
+            lines = [l.strip() for l in block.split('\n') if l.strip()]
+            venue = ""
+            for line in lines[2:]:
+                if line.startswith('[') or line.startswith('_') or line.startswith('*'):
+                    continue
+                clean = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', line)
+                clean = re.sub(r'[🏆].*', '', clean).strip()
+                if clean:
+                    venue = clean[:120]
+                    break
+
+            items.append({
+                "type":   item_type,
+                "title":  title,
+                "url":    url,
+                "date":   date_str,
+                "source": "Scholar",
+                "venue":  venue,
+            })
+
+    print(f"[Publications] {len(items)} items parsed")
+    return items
+
+
+# ---------------------------------------------------------------------------
+# Source: Semantic Scholar (supplements publications with exact pub dates)
+# ---------------------------------------------------------------------------
+
+def _normalize_title(title):
+    return re.sub(r'[^a-z0-9]', '', title.lower())
+
 
 def find_scholar_author_id():
     """Search Semantic Scholar for the author and return the best-match ID."""
@@ -136,7 +225,6 @@ def find_scholar_author_id():
             print("[Scholar] No candidates found")
             return None
 
-        # Score candidates: prefer those with matching affiliation hint or higher paper count
         def score(c):
             affil_str = " ".join(
                 a.get("name", "") for a in (c.get("affiliations") or [])
@@ -156,51 +244,72 @@ def find_scholar_author_id():
         return None
 
 
-def fetch_scholar():
-    items = []
+def fetch_scholar(pub_items):
+    """Fetch recent papers from Semantic Scholar and use them to:
+       1. Enrich existing pub_items with exact publication dates.
+       2. Add any new papers not yet in publications/index.markdown.
+    """
     author_id = find_scholar_author_id()
     if not author_id:
-        return items
+        return pub_items
 
     url = f"https://api.semanticscholar.org/graph/v1/author/{author_id}/papers"
     params = {
         "fields": "title,year,publicationDate,externalIds,venue",
-        "limit": 20,
-        "sort": "publicationDate:desc",
+        "limit": 100,
     }
     print(f"[Scholar] Fetching papers for author {author_id}")
     try:
-        r = requests.get(url, params=params, timeout=15)
+        r = requests.get(url, params=params, timeout=20)
         r.raise_for_status()
-        data = r.json()
-        for paper in data.get("data", []):
-            pub_date = paper.get("publicationDate")
-            if not pub_date and paper.get("year"):
-                pub_date = f"{paper['year']}-01-01"
-            if not pub_date:
-                continue
-
-            # Build URL: prefer DOI, fallback to Semantic Scholar paper page
-            ext = paper.get("externalIds") or {}
-            if ext.get("DOI"):
-                paper_url = f"https://doi.org/{ext['DOI']}"
-            elif paper.get("paperId"):
-                paper_url = f"https://www.semanticscholar.org/paper/{paper['paperId']}"
-            else:
-                continue
-
-            items.append({
-                "type": "scholar",
-                "title": paper.get("title", "Untitled"),
-                "url": paper_url,
-                "date": pub_date,
-                "source": "Scholar",
-                "venue": paper.get("venue") or "",
-            })
-        print(f"[Scholar] {len(items)} items")
+        scholar_papers = r.json().get("data", [])
+        print(f"[Scholar] {len(scholar_papers)} papers returned")
     except Exception as e:
         print(f"[Scholar] Papers fetch error: {e}")
-    return items
+        return pub_items
+
+    # Build lookup of existing items by normalised title
+    by_title = {_normalize_title(item["title"]): i for i, item in enumerate(pub_items)}
+
+    extra = []
+    for paper in scholar_papers:
+        pub_date = paper.get("publicationDate")
+        if not pub_date and paper.get("year"):
+            pub_date = f"{paper['year']}-01-01"
+        if not pub_date:
+            continue
+
+        ext = paper.get("externalIds") or {}
+        if ext.get("DOI"):
+            paper_url = f"https://doi.org/{ext['DOI']}"
+        elif paper.get("paperId"):
+            paper_url = f"https://www.semanticscholar.org/paper/{paper['paperId']}"
+        else:
+            continue
+
+        norm = _normalize_title(paper.get("title", ""))
+        if norm in by_title:
+            # Enrich: if Scholar has a more precise date (has month/day), use it
+            idx = by_title[norm]
+            existing_date = pub_items[idx].get("date", "")
+            if len(pub_date) > len(existing_date) or (
+                len(pub_date) >= 10 and existing_date.endswith("-01-01")
+            ):
+                pub_items[idx] = {**pub_items[idx], "date": pub_date}
+        else:
+            # New paper not yet in publications page — add it
+            extra.append({
+                "type":   "scholar",
+                "title":  paper.get("title", "Untitled"),
+                "url":    paper_url,
+                "date":   pub_date,
+                "source": "Scholar",
+                "venue":  paper.get("venue") or "",
+            })
+
+    if extra:
+        print(f"[Scholar] {len(extra)} additional papers not in publications page")
+    return pub_items + extra
 
 
 # ---------------------------------------------------------------------------
@@ -288,7 +397,11 @@ def fetch_manual():
 def main():
     all_items = []
     all_items.extend(fetch_medium())
-    all_items.extend(fetch_scholar())
+
+    pub_items = fetch_publications()          # parse publications page
+    pub_items = fetch_scholar(pub_items)      # enrich dates + add new papers
+    all_items.extend(pub_items)
+
     all_items.extend(fetch_posts())
     all_items.extend(fetch_manual())
 
