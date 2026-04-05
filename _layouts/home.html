@@ -30,56 +30,7 @@ layout: compress
 
           <!-- ── Row 2 ───────────────────────────────── -->
 
-          <!-- Live Focus / Status card -->
-          <div class="bento-card bento-status reveal reveal-d1">
-            <div class="live-indicator">
-              <span class="live-dot"></span>
-              <span class="label-sm">{{ site.current_status.label | default: "Live Focus" }}</span>
-            </div>
-            <h2 class="status-heading">{{ site.current_status.heading | default: "Current Status" }}</h2>
-            <p class="status-text">{{ site.current_status.text | default: site.bio }}</p>
-          </div>
-
-          <!-- Scholarly Impact card -->
-          <a class="bento-card bento-impact reveal reveal-d2" href="https://scholar.google.com.au/citations?user={{ site.googlescholar }}&hl=en" target="_blank" rel="noopener noreferrer" title="View on Google Scholar">
-            <div class="impact-header">
-              <span class="label-sm">Scholarly Impact</span>
-              <span class="impact-icon">&#x2197;</span>
-            </div>
-            <div class="impact-metric">{{ site.scholar_citations | default: "1.5k+" }}</div>
-            <div class="impact-label">Citations</div>
-            <div class="citation-bars" aria-hidden="true">
-              <div class="citation-bar" style="height:14%"></div>
-              <div class="citation-bar" style="height:18%"></div>
-              <div class="citation-bar" style="height:26%"></div>
-              <div class="citation-bar" style="height:38%"></div>
-              <div class="citation-bar" style="height:52%"></div>
-              <div class="citation-bar" style="height:70%"></div>
-              <div class="citation-bar" style="height:86%"></div>
-              <div class="citation-bar bar-highlight" style="height:100%"></div>
-            </div>
-          </a>
-
-          <!-- Archive / CTA card -->
-          <div class="bento-card bento-archive reveal reveal-d2">
-            <h2 class="archive-title">Explore the Archive</h2>
-            <div class="archive-links">
-              <a class="archive-link" href="{{ site.url }}/posts/">
-                Read Selected Posts
-                <span class="archive-link-icon">&#x2192;</span>
-              </a>
-              <a class="archive-link" href="{{ site.url }}/publications/">
-                Curated Research
-                <span class="archive-link-icon">&#x2192;</span>
-              </a>
-              <a class="archive-link" href="{{ site.url }}/academy/">
-                Academic Activities
-                <span class="archive-link-icon">&#x2192;</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- ── Row 3 ───────────────────────────────── -->
+          <!-- ── Row 2 ───────────────────────────────── -->
 
           <!-- Stream card (spans 2 cols, data from _data/stream.json) -->
           <div class="bento-card bento-stream reveal reveal-d2">
@@ -107,6 +58,35 @@ layout: compress
               {% endfor %}
             </div>
           </div>
+
+          <!-- Research card -->
+          <a class="bento-card bento-impact reveal reveal-d2" href="{{ site.url }}/publications/" title="View Research">
+            <div class="impact-header">
+              <span class="label-sm">Research</span>
+              <span class="impact-icon">&#x2197;</span>
+            </div>
+            <div class="impact-dual-metrics">
+              <div class="impact-metric-item">
+                <div class="impact-metric">{{ site.scholar_papers | default: "50+" }}</div>
+                <div class="impact-label">Publications</div>
+              </div>
+              <div class="impact-metric-divider"></div>
+              <div class="impact-metric-item">
+                <div class="impact-metric" id="scholar-citations">{{ site.scholar_citations | default: "1,600+" }}</div>
+                <div class="impact-label">Citations</div>
+              </div>
+            </div>
+            <div class="citation-bars" aria-hidden="true">
+              <div class="citation-bar" style="height:14%"></div>
+              <div class="citation-bar" style="height:18%"></div>
+              <div class="citation-bar" style="height:26%"></div>
+              <div class="citation-bar" style="height:38%"></div>
+              <div class="citation-bar" style="height:52%"></div>
+              <div class="citation-bar" style="height:70%"></div>
+              <div class="citation-bar" style="height:86%"></div>
+              <div class="citation-bar bar-highlight" style="height:100%"></div>
+            </div>
+          </a>
 
           <!-- LinkedIn card -->
           <a class="bento-card bento-linkedin reveal reveal-d3" href="https://linkedin.com/in/{{ site.linkedin }}" target="_blank" rel="noopener noreferrer">
@@ -178,7 +158,7 @@ layout: compress
     <script>
     /* Live Google Scholar citation count via CORS proxy */
     (function () {
-      var el = document.querySelector('.impact-metric');
+      var el = document.getElementById('scholar-citations');
       if (!el) return;
       var scholarUrl = 'https://scholar.google.com/citations?user={{ site.googlescholar }}&hl=en';
       fetch('https://corsproxy.io/?' + encodeURIComponent(scholarUrl))

@@ -13,8 +13,9 @@ current_status:
   heading: "Leading AI at CBA"
   text:    "Driving large-scale Generative AI, NLP, and data science initiatives at Commonwealth Bank of Australia. Currently focused on LLM evaluation, responsible AI, and agentic systems."
 
-# Homepage: Scholarly Impact card
-scholar_citations:  "1.5k+"
+# Homepage: Research card
+scholar_citations:  "1,600+"
+scholar_papers:     "50+"
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
 url:                https://luiz.pizzato.cc
