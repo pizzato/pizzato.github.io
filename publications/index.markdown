@@ -26,9 +26,9 @@ For a full list of tutorials, grants, workshops organised, and reviewing and pro
 I have published over 50 publications with over 1,600 citations (h-index 19). For full citation metrics see these links:
 
 <div class="profile-links">
-  <a href="https://scholar.google.com/citations?user=tTBB3FEAAAAJ" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Google Scholar"></a>
-  <a href="https://dblp.org/pid/62/4764.html" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/DBLP-004F9F?style=for-the-badge&logo=dblp&logoColor=white" alt="DBLP"></a>
-  <a href="https://aclanthology.org/people/l/luiz-pizzato/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/ACL%20Anthology-red?style=for-the-badge" alt="ACL Anthology"></a>
+  <a href="https://scholar.google.com/citations?user=3q9NOYYAAAAJ" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Google Scholar"></a>
+  <a href="https://dblp.org/pid/13/6023.html" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/DBLP-004F9F?style=for-the-badge&logo=dblp&logoColor=white" alt="DBLP"></a>
+  <a href="https://aclanthology.org/people/l/luiz-augusto-pizzato/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/ACL%20Anthology-red?style=for-the-badge" alt="ACL Anthology"></a>
 </div>
 
 
