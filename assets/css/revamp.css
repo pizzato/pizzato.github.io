@@ -1146,24 +1146,25 @@ a.bento-impact:hover .impact-metric { color: var(--primary); }
 /* Override old site body background from _config.yml */
 body { background-image: none !important; }
 
-/* ── PAGE HERO IMAGE ────────────────────────────────────────── */
+/* ── PAGE HERO IMAGE (card style) ───────────────────────────── */
 .page-hero {
-  width: 100%;
-  height: 280px;
-  overflow: hidden;
-  position: relative;
+  max-width: var(--content-width, 860px);
+  margin: 1.5rem auto 0;
+  padding: 0 var(--page-pad, 24px);
 }
 
 .page-hero img {
   width: 100%;
-  height: 100%;
+  height: 260px;
   object-fit: cover;
   object-position: center;
   display: block;
+  border-radius: var(--radius-xl);
+  box-shadow: 0 4px 24px rgba(45, 51, 53, 0.08);
 }
 
 @media (max-width: 600px) {
-  .page-hero { height: 180px; }
+  .page-hero img { height: 180px; border-radius: var(--radius-lg); }
 }
 
 /* ── PERSONAL PAGE — YouTube videos ────────────────────────── */
