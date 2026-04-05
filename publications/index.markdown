@@ -17,7 +17,13 @@ Beyond reciprocal recommenders, my research has spanned multi-stakeholder and fa
 
 On the academic service side, I co-chaired [RecSys 2023](https://recsys.acm.org/recsys23/) and the [AAAI'26 Workshop on Agentic AI in Financial Services](https://ai-4-finance.pages.dev/), organised multiple workshops on people and community recommenders, and have served on program committees for RecSys, UMAP, WWW, SIGIR, and IJCAI.
 
-For full citation metrics see these links:
+## Academic Activities
+
+For a full list of tutorials, grants, workshops organised, and reviewing and program committee roles, see the [Academic Activities](/academy/) page.
+
+## Publications
+
+I have published over 50 publications with over 1,600 citations (h-index 19). For full citation metrics see these links:
 
 <div class="profile-links">
   <a href="https://scholar.google.com/citations?user=tTBB3FEAAAAJ" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Google Scholar"></a>
