@@ -5,13 +5,19 @@ date: 2015-09-27 11:23:46+00:00
 layout: page
 link: http://luiz.pizzato.cc/publications/
 slug: publications
-title: Publications
-description: "Academic publications and research papers by Luiz Pizzato, PhD, covering AI, NLP, recommender systems and privacy-preserving machine learning."
+title: Research
+description: "Research contributions by Luiz Pizzato, PhD, covering AI, NLP, recommender systems and privacy-preserving machine learning."
 feature: assets/img/publications.jpg
 wordpress_id: 17
 ---
 
-For a comprehensive publication list with citations, check my [Google Scholar profile](http://scholar.google.com.au/citations?user=3q9NOYYAAAAJ&hl=en).
+I completed my PhD at Macquarie University in 2008, focused on Natural Language Processing and Information Retrieval. My postdoctoral work at the University of Sydney led to one of the earliest reciprocal recommender systems — [RECON](https://dl.acm.org/doi/10.1145/1864708.1864747), built for online dating — which pioneered the idea that both sides of a match need to be modelled simultaneously. That line of work produced a 🏆 Best Paper at UMAP 2011 and a widely-cited journal article in UMUAI, and it continues to be referenced as foundational in the reciprocal recommendation literature.
+
+Beyond reciprocal recommenders, my research has spanned multi-stakeholder and fairness-aware recommendation, privacy-preserving machine learning (including work on homomorphic encryption at Accenture), abuse detection in financial transactions, and more recently LLM evaluation and synthetic personas. I have published in top venues including RecSys, UMAP, IJCAI, WSDM, WWW, and IEEE BigData, and hold patents at Commonwealth Bank of Australia.
+
+On the academic service side, I co-chaired [RecSys 2023](https://recsys.acm.org/recsys23/) and the [AAAI'26 Workshop on Agentic AI in Financial Services](https://ai-4-finance.pages.dev/), organised multiple workshops on people and community recommenders, and have served on program committees for RecSys, UMAP, WWW, SIGIR, and IJCAI. I also organised the [CHAI Seminar Series](http://chai.it.usyd.edu.au/Seminars) at the University of Sydney from 2011 to 2014, and held a research grant for collaborative work between the University of Sydney and UFRGS on human-centred recommender systems.
+
+For full citation metrics see my [Google Scholar profile](http://scholar.google.com.au/citations?user=3q9NOYYAAAAJ&hl=en).
 
 <div class="profile-links">
   <a href="https://scholar.google.com/citations?user=tTBB3FEAAAAJ" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Google Scholar"></a>
