@@ -99,7 +99,7 @@ Sydney, Australia, 2009
 _Arshnoor Kaur, Amanda Aird, Harris Borman, Andrea Nicastro, Anna Leontjeva, Luiz Pizzato, and Dan Jermyn_
 Proceedings of the 33rd ACM Conference on User Modeling, Adaptation and Personalization (UMAP ‘25).
 Association for Computing Machinery, New York, NY, USA, 185–193.
-[(ACM)](https://doi.org/10.1145/3699682.3728339) 🏆 Best Paper Award
+[(ACM)](https://doi.org/10.1145/3699682.3728339) 🏆 [Best Paper Award](https://www.um.org/awards/best-paper-awards)
 
 
 **FeatureCuts: Feature Selection for Large Data by Optimizing the Cutoff**
