@@ -99,7 +99,7 @@ Sydney, Australia, 2009
 _Arshnoor Kaur, Amanda Aird, Harris Borman, Andrea Nicastro, Anna Leontjeva, Luiz Pizzato, and Dan Jermyn_
 Proceedings of the 33rd ACM Conference on User Modeling, Adaptation and Personalization (UMAP ‘25).
 Association for Computing Machinery, New York, NY, USA, 185–193.
-[(ACM)](https://doi.org/10.1145/3699682.3728339)
+[(ACM)](https://doi.org/10.1145/3699682.3728339) 🏆 Best Paper Award
 
 
 **FeatureCuts: Feature Selection for Large Data by Optimizing the Cutoff**
@@ -223,7 +223,7 @@ Proceedings of the 22nd International Joint Conference on Artificial Intelligenc
 **Finding someone you will like and who won't reject you.**
 _Luiz Pizzato, Tomasz Rej, Kalina Yacef, Irena Koprinska and Judy Kay_
 Proceedings of the 19th International Conference on User Modeling, Adaptation and Personalization (UMAP 2011). Girona, Spain. 11-15 July 2011. LNCS 6787, pp. 269--280. Springer, Heidelberg (2012)
-[(Springer)](http://dx.doi.org/10.1007/978-3-642-22362-4_23) 🏆 [Best Paper Award](https://www.um.org/awards/best-paper-awards) 
+[(Springer)](http://dx.doi.org/10.1007/978-3-642-22362-4_23) 
 
 
 
