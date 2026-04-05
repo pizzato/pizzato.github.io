@@ -2,6 +2,7 @@
 layout: personal
 title: Personal
 comments: false
+feature: assets/img/personal.jpg
 ---
 
 Hi, I'm Kinho, that's what family and friends call me. I'm a Brazilian 🇧🇷 born of Italian 🇮🇹 descent from Rio Grande do Sul, who moved to Sydney, Australia 🇦🇺 over 20 years ago. I'm a proud father of two, who enjoys every moment with my kids and wife. ❤️
