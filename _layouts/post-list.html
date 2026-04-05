@@ -19,7 +19,7 @@ layout: compress
         <h1 class="display-md">{{ page.title }}</h1>
       </header>
 
-      <div class="post-list-rows reveal">
+      <div class="post-list-rows">
         {% assign posts = site.posts | where_exp: "post", "post.project == nil" %}
         {% for post in posts %}
         <a class="post-row" href="{{ site.url }}{{ post.url }}">

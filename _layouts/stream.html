@@ -19,7 +19,7 @@ layout: compress
         <h1 class="display-md">{{ page.title }}</h1>
       </header>
 
-      <div class="stream-page-list reveal">
+      <div class="stream-page-list">
         {% for item in site.data.stream %}
         <a class="stream-page-entry" href="{{ item.url }}"{% if item.url contains '://' %} target="_blank" rel="noopener noreferrer"{% endif %}>
           <span class="stream-icon stream-icon--{{ item.type }}" aria-label="{{ item.source }}">
