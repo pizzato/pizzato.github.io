@@ -1,6 +1,6 @@
 ---
 layout: stream
-title: Stream
+title: Posts
 excerpt: "All activity across Medium, Scholar, blog, and more"
 comments: false
 ---

@@ -6,7 +6,7 @@
     </a>
     <div class="nav-links" id="nav-links">
       <a class="nav-link{% if page.url == '/about/' or page.url contains '/about' %} active{% endif %}" href="{{ site.url }}/about/">About</a>
-      <a class="nav-link{% if page.url == '/posts/' or page.layout == 'post' %} active{% endif %}" href="{{ site.url }}/posts/">Posts</a>
+      <a class="nav-link{% if page.url contains '/stream/' or page.layout == 'stream' or page.layout == 'post' %} active{% endif %}" href="{{ site.url }}/stream/">Posts</a>
       <a class="nav-link{% if page.url == '/publications/' or page.url contains 'publications' %} active{% endif %}" href="{{ site.url }}/publications/">Research</a>
       <a class="nav-link{% if page.url contains '/personal' %} active{% endif %}" href="{{ site.url }}/personal/">Personal</a>
       <a class="nav-link{% if page.url contains 'contact' %} active{% endif %}" href="{{ site.url }}/about/#contact">Contact</a>
@@ -20,7 +20,7 @@
 </div>
 <div class="nav-mobile-menu" id="nav-mobile-menu" role="dialog" aria-label="Mobile navigation">
   <a class="nav-mobile-link" href="{{ site.url }}/about/">About</a>
-  <a class="nav-mobile-link" href="{{ site.url }}/posts/">Posts</a>
+  <a class="nav-mobile-link" href="{{ site.url }}/stream/">Posts</a>
   <a class="nav-mobile-link" href="{{ site.url }}/publications/">Research</a>
   <a class="nav-mobile-link" href="{{ site.url }}/personal/">Personal</a>
   <a class="nav-mobile-link" href="{{ site.url }}/about/#contact">Contact</a>
