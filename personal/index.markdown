@@ -12,4 +12,4 @@ Food-wise, I'm always trying to watch my diet, but wine 🍷, bread 🍞, coffee
 
 I also used to be quite serious about travelling 🏖️ and photography 📷. It's hard to find the time these days, but below you'll find some of my photos from various websites over the years.
 
-I work with people 👥 and computers. I prefer people over computers 🤖, but sometimes I hate people, and almost every day I hate computers.
+I work with people and computers. I prefer people 👥 over computers 🤖, but sometimes I hate people, and almost every day I hate computers.
