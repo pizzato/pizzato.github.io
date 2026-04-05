@@ -45,7 +45,7 @@ MANUAL_YML           = os.path.join(REPO_ROOT, "_data", "photos_manual.yml")
 NSID_CACHE           = os.path.join(REPO_ROOT, "_data", "flickr_nsid.txt")
 OUTPUT_JSON          = os.path.join(REPO_ROOT, "_data", "photos.json")
 
-MAX_ITEMS            = 100
+MAX_ITEMS            = 500
 
 # ---------------------------------------------------------------------------
 # Helpers
