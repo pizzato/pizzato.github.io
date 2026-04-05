@@ -39,7 +39,7 @@ layout: compress
               <a class="stream-more" href="{{ site.url }}/posts/">All posts &#x2192;</a>
             </div>
             <div class="stream-list">
-              {% for item in site.data.stream limit:6 %}
+              {% for item in site.data.stream limit:10 %}
               <a class="stream-entry" href="{{ item.url }}"{% if item.url contains '://' %} target="_blank" rel="noopener noreferrer"{% endif %}>
                 <span class="stream-icon stream-icon--{{ item.type }}" aria-label="{{ item.source }}">
                   {% if item.type == 'medium' %}<i class="fa-brands fa-medium"></i>
