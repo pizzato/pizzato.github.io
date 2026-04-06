@@ -39,7 +39,7 @@ I have published over 50 publications with over 1,600 citations (h-index 19). Fo
 Inventors: _Dan Jermyn, Luiz Pizzato, Anna Leontjeva, Kaavya Sriskandaraja, Sandeepa Kannangara, Jack Elliott_ 
 Applicant: _Commonwealth Bank of Australia_ 
 Provisional Australian Patent Filled on 27 June 2024 
-[(IP Australia)](https://ipsearch.ipaustralia.gov.au/patents/2024901967)
+[(IP Australia)](https://ipsearch.ipaustralia.gov.au/patents/2024901967) [(Google Patents)](https://patents.google.com/patent/AU2024901967)
 
 **A vector embedder for non-natural language data** 
 Inventors: _Dan Jermyn, Luiz Pizzato, Anna Leontjeva, Naomi Ranjbar Kermany, Patrick Songco, Jack Elliott_ 
@@ -51,7 +51,7 @@ Australian Patent Filled on 28 Mar 2024
 Inventors: _David Treat, John Velissarios, Teresa Tung, Luiz Pizzato, Deborah Garand, Atieh Ranjbar Kermany, Chia Jung Chang, and Arjun Sitaraman Krishnan_.
 Applicant: _Accenture Global Solutions Limited_
 United States Patent No 10,721,217. 21 July 2020
-[(USPTO)](https://pdfpiw.uspto.gov/.piw?Docid=10721217)
+[(Google Patents)](https://patents.google.com/patent/US10721217)
 
 
 ## Edited
@@ -60,13 +60,12 @@ United States Patent No 10,721,217. 21 July 2020
 **RecSys '23: Proceedings of the 17th ACM Conference on Recommender Systems**
 Editors: _Jie Zhang, Li Chen, Shlomo Berkovsky, Min Zhang, Tommaso di Noia, Justin Basilico, Luiz Pizzato, Yang Song_
 Singapore, September 18-22, 2023. ISBN: 979-8-4007-0241-9
-[(ACM)](https://dl.acm.org/doi/proceedings/10.1145/3604915#)
+[(ACM)](https://dl.acm.org/doi/proceedings/10.1145/3604915)
 
 
 **Proceedings of the Second Workshop on Community Mining and People Recommenders**
 Edited by: _Jaakko Hollmén, Panagiotis Papapetrou and Luiz Augusto Pizzato_
 ECML/PKDD 2012, Bristol, UK, September 28, 2012
-[(PDF)](http://sydney.edu.au/engineering/it/~pizzato/publications/pdf/COMMPER2012.pdf)
 
 
 
@@ -90,7 +89,7 @@ IEEE ICDM 2011, Vancouver, Canada, 2011
 **Proceedings of the Australasian Language Technology Association Workshop 2009**
 Edited by: _Luiz Pizzato and Rolf Schwitter_
 Sydney, Australia, 2009
-[(PDF)](http://sydney.edu.au/engineering/it/~pizzato/publications/pdf/ALTA2009.pdf) [(ALTA)](http://www.alta.asn.au/events/alta2009/ALTA2009.pdf) [(HTML)](http://www.alta.asn.au/events/alta2009/alta-2009-proceedings.html) [(Bib)](http://www.alta.asn.au/events/alta2009/bib/ALTA2009_FrontMatter.bib)
+[(HTML)](http://www.alta.asn.au/events/alta2009/alta-2009-proceedings.html) [(Bib)](http://www.alta.asn.au/events/alta2009/bib/ALTA2009_FrontMatter.bib)
 
 
 
@@ -105,7 +104,7 @@ Sydney, Australia, 2009
 _Arshnoor Kaur, Amanda Aird, Harris Borman, Andrea Nicastro, Anna Leontjeva, Luiz Pizzato, and Dan Jermyn_
 Proceedings of the 33rd ACM Conference on User Modeling, Adaptation and Personalization (UMAP ‘25).
 Association for Computing Machinery, New York, NY, USA, 185–193.
-[(ACM)](https://doi.org/10.1145/3699682.3728339) 🏆 [Best Paper Award](https://www.um.org/awards/best-paper-awards)
+[(ACM)](https://doi.org/10.1145/3699682.3728339) 🏆 [Best Paper Award](https://um.org/awards/best-paper-awards)
 
 
 **FeatureCuts: Feature Selection for Large Data by Optimizing the Cutoff**
@@ -213,7 +212,7 @@ New Frontiers in Applied Data Mining, volume 7104 of Lecture Notes in Computer S
 **Stochastic Matching and Collaborative Filtering to Recommend People to People**
 _Luiz Augusto Pizzato, and Cameron Silvestrini_
 RecSys '11: Proceedings of the Fifth ACM Conference on Recommender Systems. Chicago, 23-27 October 2011
-[(PDF)](http://dl.acm.org/authorize?62534) [(ACM)](http://doi.acm.org/10.1145/2043932.2043998) \[[ACM Open Access](https://dl.acm.org/doi/10.1145/2043932.2043998?cid=81444607788)\] 
+[(ACM)](https://doi.org/10.1145/2043932.2043998) [(ACM Open Access)](https://dl.acm.org/doi/10.1145/2043932.2043998?cid=81444607788)
 
 
 
@@ -237,7 +236,7 @@ Proceedings of the 19th International Conference on User Modeling, Adaptation an
 **Learning User Preferences in Online Dating.**
 _Luiz Pizzato, Thomas Chung, Tomasz Rej, Kalina Yacef, Irena Koprinska and Judy Kay_
 Proceedings of the Workshop on Preference Learning (PL-10) at the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD). Barcelona, Spain. 24 September 2010
-[(PL10)](http://www.ke.tu-darmstadt.de/events/PL-10/papers/8-Pizzato.pdf) 
+ 
 
 
 
@@ -245,7 +244,7 @@ Proceedings of the Workshop on Preference Learning (PL-10) at the European Confe
 **RECON: A Reciprocal Recommender for Online Dating.**
 _Luiz Pizzato, Tomek Rej, Thomas Chung, Irena Koprinska and Judy Kay_
 RecSys '10: Proceedings of the Fourth ACM Conference on Recommender Systems. Barcelona, 26-30 September 2010
-[(ACM)](http://doi.acm.org/10.1145/1864708.1864747) \[[ACM Open Access](https://dl.acm.org/doi/10.1145/1864708.1864747?cid=81444607788)\] [(PDF)](http://dl.acm.org/authorize?N82406) 
+[(ACM)](https://doi.org/10.1145/1864708.1864747) [(ACM Open Access)](https://dl.acm.org/doi/10.1145/1864708.1864747?cid=81444607788)
 
 
 
@@ -261,7 +260,7 @@ RecSys '10 (demonstration session): Proceedings of the Fourth ACM Conference on 
 **Reciprocal Recommenders.**
 _Luiz Pizzato, Tomek Rej, Thomas Chung, Kalina Yacef, Irena Koprinska and Judy Kay_
 Proceedings of the Workshop on Intelligent Techniques for Web Personalization & Recommender Systems (ITWP'10) at User Modeling, Adaptation and Personalization (UMAP 2010), Big Island of Hawaii. 2010.
-[(ITWP)](http://ls13-www.cs.uni-dortmund.de/homepage/ITWP2010/papers/ReciprocalRecommender.pdf)
+
 
 
 
@@ -269,7 +268,7 @@ Proceedings of the Workshop on Intelligent Techniques for Web Personalization & 
 **Indexing on Semantic Roles for Question Answering.**
 _Luiz Pizzato and Diego Molla_
 Proceedings of the Coling 2008 Workshop Information Retrieval for Question Answering (IR4QA-08). Manchester, August, 2008
-[(PDF)](https://aclanthology.org/W08-0705.pdf) [(Bib)](http://www.aclweb.org/anthology-new/W/W08/W08-1810.bib)
+[(PDF)](https://aclanthology.org/W08-0705.pdf)
 
 
 
@@ -277,7 +276,7 @@ Proceedings of the Coling 2008 Workshop Information Retrieval for Question Answe
 **Question Prediction Language Model.**
 _Luiz Pizzato and Diego Molla_
 Proceedings Australasian Language Technology Workshop 2007, Melbourne, December 2007.
-[(ALTA)](http://www.alta.asn.au/events/altw2007/cdrom/pdf/ALTA2007_14.pdf) [(PDF)](https://aclanthology.org/U07-1016.pdf)
+[(PDF)](https://aclanthology.org/U07-1016.pdf)
 
 
 
@@ -405,7 +404,7 @@ arXiv e-prints. March 2023. [[PDF](https://arxiv.org/pdf/2303.08016)] [arXiv](ht
 
 **Reciprocal Recommender Systems: Analysis of State-of-Art Literature, Challenges and Opportunities towards Social Recommendation**
 _Ivan Palomares and Carlos Porcel and Luiz Pizzato and Ido Guy and Enrique Herrera-Viedma_
-arXiv e-prints. Jul 2020. [[PDF](https://arxiv.org/pdf/2007.16120)] [arXiv](https://arxiv.org/abs/2007.16120)
+arXiv e-prints. Jul 2020. [[PDF](https://arxiv.org/pdf/2007.16120v2)] [arXiv](https://arxiv.org/abs/2007.16120)
 
 
 **Beyond Personalization: Research Directions in Multistakeholder Recommendation.**
