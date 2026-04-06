@@ -182,8 +182,8 @@ User Modeling and User-Adapted Interaction (UMUAI). November 2013, Volume 23, Is
 **Scrutable User Models and Personalised Item Recommendation in Mobile Lifestyle Applications.**
 _Rainer Wasinger, James Wallbank, Luiz Pizzato, Judy Kay, Bob Kummerfeld, Matthias Böhmr, and Antonio Krüg_
 Proceedings of the 21st International Conference on User Modeling, Adaptation and Personalization (UMAP 2013). Rome, Italy. June 10-14, 2013, Roma Tre University
-
-
+Proceedings of the 21st International Conference on User Modeling, Adaptation and Personalization (UMAP 2013). Rome, Italy. June 10-14, 2013, Roma Tre University
+[(Springer)](http://dx.doi.org/10.1007/978-3-642-38844-6_7)
 
 
 **The effect of suspicious profiles on people recommenders.**
