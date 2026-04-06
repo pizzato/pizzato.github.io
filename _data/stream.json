@@ -94,7 +94,7 @@
   {
     "type": "scholar",
     "title": "A Robust and Efficient Pipeline for Enterprise-Level Large-Scale Entity Resolution",
-    "url": "https://arxiv.org/pdf/2508.03767",
+    "url": "https://doi.ieeecomputersociety.org/10.1109/BigData66926.2025.11400814",
     "date": "2025-08-05",
     "source": "Scholar",
     "venue": "2025 IEEE International Conference on Big Data (IEEE BigData), 2025, pp. 2359–2368."
@@ -102,7 +102,7 @@
   {
     "type": "scholar",
     "title": "FeatureCuts: Feature Selection for Large Data by Optimizing the Cutoff",
-    "url": "https://arxiv.org/pdf/2508.00954",
+    "url": "https://doi.ieeecomputersociety.org/10.1109/BigData66926.2025.11402619",
     "date": "2025-08-01",
     "source": "Scholar",
     "venue": "2025 IEEE International Conference on Big Data (IEEE BigData), 2025, pp. 2308–2319."
@@ -185,7 +185,7 @@
     "url": "https://arxiv.org/pdf/2511.16846",
     "date": "2025-01-01",
     "source": "Scholar",
-    "venue": "arXiv preprint. November 2025. [PDF] arXiv"
+    "venue": "arXiv preprint. November 2025. [[PDF]](https://arxiv.org/pdf/2511.16846) [[arXiv]](https://arxiv.org/abs/2511.16846)"
   },
   {
     "type": "linkedin",
@@ -218,7 +218,7 @@
   {
     "type": "scholar",
     "title": "Do LLM Personas Dream of Bull Markets? Comparing Human and AI Investment Strategies Through the Lens of the Five-Factor Model",
-    "url": "https://openreview.net/pdf?id=b2lFzaGlan",
+    "url": "https://arxiv.org/pdf/2411.05801",
     "date": "2024-10-28",
     "source": "Scholar",
     "venue": "NeurIPS 2024 Workshop Open-World Agents"
@@ -450,7 +450,7 @@
     "url": "https://arxiv.org/pdf/2303.08016",
     "date": "2023-01-01",
     "source": "Scholar",
-    "venue": "arXiv e-prints. March 2023. [PDF] arXiv"
+    "venue": "arXiv e-prints. March 2023. [[PDF]](https://arxiv.org/pdf/2303.08016) [[arXiv]](https://arxiv.org/abs/2303.08016)"
   },
   {
     "type": "linkedin",
@@ -620,7 +620,7 @@
     "url": "https://link.springer.com/article/10.1007/s11280-021-00946-8",
     "date": "2021-01-01",
     "source": "Scholar",
-    "venue": "World Wide Web (2021). doi:10.1007/s11280-021-00946-8 Springer"
+    "venue": "World Wide Web (2021)."
   },
   {
     "type": "scholar",
@@ -628,7 +628,7 @@
     "url": "https://www.sciencedirect.com/science/article/pii/S1566253520304267",
     "date": "2021-01-01",
     "source": "Scholar",
-    "venue": "Information Fusion, Volume 69, 2021, Pages 103-127, ISSN 1566-2535, doi:10.1016/j.inffus.2020.12.001."
+    "venue": "Information Fusion, Volume 69, 2021, Pages 103-127, ISSN 1566-2535,"
   },
   {
     "type": "linkedin",
@@ -643,7 +643,7 @@
     "url": "https://ieeexplore.ieee.org/abstract/document/9284606",
     "date": "2020-01-01",
     "source": "Scholar",
-    "venue": "2020 IEEE International Conference on Services Computing (SCC), 2020, pp. 478-480, doi:10.1109/SCC49832.2020.00074."
+    "venue": "2020 IEEE International Conference on Services Computing (SCC), 2020, pp. 478-480,"
   },
   {
     "type": "scholar",
@@ -651,7 +651,7 @@
     "url": "https://doi.org/10.1007/s11257-019-09256-1",
     "date": "2020-01-01",
     "source": "Scholar",
-    "venue": "In User Modeling and User-Adapted Interaction (UMUAI). January 2020, Volume 30, Issue 1, pp 127-158 doi:10.1007/s11257-0"
+    "venue": "In User Modeling and User-Adapted Interaction (UMUAI). January 2020, Volume 30, Issue 1, pp 127-158 [[Springer]](https:/"
   },
   {
     "type": "scholar",
@@ -659,7 +659,7 @@
     "url": "https://arxiv.org/pdf/2007.16120v2",
     "date": "2020-01-01",
     "source": "Scholar",
-    "venue": "arXiv e-prints. Jul 2020. [PDF] arXiv"
+    "venue": "arXiv e-prints. Jul 2020. [[PDF]](https://arxiv.org/pdf/2007.16120v2) [[arXiv]](https://arxiv.org/abs/2007.16120)"
   },
   {
     "type": "linkedin",
@@ -751,7 +751,7 @@
     "url": "https://arxiv.org/pdf/1905.01986",
     "date": "2019-01-01",
     "source": "Scholar",
-    "venue": "arXiv e-prints. May 2019. [PDF] arXiv"
+    "venue": "arXiv e-prints. May 2019. [[PDF]](https://arxiv.org/pdf/1905.01986) [[arXiv]](https://arxiv.org/abs/1905.01986)"
   },
   {
     "type": "linkedin",
@@ -1025,7 +1025,15 @@
     "url": "http://dx.doi.org/10.1007/s11257-012-9125-0",
     "date": "2013-01-01",
     "source": "Scholar",
-    "venue": "User Modeling and User-Adapted Interaction (UMUAI). November 2013, Volume 23, Issue 5, pp 447-488 doi:10.1007/s11257-012"
+    "venue": "User Modeling and User-Adapted Interaction (UMUAI). November 2013, Volume 23, Issue 5, pp 447-488"
+  },
+  {
+    "type": "scholar",
+    "title": "Scrutable User Models and Personalised Item Recommendation in Mobile Lifestyle Applications.",
+    "url": "http://dx.doi.org/10.1007/978-3-642-38844-6_7",
+    "date": "2013-01-01",
+    "source": "Scholar",
+    "venue": "Proceedings of the 21st International Conference on User Modeling, Adaptation and Personalization (UMAP 2013). Rome, Ita"
   },
   {
     "type": "scholar",
@@ -1041,7 +1049,7 @@
     "url": "http://doi.ieeecomputersociety.org/10.1109/TLT.2012.5",
     "date": "2012-01-01",
     "source": "Scholar",
-    "venue": "IEEE Transactions on Learning Technologies, vol. 5, no. 3, pp. 251-263, Third Quarter 2012, doi:10.1109/TLT.2012.5"
+    "venue": "IEEE Transactions on Learning Technologies, vol. 5, no. 3, pp. 251-263, Third Quarter 2012"
   },
   {
     "type": "scholar",
@@ -1101,7 +1109,7 @@
   {
     "type": "scholar",
     "title": "Reciprocal Recommender System for Online Dating",
-    "url": "https://dl.acm.org/doi/10.1145/1864708.1864787?cid=81444607788",
+    "url": "https://dl.acm.org/doi/10.1145/1864708.1864787",
     "date": "2010-01-01",
     "source": "Scholar",
     "venue": "RecSys '10 (demonstration session): Proceedings of the Fourth ACM Conference on Recommender Systems. Barcelona, 26-30 Se"
