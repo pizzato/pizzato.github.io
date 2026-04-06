@@ -10,9 +10,10 @@ Usage:
   # Scrape ALL public 500px photos via their GraphQL API (no login, no API key):
   python scripts/scrape_photos.py --500px
 
-  # Process Instagram data export directory (download from Instagram Settings
-  # → Your activity → Download your information → select JSON format):
-  python scripts/scrape_photos.py --instagram /path/to/instagram-archive/
+  # Process Instagram data export — pass the posts_N.json file directly:
+  python scripts/scrape_photos.py --instagram ~/Downloads/instagram-archive/your_instagram_activity/media/posts_1.json
+  # Or pass the archive root directory and it will find all posts_*.json files:
+  python scripts/scrape_photos.py --instagram ~/Downloads/instagram-archive/
 
   # All automated sources at once:
   python scripts/scrape_photos.py --flickr --500px
@@ -21,13 +22,13 @@ Then rebuild photos.json:
   python scripts/fetch_photos.py
 
 Notes:
-  - Existing entries in photos_manual.yml are preserved; duplicates (same URL) skipped.
+  - Existing entries in photos_manual.yml are preserved; duplicates skipped.
   - Flickr: scrapes all paginated pages of the public photostream. No account needed.
   - 500px: uses their public GraphQL API (same one the website uses). No account or
     API key needed. Retrieves all public photos with pagination.
-  - Instagram: reads posts_N.json from the data archive download. ⚠ CDN image URLs
-    are NOT included in Instagram exports — only local file paths. Entries are written
-    with image: "" so you can fill them in, or leave them as link-only stream entries.
+  - Instagram: reads posts_N.json from the data archive download. Image files are
+    copied from the archive to assets/img/instagram/ and linked in the YAML.
+    Video files (.mp4) are skipped automatically.
 
 pip dependencies: requests PyYAML
 """
@@ -331,34 +332,69 @@ def scrape_500px():
 # Instagram archive parser
 # ---------------------------------------------------------------------------
 
-def parse_instagram(archive_dir):
+def parse_instagram(archive_path):
     """
-    Parse an Instagram data export directory (JSON format).
+    Parse an Instagram data export.
 
-    Download from: Instagram → Settings → Your activity →
-                   Download your information → Format: JSON → Request download
+    Accepts either:
+      - A direct path to a posts_N.json file (e.g. .../your_instagram_activity/media/posts_1.json)
+      - A directory — will search for content/posts_*.json or posts_*.json within it
 
-    ⚠ Instagram exports do NOT include CDN image URLs.
-      Entries are written with image: "" — fill these in manually,
-      or leave them as link-only stream items (no thumbnail in gallery).
+    Images are copied from the archive to assets/img/instagram/ inside the repo,
+    and the image field is set to the Jekyll-accessible relative path.
+    Videos (.mp4, .mov etc.) are skipped.
+
+    Download your archive from: Instagram → Settings → Your activity →
+                                 Download your information → Format: JSON
     """
     import glob
+    import shutil
 
     items = []
-    print(f"[Instagram] Reading archive: {archive_dir}")
+    archive_path = os.path.expanduser(archive_path)
+    print(f"[Instagram] Reading: {archive_path}")
 
-    if not os.path.isdir(archive_dir):
-        print(f"[Instagram] Not a directory: {archive_dir}")
+    # ── Determine list of JSON files and archive root ──────────────────────
+    if os.path.isfile(archive_path):
+        post_files = [archive_path]
+        # Locate archive root by searching upward for a media/posts/ directory
+        archive_root = None
+        candidate = os.path.dirname(archive_path)
+        for _ in range(6):
+            if os.path.isdir(os.path.join(candidate, "media", "posts")):
+                archive_root = candidate
+                break
+            parent = os.path.dirname(candidate)
+            if parent == candidate:
+                break
+            candidate = parent
+        if not archive_root:
+            # Fallback: assume archive root is 3 levels above the JSON file
+            archive_root = os.path.dirname(os.path.dirname(os.path.dirname(archive_path)))
+        print(f"[Instagram] Archive root: {archive_root}")
+
+    elif os.path.isdir(archive_path):
+        archive_root = archive_path
+        post_files = sorted(
+            glob.glob(os.path.join(archive_path, "content", "posts_*.json")) +
+            glob.glob(os.path.join(archive_path, "posts_*.json")) +
+            glob.glob(os.path.join(archive_path, "your_instagram_activity", "media", "posts_*.json"))
+        )
+    else:
+        print(f"[Instagram] Path not found: {archive_path}")
         return items
-
-    post_files = sorted(
-        glob.glob(os.path.join(archive_dir, "content", "posts_*.json")) +
-        glob.glob(os.path.join(archive_dir, "posts_*.json"))
-    )
 
     if not post_files:
-        print(f"[Instagram] No posts_*.json found under {archive_dir}/content/")
+        print(f"[Instagram] No posts_*.json found")
         return items
+
+    # ── Destination directory for copied images ────────────────────────────
+    dest_dir = os.path.join(REPO_ROOT, "assets", "img", "instagram")
+    os.makedirs(dest_dir, exist_ok=True)
+
+    VIDEO_EXTS = {".mp4", ".mov", ".avi", ".webm", ".m4v"}
+    copied = 0
+    missing = 0
 
     for pf in post_files:
         print(f"[Instagram] Reading {os.path.basename(pf)}")
@@ -377,7 +413,28 @@ def parse_instagram(archive_dir):
                 date_str = iso_date(int(ts))
                 title = (media.get("title") or post.get("title") or "").strip()
 
-                # Try to find an external post URL
+                # URI is relative to archive root, e.g. "media/posts/202307/photo.jpg"
+                uri = media.get("uri", "")
+                ext = os.path.splitext(uri)[1].lower()
+                is_video = ext in VIDEO_EXTS
+
+                # Copy media file from archive to repo
+                image_jekyll_path = ""
+                if uri and archive_root:
+                    src_path = os.path.join(archive_root, uri)
+                    if os.path.isfile(src_path):
+                        filename = os.path.basename(uri)
+                        dest_path = os.path.join(dest_dir, filename)
+                        if not os.path.exists(dest_path):
+                            shutil.copy2(src_path, dest_path)
+                            copied += 1
+                        image_jekyll_path = f"assets/img/instagram/{filename}"
+                    else:
+                        missing += 1
+                        if missing <= 5:
+                            print(f"  [Instagram] File not found: {src_path}")
+
+                # Try to extract an external post URL
                 post_url = ""
                 for key in ("cross_post_source", "media_metadata"):
                     src = media.get(key) or {}
@@ -389,19 +446,17 @@ def parse_instagram(archive_dir):
                 if not post_url:
                     post_url = f"https://www.instagram.com/{INSTAGRAM_USERNAME}/"
 
-                items.append({
-                    "source": "instagram",
-                    "title":  title,
-                    "url":    post_url,
-                    "image":  "",   # not available in export
-                    "date":   date_str,
-                })
+                entry = {
+                    "source":     "instagram",
+                    "title":      title,
+                    "url":        post_url,
+                    "image":      image_jekyll_path,
+                    "date":       date_str,
+                    "media_type": "video" if is_video else "photo",
+                }
+                items.append(entry)
 
-    print(f"[Instagram] {len(items)} posts parsed")
-    if items:
-        print("  ⚠  image: fields are empty — Instagram exports don't include CDN URLs.")
-        print("     Fill them in manually, or these entries will be skipped by the photo grid.")
-
+    print(f"[Instagram] {len(items)} photo posts parsed ({copied} images copied, {missing} not found)")
     return items
 
 
@@ -418,6 +473,7 @@ Examples:
   python scripts/scrape_photos.py --flickr
   python scripts/scrape_photos.py --500px
   python scripts/scrape_photos.py --flickr --500px
+  python scripts/scrape_photos.py --instagram ~/Downloads/instagram-archive/your_instagram_activity/media/posts_1.json
   python scripts/scrape_photos.py --instagram ~/Downloads/instagram-archive/
         """
     )
@@ -425,8 +481,8 @@ Examples:
                         help="Scrape all public Flickr photos (no API key needed)")
     parser.add_argument("--500px", action="store_true", dest="fivepx",
                         help="Scrape all public 500px photos via GraphQL API (no auth needed)")
-    parser.add_argument("--instagram", metavar="archive-dir/",
-                        help="Path to extracted Instagram data archive directory")
+    parser.add_argument("--instagram", metavar="path",
+                        help="Path to a posts_N.json file or to the Instagram archive root directory")
     args = parser.parse_args()
 
     if not args.flickr and not args.fivepx and not args.instagram:
@@ -450,13 +506,17 @@ Examples:
                 seen.add(item["url"])
 
     if args.instagram:
-        if not os.path.exists(args.instagram):
-            print(f"[Instagram] Path not found: {args.instagram}")
+        expanded = os.path.expanduser(args.instagram)
+        if not os.path.exists(expanded):
+            print(f"[Instagram] Path not found: {expanded}")
             sys.exit(1)
-        for item in parse_instagram(args.instagram):
-            if item["url"] not in seen:
+        for item in parse_instagram(expanded):
+            # Instagram entries often share the same fallback profile URL,
+            # so deduplicate by image filename instead of URL.
+            dedup_key = item.get("image") or f"instagram:{item.get('date')}:{item.get('title')}"
+            if dedup_key not in seen:
                 new_items.append(item)
-                seen.add(item["url"])
+                seen.add(dedup_key)
 
     if not new_items:
         print("\nNo new entries to add.")

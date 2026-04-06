@@ -75,14 +75,18 @@ layout: compress
         {% if site.data.photos and site.data.photos.size > 0 %}
         <div class="photo-grid">
           {% for photo in site.data.photos %}
-          <a class="photo-card" href="{{ photo.url }}" target="_blank" rel="noopener noreferrer"
+          <a class="photo-card{% if photo.media_type == 'video' %} photo-card--video{% endif %}" href="{{ photo.url }}" target="_blank" rel="noopener noreferrer"
              title="{{ photo.title }}">
-            <img src="{{ photo.image }}"
-                 alt="{{ photo.title }}"
-                 loading="lazy">
+            {% assign media_src = photo.image %}
+            {% unless photo.image contains '://' %}{% assign media_src = site.url | append: '/' | append: photo.image %}{% endunless %}
+            {% if photo.media_type == 'video' %}
+            <video src="{{ media_src }}" autoplay muted loop playsinline></video>
+            {% else %}
+            <img src="{{ media_src }}" alt="{{ photo.title }}" loading="lazy">
+            {% endif %}
             <div class="photo-overlay">
               <span class="photo-source-badge photo-source-badge--{{ photo.source }}">
-                {{ photo.source }}
+                {% if photo.media_type == 'video' %}<i class="fa-solid fa-play" style="font-size:9px;margin-right:3px"></i>{% endif %}{{ photo.source }}
               </span>
               {% if photo.title and photo.title != "" %}
               <span class="photo-title">{{ photo.title }}</span>

@@ -196,13 +196,16 @@ def fetch_manual():
             if not d or not e.get("image") or not e.get("url"):
                 skipped += 1
                 continue
-            items.append({
-                "source": e.get("source", "instagram"),
-                "title":  e.get("title") or "",
-                "url":    e["url"],
-                "image":  e["image"],
-                "date":   d,
-            })
+            item = {
+                "source":     e.get("source", "instagram"),
+                "title":      e.get("title") or "",
+                "url":        e["url"],
+                "image":      e["image"],
+                "date":       d,
+            }
+            if e.get("media_type"):
+                item["media_type"] = e["media_type"]
+            items.append(item)
         print(f"[Manual] {len(items)} entries ({skipped} skipped — no image URL)")
     except Exception as e:
         print(f"[Manual] Error: {e}")
@@ -222,13 +225,14 @@ def main():
     # Filter items without required fields
     all_items = [i for i in all_items if i.get("image") and i.get("url") and i.get("date")]
 
-    # Deduplicate by URL (manual/scraped entries take priority over live feed)
-    seen_urls = set()
+    # Deduplicate: prefer image path as key (handles Instagram where all entries
+    # share the same profile fallback URL); fall back to URL for other sources.
+    seen_keys = set()
     deduped = []
     for item in all_items:
-        u = item["url"]
-        if u not in seen_urls:
-            seen_urls.add(u)
+        key = item.get("image") or item["url"]
+        if key not in seen_keys:
+            seen_keys.add(key)
             deduped.append(item)
     all_items = deduped
 
