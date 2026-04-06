@@ -142,7 +142,7 @@ doi:10.1145/3523227.3547388 [ACM (Open Access)](https://dl.acm.org/doi/10.1145/3
 **Fair-SRS: A Fair Session-based Recommendation System**
 _Naime Ranjbar Kermany, Jian Yang, Jia Wu, and Luiz Pizzato_ 
 Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining (WSDM '22). Association for Computing Machinery, New York, NY, USA, 1601–1604. 
-doi:10.1145/3488560.3502191 [ACM (Open Access)](https://dl.acm.org/doi/10.1145/3488560.3502191?cid=81444607788)
+[(ACM)](https://dl.acm.org/doi/10.1145/3488560.3502191)
 
 
 **A fairness-aware multi-stakeholder recommender system**
