@@ -92,9 +92,11 @@ def existing_urls(entries):
 
 
 def first_line(text, max_chars=120):
-    """Return the first non-empty line of text, truncated to max_chars."""
+    """Return the first non-empty line of text, truncated to max_chars.
+    Trailing quote characters are stripped (LinkedIn posts often end a
+    quoted block with a lone closing quotation mark)."""
     for line in text.splitlines():
-        line = line.strip()
+        line = line.strip().rstrip('"').rstrip()
         if line:
             return line[:max_chars] + ("…" if len(line) > max_chars else "")
     return text.strip()[:max_chars]

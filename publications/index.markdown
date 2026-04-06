@@ -39,19 +39,19 @@ I have published over 50 publications with over 1,600 citations (h-index 19). Fo
 Inventors: _Dan Jermyn, Luiz Pizzato, Anna Leontjeva, Kaavya Sriskandaraja, Sandeepa Kannangara, Jack Elliott_ 
 Applicant: _Commonwealth Bank of Australia_ 
 Provisional Australian Patent Filled on 27 June 2024 
-[(IP Australia)](https://ipsearch.ipaustralia.gov.au/patents/2024901967)
+[[IP Australia]](https://ipsearch.ipaustralia.gov.au/patents/2024901967) [[Google Patents]](https://patents.google.com/patent/AU2024901967)
 
 **A vector embedder for non-natural language data** 
 Inventors: _Dan Jermyn, Luiz Pizzato, Anna Leontjeva, Naomi Ranjbar Kermany, Patrick Songco, Jack Elliott_ 
 Applicant: _Commonwealth Bank of Australia_ 
 Australian Patent Filled on 28 Mar 2024 
-[(IP Australia)](https://ipsearch.ipaustralia.gov.au/patents/2024202048)
+[[IP Australia]](https://ipsearch.ipaustralia.gov.au/patents/2024202048)
 
 **Cryptographic datashare control for blockchain**
 Inventors: _David Treat, John Velissarios, Teresa Tung, Luiz Pizzato, Deborah Garand, Atieh Ranjbar Kermany, Chia Jung Chang, and Arjun Sitaraman Krishnan_.
 Applicant: _Accenture Global Solutions Limited_
 United States Patent No 10,721,217. 21 July 2020
-[(USPTO)](https://pdfpiw.uspto.gov/.piw?Docid=10721217)
+[[Google Patents]](https://patents.google.com/patent/US10721217)
 
 
 ## Edited
@@ -60,13 +60,13 @@ United States Patent No 10,721,217. 21 July 2020
 **RecSys '23: Proceedings of the 17th ACM Conference on Recommender Systems**
 Editors: _Jie Zhang, Li Chen, Shlomo Berkovsky, Min Zhang, Tommaso di Noia, Justin Basilico, Luiz Pizzato, Yang Song_
 Singapore, September 18-22, 2023. ISBN: 979-8-4007-0241-9
-[(ACM)](https://dl.acm.org/doi/proceedings/10.1145/3604915#)
+[[ACM]](https://dl.acm.org/doi/proceedings/10.1145/3604915)
 
 
 **Proceedings of the Second Workshop on Community Mining and People Recommenders**
 Edited by: _Jaakko Hollmén, Panagiotis Papapetrou and Luiz Augusto Pizzato_
 ECML/PKDD 2012, Bristol, UK, September 28, 2012
-[(PDF)](http://sydney.edu.au/engineering/it/~pizzato/publications/pdf/COMMPER2012.pdf)
+[[Web]](https://research.ics.aalto.fi/events/commper2012/index.html) [[PDF]](https://research.ics.aalto.fi/events/commper2012/COMMPER2012.pdf)
 
 
 
@@ -74,7 +74,7 @@ ECML/PKDD 2012, Bristol, UK, September 28, 2012
 **Proceedings of the 1st International Workshop on TV and multimedia personalization (TVM²P 2012)**
 Edited by: _Shlomo Berkovsky and Luiz Pizzato_
 UMAP 2012, Montreal, Canada, July 16, 2012
-[(CEUR-WS)](http://ceur-ws.org/Vol-872/#tvm2p2012)
+[[CEUR-WS]](http://ceur-ws.org/Vol-872/#tvm2p2012)
 
 
 
@@ -82,7 +82,7 @@ UMAP 2012, Montreal, Canada, July 16, 2012
 **Proceedings of the First Workshop on Community Mining and People Recommenders**
 Edited by: _Panagiotis Papapetrou, Luiz Augusto Pizzato, Aristides Gioni, Xiongcai Cai_
 IEEE ICDM 2011, Vancouver, Canada, 2011
-[(IEEE)](http://doi.ieeecomputersociety.org/10.1109/ICDMW.2011.192) [(Bib)](http://www.computer.org/plugins/dl/citation/abs/bibtex/description/doi/10.1109/ICDMW.2011.192.bib)
+[[IEEE]](http://doi.ieeecomputersociety.org/10.1109/ICDMW.2011.192)
 
 
 
@@ -90,7 +90,7 @@ IEEE ICDM 2011, Vancouver, Canada, 2011
 **Proceedings of the Australasian Language Technology Association Workshop 2009**
 Edited by: _Luiz Pizzato and Rolf Schwitter_
 Sydney, Australia, 2009
-[(PDF)](http://sydney.edu.au/engineering/it/~pizzato/publications/pdf/ALTA2009.pdf) [(ALTA)](http://www.alta.asn.au/events/alta2009/ALTA2009.pdf) [(HTML)](http://www.alta.asn.au/events/alta2009/alta-2009-proceedings.html) [(Bib)](http://www.alta.asn.au/events/alta2009/bib/ALTA2009_FrontMatter.bib)
+[[ACL Anthology]](https://aclanthology.org/volumes/U09-1/) [[PDF]](https://aclanthology.org/U09-1.pdf)
 
 
 
@@ -105,76 +105,77 @@ Sydney, Australia, 2009
 _Arshnoor Kaur, Amanda Aird, Harris Borman, Andrea Nicastro, Anna Leontjeva, Luiz Pizzato, and Dan Jermyn_
 Proceedings of the 33rd ACM Conference on User Modeling, Adaptation and Personalization (UMAP ‘25).
 Association for Computing Machinery, New York, NY, USA, 185–193.
-[(ACM)](https://doi.org/10.1145/3699682.3728339) 🏆 [Best Paper Award](https://www.um.org/awards/best-paper-awards)
+[[ACM]](https://doi.org/10.1145/3699682.3728339) 🏆 [Best Paper Award](https://um.org/awards/best-paper-awards)
 
 
 **FeatureCuts: Feature Selection for Large Data by Optimizing the Cutoff**
 _Andy Hu, Devika Prasad, Luiz Pizzato, Nicholas Foord, Arman Abrahamyan, Anna Leontjeva, Cooper Doyle, Dan Jermyn_
 2025 IEEE International Conference on Big Data (IEEE BigData), 2025, pp. 2308–2319.
-[[PDF](https://arxiv.org/pdf/2508.00954)] [arXiv](https://arxiv.org/abs/2508.00954)
+[[IEEE]](https://doi.ieeecomputersociety.org/10.1109/BigData66926.2025.11402619) [[PDF]](https://arxiv.org/pdf/2508.00954) [[arXiv]](https://arxiv.org/abs/2508.00954)
 
 
 **A Robust and Efficient Pipeline for Enterprise-Level Large-Scale Entity Resolution**
 _Sandeepa Kannangara, Arman Abrahamyan, Daniel Elias, Thomas Kilby, Nadav Dar, Luiz Pizzato, Anna Leontjeva, Dan Jermyn_
 2025 IEEE International Conference on Big Data (IEEE BigData), 2025, pp. 2359–2368.
-[[PDF](https://arxiv.org/pdf/2508.03767)] [arXiv](https://arxiv.org/abs/2508.03767)
+[[IEEE]](https://doi.ieeecomputersociety.org/10.1109/BigData66926.2025.11400814) [[PDF]](https://arxiv.org/pdf/2508.03767) [[arXiv]](https://arxiv.org/abs/2508.03767)
 
 
 **Do LLM Personas Dream of Bull Markets? Comparing Human and AI Investment Strategies Through the Lens of the Five-Factor Model**
 _H Borman, A Leontjeva, L Pizzato, MK Jiang, D Jermyn_
 NeurIPS 2024 Workshop Open-World Agents
-[(PDF)](https://openreview.net/pdf?id=b2lFzaGlan) [(arXiv)](https://arxiv.org/abs/2411.05801) [[PDF](https://arxiv.org/pdf/2411.05801)]
+[[PDF]](https://arxiv.org/pdf/2411.05801) [[arXiv]](https://arxiv.org/abs/2411.05801) [[OpenReview]](https://openreview.net/pdf?id=b2lFzaGlan)
 
 
 **PD-SRS: Personalized Diversity for a Fair Session-Based Recommendation System**
 _Naime Ranjbar Kermany, Luiz Pizzato, Jian Yang, Shan Xue, Jia Wu_
-Service-Oriented Computing. ICSOC 2022. Lecture Notes in Computer Science, vol 13740. Springer, Cham. 
-doi:10.1007/978-3-031-20984-0_23 [Springer](https://doi.org/10.1007/978-3-031-20984-0_23)
+Service-Oriented Computing. ICSOC 2022. Lecture Notes in Computer Science, vol 13740. Springer, Cham.
+[[Springer]](https://doi.org/10.1007/978-3-031-20984-0_23)
 
 
 
 **A Multi-Stakeholder Recommender System for Rewards Recommendations**
 _Naime Ranjbar Kermany, Luiz Pizzato, Thireindar Min, Callum Scott, and Anna Leontjeva_
 Proceedings of the 16th ACM Conference on Recommender Systems (RecSys '22). Association for Computing Machinery, New York, NY, USA, 484–487. 
-doi:10.1145/3523227.3547388 [ACM (Open Access)](https://dl.acm.org/doi/10.1145/3523227.3547388?cid=81444607788)
+[[ACM]](https://dl.acm.org/doi/10.1145/3523227.3547388)
 
 
 **Fair-SRS: A Fair Session-based Recommendation System**
 _Naime Ranjbar Kermany, Jian Yang, Jia Wu, and Luiz Pizzato_ 
 Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining (WSDM '22). Association for Computing Machinery, New York, NY, USA, 1601–1604. 
-doi:10.1145/3488560.3502191 [ACM (Open Access)](https://dl.acm.org/doi/10.1145/3488560.3502191?cid=81444607788)
+[[ACM]](https://dl.acm.org/doi/10.1145/3488560.3502191)
 
 
 **A fairness-aware multi-stakeholder recommender system**
 _Naime Ranjbar Kermany, Weiliang Zhao, Jian Yang, Jia Wu, Luiz Pizzato_
-World Wide Web (2021). doi:10.1007/s11280-021-00946-8 [Springer](https://link.springer.com/article/10.1007/s11280-021-00946-8)
+World Wide Web (2021).
+[[Springer]](https://link.springer.com/article/10.1007/s11280-021-00946-8)
 
 
 
 **Reciprocal Recommender Systems: Analysis of state-of-art literature, challenges and opportunities towards social recommendation**
 _Iván Palomares, Carlos Porcel, Luiz Pizzato, Ido Guy, and Enrique Herrera-Viedma_
-Information Fusion, Volume 69, 2021, Pages 103-127, ISSN 1566-2535, doi:10.1016/j.inffus.2020.12.001.
-[(ScienceDirect)](https://www.sciencedirect.com/science/article/pii/S1566253520304267)
+Information Fusion, Volume 69, 2021, Pages 103-127, ISSN 1566-2535, 
+[[ScienceDirect]](https://www.sciencedirect.com/science/article/pii/S1566253520304267)
 
 
 
 **An Ethical Multi-Stakeholder Recommender System Based on Evolutionary Multi-Objective Optimization**
 _N. R. Kermany, W. Zhao, J. Yang, J. Wu and L. Pizzato_
-2020 IEEE International Conference on Services Computing (SCC), 2020, pp. 478-480, doi:10.1109/SCC49832.2020.00074.
-[(IEEE)](https://ieeexplore.ieee.org/abstract/document/9284606)
+2020 IEEE International Conference on Services Computing (SCC), 2020, pp. 478-480, 
+[[IEEE]](https://ieeexplore.ieee.org/abstract/document/9284606)
 
 
 
 **Multistakeholder recommendation: Survey and research directions.**
 _Himan Abdollahpouri, Gediminas Adomavicius, Robin Burke, Ido Guy, Dietmar Jannach, Toshihiro Kamishima, Jan Krasnodebski, and Luiz Pizzato_. 
-In User Modeling and User-Adapted Interaction (UMUAI). January 2020, Volume 30, Issue 1, pp 127-158 doi:10.1007/s11257-019-09256-1 [(Springer)](https://doi.org/10.1007/s11257-019-09256-1)
+In User Modeling and User-Adapted Interaction (UMUAI). January 2020, Volume 30, Issue 1, pp 127-158 [[Springer]](https://doi.org/10.1007/s11257-019-09256-1)
 
 
 
 **Recommending people to people: The nature of reciprocal recommenders with a case study in online dating.**
 _Luiz Augusto Pizzato, Tomasz Rej, Joshua Akehurst, Irena Koprinska, Kalina Yacef, and Judy Kay_
-User Modeling and User-Adapted Interaction (UMUAI). November 2013, Volume 23, Issue 5, pp 447-488 doi:10.1007/s11257-012-9125-0
-[(Springer)](http://dx.doi.org/10.1007/s11257-012-9125-0) 
+User Modeling and User-Adapted Interaction (UMUAI). November 2013, Volume 23, Issue 5, pp 447-488
+[[Springer]](http://dx.doi.org/10.1007/s11257-012-9125-0) 
 
 
 
@@ -182,30 +183,30 @@ User Modeling and User-Adapted Interaction (UMUAI). November 2013, Volume 23, Is
 **Scrutable User Models and Personalised Item Recommendation in Mobile Lifestyle Applications.**
 _Rainer Wasinger, James Wallbank, Luiz Pizzato, Judy Kay, Bob Kummerfeld, Matthias Böhmr, and Antonio Krüg_
 Proceedings of the 21st International Conference on User Modeling, Adaptation and Personalization (UMAP 2013). Rome, Italy. June 10-14, 2013, Roma Tre University
-
-
+Proceedings of the 21st International Conference on User Modeling, Adaptation and Personalization (UMAP 2013). Rome, Italy. June 10-14, 2013, Roma Tre University
+[[Springer]](http://dx.doi.org/10.1007/978-3-642-38844-6_7)
 
 
 **The effect of suspicious profiles on people recommenders.**
 _Luiz Augusto Pizzato, Joshua Akehurst, Cameron Silvestrini, Irena Koprinska, Kalina Yacef, and Judy Kay_
 Proceedings of the 20th International Conference on User Modeling, Adaptation and Personalization (UMAP 2012). Montreal, Canada. 16-20 July 2012. LNCS 7379, pp. 225--236. Springer, Heidelberg (2012)
-[(Springer)](http://dx.doi.org/10.1007/978-3-642-31454-4_19) 
+[[Springer]](http://dx.doi.org/10.1007/978-3-642-31454-4_19) 
 
 
 
 
 **Using Wikipedia and Conceptual Graph Structures to Generate Questions for Academic Writing Support.**
 _Ming Liu, Rafael A. Calvo, Anindito Aditomo, and Luiz Augusto Pizzato_
-IEEE Transactions on Learning Technologies, vol. 5, no. 3, pp. 251-263, Third Quarter 2012, doi:10.1109/TLT.2012.5
-[(IEEE)](http://doi.ieeecomputersociety.org/10.1109/TLT.2012.5) [(Bib)](http://www.computer.org/plugins/dl/citation/abs/bibtex/description/doi/10.1109/TLT.2012.5.bib)
+IEEE Transactions on Learning Technologies, vol. 5, no. 3, pp. 251-263, Third Quarter 2012
+[[IEEE]](http://doi.ieeecomputersociety.org/10.1109/TLT.2012.5)
 
 
 
 
 **Explicit and implicit user preferences in online dating.**
 _Joshua Akehurst, Irena Koprinska, Kalina Yacef, Luiz Pizzato, Judy Kay, and Tomasz Rej_
-New Frontiers in Applied Data Mining, volume 7104 of Lecture Notes in Computer Science, pages 15–27. Springer Berlin / Heidelberg, 2012. ISBN 978-3-642-28319-2. doi:10.1007/978-3-642-28320-8_2.
-[(Springer)](http://dx.doi.org/10.1007/978-3-642-28320-8_2) 
+New Frontiers in Applied Data Mining, volume 7104 of Lecture Notes in Computer Science, pages 15–27. Springer Berlin / Heidelberg, 2012. ISBN 978-3-642-28319-2.
+[[Springer]](http://dx.doi.org/10.1007/978-3-642-28320-8_2) 
 
 
 
@@ -213,7 +214,7 @@ New Frontiers in Applied Data Mining, volume 7104 of Lecture Notes in Computer S
 **Stochastic Matching and Collaborative Filtering to Recommend People to People**
 _Luiz Augusto Pizzato, and Cameron Silvestrini_
 RecSys '11: Proceedings of the Fifth ACM Conference on Recommender Systems. Chicago, 23-27 October 2011
-[(PDF)](http://dl.acm.org/authorize?62534) [(ACM)](http://doi.acm.org/10.1145/2043932.2043998) \[[ACM Open Access](https://dl.acm.org/doi/10.1145/2043932.2043998?cid=81444607788)\] 
+[[ACM]](https://doi.org/10.1145/2043932.2043998)
 
 
 
@@ -221,7 +222,7 @@ RecSys '11: Proceedings of the Fifth ACM Conference on Recommender Systems. Chic
 **CCR - A Content-Collaborative Reciprocal Recommender for Online Dating**
 _Joshua Akehurst, Irena Koprinska, Kalina Yacef, Luiz Pizzato, Judy Kay, and Tomasz Rej_
 Proceedings of the 22nd International Joint Conference on Artificial Intelligence (IJCAI 2011). Barcelona, Spain. 16-22 July 2011
-[(IJCAI)](http://ijcai.org/papers11/Papers/IJCAI11-367.pdf)
+[[IJCAI]](http://ijcai.org/papers11/Papers/IJCAI11-367.pdf)
 
 
 
@@ -229,7 +230,7 @@ Proceedings of the 22nd International Joint Conference on Artificial Intelligenc
 **Finding someone you will like and who won't reject you.**
 _Luiz Pizzato, Tomasz Rej, Kalina Yacef, Irena Koprinska and Judy Kay_
 Proceedings of the 19th International Conference on User Modeling, Adaptation and Personalization (UMAP 2011). Girona, Spain. 11-15 July 2011. LNCS 6787, pp. 269--280. Springer, Heidelberg (2012)
-[(Springer)](http://dx.doi.org/10.1007/978-3-642-22362-4_23) 
+[[Springer]](http://dx.doi.org/10.1007/978-3-642-22362-4_23) 
 
 
 
@@ -237,15 +238,15 @@ Proceedings of the 19th International Conference on User Modeling, Adaptation an
 **Learning User Preferences in Online Dating.**
 _Luiz Pizzato, Thomas Chung, Tomasz Rej, Kalina Yacef, Irena Koprinska and Judy Kay_
 Proceedings of the Workshop on Preference Learning (PL-10) at the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD). Barcelona, Spain. 24 September 2010
-[(PL10)](http://www.ke.tu-darmstadt.de/events/PL-10/papers/8-Pizzato.pdf) 
-
+Proceedings of the Workshop on Preference Learning (PL-10) at the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD). Barcelona, Spain. 24 September 2010
+[[Workshop]](https://web.archive.org/web/20151130092112/https://www.ke.tu-darmstadt.de/events/PL-10/) [[PDF]]({{ site.url }}/assets/pdf/papers/ECML-PKDD-PL-10-8-Pizzato.pdf)
 
 
 
 **RECON: A Reciprocal Recommender for Online Dating.**
 _Luiz Pizzato, Tomek Rej, Thomas Chung, Irena Koprinska and Judy Kay_
 RecSys '10: Proceedings of the Fourth ACM Conference on Recommender Systems. Barcelona, 26-30 September 2010
-[(ACM)](http://doi.acm.org/10.1145/1864708.1864747) \[[ACM Open Access](https://dl.acm.org/doi/10.1145/1864708.1864747?cid=81444607788)\] [(PDF)](http://dl.acm.org/authorize?N82406) 
+[[ACM]](https://doi.org/10.1145/1864708.1864747)
 
 
 
@@ -253,7 +254,7 @@ RecSys '10: Proceedings of the Fourth ACM Conference on Recommender Systems. Bar
 **Reciprocal Recommender System for Online Dating**
 _Luiz Pizzato, Tomek Rej, Thomas Chung, Irena Koprinska and Judy Kay_
 RecSys '10 (demonstration session): Proceedings of the Fourth ACM Conference on Recommender Systems. Barcelona, 26-30 September 2010
-[(ACM (Open Access))](https://dl.acm.org/doi/10.1145/1864708.1864787?cid=81444607788) 
+[[ACM]](https://dl.acm.org/doi/10.1145/1864708.1864787) 
 
 
 
@@ -261,15 +262,15 @@ RecSys '10 (demonstration session): Proceedings of the Fourth ACM Conference on 
 **Reciprocal Recommenders.**
 _Luiz Pizzato, Tomek Rej, Thomas Chung, Kalina Yacef, Irena Koprinska and Judy Kay_
 Proceedings of the Workshop on Intelligent Techniques for Web Personalization & Recommender Systems (ITWP'10) at User Modeling, Adaptation and Personalization (UMAP 2010), Big Island of Hawaii. 2010.
-[(ITWP)](http://ls13-www.cs.uni-dortmund.de/homepage/ITWP2010/papers/ReciprocalRecommender.pdf)
-
+Proceedings of the Workshop on Intelligent Techniques for Web Personalization & Recommender Systems (ITWP'10) at User Modeling, Adaptation and Personalization (UMAP 2010), Big Island of Hawaii. 2010.
+[[Workshop]](https://web.archive.org/web/20120328082339/http://ls13-www.cs.uni-dortmund.de/homepage/ITWP2010/index.shtml) [[PDF]]({{ site.url }}/assets/pdf/papers/UMAP2010-ITWP-Pizzato-ReciprocalRecommender.pdf)
 
 
 
 **Indexing on Semantic Roles for Question Answering.**
 _Luiz Pizzato and Diego Molla_
 Proceedings of the Coling 2008 Workshop Information Retrieval for Question Answering (IR4QA-08). Manchester, August, 2008
-[(PDF)](https://aclanthology.org/W08-0705.pdf) [(Bib)](http://www.aclweb.org/anthology-new/W/W08/W08-1810.bib)
+[[ACL]](https://aclanthology.org/W08-1810/) [[PDF]](https://aclanthology.org/W08-1810.pdf)
 
 
 
@@ -277,7 +278,7 @@ Proceedings of the Coling 2008 Workshop Information Retrieval for Question Answe
 **Question Prediction Language Model.**
 _Luiz Pizzato and Diego Molla_
 Proceedings Australasian Language Technology Workshop 2007, Melbourne, December 2007.
-[(ALTA)](http://www.alta.asn.au/events/altw2007/cdrom/pdf/ALTA2007_14.pdf) [(PDF)](https://aclanthology.org/U07-1016.pdf)
+[[ACL]](https://aclanthology.org/U07-1014/) [[PDF]](https://aclanthology.org/U07-1014.pdf)
 
 
 
@@ -293,7 +294,7 @@ The Fifteenth Text REtrieval Conference (TREC 2006)
 **Pseudo Relevance Feedback Using Named Entities for Question Answering.**
 _Luiz Pizzato, Diego Molla and Cecile Paris_
 In Proceedings of the Australasian Language Technology Workshop 2006. Sydney University, November 2006.
-[(PDF)](https://aclanthology.org/U06-1012.pdf)
+[[PDF]](https://aclanthology.org/U06-1012.pdf)
 
 
 
@@ -301,7 +302,7 @@ In Proceedings of the Australasian Language Technology Workshop 2006. Sydney Uni
 **Extracting Exact Answers using a Meta Question Answering System.**
 _Luiz Pizzato and Diego Molla_
 Proceedings of the Australasian Language Technology Workshop 2005. The University of Sydney, Australia, December 10-11, 2005
-[(PDF)](https://aclanthology.org/U05-1014.pdf)
+[[PDF]](https://aclanthology.org/U05-1014.pdf)
 
 
 
@@ -309,7 +310,7 @@ Proceedings of the Australasian Language Technology Workshop 2005. The Universit
 **Classifying Sentences using Induced Structure.**
 _Menno van Zaanen, Luiz Pizzato and Diego Molla_
 Proceedings of the Twelfth Symposium on String Processing and Information Retrieval (SPIRE-2005). Buenos Aires, Argentina, 2-4 November 2005.
-[(Springer)](http://dx.doi.org/10.1007/11575832_15) 
+[[Springer]](http://dx.doi.org/10.1007/11575832_15) 
 
 
 
@@ -324,7 +325,7 @@ Proceedings of the Nineteenth International Joint Conference on Artificial Intel
 **Using a Trie-based Structure for Question Analysis.**
 _Luiz Pizzato_
 Proceedings of the Australasian Language Technology Workshop 2004. Macquarie University, Sydney, Australia, December 8, 2004. pp. 25-31. Published by ASSTA.
-[(PDF)](https://aclanthology.org/U04-1005.pdf)
+[[PDF]](https://aclanthology.org/U04-1005.pdf)
 
 
 
@@ -339,14 +340,14 @@ Presented at the 2004 IEEE/WIC/ACM International Conference on Web Intelligence 
 **Evaluation of a Thesaurus-Based Query Expansion Technique.**
 _Luiz Pizzato and Vera Lúcia Strube de Lima_
 Proceedings of the 6th Workshop on Computational Processing of the Portuguese Language - Written and Spoken. Lecture Notes in Computer Science. Universidade do Algarve-FCHS, Faro, Portugal. June 26-27, 2003. Springer-Verlag, 2003.
-[(Springer)](http://dx.doi.org/10.1007/3-540-45011-4_39)
+[[Springer]](http://dx.doi.org/10.1007/3-540-45011-4_39)
 
 
 
 **Query Expansion Based on Thesaurus Relations: Evaluation over Internet.**
 _Luiz Pizzato and Vera Lúcia Strube de Lima_
 Computational Linguistics and Intelligent Text Processing, Lecture Notes in Computer Science. Vol. 2588. ISBN 3-540-00532-3. Springer-Verlag, 2003. pp, 553-556.
-[(Springer)](http://dx.doi.org/10.1007/3-540-36456-0_59) 
+[[Springer]](http://dx.doi.org/10.1007/3-540-36456-0_59) 
 
 
 
@@ -395,19 +396,19 @@ Supervised Profa. Vera Lúcia Strube de Lima Defended on: 8th January 2003 Exami
 
 **ConCISE: A Reference-Free Conciseness Evaluation Metric for LLM-Generated Answers**
 _Seyed Mohssen Ghafari, Ronny Kol, Juan C. Quiroz, Nella Luan, Monika Patial, Chanaka Rupasinghe, Herman Wandabwa, Luiz Pizzato_
-arXiv preprint. November 2025. [[PDF](https://arxiv.org/pdf/2511.16846)] [arXiv](https://arxiv.org/abs/2511.16846)
+arXiv preprint. November 2025. [[PDF]](https://arxiv.org/pdf/2511.16846) [[arXiv]](https://arxiv.org/abs/2511.16846)
 
 
 **Detection of Abuse in Financial Transaction Descriptions Using Machine Learning.**
 _Anna Leontjeva and Genevieve Richards and Kaavya Sriskandaraja and Jessica Perchman and Luiz Pizzato_
-arXiv e-prints. March 2023. [[PDF](https://arxiv.org/pdf/2303.08016)] [arXiv](https://arxiv.org/abs/2303.08016)
+arXiv e-prints. March 2023. [[PDF]](https://arxiv.org/pdf/2303.08016) [[arXiv]](https://arxiv.org/abs/2303.08016)
 
 
 **Reciprocal Recommender Systems: Analysis of State-of-Art Literature, Challenges and Opportunities towards Social Recommendation**
 _Ivan Palomares and Carlos Porcel and Luiz Pizzato and Ido Guy and Enrique Herrera-Viedma_
-arXiv e-prints. Jul 2020. [[PDF](https://arxiv.org/pdf/2007.16120)] [arXiv](https://arxiv.org/abs/2007.16120)
+arXiv e-prints. Jul 2020. [[PDF]](https://arxiv.org/pdf/2007.16120v2) [[arXiv]](https://arxiv.org/abs/2007.16120)
 
 
 **Beyond Personalization: Research Directions in Multistakeholder Recommendation.**
 _Himan Abdollahpouri, Gediminas Adomavicius, Robin Burke, Ido Guy, Dietmar Jannach, Toshihiro Kamishima, Jan Krasnodebski, and Luiz Pizzato_. 
-arXiv e-prints. May 2019. [[PDF](https://arxiv.org/pdf/1905.01986)] [arXiv](https://arxiv.org/abs/1905.01986)
+arXiv e-prints. May 2019. [[PDF]](https://arxiv.org/pdf/1905.01986) [[arXiv]](https://arxiv.org/abs/1905.01986)
