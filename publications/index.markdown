@@ -90,7 +90,7 @@ IEEE ICDM 2011, Vancouver, Canada, 2011
 **Proceedings of the Australasian Language Technology Association Workshop 2009**
 Edited by: _Luiz Pizzato and Rolf Schwitter_
 Sydney, Australia, 2009
-[(HTML)](http://www.alta.asn.au/events/alta2009/alta-2009-proceedings.html) [(Bib)](http://www.alta.asn.au/events/alta2009/bib/ALTA2009_FrontMatter.bib)
+[(ACL Anthology)](https://aclanthology.org/volumes/U09-1/) [(PDF)](https://aclanthology.org/U09-1.pdf)
 
 
 
