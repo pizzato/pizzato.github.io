@@ -111,7 +111,7 @@ Association for Computing Machinery, New York, NY, USA, 185–193.
 **FeatureCuts: Feature Selection for Large Data by Optimizing the Cutoff**
 _Andy Hu, Devika Prasad, Luiz Pizzato, Nicholas Foord, Arman Abrahamyan, Anna Leontjeva, Cooper Doyle, Dan Jermyn_
 2025 IEEE International Conference on Big Data (IEEE BigData), 2025, pp. 2308–2319.
-[[IEEE]](https://www.computer.org/csdl/proceedings-article/bigdata/2025/11402619/2eDtlWjTZkY) [[PDF]](https://arxiv.org/pdf/2508.00954) [[arXiv]](https://arxiv.org/abs/2508.00954)
+[[IEEE]](https://www.computer.org/csdl/proceedings-article/bigdata/2025/11402619/2eDtlWjTZkY) [[DOI]](https://doi.ieeecomputersociety.org/10.1109/BigData66926.2025.11402619) [[PDF]](https://arxiv.org/pdf/2508.00954) [[arXiv]](https://arxiv.org/abs/2508.00954)
 
 
 **A Robust and Efficient Pipeline for Enterprise-Level Large-Scale Entity Resolution**
