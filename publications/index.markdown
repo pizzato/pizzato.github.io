@@ -136,7 +136,7 @@ doi:10.1007/978-3-031-20984-0_23 [Springer](https://doi.org/10.1007/978-3-031-20
 **A Multi-Stakeholder Recommender System for Rewards Recommendations**
 _Naime Ranjbar Kermany, Luiz Pizzato, Thireindar Min, Callum Scott, and Anna Leontjeva_
 Proceedings of the 16th ACM Conference on Recommender Systems (RecSys '22). Association for Computing Machinery, New York, NY, USA, 484–487. 
-doi:10.1145/3523227.3547388 [ACM (Open Access)](https://dl.acm.org/doi/10.1145/3523227.3547388?cid=81444607788)
+[(ACM)](https://dl.acm.org/doi/10.1145/3523227.3547388)
 
 
 **Fair-SRS: A Fair Session-based Recommendation System**
