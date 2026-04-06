@@ -1084,6 +1084,14 @@
   },
   {
     "type": "scholar",
+    "title": "Learning User Preferences in Online Dating.",
+    "url": "https://web.archive.org/web/20151130092112/https://www.ke.tu-darmstadt.de/events/PL-10/",
+    "date": "2010-01-01",
+    "source": "Scholar",
+    "venue": "Proceedings of the Workshop on Preference Learning (PL-10) at the European Conference on Machine Learning and Principles"
+  },
+  {
+    "type": "scholar",
     "title": "RECON: A Reciprocal Recommender for Online Dating.",
     "url": "https://doi.org/10.1145/1864708.1864747",
     "date": "2010-01-01",
@@ -1100,8 +1108,16 @@
   },
   {
     "type": "scholar",
+    "title": "Reciprocal Recommenders.",
+    "url": "https://web.archive.org/web/20120328082339/http://ls13-www.cs.uni-dortmund.de/homepage/ITWP2010/index.shtml",
+    "date": "2010-01-01",
+    "source": "Scholar",
+    "venue": "Proceedings of the Workshop on Intelligent Techniques for Web Personalization & Recommender Systems (ITWP'10) at User Mo"
+  },
+  {
+    "type": "scholar",
     "title": "Indexing on Semantic Roles for Question Answering.",
-    "url": "https://aclanthology.org/W08-0705.pdf",
+    "url": "https://aclanthology.org/W08-1810/",
     "date": "2008-01-01",
     "source": "Scholar",
     "venue": "Proceedings of the Coling 2008 Workshop Information Retrieval for Question Answering (IR4QA-08). Manchester, August, 200"
@@ -1109,7 +1125,7 @@
   {
     "type": "scholar",
     "title": "Question Prediction Language Model.",
-    "url": "https://aclanthology.org/U07-1016.pdf",
+    "url": "https://aclanthology.org/U07-1014/",
     "date": "2007-01-01",
     "source": "Scholar",
     "venue": "Proceedings Australasian Language Technology Workshop 2007, Melbourne, December 2007."
