@@ -66,7 +66,7 @@ Singapore, September 18-22, 2023. ISBN: 979-8-4007-0241-9
 **Proceedings of the Second Workshop on Community Mining and People Recommenders**
 Edited by: _Jaakko Hollmén, Panagiotis Papapetrou and Luiz Augusto Pizzato_
 ECML/PKDD 2012, Bristol, UK, September 28, 2012
-[(PDF)](https://research.ics.aalto.fi/events/commper2012/COMMPER2012.pdf)
+[(Web)](https://research.ics.aalto.fi/events/commper2012/index.html) [(PDF)](https://research.ics.aalto.fi/events/commper2012/COMMPER2012.pdf)
 
 
 
