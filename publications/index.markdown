@@ -5,18 +5,30 @@ date: 2015-09-27 11:23:46+00:00
 layout: page
 link: http://luiz.pizzato.cc/publications/
 slug: publications
-title: Publications
-description: "Academic publications and research papers by Luiz Pizzato, PhD, covering AI, NLP, recommender systems and privacy-preserving machine learning."
+title: Research
+description: "Research contributions by Luiz Pizzato, PhD, covering AI, NLP, recommender systems and privacy-preserving machine learning."
 feature: assets/img/publications.jpg
 wordpress_id: 17
 ---
 
-For a comprehensive publication list with citations, check my [Google Scholar profile](http://scholar.google.com.au/citations?user=3q9NOYYAAAAJ&hl=en).
+I completed my PhD at Macquarie University in 2008, focused on Natural Language Processing and Information Retrieval. My postdoctoral work at the University of Sydney led to one of the earliest reciprocal recommender systems — RECON, built for online dating — which pioneered the idea that both sides of a match need to be modelled simultaneously. That line of work produced several widely-cited papers and continues to be referenced as foundational in the reciprocal recommendation literature.
+
+Beyond reciprocal recommenders, my research has spanned multi-stakeholder and fairness-aware recommendation, privacy-preserving machine learning (including work on homomorphic encryption at Accenture), abuse detection in financial transactions, and more recently LLM evaluation and synthetic personas. I have published in top venues including RecSys, UMAP, IJCAI, WSDM, WWW, and IEEE BigData, and hold three patents.
+
+On the academic service side, I co-chaired [RecSys 2023](https://recsys.acm.org/recsys23/) and the [AAAI'26 Workshop on Agentic AI in Financial Services](https://ai-4-finance.pages.dev/), organised multiple workshops on people and community recommenders, and have served on program committees for RecSys, UMAP, WWW, SIGIR, and IJCAI.
+
+## Academic Activities
+
+For a full list of tutorials, grants, workshops organised, and reviewing and program committee roles, see the [Academic Activities](/academy/) page.
+
+## Publications
+
+I have published over 50 publications with over 1,600 citations (h-index 19). For full citation metrics see these links:
 
 <div class="profile-links">
-  <a href="https://scholar.google.com/citations?user=tTBB3FEAAAAJ" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Google Scholar"></a>
-  <a href="https://dblp.org/pid/62/4764.html" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/DBLP-004F9F?style=for-the-badge&logo=dblp&logoColor=white" alt="DBLP"></a>
-  <a href="https://aclanthology.org/people/l/luiz-pizzato/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/ACL%20Anthology-red?style=for-the-badge" alt="ACL Anthology"></a>
+  <a href="https://scholar.google.com/citations?user=3q9NOYYAAAAJ" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Google Scholar"></a>
+  <a href="https://dblp.org/pid/13/6023.html" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/DBLP-004F9F?style=for-the-badge&logo=dblp&logoColor=white" alt="DBLP"></a>
+  <a href="https://aclanthology.org/people/l/luiz-augusto-pizzato/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/ACL%20Anthology-red?style=for-the-badge" alt="ACL Anthology"></a>
 </div>
 
 
@@ -93,7 +105,7 @@ Sydney, Australia, 2009
 _Arshnoor Kaur, Amanda Aird, Harris Borman, Andrea Nicastro, Anna Leontjeva, Luiz Pizzato, and Dan Jermyn_
 Proceedings of the 33rd ACM Conference on User Modeling, Adaptation and Personalization (UMAP ‘25).
 Association for Computing Machinery, New York, NY, USA, 185–193.
-[(ACM)](https://doi.org/10.1145/3699682.3728339)
+[(ACM)](https://doi.org/10.1145/3699682.3728339) 🏆 [Best Paper Award](https://www.um.org/awards/best-paper-awards)
 
 
 **FeatureCuts: Feature Selection for Large Data by Optimizing the Cutoff**
@@ -217,7 +229,7 @@ Proceedings of the 22nd International Joint Conference on Artificial Intelligenc
 **Finding someone you will like and who won't reject you.**
 _Luiz Pizzato, Tomasz Rej, Kalina Yacef, Irena Koprinska and Judy Kay_
 Proceedings of the 19th International Conference on User Modeling, Adaptation and Personalization (UMAP 2011). Girona, Spain. 11-15 July 2011. LNCS 6787, pp. 269--280. Springer, Heidelberg (2012)
-[(Springer)](http://dx.doi.org/10.1007/978-3-642-22362-4_23) 🏆 [Best Paper Award](https://www.um.org/awards/best-paper-awards) 
+[(Springer)](http://dx.doi.org/10.1007/978-3-642-22362-4_23) 
 
 
 

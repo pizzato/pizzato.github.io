@@ -2,50 +2,191 @@
 layout: compress
 ---
 <!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
+<html lang="en" class="no-js">
 <head>
     {% include head.html %}
 </head>
 <body>
     {% include nav.html %}
-    <!-- Header -->
-    <header class="header flex" role="banner">
-        <div class="container animated fadeIn">
-            <div class="row">
-                    <a href="{{ site.url }}">
-                        <!-- <img src="{{ site.logo }}" class="img-circle zoombtn animated rotateIn"> -->
-                        <img src="{{ site.logo }}" class="img-circle zoombtn animated">
-                    </a>
-                    <h3 class="title">
-                        <a class="zoombtn" href="{{ site.url }}">
-                        	<p style="font-size:1.2rem;font-weight:300">{{ site.title }}</p>
-			            </a>
-                    </h3>
-                    <hr class="hr-line">
-                    <h3 class="title">
-                        <a href="{{ site.url }}">
-                        	<p style="font-size:1rem;font-weight:300;white-space:nowrap">{{ site.bio }}</p>
-			            </a>
-                    </h3>
-                    {% include social-links.html %}
-                  <hr class="hr-line">
-                  <h3 class="title">
-                         <a class="btn zoombtn" href="{{ site.url }}/about">
-                         About
-                         </a>
-                         <a class="btn zoombtn" href="{{ site.url }}/posts">
-                         Posts
-                         </a>
-                         <!-- <a class="btn zoombtn" href="{{ site.url }}/projects">
-                         Projects
-                         </a> -->
-                 </h3>
+
+    <main>
+      <div class="bento-wrap">
+        <div class="bento-grid">
+
+          <!-- ── Row 1 ───────────────────────────────── -->
+
+          <!-- Hero card -->
+          <div class="bento-card bento-hero reveal">
+            <span class="label-sm">Distinguished AI Scientist</span>
+            <h1 class="display-lg">{{ site.title | split: ',' | first }}</h1>
+            <p class="hero-role">{{ site.bio }}</p>
+            <p class="hero-tagline">Data Science Executive &middot; AI Researcher &middot; Problem Solver</p>
+          </div>
+
+          <!-- Photo card -->
+          <div class="bento-card bento-photo reveal reveal-d1">
+            <img src="{{ site.url }}/{{ site.logo }}" alt="{{ site.title }}">
+          </div>
+
+          <!-- ── Row 2 ───────────────────────────────── -->
+
+          <!-- ── Row 2 ───────────────────────────────── -->
+
+          <!-- Stream card (spans 2 cols, data from _data/stream.json) -->
+          <div class="bento-card bento-stream reveal reveal-d2">
+            <div class="stream-header">
+              <span class="label-sm">Posts</span>
+              <a class="stream-more" href="{{ site.url }}/posts/">All posts &#x2192;</a>
             </div>
+            <div class="stream-list">
+              {% for item in site.data.stream limit:10 %}
+              <a class="stream-entry" href="{{ item.url }}"{% if item.url contains '://' %} target="_blank" rel="noopener noreferrer"{% endif %}>
+                <span class="stream-icon stream-icon--{{ item.type }}" aria-label="{{ item.source }}">
+                  {% if item.type == 'medium' %}<i class="fa-brands fa-medium"></i>
+                  {% elsif item.type == 'scholar' %}<i class="fa-solid fa-graduation-cap"></i>
+                  {% elsif item.type == 'post' %}<i class="fa-solid fa-pen-nib"></i>
+                  {% elsif item.type == 'twitter' %}<i class="fa-brands fa-x-twitter"></i>
+                  {% elsif item.type == 'linkedin' %}<i class="fa-brands fa-linkedin-in"></i>
+                  {% else %}<i class="fa-solid fa-link"></i>
+                  {% endif %}
+                </span>
+                <div class="stream-body">
+                  <span class="stream-title">{{ item.title }}</span>
+                  <span class="stream-meta">{{ item.source }} &middot; {{ item.date | date: "%b %Y" }}</span>
+                </div>
+              </a>
+              {% endfor %}
+            </div>
+          </div>
+
+          <!-- Research card -->
+          <a class="bento-card bento-impact reveal reveal-d2" href="{{ site.url }}/publications/" title="View Research">
+            <div class="impact-header">
+              <span class="label-sm">Research</span>
+              <span class="impact-icon">&#x2197;</span>
+            </div>
+            <div class="impact-dual-metrics">
+              <div class="impact-metric-item">
+                <div class="impact-metric">{{ site.scholar_papers | default: "50+" }}</div>
+                <div class="impact-label">Publications</div>
+              </div>
+              <div class="impact-metric-divider"></div>
+              <div class="impact-metric-item">
+                <div class="impact-metric" id="scholar-citations">{{ site.scholar_citations | default: "1,600+" }}</div>
+                <div class="impact-label">Citations</div>
+              </div>
+            </div>
+            <div class="citation-bars" aria-hidden="true">
+              <div class="citation-bar" style="height:14%"></div>
+              <div class="citation-bar" style="height:18%"></div>
+              <div class="citation-bar" style="height:26%"></div>
+              <div class="citation-bar" style="height:38%"></div>
+              <div class="citation-bar" style="height:52%"></div>
+              <div class="citation-bar" style="height:70%"></div>
+              <div class="citation-bar" style="height:86%"></div>
+              <div class="citation-bar bar-highlight" style="height:100%"></div>
+            </div>
+          </a>
+
+          <!-- LinkedIn card -->
+          <a class="bento-card bento-linkedin reveal reveal-d3" href="https://linkedin.com/in/{{ site.linkedin }}" target="_blank" rel="noopener noreferrer">
+            <div class="linkedin-inner">
+              <img class="linkedin-avatar" src="{{ site.url }}/{{ site.logo }}" alt="{{ site.title }}">
+              <div class="linkedin-info">
+                <div class="linkedin-name">{{ site.title | split: ',' | first }}</div>
+                <div class="linkedin-title">{{ site.bio }}</div>
+              </div>
+            </div>
+            <div class="linkedin-cta">
+              <i class="fa-brands fa-linkedin-in" style="font-size:14px"></i>
+              Connect on LinkedIn
+            </div>
+          </a>
+
+        </div><!-- /.bento-grid -->
+      </div><!-- /.bento-wrap -->
+
+      <!-- Connect & Collaborate -->
+      <div class="connect-section reveal reveal-d3">
+        <span class="label-sm">Connect &amp; Collaborate</span>
+        <div class="connect-links">
+          {% if site.email %}
+          <a class="connect-pill" href="mailto:luiz@pizzato.cc" title="Email" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          {% endif %}
+          {% if site.twitter %}
+          <a class="connect-pill" href="https://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener noreferrer" title="Twitter / X" aria-label="Twitter">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          {% endif %}
+          {% if site.linkedin %}
+          <a class="connect-pill" href="https://linkedin.com/in/{{ site.linkedin }}" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          {% endif %}
+          {% if site.github-url %}
+          <a class="connect-pill" href="https://github.com/{{ site.github-url }}" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          {% endif %}
+          {% if site.googlescholar %}
+          <a class="connect-pill" href="https://scholar.google.com.au/citations?user={{ site.googlescholar }}&hl=en" target="_blank" rel="noopener noreferrer" title="Google Scholar" aria-label="Google Scholar">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </a>
+          {% endif %}
+          {% if site.medium %}
+          <a class="connect-pill" href="https://medium.com/{{ site.medium }}" target="_blank" rel="noopener noreferrer" title="Medium" aria-label="Medium">
+            <i class="fa-brands fa-medium"></i>
+          </a>
+          {% endif %}
         </div>
-    </header>
-    {% include scripts.html %}
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; {{ 'now' | date: "%Y" }} Luiz Pizzato. All rights reserved.</span>
+      <div class="footer-right">
+        <a href="{{ site.url }}/about/">About</a>
+        <a href="{{ site.url }}/publications/">Research</a>
+        <a href="{{ site.url }}/feed.xml">RSS</a>
+      </div>
+    </footer>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="{{ site.url }}/assets/js/revamp.js" defer></script>
+    <script>
+    /* Live Google Scholar citation count via CORS proxy */
+    (function () {
+      var el = document.getElementById('scholar-citations');
+      if (!el) return;
+      var scholarUrl = 'https://scholar.google.com/citations?user={{ site.googlescholar }}&hl=en';
+      fetch('https://corsproxy.io/?' + encodeURIComponent(scholarUrl))
+        .then(function (r) { return r.text(); })
+        .then(function (html) {
+          /* Google Scholar renders the totals table with class="gsc_rsb_std";
+             the very first cell contains the all-time citation count. */
+          var match = html.match(/class="gsc_rsb_std">([\d,]+)/);
+          if (!match) return;
+          var count = parseInt(match[1].replace(/,/g, ''), 10);
+          if (isNaN(count) || count < 1) return;
+          var label = count >= 1000
+            ? (count / 1000).toFixed(1).replace(/\.0$/, '') + 'k+'
+            : count.toLocaleString();
+          el.textContent = label;
+        })
+        .catch(function () { /* keep hardcoded fallback */ });
+    })();
+    </script>
+    {% if site.google.analytics %}
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', '{{ site.google.analytics }}', 'auto');
+      ga('send', 'pageview');
+    </script>
+    {% endif %}
 </body>
 </html>

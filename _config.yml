@@ -4,8 +4,18 @@ bio:                "Distinguished AI Scientist at Commonwealth Bank of Australi
 description:        'Distinguished AI Scientist with 20+ years in AI, NLP and machine learning. Building intelligent systems at Commonwealth Bank of Australia.'
 reading_time:       true
 words_per_minute:   200
-logo:               'assets/img/LuizPizzato.jpg'
-background:         'assets/img/wall.jpg'
+logo:               'assets/img/LuizPizzato.png'
+# background:         'assets/img/wall.jpg'
+
+# Homepage: Current Status card — edit these to update the homepage
+current_status:
+  label:   "Current Focus"
+  heading: "Leading AI at CBA"
+  text:    "Driving large-scale Generative AI, NLP, and data science initiatives at Commonwealth Bank of Australia. Currently focused on LLM evaluation, responsible AI, and agentic systems."
+
+# Homepage: Research card
+scholar_citations:  "1,600+"
+scholar_papers:     "50+"
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
 url:                https://luiz.pizzato.cc

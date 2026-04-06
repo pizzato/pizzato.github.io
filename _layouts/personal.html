@@ -1,0 +1,131 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    {% include head.html %}
+</head>
+<body>
+    {% include nav.html %}
+    {% include page-hero.html %}
+
+    <main class="page-layout">
+      <header class="page-header">
+        <a class="back-btn" href="{{ site.url }}/">
+          <i class="fa-solid fa-arrow-left" style="font-size:11px"></i>
+          Home
+        </a>
+        <h1 class="display-md">{{ page.title }}</h1>
+      </header>
+
+      <div class="page-content">
+        {{ content }}
+      </div>
+
+      <!-- YouTube videos -->
+      {% if site.data.videos and site.data.videos.videos and site.data.videos.videos.size > 0 %}
+      <section class="video-section">
+        <div class="photo-section-header">
+          <span class="label-sm">Videos</span>
+          <a href="https://www.youtube.com/@luizpizzato/videos" target="_blank" rel="noopener noreferrer" class="photo-source-links" style="font-size:13px; font-weight:500; color:var(--primary); text-decoration:underline; text-underline-offset:3px;">
+            <i class="fa-brands fa-youtube" style="font-size:12px"></i> YouTube
+          </a>
+        </div>
+        <div class="video-grid">
+          {% for video in site.data.videos.videos %}
+          <a class="video-card" href="https://www.youtube.com/watch?v={{ video.youtube_id }}"
+             target="_blank" rel="noopener noreferrer" title="{{ video.title }}">
+            <div class="video-thumb-wrap">
+              <img src="https://img.youtube.com/vi/{{ video.youtube_id }}/hqdefault.jpg"
+                   alt="{{ video.title }}" loading="lazy">
+              <div class="video-play-btn" aria-hidden="true">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="video-info">
+              <span class="video-title">{{ video.title }}</span>
+              {% if video.description and video.description != "" %}
+              <span class="video-desc">{{ video.description }}</span>
+              {% endif %}
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+      </section>
+      {% endif %}
+
+      <!-- Artistic creations / Photo gallery -->
+      <section class="photo-section">
+        <div class="photo-section-header">
+          <span class="label-sm">Artistic Creations</span>
+          <div class="photo-source-links">
+            <a href="https://www.flickr.com/photos/kinho" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-flickr" style="font-size:12px"></i> Flickr
+            </a>
+            <a href="https://500px.com/kinho" target="_blank" rel="noopener noreferrer">
+              500px
+            </a>
+            <a href="https://www.instagram.com/kinhopizzato/" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-instagram" style="font-size:12px"></i> Instagram
+            </a>
+          </div>
+        </div>
+
+        {% if site.data.photos and site.data.photos.size > 0 %}
+        <div class="photo-grid">
+          {% for photo in site.data.photos %}
+          <a class="photo-card{% if photo.media_type == 'video' %} photo-card--video{% endif %}" href="{{ photo.url }}" target="_blank" rel="noopener noreferrer"
+             title="{{ photo.title }}">
+            {% assign media_src = photo.image %}
+            {% unless photo.image contains '://' %}{% assign media_src = site.url | append: '/' | append: photo.image %}{% endunless %}
+            {% if photo.media_type == 'video' %}
+            <video src="{{ media_src }}" autoplay muted loop playsinline></video>
+            {% else %}
+            <img src="{{ media_src }}" alt="{{ photo.title }}" loading="lazy">
+            {% endif %}
+            <div class="photo-overlay">
+              <span class="photo-source-badge photo-source-badge--{{ photo.source }}">
+                {% if photo.media_type == 'video' %}<i class="fa-solid fa-play" style="font-size:9px;margin-right:3px"></i>{% endif %}{{ photo.source }}
+              </span>
+              {% if photo.title and photo.title != "" %}
+              <span class="photo-title">{{ photo.title }}</span>
+              {% endif %}
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+        {% else %}
+        <div class="photo-empty">
+          <p>
+            Photos loading soon. Browse them directly on
+            <a href="https://www.flickr.com/photos/kinho" target="_blank" rel="noopener noreferrer">Flickr</a>,
+            <a href="https://500px.com/kinho" target="_blank" rel="noopener noreferrer">500px</a>, or
+            <a href="https://www.instagram.com/kinhopizzato/" target="_blank" rel="noopener noreferrer">Instagram</a>.
+          </p>
+        </div>
+        {% endif %}
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; {{ 'now' | date: "%Y" }} Luiz Pizzato.</span>
+      <div class="footer-right">
+        <a href="{{ site.url }}/feed.xml">RSS Feed</a>
+      </div>
+    </footer>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="{{ site.url }}/assets/js/revamp.js" defer></script>
+    {% if site.google.analytics %}
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', '{{ site.google.analytics }}', 'auto');
+      ga('send', 'pageview');
+    </script>
+    {% endif %}
+</body>
+</html>

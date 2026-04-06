@@ -1,0 +1,1040 @@
+# Manual stream entries for X (Twitter) and LinkedIn.
+#
+# After adding entries here, run the fetch script to rebuild stream.json:
+#   python scripts/fetch_stream.py
+#
+# Or just commit this file — the daily GitHub Action will pick it up.
+#
+# Entry format:
+#   - type:  twitter   (or: linkedin)
+#     title: "First line / caption of the post"
+#     url:   "https://x.com/luizpizzato/status/..."
+#     date:  "YYYY-MM-DD"
+#
+# To populate from a platform data export, run:
+#   python scripts/import_archive.py --twitter <path/to/tweets.js>
+#   python scripts/import_archive.py --linkedin <path/to/Share and Comments.csv>
+
+entries:
+- type: linkedin
+  title: Artificial intelligence can feel highly technical and even a bit daunting
+    for many people. At CommBank, we have spent th…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7406466725233418240
+  date: '2025-12-15'
+- type: linkedin
+  title: Back in Sydney after an intense week at NeurIPS, I had the chance to hear
+    Prof. shafi goldwasser speak at the University…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7404416877281869824
+  date: '2025-12-10'
+- type: linkedin
+  title: See you at NeurIPS in Sydney next year!"
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7403575645827485696
+  date: '2025-12-07'
+- type: linkedin
+  title: Day 1 at NeurIPS 2025 — what a start!"
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7401879394853502976
+  date: '2025-12-03'
+- type: linkedin
+  title: We were pleased to welcome researchers from the University of Sydney to Commonwealth
+    Bank this week for an engaging work…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7397398483541938182
+  date: '2025-11-20'
+- type: linkedin
+  title: Last week at SXSW Sydney 2025, I joined two great panels exploring how AI
+    is reshaping the future of finance."
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7385920813369016321
+  date: '2025-10-20'
+- type: linkedin
+  title: Just wrapped up a fantastic week in Adelaide where CommBank AI team spent
+    with the Australian Institute for Machine Lear…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7373203572806725632
+  date: '2025-09-15'
+- type: linkedin
+  title: 🚀 FastVLM dropped on Hugging Face yesterday 🤗 … and today I’m shipping an
+    app using it to the App Store, with zero prior…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7368757039600140288
+  date: '2025-09-02'
+- type: linkedin
+  title: 'On Monday, I had the privilege of speaking at #AICon2025, calling for Australian
+    industries to be bolder in investing in…'
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7367079580429348866
+  date: '2025-08-29'
+- type: linkedin
+  title: Thank you, CommBank, for featuring me in this post!"
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7359457018652372992
+  date: '2025-08-08'
+- type: linkedin
+  title: Amazing opportunity in Adelaide to help us build the next foundational models,
+    advance and guide our AI research agenda.
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7355838221760512000
+  date: '2025-07-29'
+- type: linkedin
+  title: I will never survey a person again!"
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7344235600180314112
+  date: '2025-06-27'
+- type: twitter
+  title: Thank you for the award! Congratulations @CommBank team!
+  url: https://x.com/luizpizzato/status/1935718409926549508
+  date: '2025-06-19'
+- type: linkedin
+  title: Thank you ACM UMAP  for the best paper award!"
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7341416082349424641
+  date: '2025-06-19'
+- type: linkedin
+  title: And it's a wrap for CVPR 2025!  It was incredible to see the Commonwealth
+    Bank alongside the world's top tech companies.…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7340370163524853761
+  date: '2025-06-16'
+- type: twitter
+  title: Going to Nashville today as  @CommBank is sponsoring the Computer Vision
+    and Pattern Recognition Conference (@CVPR). Loo…
+  url: https://x.com/luizpizzato/status/1932231612303126576
+  date: '2025-06-10'
+- type: linkedin
+  title: I'm traveling to Nashville today as Commonwealth Bank is proudly sponsoring
+    the IEEE/CVF Computer Vision and Pattern Rec…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7337976022836871169
+  date: '2025-06-09'
+- type: linkedin
+  title: It's not every day you have the chance to meet your idols."
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7325162566085693441
+  date: '2025-05-05'
+- type: linkedin
+  title: I had the absolute pleasure to represent Commonwealth Bank at NeurIPS. Anna
+    Leontjeva and I discussed our work on LLM pe…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7274196214496063488
+  date: '2024-12-15'
+- type: twitter
+  title: 'Heading to #NeurIPS this week, where @CommBank is proud to be a sponsor.
+    We’ll also be presenting a paper at the confere…'
+  url: https://x.com/luizpizzato/status/1865851449433100585
+  date: '2024-12-08'
+- type: linkedin
+  title: 'Heading to #NeurIPS this week, where Commonwealth Bank is proud to be a
+    sponsor. We’ll also be presenting a paper at the…'
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7271616174977634304
+  date: '2024-12-08'
+- type: linkedin
+  title: This is an incredible chance for an early-career academic to make a real
+    difference in the world of foundational AI. You…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7265194102382546944
+  date: '2024-11-21'
+- type: linkedin
+  title: I’m very privileged to have a fulfilling career which I’ve taken on large
+    challenges and have mostly succeeded in creati…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7255460428955160576
+  date: '2024-10-25'
+- type: linkedin
+  title: I’m thrilled to embark on this journey on Foundational AI research with the
+    University of Adelaide  and the Australian I…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7242281031473500160
+  date: '2024-09-18'
+- type: linkedin
+  title: Another great opportunity to help make brighter happen for our customers
+    and Australia!
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7237226066002497536
+  date: '2024-09-04'
+- type: linkedin
+  title: Are you a data science leader who wants to innovate and do good for Australia
+    and the world? Come and join us and we'll …
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7231611944850341888
+  date: '2024-08-20'
+- type: linkedin
+  title: A couple of weeks ago, Belinda White, Oliver Fleming, PhD, Andrijana Sarac
+    and I had the privilege to spend two days wit…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7226883663601254400
+  date: '2024-08-07'
+- type: linkedin
+  title: 'I will never be tired of repeating this:  Commonwealth Bank is an amazing
+    place to apply your data science and AI skills…'
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7218583632905420802
+  date: '2024-07-15'
+- type: linkedin
+  title: I spent last week in Bengaluru with our CBA India team. Thank you for the
+    warm welcome and it was great to finally meet …
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7210260453136994304
+  date: '2024-06-22'
+- type: linkedin
+  title: Some weeks are bigger than others. This was a big one."
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7199023787126755329
+  date: '2024-05-22'
+- type: linkedin
+  title: Looking forward to speak at the upcoming 2024 Australian Corporate Treasury
+    Association ‘s Future Treasury Professionals…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7195944694244143105
+  date: '2024-05-14'
+- type: linkedin
+  title: Proud to have Commonwealth Bank sponsor this National AI Centre event to
+    help bring the benefits of AI to all Australian…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7194838843303301120
+  date: '2024-05-10'
+- type: linkedin
+  title: I will never produce a music video again"
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7186849742277009408
+  date: '2024-04-18'
+- type: linkedin
+  title: Looking forward to hear from this great group of AI leaders!
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7173233990504435713
+  date: '2024-03-12'
+- type: linkedin
+  title: ❤️🇦🇺 A 20 year love story with Australia "
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7166916553664409600
+  date: '2024-02-23'
+- type: linkedin
+  title: CommBank’s true commitment to support people’s careers and ensure the work
+    is meaningful and truly matters to bring a br…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7156141266739576832
+  date: '2024-01-25'
+- type: linkedin
+  title: We just open sourced our models for the detection of transaction abuse!"
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7127909921295122434
+  date: '2023-11-08'
+- type: linkedin
+  title: Feeling honoured to come back to University of Sydney as an industry advisory
+    board member to help steer the future of C…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7115179942534909952
+  date: '2023-10-04'
+- type: linkedin
+  title: Australia, we need to invest in AI, science and technology!"
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7112216480221433856
+  date: '2023-09-25'
+- type: linkedin
+  title: What an inspirational start of ACM RecSys! "
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7110118381852270592
+  date: '2023-09-20'
+- type: linkedin
+  title: Flying to Singapore today to co-chair the industry track of ACM RecSys. This
+    was a near year long work from myself (Comm…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7108950995761565696
+  date: '2023-09-16'
+- type: linkedin
+  title: I will never take a selfie again."
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7105154443733594112
+  date: '2023-09-06'
+- type: linkedin
+  title: I will never manage a football club again"
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7095390156379099136
+  date: '2023-08-10'
+- type: linkedin
+  title: I will never reply to an email again"
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7091898910645878784
+  date: '2023-07-31'
+- type: linkedin
+  title: I can’t think of more exciting careers than the ones in the STEM areas, but
+    even those not in STEM can be enhanced with …
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7062539552023842817
+  date: '2023-05-11'
+- type: linkedin
+  title: Calling all companies innovating and deploying Recommender Systems a.k.a.
+    "the algorithm". Submission deadline for indus…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7059519876280840192
+  date: '2023-05-03'
+- type: linkedin
+  title: I’m thrilled to announce that our technical paper on using machine learning
+    to detect abuse in transactions descriptions…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7041673872445739008
+  date: '2023-03-15'
+- type: linkedin
+  title: This is such an exciting partnership! I’m looking forward to see if we can
+    convert data and insights to many goals for o…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7034765323660648448
+  date: '2023-02-24'
+- type: linkedin
+  title: Our H2O World presentation on how Commonwealth Bank is working with H2O.ai  to
+    make the world a safer place from transac…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7005510125369135104
+  date: '2022-12-05'
+- type: linkedin
+  title: What an informative panel conversation moderated by Thireindar Min with Stela
+    SOLAR (she/her), Sonal Surana and David Ro…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A6998960470216904704
+  date: '2022-11-17'
+- type: linkedin
+  title: Last hours in Seattle and I go for one last coffee. Serendipitously bumped
+    into Dr. Yushan Chen, Co-Founder and Chief En…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A6980312163022245888
+  date: '2022-09-26'
+- type: linkedin
+  title: Today was the last day of ACM RecSys in Seattle, and I had the pleasure to
+    give an invited talk on how Commonwealth Bank…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A6979328868281176064
+  date: '2022-09-24'
+- type: linkedin
+  title: Yesterday I had the pleasure to discuss a new problem on multi-stakeholder,
+    multi-objective recommender with many expert…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A6978413787787714560
+  date: '2022-09-21'
+- type: linkedin
+  title: 'See you soon #recsys. It will be a long trip between Sydney - Seattle but
+    it will be worth catching up the latest in the…'
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A6976315618568413184
+  date: '2022-09-15'
+- type: linkedin
+  title: Honoured to join this talented group in helping steer the future of analytics
+    education in such a future thinking univer…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A6972838805653372928
+  date: '2022-09-06'
+- type: linkedin
+  title: Data scientists - come and join us!"
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A6965597994482106368
+  date: '2022-08-17'
+- type: linkedin
+  title: So thrilled to have the opportunity to present our research on recommendations
+    for CommBank Rewards at ACM RecSys 2022 i…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A6950014113125130240
+  date: '2022-07-05'
+- type: linkedin
+  title: Join H2O.ai and Commonwealth Bank in a joint data science meetup next week.
+    We will talk about how our AI models are hel…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A6932267077730725888
+  date: '2022-05-17'
+- type: linkedin
+  title: How good is working on really impactful AI projects like this? Come and join
+    Anna Leontjeva and our team, we are hiring!…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A6917334029490946048
+  date: '2022-04-06'
+- type: linkedin
+  title: This is absolutely global leading and a prime example on how AI can be used
+    for social good. Anna Leontjeva’s leadership…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A6912292028110319616
+  date: '2022-03-23'
+- type: linkedin
+  title: Do you love data science innovation and want to use your skills to really
+    help people? Join us in our mission to bring a…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A6908697964898852864
+  date: '2022-03-13'
+- type: linkedin
+  title: Are you a data scientist who wants to apply your skills to what really matters?  Look
+    no further!"
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A6867019501062516737
+  date: '2021-11-18'
+- type: linkedin
+  title: Super proud of our work using machine learning to detect and prevent abuse
+    in the payments platform. "
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A6853094463737356289
+  date: '2021-10-10'
+- type: linkedin
+  title: We are hiring! Come and join the best AI team in the world (I am unashamedly
+    biased) where we make a difference to peopl…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A6849612496190496768
+  date: '2021-10-01'
+- type: linkedin
+  title: This is a prime example of how we tackle difficult problems and make sure
+    we use our data science skills for social good…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A6848844908686651392
+  date: '2021-09-29'
+- type: linkedin
+  title: This is an amazing organisation who is helping so many people break away
+    from isolation and abuse. Please consider donat…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A6814181353056301056
+  date: '2021-06-25'
+- type: linkedin
+  title: Very proud to be part of this video and campaign. CommBank is one of the
+    most exciting companies to work for any data sc…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A6804948434416758784
+  date: '2021-05-31'
+- type: linkedin
+  title: 'We had the pleasure to talk to Gabriel Moreira from NVIDIA in our “AI Frontiers:
+    conversations with AI Labs”.  It was a …'
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A6780797274416144384
+  date: '2021-03-25'
+- type: linkedin
+  title: 'I simply love my job. We come every day to work and we ask one simple question:
+    how can we positively impact our custome…'
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A6777517212132614144
+  date: '2021-03-16'
+- type: twitter
+  title: I’m very proud to be part of the team enabling this solution to our customers
+  url: https://x.com/luizpizzato/status/1371324287504719873
+  date: '2021-03-15'
+- type: linkedin
+  title: Great to be on holidays and to receive the news that our paper is published.
+    "
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A6626168803338350592
+  date: '2020-01-23'
+- type: linkedin
+  title: Oportunidade para engenheiros brasileiros de PLN com experiência em síntese
+    de fala na Amazon/AWS Inglaterra ou Polônia.
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A6595888642164645888
+  date: '2019-11-01'
+- type: linkedin
+  title: Great to see our work on Homomorphic Encryption highlighted in Accenture's
+    Point of View on Privacy Preserving Computing…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A6587181814413164544
+  date: '2019-10-08'
+- type: linkedin
+  title: PyHeal is out! Our open source Python library that makes any development
+    with homomorphic encryption super easy.
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A6563956664565891072
+  date: '2019-08-05'
+- type: linkedin
+  title: Join us! Positions open in Sydney and Perth."
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A6559394370469093376
+  date: '2019-07-23'
+- type: linkedin
+  title: Join us! Positions open in Sydney and Perth."
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A6559390092530679808
+  date: '2019-07-23'
+- type: linkedin
+  title: We are hiring! Feel free to DM for any questions."
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A6553909397230313472
+  date: '2019-07-08'
+- type: linkedin
+  title: Last night's presentation at the Sydney Data Science MeetUp! "
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A6549629150938923008
+  date: '2019-06-26'
+- type: linkedin
+  title: I’m presenting “How to build machine learning algorithms using Homomorphic
+    Encryption” at the Sydney Data Science MeetUp…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A6548688762732417024
+  date: '2019-06-23'
+- type: linkedin
+  title: Always fun to talk about the things you love. This time, talking at an AWS
+    event on AI/ML in Melbourne about our excitin…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A6514463710097047552
+  date: '2019-03-21'
+- type: linkedin
+  title: DJ Bax - Week 7 of the road to AWS re:Invent "
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A6463851628628938752
+  date: '2018-11-01'
+- type: twitter
+  title: Our Liquid Studio team is building a robotic DJ to play at the AWS re:Invent
+    2018 in Las Vegas. Stay tuned for some real…
+  url: https://x.com/luizpizzato/status/1057170474281578499
+  date: '2018-10-30'
+- type: linkedin
+  title: Our Liquid Studio team is building a robotic DJ to play at the AWS re:Invent
+    2018 in Las Vegas. Stay tuned for some real…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A6462843350599983104
+  date: '2018-10-30'
+- type: linkedin
+  title: Oportunidade sensacional para Brasileiros com formação em linguística ou
+    computação e PLN na Amazon na Inglaterra ou Pol…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A6384958660489150464
+  date: '2018-03-29'
+- type: twitter
+  title: We are hiring Data Scientists and Full-Stack Engineers
+  url: https://x.com/luizpizzato/status/973519834519543809
+  date: '2018-03-13'
+- type: linkedin
+  title: We are hiring Data Scientists and Full-Stack Engineers"
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A6379282604654415872
+  date: '2018-03-13'
+- type: twitter
+  title: 'Join us the tutorial on people recommendations by @ido_guy and me at the
+    MIT Stratton Student Center #recsys2016'
+  url: https://x.com/luizpizzato/status/777186171923402752
+  date: '2016-09-17'
+- type: twitter
+  title: Hong Kong Harbour @ One Exchange Square
+  url: https://x.com/luizpizzato/status/775592780957712384
+  date: '2016-09-13'
+- type: twitter
+  title: Having a great time teaching a group of amazing students @GA_HongKong
+  url: https://x.com/luizpizzato/status/766136757930774528
+  date: '2016-08-18'
+- type: twitter
+  title: Quick stopover at @GA_SF before going to @GA_HongKong to teach data science.
+    So impressed with learning environment
+  url: https://x.com/luizpizzato/status/745027781398953985
+  date: '2016-06-20'
+- type: twitter
+  title: Final 2 days to submit a paper for the Workshop on Social Recommender Systems
+    @ KDD 2015 http://t.co/sEGUy9YzUD
+  url: https://x.com/luizpizzato/status/606241684872007680
+  date: '2015-06-03'
+- type: linkedin
+  title: Final 2 days to submit a paper for the Workshop on Social Recommender Systems
+    @ KDD 2015 https://lnkd.in/bm_B4Tp
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A6012004026789416960
+  date: '2015-06-03'
+- type: linkedin
+  title: We've launched our new app Foster Friends.
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A5948318728658636800
+  date: '2014-12-10'
+- type: twitter
+  title: Just read a great article on the perils of positive thinking by @oliverburkeman
+    on @TheNewPhil
+  url: https://x.com/luizpizzato/status/433465608970067968
+  date: '2014-02-12'
+- type: twitter
+  title: 'Just found out about Formula E (http://t.co/RhZfOXSRSu ). Finally something
+    interesting in the motor-sport scene! #Formu…'
+  url: https://x.com/luizpizzato/status/410273345599328256
+  date: '2013-12-10'
+- type: twitter
+  title: Would this work? A dating site for families to find new friends when they
+    move to a new city http://t.co/Ne8XzDXWPv @oct…
+  url: https://x.com/luizpizzato/status/408448428687896576
+  date: '2013-12-05'
+- type: twitter
+  title: Kudos to @pollenizer and @philmorle for the great first dat at the Lean StartUp
+    Bootcamp @murudau
+  url: https://x.com/luizpizzato/status/408112594503737345
+  date: '2013-12-04'
+- type: twitter
+  title: Part 1 of the Beyond Friendship Tutorial at Recsys 2013 http://t.co/tjnwKOYR8Z
+  url: https://x.com/luizpizzato/status/392520121370943488
+  date: '2013-10-22'
+- type: linkedin
+  title: Part 1 of the Beyond Friendship Tutorial at Recsys 2013
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A5798285892346994694
+  date: '2013-10-22'
+- type: twitter
+  title: Hi @phelo just noticed you have a paper to be published in Sydney in a few
+    days. Are you coming over to this side of the…
+  url: https://x.com/luizpizzato/status/362808822831661058
+  date: '2013-08-01'
+- type: twitter
+  title: 'Call for Papers: ICDM Workshop on Recommender Systems for Social Networks
+    (RESSON 2013): http://t.co/U0ysD9CD9v'
+  url: https://x.com/luizpizzato/status/352283091127107584
+  date: '2013-07-03'
+- type: linkedin
+  title: 'Call for Papers: ICDM Workshop on Recommender Systems for Social Networks
+    (RESSON 2013)"'
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A5758049222037340164
+  date: '2013-07-03'
+- type: twitter
+  title: Very nice table, now they just need Cruiser on top to be perfect @aecollins1
+    @CHAIresearch @smartservices http://t.co/Cw…
+  url: https://x.com/luizpizzato/status/342793431111827457
+  date: '2013-06-07'
+- type: twitter
+  title: 'Great talk by Hamish Petrie at #cebitstartups #ingogo #moshtix'
+  url: https://x.com/luizpizzato/status/339541081282711552
+  date: '2013-05-29'
+- type: linkedin
+  title: Very well timed article. We are currently working on a paper for the cold
+    start problem but looking at the perspective o…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A1426909712
+  date: '2013-04-29'
+- type: twitter
+  title: 'Great talk by Anind K. Dey at the #hctworkshop2013 about using smart devices
+    to understand people''s behaviour #usyd'
+  url: https://x.com/luizpizzato/status/318853088511401984
+  date: '2013-04-01'
+- type: twitter
+  title: 'There is still time to sign up for the human centred technology workshop
+    #hctworkshop2013 happing next Tues at #usyd htt…'
+  url: https://x.com/luizpizzato/status/317071824137629697
+  date: '2013-03-28'
+- type: linkedin
+  title: Interesting article, I certainly agree that secrecy does not scale. However,
+    this model assumes that a secret is atomic.…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A1391780626
+  date: '2013-03-07'
+- type: twitter
+  title: '@rainer_wasinger from @Sydney_Uni and @smartservices speaking at #MoMoSyd
+    tonight about the http://t.co/mlsNSr28 platfor…'
+  url: https://x.com/luizpizzato/status/298242972993077248
+  date: '2013-02-04'
+- type: twitter
+  title: 'Leaving Vancouver now, the city with the most number of free wifi spots
+    I''ve ever seen #geekheaven'
+  url: https://x.com/luizpizzato/status/147451627887009792
+  date: '2011-12-15'
+- type: twitter
+  title: '@zephoria they get more money in rainy days from short inner city trips
+    instead of the long, jammed, fixed rate JFK one'
+  url: https://x.com/luizpizzato/status/139177923277111296
+  date: '2011-11-23'
+- type: twitter
+  title: Now, I remember why I wanted to be an astronaut... http://t.co/cJrQdvXP
+  url: https://x.com/luizpizzato/status/138765297690742785
+  date: '2011-11-21'
+- type: twitter
+  title: 'Back to work in Sydney from #recsys2011 and holiday. A few busy days ahead
+    and quite jet lagged.'
+  url: https://x.com/luizpizzato/status/133257474424844289
+  date: '2011-11-06'
+- type: twitter
+  title: 'What should we be shown in the toilet? #recsys2011 #pemaworkshop http://t.co/EwgF1ABo'
+  url: https://x.com/luizpizzato/status/129685136609513472
+  date: '2011-10-27'
+- type: twitter
+  title: 'Starting the 23 hour trip to #recsys2011'
+  url: https://x.com/luizpizzato/status/127191561376235520
+  date: '2011-10-21'
+- type: twitter
+  title: Just separated my twitter account into personal and professional. Please
+    follow @kinhop for personal only.
+  url: https://x.com/luizpizzato/status/124333277183090688
+  date: '2011-10-13'
+- type: twitter
+  title: Acabei de separar minha conta do twitter em pessoal e profissional. Siga-me
+    em @kinhop para minha conta pessoal.
+  url: https://x.com/luizpizzato/status/124333235281989632
+  date: '2011-10-13'
+- type: twitter
+  title: '@carmenpizzato @modestop e esse é o segundo :-)'
+  url: https://x.com/luizpizzato/status/124301822763597824
+  date: '2011-10-13'
+- type: twitter
+  title: As an expat in Australia, I share the same point of view of this article
+    "Is the alcohol message all wrong?" http://t.co…
+  url: https://x.com/luizpizzato/status/124085073803874304
+  date: '2011-10-12'
+- type: twitter
+  title: '@modestop Pai e mãe estamos muito felizes que logo logo estarão aqui conosco!'
+  url: https://x.com/luizpizzato/status/123541558913024001
+  date: '2011-10-10'
+- type: twitter
+  title: '@zenogantner Btw it looks like there is something wrong with the wiki (recsyswiki.com)'
+  url: https://x.com/luizpizzato/status/122097724433772544
+  date: '2011-10-06'
+- type: twitter
+  title: 'We are building a community on recommender systems in Australia. Join us
+    if you are involved in #recsys downunder http:/…'
+  url: https://x.com/luizpizzato/status/121803055774703617
+  date: '2011-10-06'
+- type: linkedin
+  title: We are building a community around recommender systems in Australia. If you
+    are involved in recommender research, go joi…
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A625051935
+  date: '2011-10-06'
+- type: twitter
+  title: '@marcospizato @modestop @LuccaTondo Q vontade de estar ai com vcs. Bom almoço!'
+  url: https://x.com/luizpizzato/status/117970805517856768
+  date: '2011-09-25'
+- type: twitter
+  title: 'Not very reassuring odds: 1/3200 falling satellite killing someone X ~6000
+    satellites in space. How many of them will ev…'
+  url: https://x.com/luizpizzato/status/117152275176239104
+  date: '2011-09-23'
+- type: twitter
+  title: Such a waste of public resources, dozens of police cars, ambulances, fire
+    trucks, all for 10 protesters & ~100pp watchin…
+  url: https://x.com/luizpizzato/status/114550844883615745
+  date: '2011-09-16'
+- type: twitter
+  title: 'Not limited to US. This is a scary trend of politicians worldwide - Republicans
+    Against Science: http://t.co/skKFGS0'
+  url: https://x.com/luizpizzato/status/108080113316405249
+  date: '2011-08-29'
+- type: twitter
+  title: 'and an eBay keynote! RT @xamat: Wow... @recsys2011 Industry Track looks
+    awesome! Twitter, Facebook, Google, Pandora... a…'
+  url: https://x.com/luizpizzato/status/106746119912030208
+  date: '2011-08-25'
+- type: twitter
+  title: '#infinitybill with @3mobile! Received the 3rd bill for $0.01! It is the
+    1c surcharge for paying the previous 1c by credi…'
+  url: https://x.com/luizpizzato/status/106264292751458304
+  date: '2011-08-24'
+- type: twitter
+  title: I am wondering if Morrissey would be arrested in today's Britain http://t.co/rIfzz0p
+  url: https://x.com/luizpizzato/status/104752775891664897
+  date: '2011-08-20'
+- type: twitter
+  title: '#nothappy @QantasAirways to replace the Buenos Aires route with Santiago.
+    Ie. 2 oneworld flights to Santiago, none to BA…'
+  url: https://x.com/luizpizzato/status/103288290781835264
+  date: '2011-08-16'
+- type: twitter
+  title: 'Interesting experment! RT @flowingdata: Get a coffee, give a coffee API
+    http://t.co/WzTh6cF'
+  url: https://x.com/luizpizzato/status/100459270226710529
+  date: '2011-08-08'
+- type: twitter
+  title: Working on a Saturday :-(  but hey.. I can connect to the internet via my
+    nokia phone and ubuntu machine...
+  url: https://x.com/luizpizzato/status/94659315130044416
+  date: '2011-07-23'
+- type: twitter
+  title: Deadline extension (12 August) for ICDM's Workshop on
+  url: https://x.com/luizpizzato/status/94344931275046912
+  date: '2011-07-22'
+- type: twitter
+  title: 'Nice way to start the weekend. Our paper on stochastic matching and people
+    recommenders was accepted at #recsys2011'
+  url: https://x.com/luizpizzato/status/91997729429012481
+  date: '2011-07-15'
+- type: twitter
+  title: '@marcospizato Não sei direito o que aconteceu, acho que ele RT (re-tweeted)
+    de alguma forma estas outras pessoas. Não se…'
+  url: https://x.com/luizpizzato/status/91685816648212480
+  date: '2011-07-15'
+- type: twitter
+  title: For those who don't know TinEye yet. Check out this unauthorised used of
+    one of my photos http://t.co/1XHYGo9 (click com…
+  url: https://x.com/luizpizzato/status/91352983387901952
+  date: '2011-07-14'
+- type: twitter
+  title: '@marcospizato @modestop @LisiPTondo @LuccaTondo Será que agora tenho que
+    começar a me comunicar pelo Twitter?'
+  url: https://x.com/luizpizzato/status/91333244477386752
+  date: '2011-07-14'
+- type: twitter
+  title: '@marcospizato Oi Mano!'
+  url: https://x.com/luizpizzato/status/91330005698740224
+  date: '2011-07-14'
+- type: twitter
+  title: 'Why Ubuntu Unity does not allow customization puzzles me? I am so happy
+    to find out the "Ubuntu Classic" option. #frustr…'
+  url: https://x.com/luizpizzato/status/88502869677977600
+  date: '2011-07-06'
+- type: twitter
+  title: '#sproutoverdose but quite a wonderful meal at @sepiarestaurant'
+  url: https://x.com/luizpizzato/status/87169612961153024
+  date: '2011-07-02'
+- type: twitter
+  title: 'Great music last night at the #venue505 with @ConsciousPilots and Ninja
+    the Bunge'
+  url: https://x.com/luizpizzato/status/86923073235845120
+  date: '2011-07-01'
+- type: twitter
+  title: '#thanks #Telstra for the price change on inter. calls. Soon a 1sec call
+    to BR will cost $4.38 instead of the current $1.…'
+  url: https://x.com/luizpizzato/status/85951102587125761
+  date: '2011-06-29'
+- type: twitter
+  title: 'CFP: Workshop on Mining Communities and People Recommenders (COMMPER 2011)  ICDM2011:
+    http://lnkd.in/N_84ij'
+  url: https://x.com/luizpizzato/status/84081845838422017
+  date: '2011-06-24'
+- type: twitter
+  title: On Maggie (island) -- sun, snorkelling, bushwalking, perfect -- pity someone
+    took our orange bag with gear and underwate…
+  url: https://x.com/luizpizzato/status/79837815340412928
+  date: '2011-06-12'
+- type: twitter
+  title: 'CFP: Workshop on'
+  url: https://x.com/luizpizzato/status/76552265850302465
+  date: '2011-06-03'
+- type: twitter
+  title: Simply stunning http://www.youtube.com/watch?v=wFpeM3fxJoQ
+  url: https://x.com/luizpizzato/status/75812930741993472
+  date: '2011-06-01'
+- type: twitter
+  title: New York city bans smoking in public spaces. I hope this idea catches on.
+    http://bit.ly/iCQSHC
+  url: https://x.com/luizpizzato/status/72835815826395136
+  date: '2011-05-24'
+- type: twitter
+  title: Sad to leave Brazil :-(
+  url: https://x.com/luizpizzato/status/64532577763074048
+  date: '2011-05-01'
+- type: twitter
+  title: Checked in into paradise! Finally a week with no Internet... oops...
+  url: https://x.com/luizpizzato/status/60569150644432896
+  date: '2011-04-20'
+- type: twitter
+  title: I am on holidays, so why am I working?
+  url: https://x.com/luizpizzato/status/58977633047818240
+  date: '2011-04-15'
+- type: twitter
+  title: Now, that's a way for me to remember all the moves... http://bit.ly/hOpsUg
+  url: https://x.com/luizpizzato/status/57030774934867968
+  date: '2011-04-10'
+- type: twitter
+  title: 'Nice news article to read after a 12-hour-straight workday! #ineedabreak
+    http://reut.rs/fE0fsK'
+  url: https://x.com/luizpizzato/status/55951489117589504
+  date: '2011-04-07'
+- type: twitter
+  title: Nice gray, windy, cold-ish Saturday. Just the way I like... when I have to
+    work :-(
+  url: https://x.com/luizpizzato/status/54052517461504000
+  date: '2011-04-02'
+- type: twitter
+  title: 'Nice story! RT @guardianscience: Now where did I put my keys? http://t.co/mlSJSeP'
+  url: https://x.com/luizpizzato/status/54023504185663488
+  date: '2011-04-02'
+- type: twitter
+  title: 'People that say that you need to rest when having a cold have too much time
+    in their hand! #sick #cold #toobusy #overwor…'
+  url: https://x.com/luizpizzato/status/53739500278517760
+  date: '2011-04-01'
+- type: twitter
+  title: 'Paper accepted at #ijcai2011 :-)'
+  url: https://x.com/luizpizzato/status/53451608423538688
+  date: '2011-03-31'
+- type: twitter
+  title: '@aecollins1 congrats! Several mentions to you work by Craig Mundie in his
+    talk'
+  url: https://x.com/luizpizzato/status/52612675355684864
+  date: '2011-03-29'
+- type: twitter
+  title: 'Nice news today: our paper "Finding someone you will like and who won''t
+    reject you" was accepted at #UMAP2011'
+  url: https://x.com/luizpizzato/status/51136517686558720
+  date: '2011-03-25'
+- type: twitter
+  title: What a quote! "A deep understanding of reality is exactly the same thing
+    as laziness" http://www.dilbert.com/strips/comi…
+  url: https://x.com/luizpizzato/status/49652646562377728
+  date: '2011-03-21'
+- type: twitter
+  title: Making this twitter account official. :-P
+  url: https://x.com/luizpizzato/status/47495484176211969
+  date: '2011-03-15'
+- type: twitter
+  title: 'It is very easy to blame the destruction of the Amazon on South America
+    alone #cablegate'
+  url: https://x.com/luizpizzato/status/45326452610187265
+  date: '2011-03-09'
+- type: twitter
+  title: 'And full screen apps, who would have thought? Truly revolutionary indeed!
+    @codinghorror #macos #lion'
+  url: https://x.com/luizpizzato/status/40926049088978944
+  date: '2011-02-25'
+- type: twitter
+  title: I can buy cow manure!
+  url: https://x.com/luizpizzato/status/29380705079271425
+  date: '2011-01-24'
+- type: twitter
+  title: Overwhelmed, tired, annoyed, stressed.... but yay we have good weather and
+    I'm going to the beach!
+  url: https://x.com/luizpizzato/status/28325535473995776
+  date: '2011-01-21'
+- type: twitter
+  title: 'According to SMH, Brazil has only one city: Rio de Janeiro is not Recife
+    #fd193lf http://smh.com.au/world-193lf.html #fa…'
+  url: https://x.com/luizpizzato/status/17025875694321664
+  date: '2010-12-21'
+- type: twitter
+  title: 'Que vergonha #SCInternacional! Deixou toda a América do Sul na mão. Ainda
+    bem que não sou colorado!'
+  url: https://x.com/luizpizzato/status/14756926617288705
+  date: '2010-12-14'
+- type: twitter
+  title: '@dentinhovolei Dentinho, tá bonito no Twitter! Como tu estás? Nunca pensei
+    em ter um amigo tão popular - 922 seguidores!…'
+  url: https://x.com/luizpizzato/status/14148339108941824
+  date: '2010-12-13'
+- type: twitter
+  title: I love the nightlife (in front of my computer)! 6h45am and still going strong...
+  url: https://x.com/luizpizzato/status/12428273367650304
+  date: '2010-12-08'
+- type: twitter
+  title: 'My commitment for life: Not getting (pissed) drunk ever again!'
+  url: https://x.com/luizpizzato/status/11239151571570688
+  date: '2010-12-05'
+- type: twitter
+  title: 'Gotta love FIFA! #wc2022 in Qatar! 50C heat of pure CO2 tinyurl.com/yzh39x
+    and the weirdest pop pyramid tinyurl.com/2wsr…'
+  url: https://x.com/luizpizzato/status/10569528203280384
+  date: '2010-12-03'
+- type: twitter
+  title: 'How to get the world''s attention to one of the most important happenings
+    in Rio ever? Mention Twitter. #fd18eoi http://t…'
+  url: https://x.com/luizpizzato/status/9488492690149376
+  date: '2010-11-30'
+- type: twitter
+  title: Sleeping is overrated
+  url: https://x.com/luizpizzato/status/9114806518812673
+  date: '2010-11-29'
+- type: twitter
+  title: I am learning that there are only a few things in life that really matter.
+  url: https://x.com/luizpizzato/status/8046326658891776
+  date: '2010-11-26'
+- type: twitter
+  title: I like the "Hint to future leakers" part. http://bit.ly/cNmp4E
+  url: https://x.com/luizpizzato/status/2560687205253120
+  date: '2010-11-11'
+- type: twitter
+  title: '"Some quietly shed a tear, others #literally glowed with pride."'
+  url: https://x.com/luizpizzato/status/27728910657
+  date: '2010-10-18'
+- type: twitter
+  title: Love and hate is a weird thing... I am enjoying the iPad so much to the point
+    that I am hating it...
+  url: https://x.com/luizpizzato/status/22687238814
+  date: '2010-09-01'
+- type: twitter
+  title: This is a test... I repeat... this is a test...
+  url: https://x.com/luizpizzato/status/22501795081
+  date: '2010-08-30'
+- type: twitter
+  title: LAN is tested my patience today... 4X I booked flights, send my CC details,
+    and still no booking! Everytime the price is…
+  url: https://x.com/luizpizzato/status/22159707564
+  date: '2010-08-26'
+- type: twitter
+  title: Life is bitter... bloody pine nuts! http://bit.ly/enhxC
+  url: https://x.com/luizpizzato/status/21619306607
+  date: '2010-08-20'
+- type: twitter
+  title: Going for a run at 2pm...
+  url: https://x.com/luizpizzato/status/21279473409
+  date: '2010-08-16'
+- type: twitter
+  title: I got PHD (Post-Holiday Depression)
+  url: https://x.com/luizpizzato/status/20176053306
+  date: '2010-08-02'
+- type: twitter
+  title: Looking forward to a secluded weekend...
+  url: https://x.com/luizpizzato/status/19809871237
+  date: '2010-07-29'
+- type: twitter
+  title: 'Stop the stupid #masterchef tweeting now.. google did not show up my tweets...
+    :-('
+  url: https://x.com/luizpizzato/status/19490898352
+  date: '2010-07-25'
+- type: twitter
+  title: 'dessert demons! #masterchef'
+  url: https://x.com/luizpizzato/status/19490827183
+  date: '2010-07-25'
+- type: twitter
+  title: 'bring the man a chair! #masterchef'
+  url: https://x.com/luizpizzato/status/19490764269
+  date: '2010-07-25'
+- type: twitter
+  title: 'Your eggs were perfect! I loved your eggs #masterchef pearls'
+  url: https://x.com/luizpizzato/status/19490659314
+  date: '2010-07-25'
+- type: twitter
+  title: 'Congrats Adam! New #masterchef!'
+  url: https://x.com/luizpizzato/status/19490584125
+  date: '2010-07-25'
+- type: twitter
+  title: 'Ratatouille is the new #masterchef!!! Congrats young guy!'
+  url: https://x.com/luizpizzato/status/19490567630
+  date: '2010-07-25'
+- type: twitter
+  title: 'Celebrity chef everywhere... gosh I hate #masterchef'
+  url: https://x.com/luizpizzato/status/19490503746
+  date: '2010-07-25'
+- type: twitter
+  title: 'Jo retweeted Kylie on 7 via mobile phone call while #masterchef was on intermission'
+  url: https://x.com/luizpizzato/status/19490443480
+  date: '2010-07-25'
+- type: twitter
+  title: 'Watching #masterchef... fart!'
+  url: https://x.com/luizpizzato/status/19490296304
+  date: '2010-07-25'
+- type: twitter
+  title: Back in Sydney...
+  url: https://x.com/luizpizzato/status/17921836886
+  date: '2010-07-07'
+- type: twitter
+  title: Goodbye work... hello holidays...
+  url: https://x.com/luizpizzato/status/15401357483
+  date: '2010-06-04'
+- type: twitter
+  title: 5 days....
+  url: https://x.com/luizpizzato/status/15086716865
+  date: '2010-05-31'
+- type: twitter
+  title: Can someone show this to people in Sydney? http://tinyurl.com/23t5u83
+  url: https://x.com/luizpizzato/status/13818029343
+  date: '2010-05-12'
+- type: twitter
+  title: Some people sleep walk, I sleep write-papers...
+  url: https://x.com/luizpizzato/status/12525025092
+  date: '2010-04-20'
+- type: twitter
+  title: This is going to be a long and busy week...
+  url: https://x.com/luizpizzato/status/12436071987
+  date: '2010-04-19'
+- type: twitter
+  title: Trying Facebook/Twitter status updated via Pidgin... let's see if I start
+    flooding people again with auto-away messages
+  url: https://x.com/luizpizzato/status/12264038424
+  date: '2010-04-16'
+- type: twitter
+  title: Should I try this thing again? Will it work well with Pidgin?
+  url: https://x.com/luizpizzato/status/12250867895
+  date: '2010-04-15'
+- type: twitter
+  title: Gotta get back to work. I realized that twitter is stupid. Well, microblogging
+    is stupid.
+  url: https://x.com/luizpizzato/status/31254191
+  date: '2007-04-17'
+- type: twitter
+  title: Getting things done.. not really... reading, answer email, possible working...
+    hm.. I bet I'll be writing a blog entry..…
+  url: https://x.com/luizpizzato/status/30507681
+  date: '2007-04-17'
+- type: twitter
+  title: Trying to work but gosh I'm sleepy
+  url: https://x.com/luizpizzato/status/30127291
+  date: '2007-04-16'
+- type: twitter
+  title: Talking to sis and bro-in-law. Their having a party at home
+  url: https://x.com/luizpizzato/status/28231541
+  date: '2007-04-14'
+- type: twitter
+  title: picking up a friend... going out
+  url: https://x.com/luizpizzato/status/26368581
+  date: '2007-04-13'
+- type: twitter
+  title: cam back from the game. It was a draw. I'm upset
+  url: https://x.com/luizpizzato/status/26276171
+  date: '2007-04-12'
+- type: twitter
+  title: Getting ready to play paddle tennis
+  url: https://x.com/luizpizzato/status/26174531
+  date: '2007-04-12'
+- type: twitter
+  title: Twitterwoo needs update.
+  url: https://x.com/luizpizzato/status/26070311
+  date: '2007-04-12'
+- type: twitter
+  title: Checking out http://mikedemers.net/projects/tweetbar which seems to work
+    alright
+  url: https://x.com/luizpizzato/status/26028051
+  date: '2007-04-12'
+- type: twitter
+  title: Well. This thing looked cool when IM worked. Now I have to wait a bit longer,
+    until it is more stable. Can't stand comin…
+  url: https://x.com/luizpizzato/status/25989801
+  date: '2007-04-12'
+- type: twitter
+  title: Checking out google gadget for twitter
+  url: https://x.com/luizpizzato/status/25982231
+  date: '2007-04-12'
+- type: twitter
+  title: Woke up and I'm trying to make IM twitter to work
+  url: https://x.com/luizpizzato/status/25909541
+  date: '2007-04-12'
+- type: twitter
+  title: 'Note to self: Turn the screen away when deciding to sleep'
+  url: https://x.com/luizpizzato/status/25644581
+  date: '2007-04-12'
+- type: twitter
+  title: Checking my emails and stuff. aka procrastinating
+  url: https://x.com/luizpizzato/status/25585471
+  date: '2007-04-12'
+- type: twitter
+  title: Just woke up (5h30) and will take my parent to bus station
+  url: https://x.com/luizpizzato/status/25557731
+  date: '2007-04-12'
+- type: twitter
+  title: Finally going to sleep
+  url: https://x.com/luizpizzato/status/25392301
+  date: '2007-04-12'
+- type: twitter
+  title: Watching Gremio's game
+  url: https://x.com/luizpizzato/status/25192651
+  date: '2007-04-12'
+- type: twitter
+  title: let's see of this works now..
+  url: https://x.com/luizpizzato/status/25127701
+  date: '2007-04-11'
+- type: twitter
+  title: Checking out twitter on google talk
+  url: https://x.com/luizpizzato/status/25123921
+  date: '2007-04-11'
+- type: twitter
+  title: Watch an episode of Safran vs God and sleep.
+  url: https://x.com/luizpizzato/status/10835351
+  date: '2007-03-22'
+- type: twitter
+  title: Gave up on Rocky. Had to solve car battery problem and author a DVD. Now,
+    responding emails.
+  url: https://x.com/luizpizzato/status/10803741
+  date: '2007-03-22'
+- type: twitter
+  title: Going to watch Rocky Balboa!
+  url: https://x.com/luizpizzato/status/10760851
+  date: '2007-03-22'
+- type: twitter
+  title: Back to organizing email for a while
+  url: https://x.com/luizpizzato/status/10671251
+  date: '2007-03-21'
+- type: twitter
+  title: Transferring my email to Gmail
+  url: https://x.com/luizpizzato/status/10614381
+  date: '2007-03-21'

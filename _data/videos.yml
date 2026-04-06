@@ -1,0 +1,18 @@
+# YouTube videos for the personal page.
+# Auto-populated by: python scripts/fetch_videos.py
+#
+# You can edit descriptions manually — the script only adds new entries
+# and updates the date field; it never overwrites your edits.
+#
+# Fields:
+#   title:       Video title
+#   youtube_id:  The part after ?v= in the YouTube URL
+#   date:        "YYYY-MM-DD"  (publish date)
+#   description: One-sentence summary (optional, editable)
+
+videos:
+- title: 'Codes and Horizons: Luiz''s Journey'
+  youtube_id: Y8ibsbP8h0M
+  date: '2024-04-18'
+  description: A short documentary tracing the path from southern Brazil to AI research
+    on the other side of the world.
