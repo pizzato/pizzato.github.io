@@ -253,7 +253,7 @@ RecSys '10: Proceedings of the Fourth ACM Conference on Recommender Systems. Bar
 **Reciprocal Recommender System for Online Dating**
 _Luiz Pizzato, Tomek Rej, Thomas Chung, Irena Koprinska and Judy Kay_
 RecSys '10 (demonstration session): Proceedings of the Fourth ACM Conference on Recommender Systems. Barcelona, 26-30 September 2010
-[(ACM (Open Access))](https://dl.acm.org/doi/10.1145/1864708.1864787?cid=81444607788) 
+[(ACM)](https://dl.acm.org/doi/10.1145/1864708.1864787) 
 
 
 
