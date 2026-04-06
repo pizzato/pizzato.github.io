@@ -20,10 +20,9 @@ layout: compress
 
       <!-- Filter bar -->
       <div class="tl-filters" id="tl-filters">
-        <button class="tl-filter active" data-filter="all">All</button>
-        <button class="tl-filter" data-filter="career">Career</button>
-        <button class="tl-filter" data-filter="education">Education</button>
-        <button class="tl-filter" data-filter="research">Research</button>
+        <button class="tl-filter active" data-filter="career">Career</button>
+        <button class="tl-filter active" data-filter="education">Education</button>
+        <button class="tl-filter active" data-filter="research">Research</button>
         <button class="tl-filter" data-filter="photo">Photos</button>
         <button class="tl-filter" data-filter="writing">Writing</button>
         <button class="tl-filter" data-filter="social">Social</button>
@@ -126,35 +125,33 @@ layout: compress
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="{{ site.url }}/assets/js/revamp.js" defer></script>
     <script>
-    /* Timeline filter + social hidden by default */
+    /* Timeline — independent toggle filters */
     (function () {
       var filters = document.querySelectorAll('.tl-filter');
       var events  = document.querySelectorAll('.tl-event');
 
-      /* Hide social by default */
-      document.querySelectorAll('.tl-event--social').forEach(function (el) {
-        el.style.display = 'none';
-      });
+      function activeTypes() {
+        var types = {};
+        filters.forEach(function (btn) {
+          if (btn.classList.contains('active')) types[btn.dataset.filter] = true;
+        });
+        return types;
+      }
 
-      function applyFilter(filter) {
+      function applyFilters() {
+        var active = activeTypes();
         events.forEach(function (el) {
-          var type = el.dataset.type;
-          if (filter === 'all') {
-            /* All except social */
-            el.style.display = (type === 'social') ? 'none' : '';
-          } else {
-            el.style.display = (type === filter) ? '' : 'none';
-          }
+          el.style.display = active[el.dataset.type] ? '' : 'none';
         });
 
-        /* Show/hide year anchors that have no visible siblings */
+        /* Hide year anchors that have no visible events */
         document.querySelectorAll('.tl-year-anchor').forEach(function (anchor) {
           var year = anchor.dataset.year;
           var hasVisible = false;
           events.forEach(function (el) {
             if (el.style.display !== 'none') {
-              var date = el.querySelector('.tl-card-date');
-              if (date && date.textContent.trim().slice(-4) === year) hasVisible = true;
+              var dateEl = el.querySelector('.tl-card-date');
+              if (dateEl && dateEl.textContent.trim().slice(-4) === year) hasVisible = true;
             }
           });
           anchor.style.display = hasVisible ? '' : 'none';
@@ -163,14 +160,13 @@ layout: compress
 
       filters.forEach(function (btn) {
         btn.addEventListener('click', function () {
-          filters.forEach(function (b) { b.classList.remove('active'); });
-          btn.classList.add('active');
-          applyFilter(btn.dataset.filter);
+          btn.classList.toggle('active');
+          applyFilters();
         });
       });
 
-      /* Initial: hide social year anchors that may be year-only */
-      applyFilter('all');
+      /* Apply initial state (career/education/research on, rest off) */
+      applyFilters();
     })();
     </script>
 
