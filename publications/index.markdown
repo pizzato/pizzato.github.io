@@ -237,8 +237,8 @@ Proceedings of the 19th International Conference on User Modeling, Adaptation an
 **Learning User Preferences in Online Dating.**
 _Luiz Pizzato, Thomas Chung, Tomasz Rej, Kalina Yacef, Irena Koprinska and Judy Kay_
 Proceedings of the Workshop on Preference Learning (PL-10) at the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD). Barcelona, Spain. 24 September 2010
- 
-
+Proceedings of the Workshop on Preference Learning (PL-10) at the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD). Barcelona, Spain. 24 September 2010
+[(Workshop)](https://web.archive.org/web/20151130092112/https://www.ke.tu-darmstadt.de/events/PL-10/) [(PDF)]({{ site.url }}/assets/pdf/papers/ECML-PKDD-PL-10-8-Pizzato.pdf)
 
 
 
