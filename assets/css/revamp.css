@@ -4,7 +4,7 @@
    DESIGN.md: tonal depth, no-line rule, glass & gradient rule
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400;1,6..72,500;1,6..72,600&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 /* ── Reset ──────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -72,6 +72,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Blanket override — prevent Fira Sans (old theme) from appearing anywhere */
+*, *::before, *::after {
+  font-family: inherit;
+}
+
 /* Override old site styles */
 .header, .wrapper, .content, .container { all: unset; display: block; }
 .dl-menuwrapper { display: none !important; }
@@ -83,7 +88,7 @@ ul, ol { list-style: none; }
 
 /* ── Typography scale ───────────────────────────────────────── */
 .display-lg {
-  font-family: 'Newsreader', Georgia, serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: clamp(2.5rem, 5vw, 3.5rem);
   font-weight: 500;
   line-height: 1.1;
@@ -92,7 +97,7 @@ ul, ol { list-style: none; }
 }
 
 .display-md {
-  font-family: 'Newsreader', Georgia, serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: clamp(1.75rem, 3.5vw, 2.5rem);
   font-weight: 500;
   line-height: 1.2;
@@ -101,7 +106,7 @@ ul, ol { list-style: none; }
 }
 
 .display-sm {
-  font-family: 'Newsreader', Georgia, serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: clamp(1.25rem, 2.5vw, 1.75rem);
   font-weight: 500;
   line-height: 1.3;
@@ -149,8 +154,6 @@ ul, ol { list-style: none; }
   font-weight: 600;
   color: var(--on-surface);
   flex-shrink: 0;
-  font-family: 'Newsreader', Georgia, serif;
-  font-style: italic;
 }
 
 .nav-avatar {
@@ -284,7 +287,6 @@ ul, ol { list-style: none; }
   padding: 40px;
 }
 
-.bento-hero .label-sm { margin-bottom: 16px; }
 
 .bento-hero .display-lg { margin-bottom: 12px; }
 
@@ -359,10 +361,8 @@ ul, ol { list-style: none; }
 }
 
 .status-heading {
-  font-family: 'Newsreader', Georgia, serif;
-  font-size: 1.25rem;
-  font-style: italic;
-  font-weight: 500;
+  font-size: 1.1rem;
+  font-weight: 600;
   color: var(--on-surface);
   margin-bottom: 10px;
 }
@@ -394,7 +394,7 @@ ul, ol { list-style: none; }
 }
 
 .impact-metric {
-  font-family: 'Newsreader', Georgia, serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 3rem;
   font-weight: 600;
   letter-spacing: -0.03em;
@@ -487,10 +487,8 @@ a.bento-impact:hover .impact-metric { color: var(--primary); }
 }
 
 .archive-title {
-  font-family: 'Newsreader', Georgia, serif;
-  font-size: 1.5rem;
-  font-style: italic;
-  font-weight: 500;
+  font-size: 1.25rem;
+  font-weight: 600;
   color: var(--on-surface);
   margin-bottom: 24px;
 }
@@ -828,8 +826,7 @@ a.bento-impact:hover .impact-metric { color: var(--primary); }
 .page-content h4, .page-content h5, .page-content h6,
 .article-body h1, .article-body h2, .article-body h3,
 .article-body h4, .article-body h5, .article-body h6 {
-  font-family: 'Newsreader', Georgia, serif;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--on-surface);
   margin-top: 2rem;
   margin-bottom: 0.75rem;
@@ -840,7 +837,7 @@ a.bento-impact:hover .impact-metric { color: var(--primary); }
 .page-content h1, .article-body h1 { font-size: 2rem; }
 .page-content h2, .article-body h2 { font-size: 1.5rem; }
 .page-content h3, .article-body h3 { font-size: 1.25rem; }
-.page-content h4, .article-body h4 { font-size: 1rem; font-family: 'Inter', sans-serif; font-weight: 600; }
+.page-content h4, .article-body h4 { font-size: 1rem; font-weight: 600; }
 
 .page-content p, .article-body p { margin-bottom: 1.25rem; }
 
