@@ -386,6 +386,16 @@
     "description": ""
   },
   {
+    "type": "career",
+    "subtype": "project",
+    "title": "AITD — Abuse in Transaction Descriptions",
+    "subtitle": "Project",
+    "date": "2023-11-08",
+    "date_end": "2023-11-08",
+    "url": "https://github.com/h2oai/AITD",
+    "description": "Open-sourced dataset and detection model for identifying abusive content in bank transaction descriptions, developed at Commonwealth Bank."
+  },
+  {
     "title": "We just open sourced our models for the detection of transaction abuse!",
     "subtitle": "LinkedIn",
     "date": "2023-11-08",

@@ -151,6 +151,12 @@ projects:
     start: "2002-01-01"
     end: "2007-12-01"
 
+  - title: "AITD — Abuse in Transaction Descriptions"
+    description: "Open-sourced dataset and detection model for identifying abusive content in bank transaction descriptions, developed at Commonwealth Bank."
+    url: "https://github.com/h2oai/AITD"
+    start: "2023-11-08"
+    end: "2023-11-08"
+
   - title: "PyHeal"
     description: "Open-source Python library for easy development with homomorphic encryption, released by Accenture."
     url: "https://github.com/Accenture/pyheal"
