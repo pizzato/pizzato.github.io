@@ -147,7 +147,8 @@ doi:10.1145/3488560.3502191 [ACM (Open Access)](https://dl.acm.org/doi/10.1145/3
 
 **A fairness-aware multi-stakeholder recommender system**
 _Naime Ranjbar Kermany, Weiliang Zhao, Jian Yang, Jia Wu, Luiz Pizzato_
-World Wide Web (2021). doi:10.1007/s11280-021-00946-8 [Springer](https://link.springer.com/article/10.1007/s11280-021-00946-8)
+World Wide Web (2021).
+[(Springer)](https://link.springer.com/article/10.1007/s11280-021-00946-8)
 
 
 
