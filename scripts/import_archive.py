@@ -169,6 +169,11 @@ def parse_twitter(tweets_js_path, include_retweets=False, include_replies=False)
                 skipped += 1
                 continue
 
+        # Skip tweets before 2013
+        if date_str < "2013-01-01":
+            skipped += 1
+            continue
+
         url = f"https://x.com/{TWITTER_USERNAME}/status/{tweet_id}"
 
         items.append({
