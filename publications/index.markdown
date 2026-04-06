@@ -213,7 +213,7 @@ New Frontiers in Applied Data Mining, volume 7104 of Lecture Notes in Computer S
 **Stochastic Matching and Collaborative Filtering to Recommend People to People**
 _Luiz Augusto Pizzato, and Cameron Silvestrini_
 RecSys '11: Proceedings of the Fifth ACM Conference on Recommender Systems. Chicago, 23-27 October 2011
-[(ACM)](https://doi.org/10.1145/2043932.2043998) [(ACM Open Access)](https://dl.acm.org/doi/10.1145/2043932.2043998?cid=81444607788)
+[(ACM)](https://doi.org/10.1145/2043932.2043998)
 
 
 
