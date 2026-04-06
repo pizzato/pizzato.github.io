@@ -1,0 +1,191 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    {% include head.html %}
+</head>
+<body>
+    {% include nav.html %}
+
+    <main class="page-layout">
+      <header class="page-header">
+        <a class="back-btn" href="{{ site.url }}/">&#8592;</a>
+        <div>
+          <h1 class="display-md">Chronicle</h1>
+          <p class="page-subtitle">A life in research, code, and pixels — 1997 to present</p>
+        </div>
+      </header>
+
+      <!-- Filter bar -->
+      <div class="tl-filters" id="tl-filters">
+        <button class="tl-filter active" data-filter="all">All</button>
+        <button class="tl-filter" data-filter="career">Career</button>
+        <button class="tl-filter" data-filter="education">Education</button>
+        <button class="tl-filter" data-filter="research">Research</button>
+        <button class="tl-filter" data-filter="photo">Photos</button>
+        <button class="tl-filter" data-filter="writing">Writing</button>
+        <button class="tl-filter" data-filter="social">Social</button>
+      </div>
+
+      <!-- Timeline -->
+      <div class="tl-wrap" id="tl-wrap">
+        <div class="tl-spine"></div>
+
+        {% assign sorted = site.data.timeline | sort: "date" | reverse %}
+        {% assign prev_year = "" %}
+
+        {% for item in sorted %}
+          {% assign item_year = item.date | date: "%Y" %}
+
+          {% if item_year != prev_year %}
+            <div class="tl-year-anchor" data-year="{{ item_year }}">
+              <span class="tl-year-label">{{ item_year }}</span>
+            </div>
+            {% assign prev_year = item_year %}
+          {% endif %}
+
+          <div class="tl-event tl-event--{{ item.type }}{% if item.subtype %} tl-event--{{ item.subtype }}{% endif %} reveal"
+               data-type="{{ item.type }}">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+
+              {% if item.type == "photo" and item.image %}
+                {% if item.media_type == "video" %}
+                  <video class="tl-photo-thumb" autoplay muted loop playsinline>
+                    <source src="{{ item.image | prepend: site.url }}" type="video/mp4">
+                  </video>
+                {% else %}
+                  {% if item.image contains "://" %}
+                    <img class="tl-photo-thumb" src="{{ item.image }}" alt="{{ item.title }}" loading="lazy">
+                  {% else %}
+                    <img class="tl-photo-thumb" src="{{ item.image | prepend: site.url }}" alt="{{ item.title }}" loading="lazy">
+                  {% endif %}
+                {% endif %}
+              {% endif %}
+
+              <div class="tl-card-body">
+                <div class="tl-card-meta">
+                  <span class="tl-type-badge tl-type-badge--{{ item.type }}">
+                    {% if item.type == "career" %}
+                      {% if item.subtype == "advisory" %}&#x1F4CB;{% elsif item.subtype == "project" %}&#x1F527;{% else %}&#x1F4BC;{% endif %}
+                    {% elsif item.type == "education" %}&#x1F393;
+                    {% elsif item.type == "research" %}&#x1F4C4;
+                    {% elsif item.type == "photo" %}&#x1F4F7;
+                    {% elsif item.type == "writing" %}&#x270D;
+                    {% elsif item.type == "social" %}&#x1F4AC;
+                    {% endif %}
+                    {{ item.type | capitalize }}{% if item.subtype %} · {{ item.subtype }}{% endif %}
+                  </span>
+                  <span class="tl-card-date">{{ item.date | date: "%b %Y" }}</span>
+                </div>
+
+                <{% if item.url %}a href="{{ item.url }}"{% if item.url contains "://" %} target="_blank" rel="noopener noreferrer"{% endif %} class="tl-card-title-link"{% else %}div{% endif %} class="tl-card-title">
+                  {{ item.title }}
+                </{% if item.url %}a{% else %}div{% endif %}>
+
+                {% if item.subtitle and item.subtitle != "" %}
+                  <div class="tl-card-subtitle">{{ item.subtitle }}</div>
+                {% endif %}
+
+                {% if item.description and item.description != "" %}
+                  <div class="tl-card-desc">{{ item.description }}</div>
+                {% endif %}
+
+                {% if item.date_end %}
+                  {% assign start_ts = item.date | date: "%s" | plus: 0 %}
+                  {% assign end_ts   = item.date_end | date: "%s" | plus: 0 %}
+                  {% assign now_ts   = "now" | date: "%s" | plus: 0 %}
+                  {% assign use_end  = end_ts %}
+                  {% if use_end == 0 %}{% assign use_end = now_ts %}{% endif %}
+                  <div class="tl-tenure">
+                    <span>{{ item.date | date: "%b %Y" }} – {{ item.date_end | date: "%b %Y" }}</span>
+                  </div>
+                {% elsif item.type == "career" or item.type == "education" %}
+                  <div class="tl-tenure">
+                    <span>{{ item.date | date: "%b %Y" }} – Present</span>
+                  </div>
+                {% endif %}
+
+              </div><!-- /.tl-card-body -->
+            </div><!-- /.tl-card -->
+          </div><!-- /.tl-event -->
+
+        {% endfor %}
+      </div><!-- /.tl-wrap -->
+
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; {{ 'now' | date: "%Y" }} Luiz Pizzato. All rights reserved.</span>
+      <div class="footer-right">
+        <a href="{{ site.url }}/about/">About</a>
+        <a href="{{ site.url }}/publications/">Research</a>
+        <a href="{{ site.url }}/feed.xml">RSS</a>
+      </div>
+    </footer>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="{{ site.url }}/assets/js/revamp.js" defer></script>
+    <script>
+    /* Timeline filter + social hidden by default */
+    (function () {
+      var filters = document.querySelectorAll('.tl-filter');
+      var events  = document.querySelectorAll('.tl-event');
+
+      /* Hide social by default */
+      document.querySelectorAll('.tl-event--social').forEach(function (el) {
+        el.style.display = 'none';
+      });
+
+      function applyFilter(filter) {
+        events.forEach(function (el) {
+          var type = el.dataset.type;
+          if (filter === 'all') {
+            /* All except social */
+            el.style.display = (type === 'social') ? 'none' : '';
+          } else {
+            el.style.display = (type === filter) ? '' : 'none';
+          }
+        });
+
+        /* Show/hide year anchors that have no visible siblings */
+        document.querySelectorAll('.tl-year-anchor').forEach(function (anchor) {
+          var year = anchor.dataset.year;
+          var hasVisible = false;
+          events.forEach(function (el) {
+            if (el.style.display !== 'none') {
+              var date = el.querySelector('.tl-card-date');
+              if (date && date.textContent.trim().slice(-4) === year) hasVisible = true;
+            }
+          });
+          anchor.style.display = hasVisible ? '' : 'none';
+        });
+      }
+
+      filters.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          filters.forEach(function (b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          applyFilter(btn.dataset.filter);
+        });
+      });
+
+      /* Initial: hide social year anchors that may be year-only */
+      applyFilter('all');
+    })();
+    </script>
+
+    {% if site.google.analytics %}
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', '{{ site.google.analytics }}', 'auto');
+      ga('send', 'pageview');
+    </script>
+    {% endif %}
+</body>
+</html>
