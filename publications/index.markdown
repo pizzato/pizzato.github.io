@@ -128,8 +128,8 @@ NeurIPS 2024 Workshop Open-World Agents
 
 **PD-SRS: Personalized Diversity for a Fair Session-Based Recommendation System**
 _Naime Ranjbar Kermany, Luiz Pizzato, Jian Yang, Shan Xue, Jia Wu_
-Service-Oriented Computing. ICSOC 2022. Lecture Notes in Computer Science, vol 13740. Springer, Cham. 
-doi:10.1007/978-3-031-20984-0_23 [Springer](https://doi.org/10.1007/978-3-031-20984-0_23)
+Service-Oriented Computing. ICSOC 2022. Lecture Notes in Computer Science, vol 13740. Springer, Cham.
+[(Springer)](https://doi.org/10.1007/978-3-031-20984-0_23)
 
 
 
