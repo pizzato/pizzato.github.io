@@ -241,6 +241,12 @@ def parse_linkedin(csv_path):
             # Best URL: PostLink > ShareLink > fallback to profile
             url = post_url or share_link or LINKEDIN_PROFILE_URL
 
+            # Skip posts made to LinkedIn Groups (private/semi-private groups
+            # that don't belong on a public stream)
+            if "groupPost" in url:
+                skipped += 1
+                continue
+
             items.append({
                 "type": "linkedin",
                 "title": first_line(text),
