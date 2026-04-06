@@ -245,7 +245,7 @@ Proceedings of the Workshop on Preference Learning (PL-10) at the European Confe
 **RECON: A Reciprocal Recommender for Online Dating.**
 _Luiz Pizzato, Tomek Rej, Thomas Chung, Irena Koprinska and Judy Kay_
 RecSys '10: Proceedings of the Fourth ACM Conference on Recommender Systems. Barcelona, 26-30 September 2010
-[(ACM)](https://doi.org/10.1145/1864708.1864747) [(ACM Open Access)](https://dl.acm.org/doi/10.1145/1864708.1864747?cid=81444607788)
+[(ACM)](https://doi.org/10.1145/1864708.1864747)
 
 
 
