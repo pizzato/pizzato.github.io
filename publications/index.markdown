@@ -261,8 +261,8 @@ RecSys '10 (demonstration session): Proceedings of the Fourth ACM Conference on 
 **Reciprocal Recommenders.**
 _Luiz Pizzato, Tomek Rej, Thomas Chung, Kalina Yacef, Irena Koprinska and Judy Kay_
 Proceedings of the Workshop on Intelligent Techniques for Web Personalization & Recommender Systems (ITWP'10) at User Modeling, Adaptation and Personalization (UMAP 2010), Big Island of Hawaii. 2010.
-
-
+Proceedings of the Workshop on Intelligent Techniques for Web Personalization & Recommender Systems (ITWP'10) at User Modeling, Adaptation and Personalization (UMAP 2010), Big Island of Hawaii. 2010.
+[(Workshop)](https://web.archive.org/web/20120328082339/http://ls13-www.cs.uni-dortmund.de/homepage/ITWP2010/index.shtml) [(PDF)]({{ site.url }}/assets/pdf/papers/UMAP2010-ITWP-Pizzato-ReciprocalRecommender.pdf)
 
 
 
