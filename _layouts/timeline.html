@@ -52,16 +52,13 @@ layout: compress
             <div class="tl-card">
 
               {% if item.type == "photo" and item.image %}
+                {% unless item.image contains '://' %}{% assign media_src = site.url | append: '/' | append: item.image %}{% else %}{% assign media_src = item.image %}{% endunless %}
                 {% if item.media_type == "video" %}
                   <video class="tl-photo-thumb" autoplay muted loop playsinline>
-                    <source src="{{ item.image | prepend: site.url }}" type="video/mp4">
+                    <source src="{{ media_src }}" type="video/mp4">
                   </video>
                 {% else %}
-                  {% if item.image contains "://" %}
-                    <img class="tl-photo-thumb" src="{{ item.image }}" alt="{{ item.title }}" loading="lazy">
-                  {% else %}
-                    <img class="tl-photo-thumb" src="{{ item.image | prepend: site.url }}" alt="{{ item.title }}" loading="lazy">
-                  {% endif %}
+                  <img class="tl-photo-thumb" src="{{ media_src }}" alt="{{ item.title }}" loading="lazy">
                 {% endif %}
               {% endif %}
 
