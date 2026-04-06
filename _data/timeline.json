@@ -963,7 +963,7 @@
     "title": "PyHeal",
     "subtitle": "Project",
     "date": "2019-01-01",
-    "date_end": "2019-01-01",
+    "date_end": "2020-04-01",
     "url": "https://github.com/Accenture/pyheal",
     "description": "Open-source Python library for easy development with homomorphic encryption, released by Accenture."
   },
