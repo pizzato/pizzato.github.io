@@ -269,7 +269,7 @@ Proceedings of the Workshop on Intelligent Techniques for Web Personalization & 
 **Indexing on Semantic Roles for Question Answering.**
 _Luiz Pizzato and Diego Molla_
 Proceedings of the Coling 2008 Workshop Information Retrieval for Question Answering (IR4QA-08). Manchester, August, 2008
-[(PDF)](https://aclanthology.org/W08-0705.pdf)
+[(ACL)](https://aclanthology.org/W08-1810/) [(PDF)](https://aclanthology.org/W08-1810.pdf)
 
 
 
