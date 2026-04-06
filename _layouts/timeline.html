@@ -89,18 +89,45 @@ layout: compress
                   <div class="tl-card-desc">{{ item.description }}</div>
                 {% endif %}
 
-                {% if item.date_end %}
-                  {% assign start_ts = item.date | date: "%s" | plus: 0 %}
-                  {% assign end_ts   = item.date_end | date: "%s" | plus: 0 %}
-                  {% assign now_ts   = "now" | date: "%s" | plus: 0 %}
-                  {% assign use_end  = end_ts %}
-                  {% if use_end == 0 %}{% assign use_end = now_ts %}{% endif %}
-                  <div class="tl-tenure">
-                    <span>{{ item.date | date: "%b %Y" }} – {{ item.date_end | date: "%b %Y" }}</span>
-                  </div>
-                {% elsif item.type == "career" or item.type == "education" %}
-                  <div class="tl-tenure">
-                    <span>{{ item.date | date: "%b %Y" }} – Present</span>
+                {% if item.type == "career" or item.type == "education" %}
+                  {% assign tl_s = 1995 %}
+                  {% assign tl_e = "now" | date: "%Y" | plus: 1 %}
+                  {% assign tl_span = tl_e | minus: tl_s %}
+
+                  {% assign i_sy = item.date | date: "%Y" | plus: 0 %}
+                  {% assign i_sm = item.date | date: "%m" | plus: 0 %}
+
+                  {% if item.date_end %}
+                    {% assign i_ey = item.date_end | date: "%Y" | plus: 0 %}
+                    {% assign i_em = item.date_end | date: "%m" | plus: 0 %}
+                    {% assign end_label = item.date_end | date: "%b %Y" %}
+                  {% else %}
+                    {% assign i_ey = "now" | date: "%Y" | plus: 0 %}
+                    {% assign i_em = "now" | date: "%m" | plus: 0 %}
+                    {% assign end_label = "Present" %}
+                  {% endif %}
+
+                  {% assign bar_left = i_sy | minus: tl_s | times: 100 | divided_by: tl_span %}
+                  {% assign bar_width = i_ey | minus: i_sy | times: 100 | divided_by: tl_span %}
+                  {% if bar_width < 2 %}{% assign bar_width = 2 %}{% endif %}
+                  {% assign bar_edge = bar_left | plus: bar_width %}
+                  {% if bar_edge > 100 %}{% assign bar_width = 100 | minus: bar_left %}{% endif %}
+
+                  {% assign dur_months = i_ey | minus: i_sy | times: 12 | plus: i_em | minus: i_sm %}
+                  {% assign dur_yrs = dur_months | divided_by: 12 %}
+                  {% assign dur_rem  = dur_months | modulo: 12 %}
+
+                  <div class="tl-span">
+                    <div class="tl-span-track">
+                      <div class="tl-span-fill" style="left:{{ bar_left }}%;width:{{ bar_width }}%"></div>
+                    </div>
+                    <div class="tl-span-labels">
+                      <span>{{ item.date | date: "%b %Y" }}</span>
+                      <span class="tl-span-dur">
+                        {% if dur_yrs > 0 %}{{ dur_yrs }} yr{% if dur_yrs != 1 %}s{% endif %}{% if dur_rem > 0 %} {{ dur_rem }} mo{% endif %}{% elsif dur_months > 0 %}{{ dur_months }} mo{% else %}&lt; 1 mo{% endif %}
+                      </span>
+                      <span>{{ end_label }}</span>
+                    </div>
                   </div>
                 {% endif %}
 
