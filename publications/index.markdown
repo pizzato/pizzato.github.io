@@ -82,7 +82,7 @@ UMAP 2012, Montreal, Canada, July 16, 2012
 **Proceedings of the First Workshop on Community Mining and People Recommenders**
 Edited by: _Panagiotis Papapetrou, Luiz Augusto Pizzato, Aristides Gioni, Xiongcai Cai_
 IEEE ICDM 2011, Vancouver, Canada, 2011
-[[IEEE]](http://doi.ieeecomputersociety.org/10.1109/ICDMW.2011.192) [[Bib]](http://www.computer.org/plugins/dl/citation/abs/bibtex/description/doi/10.1109/ICDMW.2011.192.bib)
+[[IEEE]](http://doi.ieeecomputersociety.org/10.1109/ICDMW.2011.192)
 
 
 
@@ -198,7 +198,7 @@ Proceedings of the 20th International Conference on User Modeling, Adaptation an
 **Using Wikipedia and Conceptual Graph Structures to Generate Questions for Academic Writing Support.**
 _Ming Liu, Rafael A. Calvo, Anindito Aditomo, and Luiz Augusto Pizzato_
 IEEE Transactions on Learning Technologies, vol. 5, no. 3, pp. 251-263, Third Quarter 2012
-[[IEEE]](http://doi.ieeecomputersociety.org/10.1109/TLT.2012.5) [[Bib]](http://www.computer.org/plugins/dl/citation/abs/bibtex/description/doi/10.1109/TLT.2012.5.bib)
+[[IEEE]](http://doi.ieeecomputersociety.org/10.1109/TLT.2012.5)
 
 
 
