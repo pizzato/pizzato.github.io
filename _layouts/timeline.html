@@ -113,19 +113,12 @@ layout: compress
                   {% assign bar_edge = bar_left | plus: bar_width %}
                   {% if bar_edge > 100 %}{% assign bar_width = 100 | minus: bar_left %}{% endif %}
 
-                  {% assign dur_months = i_ey | minus: i_sy | times: 12 | plus: i_em | minus: i_sm %}
-                  {% assign dur_yrs = dur_months | divided_by: 12 %}
-                  {% assign dur_rem  = dur_months | modulo: 12 %}
-
                   <div class="tl-span">
                     <div class="tl-span-track">
                       <div class="tl-span-fill" style="left:{{ bar_left }}%;width:{{ bar_width }}%"></div>
                     </div>
                     <div class="tl-span-labels">
                       <span>{{ item.date | date: "%b %Y" }}</span>
-                      <span class="tl-span-dur">
-                        {% if dur_yrs > 0 %}{{ dur_yrs }} yr{% if dur_yrs != 1 %}s{% endif %}{% if dur_rem > 0 %} {{ dur_rem }} mo{% endif %}{% elsif dur_months > 0 %}{{ dur_months }} mo{% else %}&lt; 1 mo{% endif %}
-                      </span>
                       <span>{{ end_label }}</span>
                     </div>
                   </div>
