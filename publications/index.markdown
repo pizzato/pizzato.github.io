@@ -117,7 +117,7 @@ _Andy Hu, Devika Prasad, Luiz Pizzato, Nicholas Foord, Arman Abrahamyan, Anna Le
 **A Robust and Efficient Pipeline for Enterprise-Level Large-Scale Entity Resolution**
 _Sandeepa Kannangara, Arman Abrahamyan, Daniel Elias, Thomas Kilby, Nadav Dar, Luiz Pizzato, Anna Leontjeva, Dan Jermyn_
 2025 IEEE International Conference on Big Data (IEEE BigData), 2025, pp. 2359–2368.
-[[PDF]](https://arxiv.org/pdf/2508.03767) [[arXiv]](https://arxiv.org/abs/2508.03767)
+[[IEEE]](https://doi.ieeecomputersociety.org/10.1109/BigData66926.2025.11400814) [[PDF]](https://arxiv.org/pdf/2508.03767) [[arXiv]](https://arxiv.org/abs/2508.03767)
 
 
 **Do LLM Personas Dream of Bull Markets? Comparing Human and AI Investment Strategies Through the Lens of the Five-Factor Model**
