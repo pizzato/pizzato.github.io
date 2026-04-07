@@ -1,0 +1,36 @@
+name: Build Site
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: requirements-data-sync.txt
+
+      - name: Install Python dependencies
+        run: python -m pip install -r requirements-data-sync.txt
+
+      - name: Rebuild derived data from local sources
+        run: python scripts/sync_site_data.py --skip-fetch
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build

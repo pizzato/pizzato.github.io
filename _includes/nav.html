@@ -8,6 +8,7 @@
       <a class="nav-link{% if page.url == '/about/' or page.url contains '/about' %} active{% endif %}" href="{{ site.url }}/about/">About</a>
       <a class="nav-link{% if page.url contains '/posts/' or page.layout == 'stream' or page.layout == 'post' %} active{% endif %}" href="{{ site.url }}/posts/">Posts</a>
       <a class="nav-link{% if page.url == '/publications/' or page.url contains 'publications' %} active{% endif %}" href="{{ site.url }}/publications/">Research</a>
+      <a class="nav-link{% if page.url contains '/timeline' %} active{% endif %}" href="{{ site.url }}/timeline/">Timeline</a>
       <a class="nav-link{% if page.url contains '/personal' %} active{% endif %}" href="{{ site.url }}/personal/">Personal</a>
     </div>
     <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
@@ -21,6 +22,7 @@
   <a class="nav-mobile-link" href="{{ site.url }}/about/">About</a>
   <a class="nav-mobile-link" href="{{ site.url }}/posts/">Posts</a>
   <a class="nav-mobile-link" href="{{ site.url }}/publications/">Research</a>
+  <a class="nav-mobile-link" href="{{ site.url }}/timeline/">Timeline</a>
   <a class="nav-mobile-link" href="{{ site.url }}/personal/">Personal</a>
 </div>
 <script>

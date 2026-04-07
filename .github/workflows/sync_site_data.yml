@@ -1,0 +1,55 @@
+name: Sync Site Data
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: sync-site-data
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: requirements-data-sync.txt
+
+      - name: Install Python dependencies
+        run: python -m pip install -r requirements-data-sync.txt
+
+      - name: Sync generated site data
+        run: python scripts/sync_site_data.py
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      - name: Validate Jekyll build
+        run: bundle exec jekyll build
+
+      - name: Commit generated data if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add \
+            _data/photos.json \
+            _data/stream.json \
+            _data/timeline.json \
+            _data/videos.yml \
+            _data/flickr_nsid.txt \
+            _data/youtube_channel_id.txt
+          git diff --staged --quiet || (git commit -m "chore: sync site data [skip ci]" && git push)

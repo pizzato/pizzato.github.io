@@ -1,0 +1,164 @@
+# Career data for the Life Chronicle Timeline.
+# Populated from LinkedIn archive export (Positions.csv, Education.csv, Projects.csv).
+# Dates use YYYY-MM-DD; end: null means current/present.
+
+positions:
+  - title: "Distinguished AI Scientist — General Manager"
+    company: "Commonwealth Bank"
+    location: "Sydney, Australia"
+    start: "2024-10-01"
+    end: null
+    description: "Leading the development of the bank's next generation foundational GenAI models to power enterprise-wide capabilities."
+
+  - title: "Data Science CAL Lead"
+    company: "Commonwealth Bank"
+    location: "Sydney, Australia"
+    start: "2023-07-01"
+    end: "2024-10-01"
+    description: "Led Chapter Area Leads and 200+ data scientists delivering modelling and AI solutions across all of CommBank's lines of business."
+
+  - title: "Centre of Excellence Lead — AI Labs"
+    company: "Commonwealth Bank"
+    location: "Sydney, Australia"
+    start: "2020-05-01"
+    end: "2024-10-01"
+    description: "Led CommBank's AI team — built Gen.ai Studio, an AI to detect abusive transaction descriptions, and a weather data model for disaster response."
+
+  - title: "Head of Data Science, Liquid Studio ANZ"
+    company: "Accenture"
+    location: "Sydney, Australia"
+    start: "2017-08-01"
+    end: "2020-05-01"
+    description: "Led elite data science team at Accenture's innovation hub — built AI with homomorphic encryption, adversarial defence systems, and a robotic DJ for AWS re:Invent."
+
+  - title: "Director"
+    company: "Octosocial Labs"
+    location: "Sydney, Australia"
+    start: "2014-03-01"
+    end: "2017-11-01"
+    description: "Co-founded startup applying people-matching algorithms to help users find friends and support networks. Built two iPhone apps."
+
+  - title: "Senior Data Scientist"
+    company: "Commonwealth Bank"
+    location: "Sydney, Australia"
+    start: "2016-05-01"
+    end: "2017-07-01"
+    description: "Guided AI solutions for business banking clients; key contributor to DailyIQ — CBA's customer-facing business banking analytics tool."
+
+  - title: "Data Science Immersive Instructor"
+    company: "General Assembly"
+    location: "Hong Kong"
+    start: "2016-06-01"
+    end: "2016-09-01"
+    description: "Taught the first Data Science Immersive in Hong Kong — an intensive 12-week full-time program training 12 data scientists."
+
+  - title: "Principal Consultant"
+    company: "Pizzato Data Science Consultancy"
+    location: "Sydney, Australia"
+    start: "2012-11-01"
+    end: "2016-05-01"
+    description: "Provided AI and machine learning consultancy across organisations, specialising in intelligent processing of large and diverse datasets."
+
+  - title: "Senior Data Scientist"
+    company: "1-Page"
+    location: "Sydney, Australia"
+    start: "2015-02-01"
+    end: "2016-03-01"
+    description: "Founding data science team member — architected NLP algorithms powering hiring, assessment, and innovation platforms including Source.hr."
+
+  - title: "Research Fellow"
+    company: "University of Sydney"
+    location: "Sydney, Australia"
+    start: "2012-03-01"
+    end: "2014-03-01"
+    description: "Research fellow in the School of Computer Science."
+
+  - title: "Postdoctoral Researcher"
+    company: "University of Sydney"
+    location: "Sydney, Australia"
+    start: "2009-03-01"
+    end: "2012-03-01"
+    description: "R&D for Smart Services CRC — pioneered reciprocal recommender systems (online dating), mobile personalisation, and news recommendation with Fairfax Media and Woolworths."
+
+  - title: "Casual Academic"
+    company: "Macquarie University"
+    location: "Sydney, Australia"
+    start: "2004-08-01"
+    end: "2007-12-01"
+    description: "Tutoring in algorithms, C++ programming, and introduction to IT."
+
+  - title: "Lecturer"
+    company: "Universidade de Passo Fundo"
+    location: "Passo Fundo, Brazil"
+    start: "2002-02-01"
+    end: "2002-08-01"
+    description: "Taught Programming, Operating Systems, and Structured Programming across Computer Science and Information Technologies bachelor programmes."
+
+  - title: "Researcher"
+    company: "HP / PUCRS High Performance Computing Lab"
+    location: "Porto Alegre, Brazil"
+    start: "2000-01-01"
+    end: "2001-12-01"
+    description: "Maintained Linux HPC clusters, developed communication and graphical libraries, and coordinated undergraduate interns."
+
+  - title: "Internship — Delphi Developer"
+    company: "Interop"
+    location: "Porto Alegre, Brazil"
+    start: "1997-09-01"
+    end: "1999-10-01"
+    description: "Redesigned and redeveloped the company's main point-of-sale software, including the first version of their auto-update framework."
+
+advisory:
+  - title: "Member of Industry Advisory Board"
+    company: "University of Sydney — School of Computer Science"
+    location: "Sydney, Australia"
+    start: "2023-10-01"
+    end: null
+
+  - title: "Member of Advisory Board for Business Analytics"
+    company: "UTS Business School"
+    location: "Sydney, Australia"
+    start: "2022-04-01"
+    end: "2023-10-01"
+
+education:
+  - degree: "PhD in Computer Science"
+    institution: "Macquarie University"
+    location: "Sydney, Australia"
+    start: "2004-01-01"
+    end: "2008-12-01"
+    thesis: "Using Linguistically Motivated Features in Document Retrieval for Question Answering"
+    description: "Focused on the retrieval component of a question answering system — akin to today's RAG systems."
+
+  - degree: "Master of Science"
+    institution: "University (Brazil)"
+    start: "2001-01-01"
+    end: "2003-12-01"
+    thesis: "A Multi-thesaurus Structure Applied to Information Retrieval"
+    description: "Studied NLP and AI; developed an improved query expansion system later implemented in legal search for the Portuguese General Attorney's office."
+
+  - degree: "Bachelor in Computer Science"
+    institution: "University (Brazil)"
+    start: "1995-01-01"
+    end: "2000-12-01"
+    thesis: "A Virtual Environment for Distance Learning"
+    description: "Built a virtual reality chat room for multi-student/instructor interaction."
+
+projects:
+  - title: "AnswerFinder"
+    description: "Question answering system developed at Macquarie University's Centre for Language Technology — an early RAG-style system using Flat Logical Forms for semantic document retrieval."
+    url: "http://web.science.mq.edu.au/~diego/answerfinder/"
+    start: "2002-01-01"
+    end: "2007-12-01"
+
+  - title: "AITD — Abuse in Transaction Descriptions"
+    description: "Open-sourced dataset and detection model for identifying abusive content in bank transaction descriptions, developed at Commonwealth Bank."
+    url: "https://github.com/h2oai/AITD"
+    start: "2023-11-08"
+    end: "2023-11-08"
+
+  - title: "PyHeal"
+    description: "Open-source Python library for easy development with homomorphic encryption, released by Accenture."
+    url: "https://github.com/Accenture/pyheal"
+    start: "2019-01-01"
+    end: "2020-04-01"

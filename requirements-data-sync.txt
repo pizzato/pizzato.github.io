@@ -1,0 +1,4 @@
+feedparser
+PyYAML
+python-frontmatter
+requests
