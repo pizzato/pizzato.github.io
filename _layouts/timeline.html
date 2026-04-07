@@ -147,8 +147,22 @@ layout: compress
     <script>
     /* Timeline — independent toggle filters */
     (function () {
+      var siteNavWrap = document.querySelector('.site-nav-wrap');
+      var filtersBar = document.getElementById('tl-filters');
       var filters = document.querySelectorAll('.tl-filter');
       var events  = document.querySelectorAll('.tl-event');
+
+      function syncStickyTop() {
+        if (!filtersBar) return;
+        if (!siteNavWrap) {
+          filtersBar.style.top = '';
+          return;
+        }
+
+        var navRect = siteNavWrap.getBoundingClientRect();
+        var top = Math.max(0, Math.round(navRect.bottom));
+        filtersBar.style.top = top + 'px';
+      }
 
       function activeTypes() {
         var types = {};
@@ -185,6 +199,14 @@ layout: compress
         });
       });
 
+      window.addEventListener('scroll', syncStickyTop, { passive: true });
+      window.addEventListener('resize', syncStickyTop);
+      if (window.visualViewport) {
+        window.visualViewport.addEventListener('resize', syncStickyTop);
+        window.visualViewport.addEventListener('scroll', syncStickyTop);
+      }
+
+      syncStickyTop();
       /* Apply initial state (career/education/research on, rest off) */
       applyFilters();
     })();
