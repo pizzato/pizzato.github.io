@@ -6,6 +6,7 @@ Sources:
   - _data/career.yml        → career and education events
   - publications/index.md   → research papers
   - _data/photos.json       → photo events (capped at 1 per week)
+  - _data/videos.yml        → YouTube media events
   - _data/stream.json       → writing (medium, post) and social (linkedin, twitter)
 
 Run:
@@ -29,6 +30,7 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CAREER_YML    = os.path.join(REPO_ROOT, "_data", "career.yml")
 STREAM_JSON   = os.path.join(REPO_ROOT, "_data", "stream.json")
 PHOTOS_JSON   = os.path.join(REPO_ROOT, "_data", "photos.json")
+VIDEOS_YML    = os.path.join(REPO_ROOT, "_data", "videos.yml")
 PUBS_MD       = os.path.join(REPO_ROOT, "publications", "index.markdown")
 OUTPUT_JSON   = os.path.join(REPO_ROOT, "_data", "timeline.json")
 
@@ -225,6 +227,41 @@ def load_photos():
 
 
 # ---------------------------------------------------------------------------
+# Videos source
+# ---------------------------------------------------------------------------
+
+def load_videos():
+    if not os.path.exists(VIDEOS_YML):
+        print("[Videos] videos.yml not found — skipping")
+        return []
+
+    with open(VIDEOS_YML, encoding="utf-8") as f:
+        data = yaml.safe_load(f) or {}
+
+    videos = data.get("videos") or []
+    items = []
+    for video in videos:
+        youtube_id = (video.get("youtube_id") or "").strip()
+        date = video.get("date")
+        if not youtube_id or not date:
+            continue
+
+        items.append({
+            "type": "photo",
+            "title": video.get("title") or "Video",
+            "subtitle": "YouTube",
+            "date": fmt(date),
+            "url": f"https://www.youtube.com/watch?v={youtube_id}",
+            "image": video.get("image") or f"https://img.youtube.com/vi/{youtube_id}/hqdefault.jpg",
+            "media_type": "photo",
+            "description": video.get("description", ""),
+        })
+
+    print(f"[Videos] {len(items)} items")
+    return items
+
+
+# ---------------------------------------------------------------------------
 # Stream source (writing + social)
 # ---------------------------------------------------------------------------
 
@@ -272,6 +309,7 @@ def main():
     all_items.extend(load_career())
     all_items.extend(load_publications())
     all_items.extend(load_photos())
+    all_items.extend(load_videos())
 
     writing, social = load_stream()
     all_items.extend(writing)

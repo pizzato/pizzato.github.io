@@ -322,6 +322,16 @@
     "type": "social"
   },
   {
+    "type": "photo",
+    "title": "Codes and Horizons: Luiz's Journey",
+    "subtitle": "YouTube",
+    "date": "2024-04-18",
+    "url": "https://www.youtube.com/watch?v=Y8ibsbP8h0M",
+    "image": "https://img.youtube.com/vi/Y8ibsbP8h0M/hqdefault.jpg",
+    "media_type": "photo",
+    "description": "A short documentary tracing the path from southern Brazil to AI research on the other side of the world."
+  },
+  {
     "title": "I will never produce a music video again",
     "subtitle": "Medium",
     "date": "2024-04-18",

@@ -13,7 +13,7 @@ layout: compress
       <header class="page-header">
         <a class="back-btn" href="{{ site.url }}/">&#8592;</a>
         <div>
-          <h1 class="display-md">Chronicle</h1>
+          <h1 class="display-md">Timeline</h1>
           <p class="page-subtitle">A life in research, code, and pixels — 1997 to present</p>
         </div>
       </header>
@@ -23,7 +23,7 @@ layout: compress
         <button class="tl-filter active" data-filter="career">Career</button>
         <button class="tl-filter active" data-filter="education">Education</button>
         <button class="tl-filter active" data-filter="research">Research</button>
-        <button class="tl-filter" data-filter="photo">Photos</button>
+        <button class="tl-filter" data-filter="photo">Media</button>
         <button class="tl-filter" data-filter="writing">Writing</button>
         <button class="tl-filter" data-filter="social">Social</button>
       </div>
@@ -68,11 +68,11 @@ layout: compress
                       {% if item.subtype == "advisory" %}&#x1F4CB;{% elsif item.subtype == "project" %}&#x1F527;{% else %}&#x1F4BC;{% endif %}
                     {% elsif item.type == "education" %}&#x1F393;
                     {% elsif item.type == "research" %}&#x1F4C4;
-                    {% elsif item.type == "photo" %}&#x1F4F7;
+                    {% elsif item.type == "photo" %}&#x1F39E;
                     {% elsif item.type == "writing" %}&#x270D;
                     {% elsif item.type == "social" %}&#x1F4AC;
                     {% endif %}
-                    {{ item.type | capitalize }}{% if item.subtype %} · {{ item.subtype }}{% endif %}
+                    {% if item.type == "photo" %}Media{% else %}{{ item.type | capitalize }}{% endif %}{% if item.subtype %} · {{ item.subtype }}{% endif %}
                   </span>
                   <span class="tl-card-date">{{ item.date | date: "%b %Y" }}</span>
                 </div>
