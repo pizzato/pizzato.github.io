@@ -72,15 +72,15 @@
   },
   {
     "type": "post",
-    "title": "GenAICam",
-    "url": "/genaicam/",
+    "title": "GenAICam - Privacy",
+    "url": "/genaicam-privacy/",
     "date": "2025-08-21",
     "source": "Blog"
   },
   {
     "type": "post",
-    "title": "GenAICam - Privacy",
-    "url": "/genaicam-privacy/",
+    "title": "GenAICam",
+    "url": "/genaicam/",
     "date": "2025-08-21",
     "source": "Blog"
   },
@@ -90,22 +90,6 @@
     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7359457018652372992",
     "date": "2025-08-08",
     "source": "LinkedIn"
-  },
-  {
-    "type": "scholar",
-    "title": "A Robust and Efficient Pipeline for Enterprise-Level Large-Scale Entity Resolution",
-    "url": "https://doi.ieeecomputersociety.org/10.1109/BigData66926.2025.11400814",
-    "date": "2025-08-05",
-    "source": "Scholar",
-    "venue": "2025 IEEE International Conference on Big Data (IEEE BigData), 2025, pp. 2359–2368."
-  },
-  {
-    "type": "scholar",
-    "title": "FeatureCuts: Feature Selection for Large Data by Optimizing the Cutoff",
-    "url": "https://doi.ieeecomputersociety.org/10.1109/BigData66926.2025.11402619",
-    "date": "2025-08-01",
-    "source": "Scholar",
-    "venue": "2025 IEEE International Conference on Big Data (IEEE BigData), 2025, pp. 2308–2319."
   },
   {
     "type": "linkedin",
@@ -151,14 +135,6 @@
     "source": "LinkedIn"
   },
   {
-    "type": "scholar",
-    "title": "Synthetic Voices: Evaluating the Fidelity of LLM-Generated Personas in Representing People’s Financial Wellbeing",
-    "url": "https://doi.org/10.1145/3699682.3728339",
-    "date": "2025-06-13",
-    "source": "Scholar",
-    "venue": "User Modeling, Adaptation, and Personalization"
-  },
-  {
     "type": "twitter",
     "title": "Going to Nashville today as  @CommBank is sponsoring the Computer Vision and Pattern Recognition Conference (@CVPR). Loo…",
     "url": "https://x.com/luizpizzato/status/1932231612303126576",
@@ -178,6 +154,22 @@
     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7325162566085693441",
     "date": "2025-05-05",
     "source": "LinkedIn"
+  },
+  {
+    "type": "scholar",
+    "title": "FeatureCuts: Feature Selection for Large Data by Optimizing the Cutoff",
+    "url": "https://doi.ieeecomputersociety.org/10.1109/BigData66926.2025.11402619",
+    "date": "2025-01-01",
+    "source": "Scholar",
+    "venue": "2025 IEEE International Conference on Big Data (IEEE BigData), 2025, pp. 2308–2319."
+  },
+  {
+    "type": "scholar",
+    "title": "A Robust and Efficient Pipeline for Enterprise-Level Large-Scale Entity Resolution",
+    "url": "https://doi.ieeecomputersociety.org/10.1109/BigData66926.2025.11400814",
+    "date": "2025-01-01",
+    "source": "Scholar",
+    "venue": "2025 IEEE International Conference on Big Data (IEEE BigData), 2025, pp. 2359–2368."
   },
   {
     "type": "scholar",
@@ -214,14 +206,6 @@
     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7265194102382546944",
     "date": "2024-11-21",
     "source": "LinkedIn"
-  },
-  {
-    "type": "scholar",
-    "title": "Do LLM Personas Dream of Bull Markets? Comparing Human and AI Investment Strategies Through the Lens of the Five-Factor Model",
-    "url": "https://arxiv.org/pdf/2411.05801",
-    "date": "2024-10-28",
-    "source": "Scholar",
-    "venue": "NeurIPS 2024 Workshop Open-World Agents"
   },
   {
     "type": "linkedin",
@@ -328,6 +312,14 @@
     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7156141266739576832",
     "date": "2024-01-25",
     "source": "LinkedIn"
+  },
+  {
+    "type": "scholar",
+    "title": "Do LLM Personas Dream of Bull Markets? Comparing Human and AI Investment Strategies Through the Lens of the Five-Factor Model",
+    "url": "https://arxiv.org/pdf/2411.05801",
+    "date": "2024-01-01",
+    "source": "Scholar",
+    "venue": "NeurIPS 2024 Workshop Open-World Agents"
   },
   {
     "type": "linkedin",
