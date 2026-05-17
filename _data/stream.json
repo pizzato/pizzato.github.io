@@ -1,5 +1,13 @@
 [
   {
+    "type": "scholar",
+    "title": "Prompt Segmentation and Annotation Optimisation: Controlling LLM Behaviour via Optimised Segment-Level Annotations",
+    "url": "https://www.semanticscholar.org/paper/1c99f11264f179189f74187f038080e41ac11b30",
+    "date": "2026-05-14",
+    "source": "Scholar",
+    "venue": ""
+  },
+  {
     "type": "linkedin",
     "title": "Artificial intelligence can feel highly technical and even a bit daunting for many people. At CommBank, we have spent th…",
     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7406466725233418240",
@@ -26,6 +34,14 @@
     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7401879394853502976",
     "date": "2025-12-03",
     "source": "LinkedIn"
+  },
+  {
+    "type": "scholar",
+    "title": "ConCISE: A Reference-Free Conciseness Evaluation Metric for LLM-Generated Answers",
+    "url": "https://arxiv.org/pdf/2511.16846",
+    "date": "2025-11-20",
+    "source": "Scholar",
+    "venue": "arXiv preprint. November 2025. [[PDF]](https://arxiv.org/pdf/2511.16846) [[arXiv]](https://arxiv.org/abs/2511.16846)"
   },
   {
     "type": "linkedin",
@@ -178,14 +194,6 @@
     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7325162566085693441",
     "date": "2025-05-05",
     "source": "LinkedIn"
-  },
-  {
-    "type": "scholar",
-    "title": "ConCISE: A Reference-Free Conciseness Evaluation Metric for LLM-Generated Answers",
-    "url": "https://arxiv.org/pdf/2511.16846",
-    "date": "2025-01-01",
-    "source": "Scholar",
-    "venue": "arXiv preprint. November 2025. [[PDF]](https://arxiv.org/pdf/2511.16846) [[arXiv]](https://arxiv.org/abs/2511.16846)"
   },
   {
     "type": "linkedin",
