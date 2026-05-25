@@ -22,6 +22,7 @@ import os
 import re
 import sys
 from datetime import datetime, date
+from urllib.parse import urlparse
 
 try:
     import feedparser
@@ -167,11 +168,16 @@ def fetch_publications():
                 continue
             date_str = f"{year_m.group(1)}-01-01"
 
-            # URL — prefer doi.org, else first http link
+            # URL — prefer doi.org host, else first http link
             urls = re.findall(r'\((https?://[^)]+)\)', block)
             if not urls:
                 continue
-            doi_urls = [u for u in urls if 'doi.org' in u]
+
+            def _is_doi_url(u: str) -> bool:
+                host = urlparse(u).hostname or ""
+                return host == "doi.org" or host.endswith(".doi.org")
+
+            doi_urls = [u for u in urls if _is_doi_url(u)]
             url = doi_urls[0] if doi_urls else urls[0]
 
             # Venue — first non-title, non-author, non-link line
