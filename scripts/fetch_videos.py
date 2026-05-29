@@ -18,7 +18,7 @@ import re
 import sys
 from datetime import datetime, timezone
 from urllib.request import Request, urlopen
-from urllib.error import URLError
+from urllib.error import URLError, HTTPError
 import xml.etree.ElementTree as ET
 
 try:
@@ -98,8 +98,12 @@ def fetch_videos(channel_id):
     try:
         with urlopen(req, timeout=15) as r:
             raw = r.read()
-    except URLError as e:
+    except HTTPError as e:
+        if e.code == 404:
+            raise RuntimeError(f"RSS 404 for channel_id={channel_id} — cached ID may be stale") from e
         raise RuntimeError(f"Could not fetch RSS feed: {e}") from e
+    except URLError as e:
+        raise RuntimeError(f"Could not fetch RSS feed: {e}") from e          
 
     root = ET.fromstring(raw)
     items = []
@@ -209,22 +213,42 @@ def merge(existing, fetched):
     return merged, added, updated
 
 
+def _fetch_with_retry():
+    """Get channel ID and fetch videos, retrying once with fresh discovery on 404."""
+    channel_id = get_channel_id()
+    try:
+        return fetch_videos(channel_id)
+    except RuntimeError as e:
+        if "RSS 404" not in str(e) or not os.path.exists(CHANNEL_ID_CACHE):
+            raise
+        print(f"[YouTube] WARNING: {e}")
+        print("[YouTube] Invalidating cached channel ID and retrying discovery...")
+        os.remove(CHANNEL_ID_CACHE)
+        channel_id = get_channel_id()
+        return fetch_videos(channel_id)
+
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
 def main():
-    channel_id = get_channel_id()
-    fetched    = fetch_videos(channel_id)
+    try:
+        fetched = _fetch_with_retry()
+    except RuntimeError as e:
+        print(f"[YouTube] WARNING: {e}")
+        print("[YouTube] Skipping video sync — existing _data/videos.yml retained.")
+        sys.exit(0)
 
     data     = load_videos_yml()
     merged, added, updated = merge(data["videos"], fetched)
     data["videos"] = merged
-
+  
     save_videos_yml(data)
-
+  
     print(f"\n✓ {VIDEOS_YML}")
     print(f"  {added} new  |  {updated} updated  |  {len(merged)} total")
+  
+
 
 
 if __name__ == "__main__":
