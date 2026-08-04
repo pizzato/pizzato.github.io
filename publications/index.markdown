@@ -23,7 +23,7 @@ For a full list of tutorials, grants, workshops organised, and reviewing and pro
 
 ## Publications
 
-I have published over 50 publications with over 1,600 citations (h-index 19). For full citation metrics see these links:
+I have published over 50 publications with over 1,700 citations (h-index 19). For full citation metrics see these links:
 
 <div class="profile-links">
   <a href="https://scholar.google.com/citations?user=3q9NOYYAAAAJ" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Google Scholar"></a>
@@ -393,6 +393,11 @@ Supervised Profa. Vera Lúcia Strube de Lima Defended on: 8th January 2003 Exami
 
 
 ## Pre-prints
+
+**Prompt Segmentation and Annotation Optimisation: Controlling LLM Behaviour via Optimised Segment-Level Annotations**
+_Devika Prasad, Luke Gerschwitz, Tong Li, Henry Xiao, Anjin Liu, Coco Wu, Anna Leontjeva, Luiz Pizzato_
+arXiv preprint. May 2026. [[PDF]](https://arxiv.org/pdf/2605.14561) [[arXiv]](https://arxiv.org/abs/2605.14561)
+
 
 **ConCISE: A Reference-Free Conciseness Evaluation Metric for LLM-Generated Answers**
 _Seyed Mohssen Ghafari, Ronny Kol, Juan C. Quiroz, Nella Luan, Monika Patial, Chanaka Rupasinghe, Herman Wandabwa, Luiz Pizzato_
