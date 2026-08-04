@@ -76,6 +76,13 @@ def sort_key(item):
     return d
 
 
+def canonical_url(url):
+    """Dedup key: host + path, ignoring query/fragment (Medium RSS links carry
+    tracking params like ?source=rss-... that differ from the canonical URL)."""
+    p = urlparse(url)
+    return (p.netloc + p.path).rstrip("/")
+
+
 # ---------------------------------------------------------------------------
 # Source: Medium RSS
 # ---------------------------------------------------------------------------
@@ -413,6 +420,18 @@ def main():
 
     # Remove items without a date or URL
     all_items = [i for i in all_items if i.get("date") and i.get("url")]
+
+    # Dedup by canonical URL; earlier sources win, so a fetched item (e.g.
+    # Medium RSS) beats a manual fallback entry for the same story
+    seen = set()
+    deduped = []
+    for item in all_items:
+        key = canonical_url(item["url"])
+        if key in seen:
+            continue
+        seen.add(key)
+        deduped.append(item)
+    all_items = deduped
 
     # Sort descending by date
     all_items.sort(key=sort_key, reverse=True)

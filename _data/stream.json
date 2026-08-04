@@ -1,5 +1,27 @@
 [
   {
+    "type": "twitter",
+    "title": "I will never direct a movie again. Built an AI (Stephen Spielbot) that fully produces and publishes videos… then replies to the comments.",
+    "url": "https://x.com/luizpizzato/status/2084418674900013558",
+    "date": "2026-08-04",
+    "source": "X"
+  },
+  {
+    "type": "linkedin",
+    "title": "I will never direct a movie again. I built Stephen Spielbot, an AI system that writes the script, generates the visuals…",
+    "url": "https://www.linkedin.com/posts/pizzato_i-will-never-direct-a-movie-again-i-built-activity-7490169495261650944-axtX",
+    "date": "2026-08-04",
+    "source": "LinkedIn"
+  },
+  {
+    "type": "medium",
+    "title": "I will never direct a movie again",
+    "url": "https://medium.com/@pizzato/i-will-never-direct-a-movie-again-65bd4e9e6797?source=rss-591226894f7c------2",
+    "date": "2026-08-02",
+    "source": "Medium",
+    "image": "https://cdn-images-1.medium.com/max/1024/1*umP8l2UsByw6xxOHiPi99Q.png"
+  },
+  {
     "type": "scholar",
     "title": "Prompt Segmentation and Annotation Optimisation: Controlling LLM Behaviour via Optimised Segment-Level Annotations",
     "url": "https://doi.org/10.48550/arXiv.2605.14561",
