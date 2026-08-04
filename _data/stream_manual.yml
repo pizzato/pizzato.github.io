@@ -6,16 +6,28 @@
 # Or just commit this file — the daily GitHub Action will pick it up.
 #
 # Entry format:
-#   - type:  twitter   (or: linkedin)
+#   - type:  twitter   (or: linkedin, medium)
 #     title: "First line / caption of the post"
 #     url:   "https://x.com/luizpizzato/status/..."
 #     date:  "YYYY-MM-DD"
+#
+# A `medium` entry is only needed for unlisted stories — public ones arrive via
+# the RSS feed, and fetch_stream.py dedups by URL if a story is in both.
 #
 # To populate from a platform data export, run:
 #   python scripts/import_archive.py --twitter <path/to/tweets.js>
 #   python scripts/import_archive.py --linkedin <path/to/Share and Comments.csv>
 
 entries:
+- type: twitter
+  title: I will never direct a movie again. Built an AI (Stephen Spielbot) that fully
+    produces and publishes videos… then replies to the comments.
+  url: https://x.com/luizpizzato/status/2084418674900013558
+  date: '2026-08-04'
+- type: medium
+  title: I will never direct a movie again
+  url: https://medium.com/@pizzato/i-will-never-direct-a-movie-again-65bd4e9e6797
+  date: '2026-08-02'
 - type: linkedin
   title: Artificial intelligence can feel highly technical and even a bit daunting
     for many people. At CommBank, we have spent th…
