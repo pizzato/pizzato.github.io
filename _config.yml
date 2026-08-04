@@ -14,7 +14,7 @@ current_status:
   text:    "Driving large-scale Generative AI, NLP, and data science initiatives at Commonwealth Bank of Australia. Currently focused on LLM evaluation, responsible AI, and agentic systems."
 
 # Homepage: Research card
-scholar_citations:  "1,600+"
+scholar_citations:  "1,700+"
 scholar_papers:     "50+"
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
