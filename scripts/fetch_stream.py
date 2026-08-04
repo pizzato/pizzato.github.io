@@ -21,6 +21,7 @@ import json
 import os
 import re
 import sys
+import time
 from datetime import datetime, date
 from urllib.parse import urlparse
 
@@ -41,6 +42,10 @@ except ImportError as e:
 MEDIUM_USER = "@pizzato"
 SCHOLAR_AUTHOR_NAME = "Luiz Pizzato"
 SCHOLAR_AFFILIATION_HINT = "Commonwealth Bank"  # helps disambiguate
+
+SCHOLAR_MAX_ATTEMPTS = 5     # total tries per request when rate-limited
+SCHOLAR_BACKOFF_SECONDS = 5  # first retry delay; doubles each retry
+SCHOLAR_BACKOFF_CAP = 60     # never wait longer than this between tries
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 POSTS_DIR = os.path.join(REPO_ROOT, "_posts")
@@ -220,6 +225,24 @@ def _normalize_title(title):
     return re.sub(r'[^a-z0-9]', '', title.lower())
 
 
+def _scholar_get(url, params, timeout):
+    """GET with retry-with-backoff on 429, which the free Semantic Scholar
+    API returns routinely. Raises if still rate-limited on the last try."""
+    delay = SCHOLAR_BACKOFF_SECONDS
+    for attempt in range(1, SCHOLAR_MAX_ATTEMPTS + 1):
+        r = requests.get(url, params=params, timeout=timeout)
+        if r.status_code != 429 or attempt == SCHOLAR_MAX_ATTEMPTS:
+            r.raise_for_status()
+            return r
+        retry_after = r.headers.get("Retry-After", "")
+        wait = max(delay, int(retry_after)) if retry_after.isdigit() else delay
+        wait = min(wait, SCHOLAR_BACKOFF_CAP)
+        print(f"[Scholar] 429 rate-limited, retrying in {wait}s "
+              f"(attempt {attempt}/{SCHOLAR_MAX_ATTEMPTS})")
+        time.sleep(wait)
+        delay *= 2
+
+
 def find_scholar_author_id():
     """Search Semantic Scholar for the author and return the best-match ID."""
     url = "https://api.semanticscholar.org/graph/v1/author/search"
@@ -230,8 +253,7 @@ def find_scholar_author_id():
     }
     print(f"[Scholar] Searching for author: {SCHOLAR_AUTHOR_NAME}")
     try:
-        r = requests.get(url, params=params, timeout=15)
-        r.raise_for_status()
+        r = _scholar_get(url, params, timeout=15)
         data = r.json()
         candidates = data.get("data", [])
         if not candidates:
@@ -257,14 +279,69 @@ def find_scholar_author_id():
         return None
 
 
+def _merge_scholar_entries(pub_items, scholar_entries):
+    """Fold scholar-sourced entries into the publications list: replace a
+    year-only date with a more precise one when titles match, otherwise keep
+    the entry as a scholar-only paper. Returns (items, dates_updated, added)."""
+    by_title = {_normalize_title(item["title"]): i for i, item in enumerate(pub_items)}
+    dates_updated = 0
+    extra = []
+    for entry in scholar_entries:
+        pub_date = entry.get("date", "")
+        norm = _normalize_title(entry.get("title", ""))
+        if norm in by_title:
+            # Enrich: if Scholar has a more precise date (has month/day), use it
+            idx = by_title[norm]
+            existing_date = pub_items[idx].get("date", "")
+            if pub_date != existing_date and (
+                len(pub_date) > len(existing_date)
+                or (len(pub_date) >= 10 and existing_date.endswith("-01-01"))
+            ):
+                pub_items[idx] = {**pub_items[idx], "date": pub_date}
+                dates_updated += 1
+        else:
+            # Paper not on the publications page — keep it as its own item
+            extra.append(entry)
+    return pub_items + extra, dates_updated, len(extra)
+
+
+def _preserve_previous_scholar(pub_items):
+    """Fallback when Semantic Scholar is unavailable (e.g. persistent 429s):
+    reuse the scholar entries already committed in _data/stream.json so one
+    rate-limited run doesn't regress precise dates or drop scholar-only
+    papers from the published site."""
+    try:
+        with open(OUTPUT_JSON) as f:
+            previous = json.load(f)
+    except (OSError, ValueError):
+        previous = None
+    if not isinstance(previous, list):
+        print("[Scholar] No previous stream.json to fall back on")
+        return pub_items
+
+    prev_scholar = [
+        i for i in previous if isinstance(i, dict) and i.get("type") == "scholar"
+    ]
+    if not prev_scholar:
+        print("[Scholar] Previous stream.json has no scholar entries")
+        return pub_items
+
+    items, dates_updated, added = _merge_scholar_entries(pub_items, prev_scholar)
+    print(f"[Scholar] Fallback: reused {dates_updated} precise dates and "
+          f"{added} scholar-only papers from previous stream.json")
+    return items
+
+
 def fetch_scholar(pub_items):
     """Fetch recent papers from Semantic Scholar and use them to:
        1. Enrich existing pub_items with exact publication dates.
        2. Add any new papers not yet in publications/index.markdown.
+       If the API stays unavailable after retries, fall back to the scholar
+       data already committed in _data/stream.json.
     """
     author_id = find_scholar_author_id()
     if not author_id:
-        return pub_items
+        return _preserve_previous_scholar(pub_items)
 
     url = f"https://api.semanticscholar.org/graph/v1/author/{author_id}/papers"
     params = {
@@ -273,18 +350,18 @@ def fetch_scholar(pub_items):
     }
     print(f"[Scholar] Fetching papers for author {author_id}")
     try:
-        r = requests.get(url, params=params, timeout=20)
-        r.raise_for_status()
+        r = _scholar_get(url, params, timeout=20)
         scholar_papers = r.json().get("data", [])
         print(f"[Scholar] {len(scholar_papers)} papers returned")
     except Exception as e:
         print(f"[Scholar] Papers fetch error: {e}")
-        return pub_items
+        return _preserve_previous_scholar(pub_items)
 
-    # Build lookup of existing items by normalised title
-    by_title = {_normalize_title(item["title"]): i for i, item in enumerate(pub_items)}
+    if not scholar_papers:
+        print("[Scholar] Empty paper list, keeping previous scholar data")
+        return _preserve_previous_scholar(pub_items)
 
-    extra = []
+    entries = []
     for paper in scholar_papers:
         pub_date = paper.get("publicationDate")
         if not pub_date and paper.get("year"):
@@ -300,29 +377,19 @@ def fetch_scholar(pub_items):
         else:
             continue
 
-        norm = _normalize_title(paper.get("title", ""))
-        if norm in by_title:
-            # Enrich: if Scholar has a more precise date (has month/day), use it
-            idx = by_title[norm]
-            existing_date = pub_items[idx].get("date", "")
-            if len(pub_date) > len(existing_date) or (
-                len(pub_date) >= 10 and existing_date.endswith("-01-01")
-            ):
-                pub_items[idx] = {**pub_items[idx], "date": pub_date}
-        else:
-            # New paper not yet in publications page — add it
-            extra.append({
-                "type":   "scholar",
-                "title":  paper.get("title", "Untitled"),
-                "url":    paper_url,
-                "date":   pub_date,
-                "source": "Scholar",
-                "venue":  paper.get("venue") or "",
-            })
+        entries.append({
+            "type":   "scholar",
+            "title":  paper.get("title") or "Untitled",
+            "url":    paper_url,
+            "date":   pub_date,
+            "source": "Scholar",
+            "venue":  paper.get("venue") or "",
+        })
 
-    if extra:
-        print(f"[Scholar] {len(extra)} additional papers not in publications page")
-    return pub_items + extra
+    items, _, added = _merge_scholar_entries(pub_items, entries)
+    if added:
+        print(f"[Scholar] {added} additional papers not in publications page")
+    return items
 
 
 # ---------------------------------------------------------------------------
