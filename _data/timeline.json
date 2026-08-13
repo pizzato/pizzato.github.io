@@ -112,18 +112,18 @@
     "type": "social"
   },
   {
-    "title": "GenAICam",
-    "subtitle": "Blog",
-    "date": "2025-08-21",
-    "url": "/genaicam/",
-    "description": "",
-    "type": "writing"
-  },
-  {
     "title": "GenAICam - Privacy",
     "subtitle": "Blog",
     "date": "2025-08-21",
     "url": "/genaicam-privacy/",
+    "description": "",
+    "type": "writing"
+  },
+  {
+    "title": "GenAICam",
+    "subtitle": "Blog",
+    "date": "2025-08-21",
+    "url": "/genaicam/",
     "description": "",
     "type": "writing"
   },
