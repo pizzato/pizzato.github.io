@@ -19,6 +19,10 @@
 #   python scripts/import_archive.py --linkedin <path/to/Share and Comments.csv>
 
 entries:
+- type: twitter
+  title: Intelligence keeps getting cheaper. Local models keep getting stronger.
+  url: https://x.com/luizpizzato/status/2088178195636043929
+  date: '2026-08-14'
 - type: linkedin
   title: The cost of intelligence keeps dropping, and the ability to run powerful
     models locally keeps rising.
