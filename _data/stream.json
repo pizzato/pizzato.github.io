@@ -110,15 +110,15 @@
   },
   {
     "type": "post",
-    "title": "GenAICam - Privacy",
-    "url": "/genaicam-privacy/",
+    "title": "GenAICam",
+    "url": "/genaicam/",
     "date": "2025-08-21",
     "source": "Blog"
   },
   {
     "type": "post",
-    "title": "GenAICam",
-    "url": "/genaicam/",
+    "title": "GenAICam - Privacy",
+    "url": "/genaicam-privacy/",
     "date": "2025-08-21",
     "source": "Blog"
   },
