@@ -19,6 +19,11 @@
 #   python scripts/import_archive.py --linkedin <path/to/Share and Comments.csv>
 
 entries:
+- type: linkedin
+  title: The cost of intelligence keeps dropping, and the ability to run powerful
+    models locally keeps rising.
+  url: https://www.linkedin.com/feed/update/urn:li:activity:7493209879055273984/
+  date: '2026-08-12'
 - type: twitter
   title: I will never direct a movie again. Built an AI (Stephen Spielbot) that fully
     produces and publishes videos… then replies to the comments.
