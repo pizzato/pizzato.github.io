@@ -1,5 +1,15 @@
 [
   {
+    "type": "photo",
+    "title": "Cost of Intelligence Keeps Dropping",
+    "subtitle": "YouTube",
+    "date": "2026-08-16",
+    "url": "https://www.youtube.com/watch?v=ju67O60aPXg",
+    "image": "https://img.youtube.com/vi/ju67O60aPXg/hqdefault.jpg",
+    "media_type": "photo",
+    "description": "The cost of intelligence keeps dropping, and the ability to run powerful models locally keeps rising."
+  },
+  {
     "title": "Intelligence keeps getting cheaper. Local models keep getting stronger.",
     "subtitle": "X",
     "date": "2026-08-14",

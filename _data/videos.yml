@@ -11,6 +11,11 @@
 #   description: One-sentence summary (optional, editable)
 
 videos:
+- title: Cost of Intelligence Keeps Dropping
+  youtube_id: ju67O60aPXg
+  date: '2026-08-16'
+  description: The cost of intelligence keeps dropping, and the ability to run powerful
+    models locally keeps rising.
 - title: 'Codes and Horizons: Luiz''s Journey'
   youtube_id: Y8ibsbP8h0M
   date: '2024-04-18'
