@@ -11,6 +11,10 @@
 #   description: One-sentence summary (optional, editable)
 
 videos:
+- title: The model lets me sing!
+  youtube_id: uql-C5CqInE
+  date: '2026-08-21'
+  description: The model lets me sing!
 - title: Cost of Intelligence Keeps Dropping
   youtube_id: ju67O60aPXg
   date: '2026-08-16'

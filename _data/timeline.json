@@ -1,6 +1,16 @@
 [
   {
     "type": "photo",
+    "title": "The model lets me sing!",
+    "subtitle": "YouTube",
+    "date": "2026-08-21",
+    "url": "https://www.youtube.com/watch?v=uql-C5CqInE",
+    "image": "https://img.youtube.com/vi/uql-C5CqInE/hqdefault.jpg",
+    "media_type": "photo",
+    "description": "The model lets me sing!"
+  },
+  {
+    "type": "photo",
     "title": "Cost of Intelligence Keeps Dropping",
     "subtitle": "YouTube",
     "date": "2026-08-16",
