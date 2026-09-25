@@ -11,6 +11,11 @@
 #   description: One-sentence summary (optional, editable)
 
 videos:
+- title: Mind Follows Mind
+  youtube_id: OOxSRbLfjLU
+  date: '2026-09-25'
+  description: A haunting meditation on water cycles, human civilization, and the
+    minds we've built beyond ourselves.
 - title: The model lets me sing!
   youtube_id: uql-C5CqInE
   date: '2026-08-21'
