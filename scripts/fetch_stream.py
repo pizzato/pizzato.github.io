@@ -41,7 +41,6 @@ except ImportError as e:
 
 MEDIUM_USER = "@pizzato"
 SCHOLAR_AUTHOR_NAME = "Luiz Pizzato"
-SCHOLAR_AFFILIATION_HINT = "Commonwealth Bank"  # helps disambiguate
 
 SCHOLAR_MAX_ATTEMPTS = 5     # total tries per request when rate-limited
 SCHOLAR_BACKOFF_SECONDS = 5  # first retry delay; doubles each retry
@@ -243,8 +242,21 @@ def _scholar_get(url, params, timeout):
         delay *= 2
 
 
-def find_scholar_author_id():
-    """Search Semantic Scholar for the author and return the best-match ID."""
+def _is_scholar_author_name(name):
+    """True if `name` plausibly refers to the site owner: surname Pizzato and
+    a first name/initial starting with L (e.g. "Luiz Pizzato", "L. Pizzato",
+    "Luiz Augusto Pizzato"). Semantic Scholar's author search is fuzzy and
+    can return unrelated authors, so every candidate and paper is checked."""
+    parts = re.findall(r"[a-z]+", (name or "").lower())
+    return len(parts) >= 2 and parts[-1] == "pizzato" and parts[0].startswith("l")
+
+
+def find_scholar_author_ids():
+    """Search Semantic Scholar for the author and return the IDs of every
+    profile whose name matches. Semantic Scholar often splits one person
+    across several profiles (e.g. "L. Pizzato" and "Luiz Pizzato"), and the
+    search can also return unrelated prolific authors, so candidates are
+    filtered by name rather than ranked by paper count."""
     url = "https://api.semanticscholar.org/graph/v1/author/search"
     params = {
         "query": SCHOLAR_AUTHOR_NAME,
@@ -256,27 +268,20 @@ def find_scholar_author_id():
         r = _scholar_get(url, params, timeout=15)
         data = r.json()
         candidates = data.get("data", [])
-        if not candidates:
-            print("[Scholar] No candidates found")
-            return None
-
-        def score(c):
-            affil_str = " ".join(
-                a.get("name", "") for a in (c.get("affiliations") or [])
-            ).lower()
-            s = c.get("paperCount", 0)
-            if SCHOLAR_AFFILIATION_HINT.lower() in affil_str:
-                s += 1000
-            if SCHOLAR_AUTHOR_NAME.lower() in c.get("name", "").lower():
-                s += 500
-            return s
-
-        best = max(candidates, key=score)
-        print(f"[Scholar] Best match: {best.get('name')} (id={best['authorId']}, papers={best.get('paperCount')})")
-        return best["authorId"]
+        matches = [c for c in candidates if _is_scholar_author_name(c.get("name"))]
+        for c in candidates:
+            if c not in matches:
+                print(f"[Scholar] Ignoring non-matching candidate: {c.get('name')} "
+                      f"(id={c.get('authorId')}, papers={c.get('paperCount')})")
+        if not matches:
+            print("[Scholar] No matching candidates found")
+            return []
+        for c in matches:
+            print(f"[Scholar] Match: {c.get('name')} (id={c['authorId']}, papers={c.get('paperCount')})")
+        return [c["authorId"] for c in matches]
     except Exception as e:
         print(f"[Scholar] Author search error: {e}")
-        return None
+        return []
 
 
 def _merge_scholar_entries(pub_items, scholar_entries):
@@ -339,19 +344,27 @@ def fetch_scholar(pub_items):
        If the API stays unavailable after retries, fall back to the scholar
        data already committed in _data/stream.json.
     """
-    author_id = find_scholar_author_id()
-    if not author_id:
+    author_ids = find_scholar_author_ids()
+    if not author_ids:
         return _preserve_previous_scholar(pub_items)
 
-    url = f"https://api.semanticscholar.org/graph/v1/author/{author_id}/papers"
     params = {
-        "fields": "title,year,publicationDate,externalIds,venue",
+        "fields": "title,year,publicationDate,externalIds,venue,authors",
         "limit": 100,
     }
-    print(f"[Scholar] Fetching papers for author {author_id}")
+    scholar_papers = []
+    seen_ids = set()
     try:
-        r = _scholar_get(url, params, timeout=20)
-        scholar_papers = r.json().get("data", [])
+        for author_id in author_ids:
+            url = f"https://api.semanticscholar.org/graph/v1/author/{author_id}/papers"
+            print(f"[Scholar] Fetching papers for author {author_id}")
+            r = _scholar_get(url, params, timeout=20)
+            for paper in r.json().get("data", []):
+                pid = paper.get("paperId")
+                if pid and pid in seen_ids:
+                    continue
+                seen_ids.add(pid)
+                scholar_papers.append(paper)
         print(f"[Scholar] {len(scholar_papers)} papers returned")
     except Exception as e:
         print(f"[Scholar] Papers fetch error: {e}")
@@ -360,6 +373,16 @@ def fetch_scholar(pub_items):
     if not scholar_papers:
         print("[Scholar] Empty paper list, keeping previous scholar data")
         return _preserve_previous_scholar(pub_items)
+
+    # Defence in depth: only keep papers that actually list the author
+    authored = [
+        p for p in scholar_papers
+        if any(_is_scholar_author_name(a.get("name")) for a in (p.get("authors") or []))
+    ]
+    if len(authored) < len(scholar_papers):
+        print(f"[Scholar] Dropped {len(scholar_papers) - len(authored)} papers "
+              f"not listing {SCHOLAR_AUTHOR_NAME} as an author")
+    scholar_papers = authored
 
     entries = []
     for paper in scholar_papers:
