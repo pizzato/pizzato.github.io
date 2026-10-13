@@ -155,10 +155,12 @@ class ScholarSuccessPathTest(unittest.TestCase):
         papers_payload = {"data": [
             {"title": "Known Paper", "year": 2025,
              "publicationDate": "2025-08-01",
-             "externalIds": {"DOI": "10.1109/known"}, "venue": "BigData"},
+             "externalIds": {"DOI": "10.1109/known"}, "venue": "BigData",
+             "authors": [{"name": "Luiz Pizzato"}]},
             {"title": "Brand New Paper", "year": 2026,
              "publicationDate": "2026-05-14",
-             "externalIds": {"DOI": "10.48550/arXiv.2605.14561"}, "venue": ""},
+             "externalIds": {"DOI": "10.48550/arXiv.2605.14561"}, "venue": "",
+             "authors": [{"name": "L. Pizzato"}]},
         ]}
 
         def fake_get(url, params=None, timeout=None):
@@ -179,6 +181,54 @@ class ScholarSuccessPathTest(unittest.TestCase):
         new = next(i for i in result if i["title"] == "Brand New Paper")
         self.assertEqual(new["date"], "2026-05-14")
         self.assertEqual(new["url"], "https://doi.org/10.48550/arXiv.2605.14561")
+
+
+class AuthorDisambiguationTest(unittest.TestCase):
+    """fetch_scholar must never pull in papers from unrelated authors that the
+    fuzzy author search returns (regression: "A. D. de Souza", 11k papers,
+    outranked the real profiles on paper count)."""
+
+    def test_ignores_unrelated_prolific_candidate_and_merges_split_profiles(self):
+        search_payload = {"data": [
+            {"authorId": "143934397", "name": "L. Pizzato", "paperCount": 39},
+            {"authorId": "2330185336", "name": "Luiz Pizzato", "paperCount": 6},
+            {"authorId": "12989824", "name": "A. D. de Souza", "paperCount": 11007},
+        ]}
+        papers_by_author = {
+            "143934397": [{"paperId": "p1", "title": "Old Paper", "year": 2012,
+                           "externalIds": {"DOI": "10.1/old"},
+                           "authors": [{"name": "L. Pizzato"}]}],
+            "2330185336": [
+                {"paperId": "p2", "title": "New Paper",
+                 "publicationDate": "2026-05-14",
+                 "externalIds": {"DOI": "10.1/new"},
+                 "authors": [{"name": "Luiz Pizzato"}]},
+                # Misattributed paper on the right profile: author not listed
+                {"paperId": "p3", "title": "Misattributed", "year": 2026,
+                 "externalIds": {"DOI": "10.1/wrong"},
+                 "authors": [{"name": "Someone Else"}]},
+            ],
+        }
+        requested = []
+
+        def fake_get(url, params=None, timeout=None):
+            requested.append(url)
+            if "author/search" in url:
+                return _resp(200, payload=search_payload)
+            author_id = url.split("/author/")[1].split("/")[0]
+            return _resp(200, payload={"data": papers_by_author.get(author_id, [])})
+
+        with mock.patch.object(fetch_stream.requests, "get", side_effect=fake_get):
+            result = fetch_stream.fetch_scholar([])
+
+        self.assertFalse(any("12989824" in u for u in requested))
+        self.assertEqual(sorted(i["title"] for i in result), ["New Paper", "Old Paper"])
+
+    def test_name_matcher(self):
+        for name in ["Luiz Pizzato", "L. Pizzato", "Luiz Augusto Pizzato", "L Pizzato"]:
+            self.assertTrue(fetch_stream._is_scholar_author_name(name), name)
+        for name in ["A. D. de Souza", "Pizzato", "M. Pizzato", "", None]:
+            self.assertFalse(fetch_stream._is_scholar_author_name(name), name)
 
 
 if __name__ == "__main__":
