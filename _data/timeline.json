@@ -86,14 +86,6 @@
     "type": "social"
   },
   {
-    "title": "I will never direct a movie again",
-    "subtitle": "Medium",
-    "date": "2026-08-02",
-    "url": "https://medium.com/@pizzato/i-will-never-direct-a-movie-again-65bd4e9e6797?source=rss-591226894f7c------2",
-    "description": "",
-    "type": "writing"
-  },
-  {
     "type": "research",
     "title": "Prompt Segmentation and Annotation Optimisation: Controlling LLM Behaviour via Optimised Segment-Level Annotations",
     "subtitle": "arXiv preprint. May 2026",
@@ -158,14 +150,6 @@
     "type": "social"
   },
   {
-    "title": "I will never code an app again",
-    "subtitle": "Medium",
-    "date": "2025-09-02",
-    "url": "https://medium.com/@pizzato/i-will-never-code-an-app-again-b262893dca8c?source=rss-591226894f7c------2",
-    "description": "",
-    "type": "writing"
-  },
-  {
     "title": "🚀 FastVLM dropped on Hugging Face yesterday 🤗 … and today I’m shipping an app using it to the App Store, with zero prior…",
     "subtitle": "LinkedIn",
     "date": "2025-09-02",
@@ -212,14 +196,6 @@
     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7355838221760512000",
     "description": "",
     "type": "social"
-  },
-  {
-    "title": "I will never survey a person again",
-    "subtitle": "Medium",
-    "date": "2025-06-27",
-    "url": "https://medium.com/@pizzato/i-will-never-survey-a-person-again-c056a171f8a1?source=rss-591226894f7c------2",
-    "description": "",
-    "type": "writing"
   },
   {
     "title": "I will never survey a person again!",
@@ -434,14 +410,6 @@
     "description": "A short documentary tracing the path from southern Brazil to AI research on the other side of the world."
   },
   {
-    "title": "I will never produce a music video again",
-    "subtitle": "Medium",
-    "date": "2024-04-18",
-    "url": "https://medium.com/@pizzato/i-will-never-produce-a-music-video-again-b8421d09fd71?source=rss-591226894f7c------2",
-    "description": "",
-    "type": "writing"
-  },
-  {
     "title": "I will never produce a music video again",
     "subtitle": "LinkedIn",
     "date": "2024-04-18",
@@ -559,28 +527,12 @@
     "type": "social"
   },
   {
-    "title": "I will never take a selfie again",
-    "subtitle": "Medium",
-    "date": "2023-09-06",
-    "url": "https://medium.com/@pizzato/i-will-never-take-a-selfie-again-2f0115a7362b?source=rss-591226894f7c------2",
-    "description": "",
-    "type": "writing"
-  },
-  {
     "title": "I will never take a selfie again.",
     "subtitle": "LinkedIn",
     "date": "2023-09-06",
     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7105154443733594112",
     "description": "",
     "type": "social"
-  },
-  {
-    "title": "I will never manage a football club again",
-    "subtitle": "Medium",
-    "date": "2023-08-10",
-    "url": "https://medium.com/@pizzato/i-will-never-manage-a-football-club-again-fe1a2f829a2e?source=rss-591226894f7c------2",
-    "description": "",
-    "type": "writing"
   },
   {
     "title": "I will never manage a football club again",
@@ -595,14 +547,6 @@
     "subtitle": "Blog",
     "date": "2023-08-01",
     "url": "/i-will-never-reply-to-an-email-again/",
-    "description": "",
-    "type": "writing"
-  },
-  {
-    "title": "I will never reply to an email again",
-    "subtitle": "Medium",
-    "date": "2023-07-31",
-    "url": "https://medium.com/@pizzato/i-will-never-reply-to-an-email-again-cafc8dbcc541?source=rss-591226894f7c------2",
     "description": "",
     "type": "writing"
   },
