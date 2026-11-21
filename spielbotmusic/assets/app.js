@@ -11,6 +11,7 @@
   const empty = document.getElementById('empty-state');
   const dialog = document.getElementById('artist-dialog');
   const player = document.getElementById('video-player');
+  const playerFormat = document.getElementById('player-format');
   const tracks = document.getElementById('track-list');
   const share = document.getElementById('share-artist');
   const sourceMap = new Map();
@@ -128,8 +129,8 @@
       const image = element('img');
       image.src = thumbnail(video.id);
       image.alt = '';
-      image.width = 480;
-      image.height = 270;
+      image.width = 270;
+      image.height = 480;
       image.loading = 'lazy';
       art.append(image);
       if (video.duration) art.append(element('span', 'duration', video.duration));
@@ -192,8 +193,8 @@
       thumb.src = thumbnail(item.id);
       thumb.alt = '';
       thumb.loading = 'eager';
-      thumb.width = 80;
-      thumb.height = 60;
+      thumb.width = 54;
+      thumb.height = 96;
       art.append(thumb);
       const copy = element('span', 'track-copy');
       copy.append(element('span', 'track-title', shortTitle(item, source)));
@@ -245,6 +246,12 @@
     }
   }
 
+  playerFormat.addEventListener('click', () => {
+    const wide = player.classList.toggle('is-wide');
+    playerFormat.setAttribute('aria-pressed', String(wide));
+    playerFormat.textContent = wide ? 'Portrait view' : 'Wide view';
+  });
+
   function closeView() {
     player.replaceChildren();
     selectedSource = null;
@@ -252,6 +259,9 @@
     renderedRoute = '';
     document.title = pageTitle;
     document.body.classList.remove('dialog-open');
+    player.classList.remove('is-wide');
+    playerFormat.setAttribute('aria-pressed', 'false');
+    playerFormat.textContent = 'Wide view';
     if (dialog.open) dialog.close();
     if (returnFocus && document.contains(returnFocus)) returnFocus.focus({preventScroll: true});
     returnFocus = null;

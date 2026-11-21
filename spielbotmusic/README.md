@@ -10,7 +10,7 @@ This is a complete static HTML document without Jekyll front matter. The existin
 - `assets/catalogue.json`: verified public YouTube playlist metadata and source provenance.
 - `assets/app.js`: video search, artist filtering, shareable artist/video links, accessible playlist dialog and click-to-load YouTube player.
 - `assets/styles.css`: responsive Electric Poster design.
-- `assets/artists/` and `assets/videos/`: local copies of the channel's artwork.
+- `assets/artists/` and `assets/videos/`: curated high-resolution artist portraits and local video thumbnails.
 - `assets/fonts/`: bundled Archivo Black and Space Grotesk fonts with their OFL licences.
 - `_tools/refresh_catalogue.py`: catalogue maintenance utility. The leading underscore keeps this directory out of Jekyll's published output.
 
@@ -22,7 +22,7 @@ From the repository root, using Python 3.10 or newer:
 python spielbotmusic/_tools/refresh_catalogue.py --refresh
 ```
 
-This fetches public playlist HTML, validates completeness and channel ownership, downloads any missing artwork and atomically updates the catalogue. To replace existing artwork as well:
+This fetches public playlist HTML, validates completeness and channel ownership, downloads any missing artwork and atomically updates the catalogue. To refresh existing video thumbnails as well (curated artist portraits are preserved):
 
 ```bash
 python spielbotmusic/_tools/refresh_catalogue.py --refresh --download-thumbnails
@@ -38,10 +38,18 @@ The artist roster follows the ten artist playlists. AI Music Video Network is a 
 
 The catalogue retains source order and duplicate entries for provenance. The interface removes duplicate video cards and keeps collaborations discoverable under every artist playlist they belong to. Playback uses the original live YouTube playlist; the displayed song list and artwork reflect the most recent catalogue refresh.
 
-Artist and video links use URL fragments, so direct links work on GitHub Pages without additional routes. Opening an artist does not autoplay; pressing play or selecting a video loads the YouTube embed. Closing the dialog removes the player. Native YouTube controls and a direct YouTube link remain available.
+Artist and video links use URL fragments, so direct links work on GitHub Pages without additional routes. Opening an artist does not autoplay; pressing play or selecting a video loads the YouTube embed. The gallery and player default to a 9:16 portrait view suited to Shorts. The player’s **Wide view** / **Portrait view** button changes the frame without reloading the video. Closing the dialog removes the player and restores portrait view for the next visit. Native YouTube controls and a direct YouTube link remain available.
 
 ## Validation and deployment
 
 The existing **Build Site** workflow validates Jekyll on pushes and pull requests. GitHub Pages publishes the repository root from `master`. No shared layouts, navigation, configuration, dependencies or deployment workflows were changed for this section.
 
 Check the gallery, search/filter, playlist selection, direct artist link, close/Escape, contact email, and mobile layout when making further changes. The page's artist links also work directly on YouTube if JavaScript or catalogue loading is unavailable.
+
+## Artist artwork and branding
+
+The ten artist portraits were generated on 21 November 2026 using both the main character portrait and turnaround sheet in Spielbot Settings → Characters. Each is a 1024 × 1536 JPEG, with identity and wardrobe guided by those references. The complete prompts are recorded in `_tools/artwork-prompts.json`; they were created with the built-in image-generation tool. The original local character assets remain unchanged.
+
+The supplied transparent Stephen Spielbot Music logo is used in the header and footer, with the supplied white-background version used as the page icon. Both are retained in `assets/brand/`.
+
+`--download-thumbnails` refreshes video thumbnails only. An existing valid artist portrait is always preserved; a thumbnail fallback is created only if an artist portrait is absent or invalid.

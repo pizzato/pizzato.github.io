@@ -114,9 +114,9 @@ body.spielbot { margin: 0; background: var(--sb-paper); color: var(--sb-ink); fo
 .spielbot #artist-filter { display: block; width: 100%; min-height: 52px; appearance: none; padding: 12px 48px 12px 17px; border: 1px solid #78796d; border-radius: 0; background: var(--sb-ink); color: var(--sb-paper-bright); font-size: 16px; cursor: pointer; }
 .spielbot #artist-filter option { background: var(--sb-ink); color: var(--sb-paper-bright); }
 .spielbot .video-results-note { margin-bottom: 26px; color: #c2c2b5; font-size: 13px; }
-.spielbot .video-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 35px 26px; }
+.spielbot .video-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 35px 26px; }
 .spielbot .video-card { min-width: 0; color: inherit; text-decoration: none; }
-.spielbot .video-thumb { position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: #353630; }
+.spielbot .video-thumb { position: relative; aspect-ratio: 9 / 16; overflow: hidden; background: #353630; }
 .spielbot .video-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform 220ms ease; }
 .spielbot .video-card:hover .video-thumb img { transform: scale(1.035); }
 .spielbot .duration { position: absolute; right: 9px; bottom: 9px; padding: 3px 6px; background: #171819ed; color: #fff; font-size: 12px; font-weight: 600; line-height: 1.35; font-variant-numeric: tabular-nums; }
@@ -183,9 +183,9 @@ body.spielbot { margin: 0; background: var(--sb-paper); color: var(--sb-ink); fo
 .spielbot .share-fallback { display: flex; align-items: center; gap: 15px; padding: 16px 31px; border-bottom: 1px solid var(--sb-line); }
 .spielbot .share-fallback label { font-size: 13px; font-weight: 600; }
 .spielbot .share-fallback input { flex: 1; min-width: 0; min-height: 44px; padding: 8px 12px; border: 1px solid var(--sb-ink); border-radius: 0; background: var(--sb-paper-bright); color: var(--sb-ink); font-size: 16px; }
-.spielbot .dialog-content { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(275px, 1fr); gap: 29px; padding: 29px 31px 31px; align-items: start; }
+.spielbot .dialog-content { display: grid; grid-template-columns: minmax(0, 1fr) minmax(275px, 1fr); gap: 29px; padding: 29px 31px 31px; align-items: start; }
 .spielbot .player-column { min-width: 0; }
-.spielbot .video-player { position: relative; width: 100%; aspect-ratio: 16 / 9; background: #101110; color: #fff; overflow: hidden; }
+.spielbot .video-player { position: relative; width: min(100%, 420px, calc(66dvh * 9 / 16)); min-width: 200px; margin-inline: auto; aspect-ratio: 9 / 16; background: #101110; color: #fff; overflow: hidden; }
 .spielbot .video-player iframe { display: block; width: 100%; height: 100%; border: 0; }
 .spielbot .player-poster { position: absolute; inset: 0; display: grid; place-items: center; }
 .spielbot .player-poster > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .76; }
@@ -199,14 +199,14 @@ body.spielbot { margin: 0; background: var(--sb-paper); color: var(--sb-ink); fo
 .spielbot .youtube-fallback svg { width: 16px; height: 16px; }
 .spielbot .playlist-column { min-width: 0; }
 .spielbot .playlist-column > h3 { padding: 0 0 14px; border-bottom: 2px solid var(--sb-ink); font-size: 14px; line-height: 1.3; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
-.spielbot .track-list { max-height: 430px; margin: 9px 0 0; padding: 0 5px 0 0; overflow-y: auto; list-style: none; scrollbar-color: #77796b transparent; scrollbar-width: thin; }
+.spielbot .track-list { max-height: 66dvh; margin: 9px 0 0; padding: 0 5px 0 0; overflow-y: auto; list-style: none; scrollbar-color: #77796b transparent; scrollbar-width: thin; }
 .spielbot .track-list > li { margin: 0; padding: 0; }
-.spielbot .track { display: grid; grid-template-columns: 20px 70px minmax(0, 1fr); align-items: center; gap: 10px; width: 100%; min-height: 76px; padding: 11px 9px; border: 0; border-bottom: 1px solid var(--sb-line); border-radius: 0; background: transparent; color: var(--sb-ink); text-align: left; }
+.spielbot .track { display: grid; grid-template-columns: 20px 48px minmax(0, 1fr); align-items: center; gap: 10px; width: 100%; min-height: 76px; padding: 11px 9px; border: 0; border-bottom: 1px solid var(--sb-line); border-radius: 0; background: transparent; color: var(--sb-ink); text-align: left; }
 .spielbot .track:hover { background: #deddce; }
 .spielbot .track[aria-current="true"] { background: var(--sb-ink); color: var(--sb-paper-bright); }
 .spielbot .track:focus-visible { outline-offset: -3px; }
 .spielbot .track-index { font-size: 12px; text-align: center; font-variant-numeric: tabular-nums; }
-.spielbot .track-thumb { aspect-ratio: 16 / 9; overflow: hidden; background: #c4c5b7; }
+.spielbot .track-thumb { aspect-ratio: 9 / 16; overflow: hidden; background: #c4c5b7; }
 .spielbot .track-thumb img { width: 100%; height: 100%; object-fit: cover; }
 .spielbot .track-copy { min-width: 0; }
 .spielbot .track-title { display: block; font-size: 14px; font-weight: 600; line-height: 1.35; overflow-wrap: anywhere; }
@@ -240,8 +240,8 @@ body.spielbot { margin: 0; background: var(--sb-paper); color: var(--sb-ink); fo
   .spielbot .dialog-header { grid-template-columns: 75px minmax(0, 1fr); gap: 18px; }
   .spielbot .dialog-portrait { width: 75px; height: 90px; }
   .spielbot .dialog-actions { grid-column: 2; flex-direction: row; flex-wrap: wrap; }
-  .spielbot .dialog-content { grid-template-columns: minmax(0, 1.3fr) minmax(275px, 1fr); gap: 22px; }
-  .spielbot .track { grid-template-columns: 15px 55px minmax(0, 1fr); gap: 8px; padding-inline: 6px; }
+  .spielbot .dialog-content { grid-template-columns: minmax(0, 1fr) minmax(275px, 1fr); gap: 22px; }
+  .spielbot .track { grid-template-columns: 15px 44px minmax(0, 1fr); gap: 8px; padding-inline: 6px; }
 }
 
 @media (max-width: 850px) {
@@ -277,7 +277,7 @@ body.spielbot { margin: 0; background: var(--sb-paper); color: var(--sb-ink); fo
   .spielbot .about-section > p:not(.eyebrow) { font-size: 16px; }
   .spielbot .dialog-content { grid-template-columns: 1fr; gap: 27px; }
   .spielbot .track-list { max-height: none; padding-right: 0; }
-  .spielbot .track { grid-template-columns: 24px 82px minmax(0, 1fr); gap: 13px; padding: 13px 10px; }
+  .spielbot .track { grid-template-columns: 24px 54px minmax(0, 1fr); gap: 13px; padding: 13px 10px; }
   .spielbot .track-title { font-size: 15px; }
   .spielbot .playlist-column > h3 { font-size: 15px; }
 }
@@ -362,7 +362,7 @@ body.spielbot { margin: 0; background: var(--sb-paper); color: var(--sb-ink); fo
   .spielbot .player-start { min-height: 48px; padding: 12px 15px; font-size: 13px; box-shadow: 3px 3px 0 var(--sb-ink); }
   .spielbot .player-caption { font-size: 16px; padding-top: 15px; }
   .spielbot .youtube-fallback { font-size: 12px; }
-  .spielbot .track { grid-template-columns: 20px 65px minmax(0, 1fr); gap: 10px; padding: 11px 6px; }
+  .spielbot .track { grid-template-columns: 20px 48px minmax(0, 1fr); gap: 10px; padding: 11px 6px; }
   .spielbot .track-title { font-size: 14px; }
   .spielbot .dialog-footer { padding: 14px 17px; font-size: 12px; }
 }
@@ -380,13 +380,13 @@ body.spielbot { margin: 0; background: var(--sb-paper); color: var(--sb-ink); fo
   .spielbot .artist-grid { gap: 26px 13px; }
   .spielbot .artist-card h3 { font-size: 16px; }
   .spielbot .card-play { width: 25px; height: 25px; }
-  .spielbot .video-grid { grid-template-columns: 1fr; gap: 27px; }
+  .spielbot .video-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 25px 13px; }
   .spielbot .video-card h3 { font-size: 16px; }
   .spielbot .duration { font-size: 12px; }
   .spielbot .dialog-header { padding-left: 15px; grid-template-columns: 50px minmax(0, 1fr); gap: 11px; }
   .spielbot .dialog-portrait { width: 50px; height: 66px; }
   .spielbot .dialog-title-block h2 { font-size: 23px; }
-  .spielbot .track { grid-template-columns: 17px 55px minmax(0, 1fr); gap: 8px; }
+  .spielbot .track { grid-template-columns: 17px 42px minmax(0, 1fr); gap: 8px; }
 }
 
 @media (hover: none) {
@@ -402,5 +402,20 @@ body.spielbot { margin: 0; background: var(--sb-paper); color: var(--sb-ink); fo
 /* Vector marks retain the poster palette across platform emoji fonts. */
 .spielbot svg.burst { width: clamp(100px, 14vw, 175px); height: auto; }
 .spielbot svg.ticker-star { width: 22px; height: 22px; flex: 0 0 22px; }
-.spielbot .video-player { min-height: 200px; }
+.spielbot .video-player.is-wide { width: 100%; min-width: 0; aspect-ratio: 16 / 9; }
 .spielbot .player-start-symbol { display: inline-flex; }
+
+/* Supplied brand mark and portrait-first playback. */
+.spielbot .brand-logo { width: 108px; height: 108px; object-fit: contain; }
+.spielbot .footer-mark .brand-logo { width: 100px; height: 100px; }
+.spielbot .artist-art img, .spielbot .poster-image img, .spielbot .dialog-portrait img { object-position: 50% 0%; }
+.spielbot .player-toolbar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 14px; font-size: 14px; }
+.spielbot .player-toolbar .button { min-height: 44px; padding: 10px 14px; font-size: 14px; }
+.spielbot .player-toolbar .button[aria-pressed="true"] { background: var(--sb-lime); }
+@media (min-width: 851px) and (max-width: 1100px) {
+  .spielbot .video-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 620px) {
+  .spielbot .brand-logo { width: 92px; height: 92px; }
+  .spielbot .header-inner { padding-block: 10px 15px; }
+}

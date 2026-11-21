@@ -293,11 +293,15 @@ def download_thumbnails(catalogue, asset_dir, refresh_all=False):
     videos = {video["id"]: video for artist in catalogue["artists"] for video in artist["videos"]}
     videos.update({video["id"]: video for video in catalogue["collection"]["videos"]})
     tasks = [(video["thumbnail"], asset_dir / "videos" / (video_id + ".jpg")) for video_id, video in videos.items()]
-    tasks.extend((artist["videos"][0]["thumbnail"], asset_dir / "artists" / (artist["id"] + ".jpg"))
-                 for artist in catalogue["artists"] if artist["videos"])
-    required = tasks
-    tasks = [(url, destination) for url, destination in required
+    artist_fallbacks = [(artist["videos"][0]["thumbnail"], asset_dir / "artists" / (artist["id"] + ".jpg"))
+                       for artist in catalogue["artists"] if artist["videos"]]
+    required = tasks + artist_fallbacks
+    tasks = [(url, destination) for url, destination in tasks
              if refresh_all or not existing_thumbnail_valid(destination)]
+    # Artist portraits are curated separately; refreshing video thumbnails must
+    # never replace them with a low-resolution frame from a music video.
+    tasks.extend((url, destination) for url, destination in artist_fallbacks
+                 if not existing_thumbnail_valid(destination))
     with ThreadPoolExecutor(max_workers=4) as pool:
         for _ in pool.map(lambda task: retrieve_thumbnail(*task), tasks):
             pass
