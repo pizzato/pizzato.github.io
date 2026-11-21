@@ -62,7 +62,7 @@ ARTISTS = [
     ("orla-static", "Orla Static", "PLLtWWI7ELcIs"),
     ("ixovel", "IXØVEL", "PLW48zww8S06s"),
 ]
-COLLECTION = ("ai-music-video-network", "AI Music Video Network", "PLS5WTo4e7mhQ")
+COLLECTION = ("ai-music-video-network", "Stephen Spielbot Music", "PLS5WTo4e7mhQ")
 MAX_PAGE_BYTES = 20 * 1024 * 1024
 MAX_IMAGE_BYTES = 10 * 1024 * 1024
 VIDEO_ID = re.compile(r"^[A-Za-z0-9_-]{11}$")

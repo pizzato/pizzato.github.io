@@ -34,7 +34,7 @@ The artist roster is explicit in the utility. When adding an artist, add its ver
 
 ## Playlist behaviour
 
-The artist roster follows the ten artist playlists. AI Music Video Network is a separate collection. Videos verified as belonging to Stephen Spielbot Music but absent from artist playlists appear under **More from Spielbot** in the video browser.
+The artist roster follows the ten artist playlists. Stephen Spielbot Music is a separate collection. Videos verified as belonging to Stephen Spielbot Music but absent from artist playlists appear under **More from Spielbot** in the video browser.
 
 The catalogue retains source order and duplicate entries for provenance. The interface removes duplicate video cards and keeps collaborations discoverable under every artist playlist they belong to. Playback uses the original live YouTube playlist; the displayed song list and artwork reflect the most recent catalogue refresh.
 
