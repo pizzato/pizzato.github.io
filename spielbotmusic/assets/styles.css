@@ -1,0 +1,406 @@
+/* Stephen Spielbot Music — Electric Poster. Intentionally isolated from the main site. */
+:root {
+  --sb-paper: #ecebde;
+  --sb-paper-bright: #f7f5ea;
+  --sb-ink: #171819;
+  --sb-lime: #e4ff3d;
+  --sb-coral: #fa6945;
+  --sb-muted: #55554e;
+  --sb-line: #bdbdb0;
+  --sb-display: "Archivo Black", "Arial Black", Impact, sans-serif;
+  --sb-body: "Space Grotesk", Arial, Helvetica, sans-serif;
+}
+
+html:has(body.spielbot) { scroll-behavior: smooth; scroll-padding-top: 24px; }
+body.spielbot { margin: 0; background: var(--sb-paper); color: var(--sb-ink); font: 400 16px/1.55 var(--sb-body); }
+.spielbot *, .spielbot *::before, .spielbot *::after { box-sizing: border-box; }
+.spielbot h1, .spielbot h2, .spielbot h3, .spielbot p { margin: 0; }
+.spielbot h1, .spielbot h2, .spielbot h3 { line-height: 1.05; }
+.spielbot button, .spielbot input, .spielbot select { font: inherit; }
+.spielbot button, .spielbot a { -webkit-tap-highlight-color: transparent; }
+.spielbot button { cursor: pointer; }
+.spielbot a { color: inherit; }
+.spielbot img { display: block; max-width: 100%; }
+.spielbot svg { display: block; width: 21px; height: 21px; flex-shrink: 0; }
+.spielbot [hidden], .spielbot .is-hidden { display: none !important; }
+.spielbot :focus-visible { outline: 3px solid var(--sb-coral); outline-offset: 5px; }
+.spielbot ::selection { background: var(--sb-ink); color: var(--sb-lime); }
+.spielbot .container, .spielbot .header-inner { width: min(1280px, calc(100% - 96px)); margin-inline: auto; }
+.spielbot .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.spielbot .skip-link { position: absolute; top: 12px; left: 12px; z-index: 100; padding: 12px 18px; background: var(--sb-lime); color: var(--sb-ink); transform: translateY(-160%); font-weight: 700; }
+.spielbot .skip-link:focus { transform: none; }
+.spielbot .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.spielbot .button { display: inline-flex; justify-content: center; align-items: center; gap: 14px; min-height: 49px; padding: 13px 20px; border: 2px solid var(--sb-ink); border-radius: 0; background: var(--sb-lime); color: var(--sb-ink); text-decoration: none; font-size: 15px; line-height: 1.25; font-weight: 700; transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease; }
+.spielbot .button:hover { transform: translate(-2px, -2px); box-shadow: 4px 4px 0 var(--sb-ink); }
+.spielbot .button-dark { background: var(--sb-ink); color: var(--sb-paper-bright); }
+.spielbot .button-dark:hover { background: #30312b; }
+.spielbot .button-outline { background: transparent; }
+.spielbot .button-outline:hover { background: var(--sb-lime); }
+
+/* Wordmark and editorial navigation. */
+.spielbot .site-header { border-bottom: 2px solid var(--sb-ink); }
+.spielbot .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 30px; min-height: 110px; padding-block: 22px; }
+.spielbot .wordmark { display: inline-flex; flex-direction: column; flex-shrink: 0; text-decoration: none; }
+.spielbot .wordmark-main { font-family: var(--sb-display); font-size: 40px; font-weight: 400; line-height: .88; letter-spacing: -.065em; }
+.spielbot .wordmark-dot, .spielbot .footer-mark > span { color: var(--sb-coral); }
+.spielbot .wordmark-sub { margin-top: 10px; font-size: 12px; line-height: 1; font-weight: 700; letter-spacing: .095em; text-transform: uppercase; }
+.spielbot .site-nav { display: flex; align-items: center; justify-content: center; gap: clamp(22px, 3vw, 44px); }
+.spielbot .site-nav a { position: relative; padding-block: 8px; text-decoration: none; font-size: 15px; font-weight: 600; }
+.spielbot .site-nav a::after { content: ""; position: absolute; left: 0; right: 0; bottom: 3px; height: 2px; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform 150ms ease; }
+.spielbot .site-nav a:hover::after, .spielbot .site-nav a:focus-visible::after { transform: scaleX(1); }
+.spielbot .header-cta { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 12px 16px; background: var(--sb-ink); color: var(--sb-lime); text-decoration: none; font-size: 13px; line-height: 1.2; letter-spacing: .035em; font-weight: 700; transform: rotate(3deg); }
+.spielbot .header-cta svg { width: 19px; height: 19px; }
+.spielbot .header-cta:hover { background: var(--sb-coral); color: var(--sb-ink); }
+
+/* Oversized poster headline and artist collage. */
+.spielbot .hero { display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: clamp(25px, 4vw, 65px); padding-block: 70px 76px; }
+.spielbot .hero-copy { position: relative; z-index: 2; min-width: 0; }
+.spielbot .hero-copy > .eyebrow { margin-bottom: 26px; }
+.spielbot .hero-title { font-family: var(--sb-display); font-size: clamp(58px, 7.15vw, 104px); font-weight: 400; line-height: .91; letter-spacing: -.065em; text-transform: uppercase; }
+.spielbot .hero-title > span { display: block; }
+.spielbot .hero-title .highlight { display: table; position: relative; margin-top: 5px; margin-left: -.08em; padding: .025em .105em .07em .08em; background: var(--sb-lime); color: var(--sb-ink); }
+.spielbot .hero-description { max-width: 33ch; margin-top: 28px; font-size: 19px; line-height: 1.55; font-weight: 500; }
+.spielbot .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 18px; margin-top: 28px; }
+.spielbot .hero-actions > a:not(.button) { text-underline-offset: 4px; font-size: 15px; font-weight: 600; }
+.spielbot .hero-collage { position: relative; min-width: 0; height: 485px; isolation: isolate; }
+.spielbot .poster { position: absolute; display: flex; flex-direction: column; overflow: hidden; padding: 9px 9px 0; border: 2px solid var(--sb-ink); background: var(--sb-paper-bright); color: var(--sb-ink); text-decoration: none; box-shadow: 0 7px 0 var(--sb-ink); transition: transform 180ms ease, box-shadow 180ms ease; }
+.spielbot .poster-image { min-height: 0; flex: 1; overflow: hidden; background: var(--sb-ink); }
+.spielbot .poster-image img { width: 100%; height: 100%; object-fit: cover; }
+.spielbot .poster-caption { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 12px; min-height: 46px; padding: 10px 4px; font-family: var(--sb-display); font-weight: 400; font-size: 18px; line-height: 1.1; letter-spacing: -.045em; text-transform: uppercase; }
+.spielbot .poster-caption > span { font-family: var(--sb-body); font-size: 12px; font-weight: 600; line-height: 1.2; letter-spacing: .025em; white-space: nowrap; }
+.spielbot .poster-caption svg { width: 18px; height: 18px; }
+.spielbot .poster-ixovel { z-index: 1; width: 61%; height: 335px; top: 9px; left: 1%; transform: rotate(-9deg); }
+.spielbot .poster-kinho { z-index: 2; width: 61%; height: 340px; right: 1%; bottom: 8px; transform: rotate(8deg); }
+.spielbot .poster-ixovel:hover { z-index: 4; transform: rotate(-6deg) translateY(-7px); box-shadow: 0 11px 0 var(--sb-ink); }
+.spielbot .poster-kinho:hover { z-index: 4; transform: rotate(5deg) translateY(-7px); box-shadow: 0 11px 0 var(--sb-ink); }
+.spielbot .burst { position: absolute; z-index: 0; right: -14px; top: -34px; color: var(--sb-coral); font: 400 168px/1 Arial, sans-serif; transform: rotate(8deg); user-select: none; }
+.spielbot .round-sticker { position: absolute; left: -20px; bottom: 5px; z-index: 5; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 145px; height: 145px; padding: 20px; border: 2px solid var(--sb-ink); border-radius: 50%; background: var(--sb-coral); color: var(--sb-ink); box-shadow: 3px 4px 0 var(--sb-ink); font-family: var(--sb-display); font-size: 20px; font-weight: 400; line-height: 1.02; text-align: center; text-decoration: none; letter-spacing: -.045em; text-transform: uppercase; transform: rotate(-12deg); }
+.spielbot .ticker { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: clamp(18px, 5vw, 70px); padding: 18px 24px; background: var(--sb-ink); color: var(--sb-lime); font-size: 13px; font-weight: 700; line-height: 1.25; letter-spacing: .11em; text-transform: uppercase; }
+.spielbot .ticker-star { font-size: 23px; line-height: .8; }
+
+/* All artists are a single, clear roster. */
+.spielbot .artists-section { padding-block: 88px 94px; }
+.spielbot .section-heading { display: flex; justify-content: space-between; align-items: flex-end; gap: 28px; margin-bottom: 35px; }
+.spielbot .section-heading > div { min-width: 0; }
+.spielbot .section-heading .eyebrow { margin-bottom: 14px; }
+.spielbot .section-heading h2 { max-width: 20ch; font-family: var(--sb-display); font-size: clamp(33px, 3.7vw, 49px); font-weight: 400; line-height: 1.04; letter-spacing: -.055em; }
+.spielbot .section-heading p:not(.eyebrow) { max-width: 57ch; margin-top: 15px; color: var(--sb-muted); font-size: 16px; line-height: 1.6; }
+.spielbot .section-heading > p:not(.eyebrow) { flex: 0 0 auto; max-width: 27ch; margin-top: 0; padding-bottom: 2px; }
+.spielbot .artist-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 38px 24px; }
+.spielbot .artist-card { min-width: 0; padding-bottom: 16px; border-bottom: 2px solid var(--sb-ink); color: var(--sb-ink); text-decoration: none; }
+.spielbot .artist-art { position: relative; aspect-ratio: 4 / 5; overflow: hidden; background: #d8d7c9; }
+.spielbot .artist-art img { width: 100%; height: 100%; object-fit: cover; transition: transform 220ms ease, filter 220ms ease; }
+.spielbot .artist-card:hover .artist-art img { transform: scale(1.045); }
+.spielbot .artist-card-body { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 12px; padding-top: 17px; }
+.spielbot .artist-card-body > div { min-width: 0; }
+.spielbot .artist-card h3 { align-self: center; font-family: var(--sb-display); font-size: clamp(17px, 1.65vw, 22px); font-weight: 400; line-height: 1.13; letter-spacing: -.05em; overflow-wrap: anywhere; }
+.spielbot .artist-meta { display: block; margin-top: 8px; color: var(--sb-muted); font-size: 12px; line-height: 1.4; }
+.spielbot .card-play { grid-column: 2; grid-row: 1; display: grid; align-self: center; place-items: center; width: 35px; height: 35px; padding-left: 2px; background: var(--sb-lime); border: 1px solid var(--sb-ink); border-radius: 50%; font-size: 13px; line-height: 1; transition: background 150ms ease; }
+.spielbot .card-play svg { width: 16px; height: 16px; }
+.spielbot .artist-card:hover .card-play { background: var(--sb-coral); }
+
+/* Searchable catalogue. */
+.spielbot .videos-section { padding-block: 80px 86px; background: var(--sb-ink); color: var(--sb-paper-bright); }
+.spielbot .videos-section .section-heading .eyebrow { color: var(--sb-lime); }
+.spielbot .videos-section .section-heading p:not(.eyebrow) { color: #c7c7b9; }
+.spielbot .videos-section :focus-visible { outline-color: var(--sb-lime); }
+.spielbot .video-controls { display: flex; align-items: center; flex-wrap: wrap; gap: 16px; margin-bottom: 17px; }
+.spielbot .search-field { position: relative; flex: 1 1 280px; min-width: 0; }
+.spielbot .search-field > svg { position: absolute; top: 50%; left: 17px; width: 19px; height: 19px; color: #c9c9bd; transform: translateY(-50%); pointer-events: none; }
+.spielbot .search-field input { width: 100%; min-height: 52px; padding: 12px 18px 12px 48px; border: 1px solid #78796d; border-radius: 0; background: transparent; color: var(--sb-paper-bright); font-size: 16px; line-height: 1.5; }
+.spielbot .search-field input::placeholder { color: #bfbfb2; opacity: 1; }
+.spielbot .filter-field { position: relative; display: block; flex: 0 1 245px; min-width: 195px; }
+.spielbot .filter-field > svg { position: absolute; right: 15px; top: 50%; width: 20px; height: 20px; color: var(--sb-paper-bright); transform: translateY(-50%); pointer-events: none; }
+.spielbot #artist-filter { display: block; width: 100%; min-height: 52px; appearance: none; padding: 12px 48px 12px 17px; border: 1px solid #78796d; border-radius: 0; background: var(--sb-ink); color: var(--sb-paper-bright); font-size: 16px; cursor: pointer; }
+.spielbot #artist-filter option { background: var(--sb-ink); color: var(--sb-paper-bright); }
+.spielbot .video-results-note { margin-bottom: 26px; color: #c2c2b5; font-size: 13px; }
+.spielbot .video-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 35px 26px; }
+.spielbot .video-card { min-width: 0; color: inherit; text-decoration: none; }
+.spielbot .video-thumb { position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: #353630; }
+.spielbot .video-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform 220ms ease; }
+.spielbot .video-card:hover .video-thumb img { transform: scale(1.035); }
+.spielbot .duration { position: absolute; right: 9px; bottom: 9px; padding: 3px 6px; background: #171819ed; color: #fff; font-size: 12px; font-weight: 600; line-height: 1.35; font-variant-numeric: tabular-nums; }
+.spielbot .video-play { position: absolute; top: 50%; left: 50%; display: grid; place-items: center; width: 46px; height: 46px; border: 1px solid var(--sb-ink); border-radius: 50%; background: var(--sb-lime); color: var(--sb-ink); transform: translate(-50%, -50%); opacity: 0; transition: opacity 150ms ease; }
+.spielbot .video-play svg { width: 19px; height: 19px; }
+.spielbot .video-card:hover .video-play, .spielbot .video-card:focus-visible .video-play { opacity: 1; }
+.spielbot .video-card-text { padding-top: 14px; }
+.spielbot .video-artist { display: block; margin-bottom: 7px; color: var(--sb-lime); font-size: 12px; line-height: 1.3; font-weight: 600; letter-spacing: .055em; }
+.spielbot .video-card h3 { font-size: 17px; line-height: 1.4; font-weight: 600; letter-spacing: -.025em; }
+.spielbot .empty-state { padding: 48px 22px; border: 1px solid #6f7065; text-align: center; font-size: 17px; color: #d5d5c9; }
+.spielbot .empty-state p + p { margin-top: 9px; }
+.spielbot .empty-state h3 { margin-bottom: 11px; }
+.spielbot .empty-state .button { margin-top: 22px; }
+.spielbot .load-more { display: flex; justify-content: center; align-items: center; gap: 12px; min-height: 49px; margin: 37px auto 0; padding: 13px 24px; border: 1px solid var(--sb-paper); border-radius: 0; background: transparent; color: var(--sb-paper-bright); font-size: 15px; font-weight: 600; }
+.spielbot .load-more:hover { background: var(--sb-lime); border-color: var(--sb-lime); color: var(--sb-ink); }
+
+/* Collection and project context. */
+.spielbot .collection-section { display: flex; align-items: center; justify-content: space-between; gap: 34px; margin-block: 78px 0; padding: 36px 40px; border: 2px solid var(--sb-ink); background: var(--sb-lime); box-shadow: 7px 7px 0 var(--sb-ink); }
+.spielbot .collection-copy { max-width: 760px; }
+.spielbot .collection-copy .eyebrow { margin-bottom: 12px; }
+.spielbot .collection-copy h2 { font-family: var(--sb-display); font-size: clamp(25px, 3vw, 36px); font-weight: 400; letter-spacing: -.05em; }
+.spielbot .collection-copy p:not(.eyebrow) { max-width: 61ch; margin-top: 13px; font-size: 16px; }
+.spielbot .collection-section > .button { flex-shrink: 0; }
+.spielbot .about-section { display: grid; grid-template-columns: .9fr 1.2fr; column-gap: 80px; row-gap: 18px; padding-block: 88px 90px; }
+.spielbot .about-section > .eyebrow { grid-column: 1 / -1; }
+.spielbot .about-section > h2 { grid-column: 1; grid-row: 2 / span 2; max-width: 14ch; font-family: var(--sb-display); font-size: clamp(29px, 3.2vw, 42px); font-weight: 400; line-height: 1.08; letter-spacing: -.05em; }
+.spielbot .about-copy { grid-column: 2; grid-row: 2 / span 2; min-width: 0; }
+.spielbot .about-copy > p { max-width: 63ch; font-size: 17px; line-height: 1.65; }
+.spielbot .about-copy > .about-note { margin-top: 22px; font-size: 16px; }
+.spielbot .about-copy > .contact-line { margin-top: 27px; }
+.spielbot .contact-line > span, .spielbot .contact-line > .contact-label { display: block; font-size: 12px; line-height: 1.4; letter-spacing: .09em; font-weight: 700; text-transform: uppercase; }
+.spielbot .contact-line a { display: table; max-width: 100%; margin-top: 6px; padding-bottom: 2px; border-bottom: 2px solid currentColor; font-size: clamp(17px, 2vw, 23px); font-weight: 600; line-height: 1.4; text-decoration: none; overflow-wrap: anywhere; }
+.spielbot .contact-line a:hover { color: #8c2f1c; }
+.spielbot .about-section > p:not(.eyebrow), .spielbot .about-note { grid-column: 2; max-width: 63ch; font-size: 17px; line-height: 1.65; }
+.spielbot .about-note { color: var(--sb-muted); font-size: 16px; }
+.spielbot .about-section a { text-underline-offset: 4px; }
+.spielbot .site-footer { border-top: 2px solid var(--sb-ink); padding-block: 32px 38px; }
+.spielbot .site-footer > .container { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 24px; }
+.spielbot .footer-mark { font-family: var(--sb-display); font-size: 27px; font-weight: 400; line-height: 1; letter-spacing: -.055em; text-decoration: none; }
+.spielbot .footer-links { display: flex; align-items: center; flex-wrap: wrap; gap: 15px 27px; font-size: 13px; }
+.spielbot .footer-links a { text-underline-offset: 4px; }
+.spielbot .site-footer > .container > p { font-size: 13px; color: var(--sb-muted); }
+.spielbot .back-to-top { font-size: 13px; text-underline-offset: 4px; }
+.spielbot .contact-email { min-width: 0; max-width: 100%; font-size: 16px; font-weight: 600; line-height: 1.4; text-underline-offset: 4px; overflow-wrap: anywhere; }
+
+/* Artist playlist overlay. */
+.spielbot .artist-dialog { width: min(1190px, calc(100vw - 48px)); max-width: none; max-height: calc(100dvh - 48px); margin: auto; padding: 0; overflow: auto; border: 2px solid var(--sb-ink); border-radius: 0; background: var(--sb-paper); color: var(--sb-ink); box-shadow: 8px 8px 0 #1718197d; }
+.spielbot .artist-dialog::backdrop { background: #171819cc; }
+.spielbot .dialog-shell { position: relative; }
+.spielbot .dialog-close { position: sticky; top: 13px; z-index: 8; display: grid; place-items: center; width: 44px; height: 44px; margin: 13px 14px -57px auto; padding: 0; border: 2px solid var(--sb-ink); border-radius: 50%; background: var(--sb-lime); color: var(--sb-ink); }
+.spielbot .dialog-close:hover { background: var(--sb-coral); }
+.spielbot .dialog-close svg { width: 20px; height: 20px; }
+.spielbot .dialog-header { display: grid; grid-template-columns: 90px minmax(0, 1fr) auto; align-items: center; gap: 23px; padding: 33px 76px 29px 31px; border-bottom: 2px solid var(--sb-ink); }
+.spielbot .dialog-portrait { width: 90px; height: 105px; overflow: hidden; border: 1px solid var(--sb-ink); transform: rotate(-4deg); }
+.spielbot .dialog-portrait img { width: 100%; height: 100%; object-fit: cover; }
+.spielbot .dialog-title-block { min-width: 0; }
+.spielbot .dialog-title-block .eyebrow { margin-bottom: 9px; }
+.spielbot .dialog-title-block h2 { font-family: var(--sb-display); font-size: clamp(28px, 3.2vw, 43px); font-weight: 400; line-height: 1.05; letter-spacing: -.055em; overflow-wrap: anywhere; }
+.spielbot #dialog-description { margin-top: 10px; max-width: 57ch; color: var(--sb-muted); font-size: 14px; line-height: 1.5; }
+.spielbot .dialog-actions { display: flex; flex-direction: column; align-items: stretch; gap: 9px; }
+.spielbot .dialog-actions .button, .spielbot .dialog-actions > button { min-height: 43px; padding: 10px 13px; font-size: 13px; }
+.spielbot .dialog-actions > button:not(.button) { display: inline-flex; justify-content: center; align-items: center; gap: 9px; border: 1px solid var(--sb-ink); background: transparent; color: var(--sb-ink); }
+.spielbot .dialog-actions > button:not(.button):hover { background: var(--sb-lime); }
+.spielbot .share-fallback { display: flex; align-items: center; gap: 15px; padding: 16px 31px; border-bottom: 1px solid var(--sb-line); }
+.spielbot .share-fallback label { font-size: 13px; font-weight: 600; }
+.spielbot .share-fallback input { flex: 1; min-width: 0; min-height: 44px; padding: 8px 12px; border: 1px solid var(--sb-ink); border-radius: 0; background: var(--sb-paper-bright); color: var(--sb-ink); font-size: 16px; }
+.spielbot .dialog-content { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(275px, 1fr); gap: 29px; padding: 29px 31px 31px; align-items: start; }
+.spielbot .player-column { min-width: 0; }
+.spielbot .video-player { position: relative; width: 100%; aspect-ratio: 16 / 9; background: #101110; color: #fff; overflow: hidden; }
+.spielbot .video-player iframe { display: block; width: 100%; height: 100%; border: 0; }
+.spielbot .player-poster { position: absolute; inset: 0; display: grid; place-items: center; }
+.spielbot .player-poster > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .76; }
+.spielbot .player-start { position: relative; z-index: 1; display: inline-flex; align-items: center; justify-content: center; gap: 11px; min-height: 52px; padding: 13px 20px; border: 2px solid var(--sb-ink); border-radius: 0; background: var(--sb-lime); color: var(--sb-ink); box-shadow: 4px 4px 0 var(--sb-ink); font-size: 15px; font-weight: 700; }
+.spielbot .player-start:hover { background: var(--sb-coral); }
+.spielbot .player-start svg { width: 20px; height: 20px; }
+.spielbot .player-caption { padding-top: 17px; font-size: 17px; font-weight: 600; line-height: 1.45; letter-spacing: -.02em; }
+.spielbot .player-caption .eyebrow { margin-bottom: 8px; }
+.spielbot .player-caption h3 { font-size: 18px; font-weight: 600; line-height: 1.4; }
+.spielbot .youtube-fallback { display: inline-flex; align-items: center; gap: 8px; margin-top: 13px; color: var(--sb-muted); font-size: 13px; line-height: 1.45; text-underline-offset: 3px; }
+.spielbot .youtube-fallback svg { width: 16px; height: 16px; }
+.spielbot .playlist-column { min-width: 0; }
+.spielbot .playlist-column > h3 { padding: 0 0 14px; border-bottom: 2px solid var(--sb-ink); font-size: 14px; line-height: 1.3; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.spielbot .track-list { max-height: 430px; margin: 9px 0 0; padding: 0 5px 0 0; overflow-y: auto; list-style: none; scrollbar-color: #77796b transparent; scrollbar-width: thin; }
+.spielbot .track-list > li { margin: 0; padding: 0; }
+.spielbot .track { display: grid; grid-template-columns: 20px 70px minmax(0, 1fr); align-items: center; gap: 10px; width: 100%; min-height: 76px; padding: 11px 9px; border: 0; border-bottom: 1px solid var(--sb-line); border-radius: 0; background: transparent; color: var(--sb-ink); text-align: left; }
+.spielbot .track:hover { background: #deddce; }
+.spielbot .track[aria-current="true"] { background: var(--sb-ink); color: var(--sb-paper-bright); }
+.spielbot .track:focus-visible { outline-offset: -3px; }
+.spielbot .track-index { font-size: 12px; text-align: center; font-variant-numeric: tabular-nums; }
+.spielbot .track-thumb { aspect-ratio: 16 / 9; overflow: hidden; background: #c4c5b7; }
+.spielbot .track-thumb img { width: 100%; height: 100%; object-fit: cover; }
+.spielbot .track-copy { min-width: 0; }
+.spielbot .track-title { display: block; font-size: 14px; font-weight: 600; line-height: 1.35; overflow-wrap: anywhere; }
+.spielbot .track-duration { display: block; margin-top: 5px; font-size: 12px; line-height: 1.2; opacity: .78; font-variant-numeric: tabular-nums; }
+.spielbot .dialog-footer { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 9px 20px; padding: 16px 31px; border-top: 1px solid var(--sb-line); color: var(--sb-muted); font-size: 12px; }
+
+@media (min-width: 1500px) {
+  .spielbot .hero-title { font-size: 108px; }
+  .spielbot .hero-collage { height: 505px; }
+  .spielbot .poster-ixovel { height: 350px; }
+  .spielbot .poster-kinho { height: 355px; }
+}
+
+@media (max-width: 1100px) {
+  .spielbot .container, .spielbot .header-inner { width: calc(100% - 64px); }
+  .spielbot .header-inner { min-height: 100px; }
+  .spielbot .hero { gap: 30px; padding-block: 61px 65px; }
+  .spielbot .hero-collage { height: 400px; }
+  .spielbot .poster-ixovel { height: 280px; }
+  .spielbot .poster-kinho { height: 285px; }
+  .spielbot .round-sticker { width: 120px; height: 120px; padding: 15px; font-size: 17px; }
+  .spielbot .burst { font-size: 130px; right: -9px; top: -22px; }
+  .spielbot .hero-description { font-size: 17px; }
+  .spielbot .artist-grid { gap: 32px 19px; }
+  .spielbot .artist-card h3 { font-size: 18px; }
+  .spielbot .artist-card-body { gap: 7px; }
+  .spielbot .card-play { width: 29px; height: 29px; }
+  .spielbot .card-play svg { width: 14px; height: 14px; }
+  .spielbot .about-section { column-gap: 50px; }
+  .spielbot .collection-section { gap: 24px; padding: 30px; }
+  .spielbot .dialog-header { grid-template-columns: 75px minmax(0, 1fr); gap: 18px; }
+  .spielbot .dialog-portrait { width: 75px; height: 90px; }
+  .spielbot .dialog-actions { grid-column: 2; flex-direction: row; flex-wrap: wrap; }
+  .spielbot .dialog-content { grid-template-columns: minmax(0, 1.3fr) minmax(275px, 1fr); gap: 22px; }
+  .spielbot .track { grid-template-columns: 15px 55px minmax(0, 1fr); gap: 8px; padding-inline: 6px; }
+}
+
+@media (max-width: 850px) {
+  .spielbot .site-nav { gap: 20px; }
+  .spielbot .site-nav a { font-size: 14px; }
+  .spielbot .wordmark-main { font-size: 35px; }
+  .spielbot .wordmark-sub { font-size: 12px; letter-spacing: .065em; }
+  .spielbot .header-cta { padding: 11px 13px; font-size: 12px; }
+  .spielbot .hero { grid-template-columns: 1.1fr 1fr; gap: 18px; padding-block: 48px 55px; }
+  .spielbot .hero-title { font-size: 7.15vw; }
+  .spielbot .hero-copy > .eyebrow { margin-bottom: 22px; font-size: 12px; letter-spacing: .1em; }
+  .spielbot .hero-description { font-size: 16px; margin-top: 22px; }
+  .spielbot .hero-collage { height: 345px; }
+  .spielbot .poster { padding: 6px 6px 0; }
+  .spielbot .poster-ixovel { height: 235px; }
+  .spielbot .poster-kinho { height: 240px; }
+  .spielbot .poster-caption { min-height: 34px; padding: 8px 2px; font-size: 15px; }
+  .spielbot .poster-caption > span { display: none; }
+  .spielbot .round-sticker { left: -10px; bottom: 5px; width: 105px; height: 105px; font-size: 15px; }
+  .spielbot .burst { top: -12px; font-size: 110px; }
+  .spielbot .hero-actions { gap: 14px; margin-top: 23px; }
+  .spielbot .hero-actions .button { font-size: 14px; padding-inline: 16px; }
+  .spielbot .ticker { gap: 28px; font-size: 12px; letter-spacing: .08em; }
+  .spielbot .ticker-extra, .spielbot .ticker-star:nth-last-child(2) { display: none; }
+  .spielbot .artists-section { padding-block: 65px 70px; }
+  .spielbot .artist-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 34px 22px; }
+  .spielbot .artist-card h3 { font-size: 21px; }
+  .spielbot .card-play { width: 33px; height: 33px; }
+  .spielbot .video-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 22px; }
+  .spielbot .videos-section { padding-block: 65px; }
+  .spielbot .collection-section { flex-direction: column; align-items: flex-start; margin-top: 62px; }
+  .spielbot .about-section { column-gap: 36px; padding-block: 70px; }
+  .spielbot .about-section > p:not(.eyebrow) { font-size: 16px; }
+  .spielbot .dialog-content { grid-template-columns: 1fr; gap: 27px; }
+  .spielbot .track-list { max-height: none; padding-right: 0; }
+  .spielbot .track { grid-template-columns: 24px 82px minmax(0, 1fr); gap: 13px; padding: 13px 10px; }
+  .spielbot .track-title { font-size: 15px; }
+  .spielbot .playlist-column > h3 { font-size: 15px; }
+}
+
+@media (max-width: 620px) {
+  html:has(body.spielbot) { scroll-padding-top: 15px; }
+  .spielbot .container, .spielbot .header-inner { width: calc(100% - 40px); }
+  .spielbot .header-inner { flex-wrap: wrap; gap: 19px; min-height: 0; padding-block: 23px 18px; }
+  .spielbot .wordmark-main { font-size: 36px; }
+  .spielbot .wordmark-sub { font-size: 12px; }
+  .spielbot .wordmark-sub { letter-spacing: .025em; }
+  .spielbot .site-nav { order: 3; width: 100%; justify-content: space-between; gap: 18px; border-top: 1px solid var(--sb-line); padding-top: 9px; }
+  .spielbot .site-nav a { font-size: 14px; padding-block: 4px; }
+  .spielbot .header-cta { padding: 11px 14px; font-size: 12px; }
+  .spielbot .hero { grid-template-columns: 1fr; gap: 36px; padding-block: 41px 41px; }
+  .spielbot .hero-title { font-size: clamp(51px, 14.9vw, 88px); line-height: .92; letter-spacing: -.066em; }
+  .spielbot .hero-copy > .eyebrow { margin-bottom: 22px; font-size: 12px; }
+  .spielbot .hero-description { max-width: 32ch; font-size: 17px; line-height: 1.55; margin-top: 24px; }
+  .spielbot .hero-actions { margin-top: 22px; }
+  .spielbot .hero-actions .button { min-height: 47px; font-size: 14px; }
+  .spielbot .hero-collage { height: clamp(300px, 79vw, 435px); width: min(490px, calc(100% - 16px)); margin-inline: auto; }
+  .spielbot .poster-ixovel { top: 6px; left: 2%; width: 59%; height: 76%; }
+  .spielbot .poster-kinho { right: 2%; bottom: 2%; width: 59%; height: 77%; }
+  .spielbot .poster-caption { min-height: 38px; font-size: 17px; }
+  .spielbot .round-sticker { left: 1%; bottom: -1%; width: 116px; height: 116px; font-size: 17px; }
+  .spielbot .burst { top: -19px; right: 0; font-size: 118px; }
+  .spielbot .ticker { padding: 16px 17px; gap: 15px 19px; font-size: 12px; letter-spacing: .06em; }
+  .spielbot .ticker-star { font-size: 18px; }
+  .spielbot .artists-section { padding-block: 54px 59px; }
+  .spielbot .section-heading { flex-direction: column; align-items: flex-start; gap: 17px; margin-bottom: 29px; }
+  .spielbot .section-heading > p:not(.eyebrow) { max-width: 100%; }
+  .spielbot .section-heading h2 { font-size: 34px; letter-spacing: -.055em; }
+  .spielbot .section-heading > .eyebrow { font-size: 12px; margin-bottom: 12px; }
+  .spielbot .section-heading p:not(.eyebrow) { font-size: 16px; }
+  .spielbot .artist-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 17px; }
+  .spielbot .artist-card { padding-bottom: 14px; }
+  .spielbot .artist-art { aspect-ratio: 4 / 5; }
+  .spielbot .artist-card-body { padding-top: 13px; gap: 7px; }
+  .spielbot .artist-card h3 { font-size: clamp(17px, 4.6vw, 22px); letter-spacing: -.055em; }
+  .spielbot .artist-meta { font-size: 12px; }
+  .spielbot .card-play { width: 28px; height: 28px; }
+  .spielbot .card-play svg { width: 13px; height: 13px; }
+  .spielbot .videos-section { padding-block: 54px 60px; }
+  .spielbot .video-controls { gap: 12px; }
+  .spielbot .search-field { flex-basis: 100%; }
+  .spielbot .filter-field { flex: 1 1 100%; width: 100%; }
+  .spielbot .video-grid { gap: 27px 16px; }
+  .spielbot .video-card h3 { font-size: 16px; line-height: 1.4; }
+  .spielbot .video-artist { font-size: 12px; }
+  .spielbot .video-card-text { padding-top: 12px; }
+  .spielbot .duration { right: 5px; bottom: 5px; font-size: 12px; padding: 2px 5px; }
+  .spielbot .video-play { width: 35px; height: 35px; opacity: 1; }
+  .spielbot .video-play svg { width: 15px; height: 15px; }
+  .spielbot .load-more { margin-top: 30px; min-height: 47px; font-size: 14px; }
+  .spielbot .collection-section { margin-top: 53px; padding: 27px 23px; box-shadow: 5px 5px 0 var(--sb-ink); }
+  .spielbot .collection-copy h2 { font-size: 27px; }
+  .spielbot .collection-copy p:not(.eyebrow) { font-size: 16px; }
+  .spielbot .collection-section > .button { min-height: 46px; font-size: 14px; }
+  .spielbot .about-section { grid-template-columns: 1fr; gap: 19px; padding-block: 60px 55px; }
+  .spielbot .about-section > .eyebrow, .spielbot .about-section > h2, .spielbot .about-section > p:not(.eyebrow), .spielbot .about-note { grid-column: 1; grid-row: auto; }
+  .spielbot .about-copy { grid-column: 1; grid-row: auto; }
+  .spielbot .about-copy > p { font-size: 16px; }
+  .spielbot .about-copy > .contact-line { margin-top: 23px; }
+  .spielbot .about-section > h2 { max-width: 16ch; font-size: 33px; }
+  .spielbot .about-section > p:not(.eyebrow) { font-size: 16px; }
+  .spielbot .about-note { font-size: 16px; }
+  .spielbot .site-footer { padding-block: 27px 30px; }
+  .spielbot .site-footer > .container { flex-direction: column; align-items: flex-start; gap: 23px; }
+  .spielbot .footer-mark { font-size: 27px; }
+  .spielbot .footer-links { gap: 13px 23px; font-size: 12px; }
+  .spielbot .artist-dialog { width: calc(100vw - 16px); max-height: calc(100dvh - 16px); border-width: 1px; box-shadow: 3px 3px 0 #1718197d; }
+  .spielbot .dialog-close { top: 10px; margin: 10px 10px -54px auto; width: 42px; height: 42px; }
+  .spielbot .dialog-header { grid-template-columns: 61px minmax(0, 1fr); gap: 15px; padding: 27px 57px 23px 19px; }
+  .spielbot .dialog-portrait { width: 61px; height: 77px; }
+  .spielbot .dialog-title-block .eyebrow { font-size: 12px; letter-spacing: .1em; margin-bottom: 7px; }
+  .spielbot .dialog-title-block h2 { font-size: 27px; letter-spacing: -.055em; }
+  .spielbot #dialog-description { font-size: 12px; margin-top: 9px; }
+  .spielbot .dialog-actions { grid-column: 1 / -1; gap: 8px; margin-top: 3px; }
+  .spielbot .dialog-actions .button, .spielbot .dialog-actions > button { min-height: 42px; padding: 10px 12px; font-size: 12px; }
+  .spielbot .dialog-content { padding: 20px 17px 24px; gap: 25px; }
+  .spielbot .share-fallback { flex-direction: column; align-items: stretch; gap: 8px; padding: 15px 17px; }
+  .spielbot .player-start { min-height: 48px; padding: 12px 15px; font-size: 13px; box-shadow: 3px 3px 0 var(--sb-ink); }
+  .spielbot .player-caption { font-size: 16px; padding-top: 15px; }
+  .spielbot .youtube-fallback { font-size: 12px; }
+  .spielbot .track { grid-template-columns: 20px 65px minmax(0, 1fr); gap: 10px; padding: 11px 6px; }
+  .spielbot .track-title { font-size: 14px; }
+  .spielbot .dialog-footer { padding: 14px 17px; font-size: 12px; }
+}
+
+@media (max-width: 370px) {
+  .spielbot .container, .spielbot .header-inner { width: calc(100% - 32px); }
+  .spielbot .hero-title { font-size: 14.75vw; }
+  .spielbot .header-cta { padding-inline: 10px; }
+  .spielbot .header-cta svg { display: none; }
+  .spielbot .hero-description { font-size: 16px; }
+  .spielbot .hero-collage { height: 285px; }
+  .spielbot .round-sticker { width: 100px; height: 100px; font-size: 15px; }
+  .spielbot .ticker { gap: 12px; font-size: 12px; }
+  .spielbot .ticker-star { display: none; }
+  .spielbot .artist-grid { gap: 26px 13px; }
+  .spielbot .artist-card h3 { font-size: 16px; }
+  .spielbot .card-play { width: 25px; height: 25px; }
+  .spielbot .video-grid { grid-template-columns: 1fr; gap: 27px; }
+  .spielbot .video-card h3 { font-size: 16px; }
+  .spielbot .duration { font-size: 12px; }
+  .spielbot .dialog-header { padding-left: 15px; grid-template-columns: 50px minmax(0, 1fr); gap: 11px; }
+  .spielbot .dialog-portrait { width: 50px; height: 66px; }
+  .spielbot .dialog-title-block h2 { font-size: 23px; }
+  .spielbot .track { grid-template-columns: 17px 55px minmax(0, 1fr); gap: 8px; }
+}
+
+@media (hover: none) {
+  .spielbot .video-play { opacity: 1; }
+  .spielbot .artist-card:hover .artist-art img, .spielbot .video-card:hover .video-thumb img { transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:has(body.spielbot) { scroll-behavior: auto; }
+  .spielbot *, .spielbot *::before, .spielbot *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+}
+
+/* Vector marks retain the poster palette across platform emoji fonts. */
+.spielbot svg.burst { width: clamp(100px, 14vw, 175px); height: auto; }
+.spielbot svg.ticker-star { width: 22px; height: 22px; flex: 0 0 22px; }
+.spielbot .video-player { min-height: 200px; }
+.spielbot .player-start-symbol { display: inline-flex; }
