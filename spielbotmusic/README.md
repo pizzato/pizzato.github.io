@@ -53,3 +53,5 @@ The ten artist portraits were generated on 21 November 2026 using both the main 
 The supplied transparent Stephen Spielbot Music logo is used in the header and footer, with the supplied white-background version used as the page icon. Both are retained in `assets/brand/`.
 
 `--download-thumbnails` refreshes video thumbnails only. An existing valid artist portrait is always preserved; a thumbnail fallback is created only if an artist portrait is absent or invalid.
+
+Video previews use YouTube’s maximum-resolution thumbnails when available, with standard/high-quality and playlist-source fallbacks. The refresh utility rejects missing-size placeholders and preserves a sharper existing image if a higher-resolution source is temporarily unavailable. These local images serve both the song gallery and artist-player preview; actual playback quality is controlled by YouTube.

@@ -22,11 +22,14 @@ be supplemented from the same video in the collection only when that item's
 channel ID matches Spielbot Music.
 
 Missing or invalid required thumbnails are downloaded before every catalogue
-write. --download-thumbnails additionally replaces all existing thumbnails.
+write. --download-thumbnails additionally refreshes existing video thumbnails
+without downgrading their resolution or replacing curated artist portraits.
 The previous catalogue is left intact if retrieval, parsing, count validation,
 or any required image download fails. Pagination is detected but not followed; a
 larger playlist or a changed YouTube page format requires a parser update.
-Thumbnails are downloaded unmodified from actual source URLs, validated as JPEG,
+Video thumbnails prefer YouTube's maximum-resolution image, falling back to
+standard/high-quality images and then the playlist source when unavailable.
+Thumbnails are downloaded unmodified, validated as JPEG with usable dimensions,
 and atomically saved beside the output in videos/<id>.jpg and artists/<slug>.jpg.
 No schedule, commits, or deployment are created by this script.
 """
@@ -258,22 +261,27 @@ def extract_playlist(spec, cache_dir, refresh):
     return result
 
 
-def retrieve_thumbnail(url, destination):
+def thumbnail_content(url):
     def allowed(candidate):
         parsed = urlsplit(candidate)
         host = parsed.hostname or ""
         return parsed.scheme == "https" and (host == "ytimg.com" or host.endswith(".ytimg.com"))
     if not allowed(url):
-        raise RefreshError("Thumbnail is missing or is not a YouTube image: " + destination.name)
+        raise RefreshError("Thumbnail is missing or is not a YouTube image")
     try:
         with urlopen(url, timeout=30) as response:
             if not allowed(response.url) or response.headers.get_content_type() != "image/jpeg":
-                raise RefreshError("Thumbnail response is not a verified JPEG: " + destination.name)
+                raise RefreshError("Thumbnail response is not a verified JPEG")
             content = response.read(MAX_IMAGE_BYTES + 1)
     except OSError as error:
-        raise RefreshError("Could not download thumbnail " + destination.name) from error
+        raise RefreshError("Could not download thumbnail") from error
     if not valid_jpeg(content):
-        raise RefreshError("Invalid or oversized JPEG thumbnail: " + destination.name)
+        raise RefreshError("Invalid or oversized JPEG thumbnail")
+    return content
+
+
+def retrieve_thumbnail(url, destination):
+    content = thumbnail_content(url)
     atomic_write(destination, content)
 
 
@@ -282,9 +290,70 @@ def valid_jpeg(content):
             and content.rstrip().endswith(b"\xff\xd9"))
 
 
+def jpeg_dimensions(content):
+    """Read a JPEG frame header without adding an imaging dependency."""
+    if not valid_jpeg(content):
+        return None
+    offset = 2
+    while offset + 3 < len(content):
+        if content[offset] != 0xff:
+            return None
+        while offset < len(content) and content[offset] == 0xff:
+            offset += 1
+        if offset >= len(content):
+            return None
+        marker = content[offset]
+        offset += 1
+        if marker in (0xd9, 0xda):
+            return None
+        if marker == 0x01 or 0xd0 <= marker <= 0xd8:
+            continue
+        length = int.from_bytes(content[offset:offset + 2], "big")
+        if length < 2 or offset + length > len(content):
+            return None
+        if marker in (0xc0, 0xc1, 0xc2, 0xc3, 0xc5, 0xc6, 0xc7,
+                      0xc9, 0xca, 0xcb, 0xcd, 0xce, 0xcf):
+            if length < 8:
+                return None
+            height = int.from_bytes(content[offset + 3:offset + 5], "big")
+            width = int.from_bytes(content[offset + 5:offset + 7], "big")
+            return (width, height) if width and height else None
+        offset += length
+    return None
+
+
+def retrieve_video_thumbnail(video, destination):
+    video_id = video.get("id", "")
+    if not VIDEO_ID.fullmatch(video_id):
+        raise RefreshError("Invalid video ID for thumbnail")
+    existing = destination.read_bytes() if destination.is_file() else b""
+    existing_size = jpeg_dimensions(existing)
+    candidates = [(f"https://i.ytimg.com/vi/{video_id}/{name}.jpg", minimum)
+                  for name, minimum in (("maxresdefault", (1280, 720)),
+                                        ("sddefault", (640, 480)),
+                                        ("hqdefault", (480, 360)))]
+    candidates.append((video.get("thumbnail", ""), (1, 1)))
+    for url, minimum in candidates:
+        try:
+            content = thumbnail_content(url)
+        except RefreshError:
+            continue
+        size = jpeg_dimensions(content)
+        # YouTube can return a tiny placeholder with HTTP 200 for missing sizes.
+        if not size or max(size) < minimum[0] or min(size) < minimum[1]:
+            continue
+        if not existing_size or size[0] * size[1] > existing_size[0] * existing_size[1]:
+            atomic_write(destination, content)
+        elif size == existing_size:
+            atomic_write(destination, content)
+        return
+    if not existing_size:
+        raise RefreshError("No usable thumbnail available: " + destination.name)
+
+
 def existing_thumbnail_valid(path):
     try:
-        return path.is_file() and path.stat().st_size <= MAX_IMAGE_BYTES and valid_jpeg(path.read_bytes())
+        return path.is_file() and path.stat().st_size <= MAX_IMAGE_BYTES and bool(jpeg_dimensions(path.read_bytes()))
     except OSError:
         return False
 
@@ -292,23 +361,25 @@ def existing_thumbnail_valid(path):
 def download_thumbnails(catalogue, asset_dir, refresh_all=False):
     videos = {video["id"]: video for artist in catalogue["artists"] for video in artist["videos"]}
     videos.update({video["id"]: video for video in catalogue["collection"]["videos"]})
-    tasks = [(video["thumbnail"], asset_dir / "videos" / (video_id + ".jpg")) for video_id, video in videos.items()]
+    tasks = [(video, asset_dir / "videos" / (video_id + ".jpg")) for video_id, video in videos.items()]
     artist_fallbacks = [(artist["videos"][0]["thumbnail"], asset_dir / "artists" / (artist["id"] + ".jpg"))
                        for artist in catalogue["artists"] if artist["videos"]]
     required = tasks + artist_fallbacks
-    tasks = [(url, destination) for url, destination in tasks
+    tasks = [(video, destination) for video, destination in tasks
              if refresh_all or not existing_thumbnail_valid(destination)]
     # Artist portraits are curated separately; refreshing video thumbnails must
     # never replace them with a low-resolution frame from a music video.
-    tasks.extend((url, destination) for url, destination in artist_fallbacks
-                 if not existing_thumbnail_valid(destination))
+    fallback_tasks = [(url, destination) for url, destination in artist_fallbacks
+                      if not existing_thumbnail_valid(destination)]
     with ThreadPoolExecutor(max_workers=4) as pool:
-        for _ in pool.map(lambda task: retrieve_thumbnail(*task), tasks):
+        for _ in pool.map(lambda task: retrieve_video_thumbnail(*task), tasks):
+            pass
+        for _ in pool.map(lambda task: retrieve_thumbnail(*task), fallback_tasks):
             pass
     missing = [destination.name for _, destination in required if not existing_thumbnail_valid(destination)]
     if missing:
         raise RefreshError("Required thumbnails are unavailable; previous catalogue retained: " + ", ".join(missing))
-    print("Saved " + str(len(tasks)) + " JPEG thumbnails; all " + str(len(required)) + " required images verified.")
+    print("Refreshed " + str(len(tasks) + len(fallback_tasks)) + " JPEG thumbnails; all " + str(len(required)) + " required images verified.")
 
 
 def run(options, cache_dir):
