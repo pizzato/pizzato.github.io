@@ -179,6 +179,25 @@ def continuation_context(cache_path):
     raise RefreshError("Public playlist continuation context is unavailable")
 
 
+def playlist_contents(data, playlist_id):
+    """Select playlist rows, excluding outer-page recommendation continuations."""
+    contents = data.get("contents", {})
+    sections = [section for section in nodes(contents, "itemSectionRenderer")
+                if section.get("targetId") == playlist_id]
+    if not sections:
+        # Shorts grids put the playlist identity on the parent section list.
+        for parent in nodes(contents, "sectionListRenderer"):
+            if parent.get("targetId") == "VL" + playlist_id:
+                sections.extend(section for section in nodes(parent.get("contents", []), "itemSectionRenderer")
+                                if section.get("targetId") in (None, playlist_id))
+    if not sections:
+        sections = [section for section in nodes(contents, "playlistVideoListRenderer")
+                    if section.get("playlistId", playlist_id) == playlist_id]
+    if len(sections) != 1 or not isinstance(sections[0].get("contents"), list):
+        raise RefreshError("Cannot identify the public playlist's video list")
+    return sections[0]["contents"]
+
+
 def next_continuation(contents):
     """Accept one unambiguous public browse continuation, never arbitrary URLs."""
     items = [("renderer", item) for item in nodes(contents, "continuationItemRenderer")]
@@ -213,7 +232,7 @@ def next_continuation(contents):
     return token
 
 
-def read_continuation(token, context, cache_path, refresh):
+def read_continuation(token, context, cache_path, refresh, playlist_id=None):
     """Continue the public web playlist without cookies, credentials or API keys."""
     if refresh or not cache_path.exists():
         request = Request(
@@ -246,6 +265,8 @@ def read_continuation(token, context, cache_path, refresh):
     for key in ("onResponseReceivedActions", "onResponseReceivedEndpoints", "onResponseReceivedCommands"):
         actions.extend(nodes(data.get(key, []), "appendContinuationItemsAction"))
     if len(actions) == 1 and isinstance(actions[0], dict):
+        if playlist_id and actions[0].get("targetId") not in (None, playlist_id):
+            raise RefreshError("Playlist continuation targets a different list")
         contents = actions[0].get("continuationItems")
     elif not actions:
         legacy = data.get("continuationContents", {})
@@ -352,7 +373,7 @@ def extract_playlist(spec, cache_dir, refresh, exclude_albums=False):
     if reported_count > MAX_PLAYLIST_ENTRIES:
         raise RefreshError("Incomplete playlist " + name + ": playlist exceeds the entry limit")
     videos = []
-    contents = data.get("contents", {})
+    contents = playlist_contents(data, playlist_id)
     seen_tokens = set()
     context = None
     page_number = 1
@@ -378,7 +399,7 @@ def extract_playlist(spec, cache_dir, refresh, exclude_albums=False):
             page_number += 1
             token_hash = hashlib.sha256(token.encode("utf-8")).hexdigest()[:16]
             page_cache = cache_dir / (slug + "-page-" + str(page_number) + "-" + token_hash + ".json")
-            contents, fetched_at = read_continuation(token, context, page_cache, refresh)
+            contents, fetched_at = read_continuation(token, context, page_cache, refresh, playlist_id)
             source_fetched_at = min(source_fetched_at, fetched_at)
     except RefreshError as error:
         raise RefreshError("Incomplete playlist " + name + ": " + str(error)
