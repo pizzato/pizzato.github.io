@@ -23,6 +23,17 @@
   let selectedVideo = null;
   let returnFocus = null;
   let renderedRoute = '';
+  let stopPlayerObserver = null;
+  // Only confirmed landscape renders. Missing 'short' metadata is not a format signal.
+  const landscapeVideos = new Set(['ekrWNcVbADs', 'R31jtl8Mn6s']);
+  const isLandscape = video => landscapeVideos.has(video.id);
+  function setVideoFormat(video) {
+    const wide = isLandscape(video);
+    player.classList.toggle('is-wide', wide);
+    player.classList.toggle('landscape-video', wide);
+    playerFormat.setAttribute('aria-pressed', String(wide));
+    playerFormat.textContent = wide ? 'Portrait view' : 'Wide view';
+  }
 
   const element = (tag, className, text) => {
     const item = document.createElement(tag);
@@ -120,7 +131,7 @@
     const fragment = document.createDocumentFragment();
     for (const video of shown) {
       const source = sourceMap.get(video.artistIds.includes(filter.value) ? filter.value : video.sourceId);
-      const card = element('a', 'video-card');
+      const card = element('a', `video-card${isLandscape(video) ? ' video-card-landscape' : ''}`);
       card.href = watchUrl(video, source);
       card.dataset.openArtist = source.id;
       card.dataset.videoId = video.id;
@@ -129,8 +140,8 @@
       const image = element('img');
       image.src = thumbnail(video.id);
       image.alt = '';
-      image.width = 270;
-      image.height = 480;
+      image.width = isLandscape(video) ? 1280 : 270;
+      image.height = isLandscape(video) ? 720 : 480;
       image.loading = 'lazy';
       art.append(image);
       if (video.duration) art.append(element('span', 'duration', video.duration));
@@ -188,13 +199,13 @@
       button.setAttribute('aria-label', `Play ${item.title}`);
       button.setAttribute('aria-current', String(item.id === video.id));
       button.append(element('span', 'track-index', String(index + 1).padStart(2, '0')));
-      const art = element('span', 'track-thumb');
+      const art = element('span', `track-thumb${isLandscape(item) ? ' track-thumb-landscape' : ''}`);
       const thumb = element('img');
       thumb.src = thumbnail(item.id);
       thumb.alt = '';
       thumb.loading = 'eager';
-      thumb.width = 54;
-      thumb.height = 96;
+      thumb.width = isLandscape(item) ? 1280 : 54;
+      thumb.height = isLandscape(item) ? 720 : 96;
       art.append(thumb);
       const copy = element('span', 'track-copy');
       copy.append(element('span', 'track-title', shortTitle(item, source)));
@@ -214,7 +225,9 @@
   }
 
   function selectVideo(video, playNow) {
+    if (stopPlayerObserver) { stopPlayerObserver(); stopPlayerObserver = null; }
     selectedVideo = video;
+    setVideoFormat(video);
     document.getElementById('selected-video-title').textContent = shortTitle(video, selectedSource);
     document.getElementById('watch-youtube').href = watchUrl(video, selectedSource);
     tracks.querySelectorAll('[data-track-id]').forEach(track => track.setAttribute('aria-current', String(track.dataset.trackId === video.id)));
@@ -222,13 +235,27 @@
     if (playNow) {
       const frame = element('iframe');
       const url = new URL(`https://www.youtube-nocookie.com/embed/${video.id}`);
-      url.search = new URLSearchParams({listType: 'playlist', list: selectedSource.playlistId, autoplay: '1', playsinline: '1', rel: '0'}).toString();
+      url.search = new URLSearchParams({listType: 'playlist', list: selectedSource.playlistId, autoplay: '1', playsinline: '1', rel: '0', enablejsapi: '1', origin: location.origin}).toString();
       frame.src = url.href;
       frame.title = `${video.title} — YouTube player`;
       frame.allow = 'autoplay; encrypted-media; picture-in-picture; web-share';
       frame.referrerPolicy = 'strict-origin-when-cross-origin';
       frame.allowFullscreen = true;
       player.append(frame);
+      let playingVideoId = video.id;
+      if (window.observeMusicPlayer) stopPlayerObserver = window.observeMusicPlayer(frame, id => {
+        if (!selectedSource || id === playingVideoId) return;
+        playingVideoId = id;
+        const next = selectedSource.videos.find(item => item.id === id);
+        if (!next) { setVideoFormat({id}); return; }
+        selectedVideo = next;
+        setVideoFormat(next);
+        document.getElementById('selected-video-title').textContent = shortTitle(next, selectedSource);
+        document.getElementById('watch-youtube').href = watchUrl(next, selectedSource);
+        tracks.querySelectorAll('[data-track-id]').forEach(track => track.setAttribute('aria-current', String(track.dataset.trackId === id)));
+        history.replaceState(history.state, '', routeFor(selectedSource, next));
+        renderedRoute = location.hash;
+      });
       document.getElementById('dialog-status').textContent = 'Playback controls are in the video player.';
     } else {
       const poster = element('div', 'player-poster');
@@ -253,6 +280,8 @@
   });
 
   function closeView() {
+    if (stopPlayerObserver) { stopPlayerObserver(); stopPlayerObserver = null; }
+    player.classList.remove('landscape-video');
     player.replaceChildren();
     selectedSource = null;
     selectedVideo = null;

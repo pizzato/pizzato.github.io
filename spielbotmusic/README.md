@@ -10,6 +10,7 @@ This is a complete static HTML document without Jekyll front matter. The existin
 - `assets/catalogue.json`: verified public YouTube playlist metadata and source provenance.
 - `assets/app.js`: video search, artist filtering, shareable artist/video links, accessible playlist dialog and click-to-load YouTube player.
 - `assets/styles.css`: responsive Electric Poster design.
+- `assets/player-sync.js`: observes native YouTube playlist changes so the video frame follows each selected song.
 - `assets/artists/` and `assets/videos/`: curated high-resolution artist portraits and local video thumbnails.
 - `assets/fonts/`: bundled Archivo Black and Space Grotesk fonts with their OFL licences.
 - `_tools/refresh_catalogue.py`: catalogue maintenance utility. The leading underscore keeps this directory out of Jekyll's published output.
@@ -38,7 +39,9 @@ The artist roster follows the ten artist playlists. Stephen Spielbot Music is a 
 
 The catalogue retains source order and duplicate entries for provenance. The interface removes duplicate video cards and keeps collaborations discoverable under every artist playlist they belong to. Playback uses the original live YouTube playlist; the displayed song list and artwork reflect the most recent catalogue refresh.
 
-Artist and video links use URL fragments, so direct links work on GitHub Pages without additional routes. Opening an artist does not autoplay; pressing play or selecting a video loads the YouTube embed. The gallery and player default to a 9:16 portrait view suited to Shorts. The player’s **Wide view** / **Portrait view** button changes the frame without reloading the video. Closing the dialog removes the player and restores portrait view for the next visit. Native YouTube controls and a direct YouTube link remain available.
+Artist and video links use URL fragments, so direct links work on GitHub Pages without additional routes. Opening an artist does not autoplay; pressing play or selecting a video loads the YouTube embed. Portrait videos retain the existing 9:16 thumbnails. Confirmed landscape videos display their complete existing YouTube cover in a 16:9 card spanning two grid columns; on mobile, each occupies a full row. Landscape playlist thumbnails also show the complete image. Each selection defaults the player to its video format, including changes made with YouTube’s native playlist controls. The player’s **Wide view** / **Portrait view** button remains available without reloading the video. Closing the dialog removes the player and its observer. Native YouTube controls and a direct YouTube link remain available.
+
+The explicit `landscapeVideos` set in `assets/app.js` currently contains `ekrWNcVbADs` (Sunday Light) and `R31jtl8Mn6s` (I Forgot What Real Felt Like), verified against their original rendered videos. Add new landscape IDs only after checking their actual format: a missing `short` flag or a wide YouTube thumbnail does not establish landscape playback. No portrait covers are imported. The YouTube IFrame API loads only when playback is requested; if it is unavailable, site-selected tracks still choose their format, while native playlist transitions cannot be observed.
 
 ## Validation and deployment
 

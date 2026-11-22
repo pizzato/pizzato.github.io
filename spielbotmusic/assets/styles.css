@@ -419,3 +419,13 @@ body.spielbot { margin: 0; background: var(--sb-paper); color: var(--sb-ink); fo
   .spielbot .brand-logo { width: 92px; height: 92px; }
   .spielbot .header-inner { padding-block: 10px 15px; }
 }
+
+/* Only the two verified landscape videos change shape or span. */
+.spielbot .video-card-landscape { grid-column: span 2; }
+.spielbot .video-card-landscape .video-thumb { aspect-ratio: 16 / 9; }
+.spielbot .video-card-landscape .video-thumb img,
+.spielbot .track-thumb-landscape img,
+.spielbot .landscape-video .player-poster > img { object-fit: contain; }
+.spielbot .video-card-landscape:hover .video-thumb img { transform: none; }
+.spielbot .track-thumb-landscape { aspect-ratio: 16 / 9; }
+.spielbot .video-player.is-wide { min-height: 200px; }
