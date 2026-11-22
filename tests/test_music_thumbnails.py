@@ -76,6 +76,16 @@ class MusicThumbnailTests(unittest.TestCase):
             with self.subTest(content=content):
                 self.assertIsNone(catalogue.jpeg_dimensions(content))
 
+    def test_uploads_only_artwork_is_downloaded_once_with_overlapping_sources(self):
+        extra = {"id": "aaaaaaaaaaa", "thumbnail": "https://i.ytimg.com/vi/aaaaaaaaaaa/hqdefault.jpg"}
+        data = {"artists": [], "collection": {"videos": [self.video]},
+                "uploads": {"videos": [self.video, extra]}}
+        with patch.object(catalogue, "thumbnail_content", return_value=jpeg(1280, 720)) as fetch:
+            catalogue.download_thumbnails(data, self.root)
+        self.assertEqual(fetch.call_count, 2)
+        self.assertTrue(catalogue.existing_thumbnail_valid(self.root / "videos/aaaaaaaaaaa.jpg"))
+        self.assertTrue(catalogue.existing_thumbnail_valid(self.root / ("videos/" + self.video["id"] + ".jpg")))
+
 
 if __name__ == "__main__":
     unittest.main()
