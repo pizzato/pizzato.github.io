@@ -50,11 +50,19 @@ class MusicPaginationTests(unittest.TestCase):
         self.addCleanup(directory.cleanup)
         self.cache = Path(directory.name)
 
-    def write_initial(self, count, items, context=True):
+    def write_initial(self, count, items, context=True, modern=False):
         data = {
             "header": {"playlistHeaderRenderer": {"numVideosText": {"simpleText": str(count)}}},
             "contents": {"playlistVideoListRenderer": {"contents": items}},
         }
+        if modern:
+            section = {"targetId": PLAYLIST[2], "contents": items}
+            if modern == "shorts":
+                section = {"contents": [{"richGridRenderer": {"contents": items}}]}
+            data["contents"] = {"sectionListRenderer": {"targetId": "VL" + PLAYLIST[2], "contents": [
+                {"itemSectionRenderer": section},
+                continuation("outer-recommendations"),
+            ]}}
         config = {"INNERTUBE_API_KEY": "must-not-be-sent", "INNERTUBE_CONTEXT": {"client": {
             "clientName": "WEB", "clientVersion": "2.test", "hl": "en",
             "visitorData": "anonymous-visitor", "remoteHost": "must-not-be-sent",
@@ -66,6 +74,37 @@ class MusicPaginationTests(unittest.TestCase):
 
     def extract(self):
         return catalogue.extract_playlist(PLAYLIST, self.cache, False)
+
+    def test_complete_playlist_ignores_outer_recommendation_continuation(self):
+        self.write_initial(1, [video("aaaaaaaaaaa", 1)], modern=True)
+        with patch.object(catalogue, "urlopen") as fetch:
+            result = self.extract()
+        self.assertEqual(result["verifiedCount"], 1)
+        fetch.assert_not_called()
+
+    def test_only_playlist_continuation_is_followed_with_outer_recommendations(self):
+        self.write_initial(2, [video("aaaaaaaaaaa", 1), continuation("playlist-page-2")], modern=True)
+        with patch.object(catalogue, "urlopen", return_value=response([video("bbbbbbbbbbb", 2)])) as fetch:
+            result = self.extract()
+        self.assertEqual(result["verifiedCount"], 2)
+        self.assertEqual(json.loads(fetch.call_args.args[0].data)["continuation"], "playlist-page-2")
+        self.assertEqual(fetch.call_count, 1)
+
+    def test_shorts_grid_uses_parent_playlist_identity(self):
+        self.write_initial(1, [video("aaaaaaaaaaa", 1)], modern="shorts")
+        with patch.object(catalogue, "urlopen") as fetch:
+            result = self.extract()
+        self.assertEqual(result["verifiedCount"], 1)
+        fetch.assert_not_called()
+
+    def test_continuation_for_another_list_is_rejected(self):
+        self.write_initial(2, [video("aaaaaaaaaaa", 1), continuation("page-2")])
+        wrong_list = {"onResponseReceivedActions": [{"appendContinuationItemsAction": {
+            "targetId": "PL_another_list", "continuationItems": [video("bbbbbbbbbbb", 2)],
+        }}]}
+        with patch.object(catalogue, "urlopen", return_value=io.BytesIO(json.dumps(wrong_list).encode())):
+            with self.assertRaisesRegex(catalogue.RefreshError, "targets a different list"):
+                self.extract()
 
     def test_follows_all_pages_and_preserves_order_and_repeated_videos(self):
         self.write_initial(3, [video("aaaaaaaaaaa", 1), modern_continuation("page-2")])
