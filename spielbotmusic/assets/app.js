@@ -55,7 +55,7 @@
   };
   const normalise = value => String(value).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/æ/g, 'ae').replace(/ø/g, 'o');
   const uniqueVideos = entries => [...new Map(entries.map(video => [video.id, video])).values()];
-  const thumbnail = id => new URL(`videos/${encodeURIComponent(id)}.jpg?v=hd-20261121`, assetBase).href;
+  const thumbnail = id => new URL(`videos/${encodeURIComponent(id)}.jpg?v=${encodeURIComponent(catalogue.generatedAt || catalogue.fetchedAt)}`, assetBase).href;
   const portrait = source => source.isCollection ? thumbnail(source.imageVideoId) : new URL(`artists/${encodeURIComponent(source.id)}.jpg`, assetBase).href;
   const watchUrl = (video, source) => {
     const url = new URL('https://www.youtube.com/watch');
