@@ -99,6 +99,7 @@
     document.querySelectorAll('[data-open-artist]').forEach(link => {
       if (!sourceMap.has(link.dataset.openArtist)) link.hidden = true;
     });
+    document.getElementById('collection').hidden = !data.collection;
     // Interleave artists for discovery while preserving each playlist's song order.
     const orderedIds = new Set();
     const longestPlaylist = Math.max(0, ...data.artists.map(artist => artist.videos.length));
