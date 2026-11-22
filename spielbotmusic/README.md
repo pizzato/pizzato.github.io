@@ -29,7 +29,17 @@ This fetches public playlist HTML, validates completeness and channel ownership,
 python spielbotmusic/_tools/refresh_catalogue.py --refresh --download-thumbnails
 ```
 
-No credentials or API key are required. There is no new scheduled task. Review and commit the refreshed files through the normal repository workflow.
+No YouTube credentials or API key are required.
+
+### Automatic daily updates
+
+The [Sync Music Catalogue](https://github.com/pizzato/pizzato.github.io/actions/workflows/sync_music_catalogue.yml) GitHub Actions workflow runs daily at **18:43 UTC** (05:43 Sydney daylight time / 04:43 standard time). GitHub may delay scheduled runs. Use **Run workflow** on `master` for an immediate refresh.
+
+Each run tests the refresh utility, fetches the configured public playlists, refreshes video thumbnails while preserving curated artist portraits, validates the Jekyll build, and commits the generated catalogue and artwork. It then explicitly requests a GitHub Pages build and checks that the public catalogue matches the refreshed file. A green run therefore confirms publication, not just a successful fetch. The workflow uses the repository's built-in `GITHUB_TOKEN` with contents and Pages write permissions; no additional secrets are needed.
+
+Failed or incomplete retrieval is retried up to three times and never publishes partial results. A final failure is visible in GitHub Actions and preserves the existing website. The music job shares a concurrency group with **Sync Site Data** to avoid overlapping automated commits. Successful refresh timestamps are committed as a record of the last check, even when playlist contents are unchanged. Thumbnail URLs include the catalogue version so returning visitors receive updated artwork.
+
+Updates follow the ten configured artist playlists and the Stephen Spielbot Music collection: add a new upload to one of those playlists for it to appear. Titles, playlist ordering, additions/removals and video thumbnails refresh automatically. Uploads outside those playlists and newly created artist playlists are not discovered automatically.
 
 The artist roster is explicit in the utility. When adding an artist, add its verified playlist entry there and its static card in `index.html`. A changed YouTube page format, incomplete playlist, or pagination causes a clear failure instead of replacing the catalogue with partial results.
 
@@ -45,7 +55,7 @@ The explicit `landscapeVideos` set in `assets/app.js` currently contains `ekrWNc
 
 ## Validation and deployment
 
-The existing **Build Site** workflow validates Jekyll on pushes and pull requests. GitHub Pages publishes the repository root from `master`. No shared layouts, navigation, configuration, dependencies or deployment workflows were changed for this section.
+The **Build Site** workflow runs the music catalogue tests and validates Jekyll on pushes and pull requests. GitHub Pages publishes the repository root from `master`; **Sync Music Catalogue** explicitly requests and verifies publication after each daily refresh. The existing main-site data sync remains on its six-hour schedule.
 
 Check the gallery, search/filter, playlist selection, direct artist link, close/Escape, contact email, and mobile layout when making further changes. The page's artist links also work directly on YouTube if JavaScript or catalogue loading is unavailable.
 
