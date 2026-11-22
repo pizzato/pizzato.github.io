@@ -3,9 +3,9 @@
   "channel": "Stephen Spielbot Music",
   "channelUrl": "https://www.youtube.com/@SpielbotMusic",
   "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
-  "fetchedAt": "2026-11-22T11:47:20.156800+00:00",
-  "generatedAt": "2026-11-22T11:47:21.200230+00:00",
-  "sourceMethod": "Public YouTube playlist HTML, ytInitialData playlist entries. Source order preserved.",
+  "fetchedAt": "2026-11-22T11:55:24.010297+00:00",
+  "generatedAt": "2026-11-22T11:55:26.487841+00:00",
+  "sourceMethod": "Public YouTube artist, collection and channel uploads playlists. Source order preserved; Album: playlists excluded.",
   "artists": [
     {
       "id": "dayo-ember",
@@ -47,7 +47,7 @@
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
           "playlistIndex": 3,
           "url": "https://www.youtube.com/watch?v=R31jtl8Mn6s&list=PLHeaGxWVyVp8&index=3",
-          "thumbnail": "https://i.ytimg.com/vi/R31jtl8Mn6s/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAGi85f_Aw4I2JfY1gYY4OoEIOCoAQ==&rs=AOn4CLClEDRb23Dor4w_GTVD6YRQ36PjJQ&usqp=CBU"
+          "thumbnail": "https://i.ytimg.com/vi/R31jtl8Mn6s/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBis_LwSlfS6PdGsrBMtY26IqwNsA"
         },
         {
           "id": "Bms8I1hGHqw",
@@ -65,9 +65,9 @@
       "sourceStats": [
         "4 videos",
         "No views",
-        "Last updated on Nov 9, 2026"
+        "Last updated on 9 Nov 2026"
       ],
-      "sourceFetchedAt": "2026-11-22T11:47:20.197174+00:00",
+      "sourceFetchedAt": "2026-11-22T11:55:24.090569+00:00",
       "verifiedCount": 4,
       "uniqueVideoCount": 4,
       "complete": true,
@@ -93,7 +93,7 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "TmHpwuy1Elk",
@@ -106,7 +106,7 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "dMrgJdf5-L4",
@@ -119,16 +119,16 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         }
       ],
       "sourceUrl": "https://www.youtube.com/playlist?list=PLB4KOL0CL23U",
       "sourceStats": [
         "3 videos",
         "1 view",
-        "Last updated on Nov 7, 2026"
+        "Last updated on 7 Nov 2026"
       ],
-      "sourceFetchedAt": "2026-11-22T11:47:20.197174+00:00",
+      "sourceFetchedAt": "2026-11-22T11:55:24.119640+00:00",
       "verifiedCount": 3,
       "uniqueVideoCount": 3,
       "complete": true,
@@ -154,7 +154,7 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "4hkhYiNWAPA",
@@ -167,16 +167,16 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         }
       ],
       "sourceUrl": "https://www.youtube.com/playlist?list=PLNqOshiTywVg",
       "sourceStats": [
         "2 videos",
         "2 views",
-        "Last updated on Sep 19, 2026"
+        "Last updated on 19 Sept 2026"
       ],
-      "sourceFetchedAt": "2026-11-22T11:47:20.156800+00:00",
+      "sourceFetchedAt": "2026-11-22T11:55:24.044194+00:00",
       "verifiedCount": 2,
       "uniqueVideoCount": 2,
       "complete": true,
@@ -194,11 +194,15 @@
         {
           "id": "TE73dkHco-0",
           "title": "KINHØᴬᴵ — Burn the Blueprint",
-          "duration": "",
+          "duration": "1:31",
           "format": "short",
           "playlistIndex": 1,
           "url": "https://www.youtube.com/watch?v=TE73dkHco-0&list=PLN8w79OveH3I&index=1",
-          "thumbnail": "https://i.ytimg.com/vi/TE73dkHco-0/oar2.jpg?sqp=-oaymwEoCIwDENAFSFqQAgHyq4qpAxcIARUAAAAAJQAAyEI9AICiQ3gBuAL3GA==&rs=AOn4CLAN8NQSrf65juAKrclhvzoNrwJxLQ"
+          "thumbnail": "https://i.ytimg.com/vi/TE73dkHco-0/oar2.jpg?sqp=-oaymwEkCIwDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLCh9LH0dNZIxi7HfO9x5BK9bE3Nig",
+          "channel": "Stephen Spielbot Music",
+          "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+          "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "yXDpdOAZ44E",
@@ -207,11 +211,11 @@
           "format": "short",
           "playlistIndex": 1,
           "url": "https://www.youtube.com/watch?v=yXDpdOAZ44E&list=PLN8w79OveH3I&index=1",
-          "thumbnail": "https://i.ytimg.com/vi/yXDpdOAZ44E/oar2.jpg?sqp=-oaymwEoCIwDENAFSFqQAgHyq4qpAxcIARUAAAAAJQAAyEI9AICiQ3gBuAL3GA==&rs=AOn4CLDYbHCEG3aVE7d1wXxsvoOuJXmzgw",
+          "thumbnail": "https://i.ytimg.com/vi/yXDpdOAZ44E/oar2.jpg?sqp=-oaymwEkCIwDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLB9DdHUsWFz-EkO5d_qV6nrdvOC_g",
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "t8eXrnsW6ow",
@@ -220,11 +224,11 @@
           "format": "short",
           "playlistIndex": 1,
           "url": "https://www.youtube.com/watch?v=t8eXrnsW6ow&list=PLN8w79OveH3I&index=1",
-          "thumbnail": "https://i.ytimg.com/vi/t8eXrnsW6ow/oar2.jpg?sqp=-oaymwEoCIwDENAFSFqQAgHyq4qpAxcIARUAAAAAJQAAyEI9AICiQ3gBuAL3GA==&rs=AOn4CLC01EOakM1zcSmU3pnb7ogPM9l57g",
+          "thumbnail": "https://i.ytimg.com/vi/t8eXrnsW6ow/oar2.jpg?sqp=-oaymwEkCIwDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLBeqV3IJLQOJhPaKD2580aeD1NGlw",
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "4dqJwE8huL4",
@@ -233,11 +237,11 @@
           "format": "short",
           "playlistIndex": 1,
           "url": "https://www.youtube.com/watch?v=4dqJwE8huL4&list=PLN8w79OveH3I&index=1",
-          "thumbnail": "https://i.ytimg.com/vi/4dqJwE8huL4/oar2.jpg?sqp=-oaymwEoCIwDENAFSFqQAgHyq4qpAxcIARUAAAAAJQAAyEI9AICiQ3gBuAL3GA==&rs=AOn4CLBJvfdU51S1_I-OdR-iFBME2JGW1w",
+          "thumbnail": "https://i.ytimg.com/vi/4dqJwE8huL4/oar2.jpg?sqp=-oaymwEkCIwDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLD_escVMchGfPHOWCDWsBzFqPRcZg",
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "WHDWlDrca5g",
@@ -246,11 +250,11 @@
           "format": "short",
           "playlistIndex": 1,
           "url": "https://www.youtube.com/watch?v=WHDWlDrca5g&list=PLN8w79OveH3I&index=1",
-          "thumbnail": "https://i.ytimg.com/vi/WHDWlDrca5g/oar2.jpg?sqp=-oaymwEcCNAFENAFSFqQAgHyq4qpAwsIARUAAIhCuAL3GA==&rs=AOn4CLBkZgot6kL4YIm6CM7H5bw8EgkSvg",
+          "thumbnail": "https://i.ytimg.com/vi/WHDWlDrca5g/oar2.jpg?sqp=-oaymwEYCNAFENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLCUlRjOPaorWcXd70dDB_sgmHSeVQ",
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         }
       ],
       "sourceUrl": "https://www.youtube.com/playlist?list=PLN8w79OveH3I",
@@ -259,7 +263,7 @@
         "2 views",
         "Updated today"
       ],
-      "sourceFetchedAt": "2026-11-22T11:47:20.165112+00:00",
+      "sourceFetchedAt": "2026-11-22T11:55:24.010297+00:00",
       "verifiedCount": 5,
       "uniqueVideoCount": 5,
       "complete": true,
@@ -285,7 +289,7 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "w0ci1-b9gjY",
@@ -298,16 +302,16 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         }
       ],
       "sourceUrl": "https://www.youtube.com/playlist?list=PLKN9iKS-_8T4",
       "sourceStats": [
         "2 videos",
         "No views",
-        "Last updated on Sep 25, 2026"
+        "Last updated on 25 Sept 2026"
       ],
-      "sourceFetchedAt": "2026-11-22T11:47:20.437022+00:00",
+      "sourceFetchedAt": "2026-11-22T11:55:24.607768+00:00",
       "verifiedCount": 2,
       "uniqueVideoCount": 2,
       "complete": true,
@@ -333,7 +337,7 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "cbczzU8FmJs",
@@ -346,7 +350,7 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "l5Q7iHwKttA",
@@ -359,16 +363,16 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         }
       ],
       "sourceUrl": "https://www.youtube.com/playlist?list=PLT9A8FuBHlM8",
       "sourceStats": [
         "3 videos",
         "2 views",
-        "Last updated on Oct 17, 2026"
+        "Last updated on 17 Oct 2026"
       ],
-      "sourceFetchedAt": "2026-11-22T11:47:20.478800+00:00",
+      "sourceFetchedAt": "2026-11-22T11:55:24.693437+00:00",
       "verifiedCount": 3,
       "uniqueVideoCount": 3,
       "complete": true,
@@ -394,7 +398,7 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "5PzuSzOI5QE",
@@ -407,7 +411,7 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "rFHN59Mq-Iw",
@@ -420,7 +424,7 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "w4ylYVmJ4jg",
@@ -433,7 +437,7 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "38UtCWo07eU",
@@ -446,7 +450,7 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "PTDYj2lJIH8",
@@ -459,7 +463,7 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "iAULVVRdOW0",
@@ -472,7 +476,7 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "qxZ6AnMhar4",
@@ -485,7 +489,7 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "VMiZ7xa4pDc",
@@ -498,7 +502,7 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "YS5yj37eauU",
@@ -511,7 +515,7 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "jwl9mUQoBSQ",
@@ -524,7 +528,7 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         }
       ],
       "sourceUrl": "https://www.youtube.com/playlist?list=PLRLwOWi6KH2M",
@@ -533,7 +537,7 @@
         "12 views",
         "Updated 2 days ago"
       ],
-      "sourceFetchedAt": "2026-11-22T11:47:20.514115+00:00",
+      "sourceFetchedAt": "2026-11-22T11:55:24.722715+00:00",
       "verifiedCount": 11,
       "uniqueVideoCount": 11,
       "complete": true,
@@ -619,9 +623,9 @@
       "sourceStats": [
         "6 videos",
         "1 view",
-        "Last updated on Nov 13, 2026"
+        "Last updated on 13 Nov 2026"
       ],
-      "sourceFetchedAt": "2026-11-22T11:47:20.510945+00:00",
+      "sourceFetchedAt": "2026-11-22T11:55:24.722849+00:00",
       "verifiedCount": 6,
       "uniqueVideoCount": 5,
       "complete": true,
@@ -647,7 +651,7 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "QwBlgfKyZuQ",
@@ -660,7 +664,7 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "tVljGPPLQak",
@@ -673,7 +677,7 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "HBCTT5KiWdA",
@@ -686,7 +690,7 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "Bms8I1hGHqw",
@@ -699,7 +703,7 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "RKA67vdRMfw",
@@ -712,16 +716,16 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         }
       ],
       "sourceUrl": "https://www.youtube.com/playlist?list=PLLtWWI7ELcIs",
       "sourceStats": [
         "6 videos",
         "No views",
-        "Last updated on Oct 17, 2026"
+        "Last updated on 17 Oct 2026"
       ],
-      "sourceFetchedAt": "2026-11-22T11:47:20.644991+00:00",
+      "sourceFetchedAt": "2026-11-22T11:55:25.169461+00:00",
       "verifiedCount": 6,
       "uniqueVideoCount": 6,
       "complete": true,
@@ -747,7 +751,7 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "fzCFdS_cR3E",
@@ -760,7 +764,7 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "c_ili4KNbGA",
@@ -773,7 +777,7 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "XH5BNXLYcfk",
@@ -786,7 +790,7 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "mPSfIQI24iY",
@@ -799,7 +803,7 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "xTka9A4awew",
@@ -812,7 +816,7 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "ERPvJBnyHlI",
@@ -825,7 +829,7 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         },
         {
           "id": "3RQ6uL2YWZg",
@@ -838,16 +842,16 @@
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
-          "metadataSourceUrl": "https://www.youtube.com/playlist?list=PLS5WTo4e7mhQ"
+          "metadataSourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ"
         }
       ],
       "sourceUrl": "https://www.youtube.com/playlist?list=PLW48zww8S06s",
       "sourceStats": [
         "8 videos",
         "8 views",
-        "Last updated on Oct 25, 2026"
+        "Last updated on 25 Oct 2026"
       ],
-      "sourceFetchedAt": "2026-11-22T11:47:20.737108+00:00",
+      "sourceFetchedAt": "2026-11-22T11:55:25.365838+00:00",
       "verifiedCount": 8,
       "uniqueVideoCount": 8,
       "complete": true,
@@ -1618,10 +1622,616 @@
       "5 views",
       "Updated yesterday"
     ],
-    "sourceFetchedAt": "2026-11-22T11:47:21.143753+00:00",
+    "sourceFetchedAt": "2026-11-22T11:55:25.918034+00:00",
     "verifiedCount": 68,
     "uniqueVideoCount": 52,
     "complete": true,
     "hasContinuation": false
+  },
+  "uploads": {
+    "id": "channel-uploads",
+    "name": "Channel uploads",
+    "playlistId": "UUm0coTP4Ztr91F5ZyYZwXTQ",
+    "playlistUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ",
+    "imageVideoId": "TE73dkHco-0",
+    "reportedVideoCount": 53,
+    "description": "",
+    "videos": [
+      {
+        "id": "TE73dkHco-0",
+        "title": "KINHØᴬᴵ — Burn the Blueprint",
+        "duration": "1:31",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 1,
+        "url": "https://www.youtube.com/watch?v=TE73dkHco-0&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=1",
+        "thumbnail": "https://i.ytimg.com/vi/TE73dkHco-0/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYZSBlKGUwD7gC9xg=&rs=AOn4CLC1yVjyO9rjLuFlsztpyEOyIjx4HQ"
+      },
+      {
+        "id": "BAKv0lsW_MU",
+        "title": "VÆZURI — Sworn to the Falling Sky",
+        "duration": "1:35",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 2,
+        "url": "https://www.youtube.com/watch?v=BAKv0lsW_MU&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=2",
+        "thumbnail": "https://i.ytimg.com/vi/BAKv0lsW_MU/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYPiA2KH8wD7gC9xg=&rs=AOn4CLCnpuXu80eQZMEgYVnpjNjDX2w8dg"
+      },
+      {
+        "id": "5PzuSzOI5QE",
+        "title": "VÆZURI — Blood and Cherry Snow",
+        "duration": "1:31",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 3,
+        "url": "https://www.youtube.com/watch?v=5PzuSzOI5QE&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=3",
+        "thumbnail": "https://i.ytimg.com/vi/5PzuSzOI5QE/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYZSBMKFUwD7gC9xg=&rs=AOn4CLCtMOpA8ZGcju7BLeE9mgwMpAbHYQ"
+      },
+      {
+        "id": "rFHN59Mq-Iw",
+        "title": "VÆZURI — The Silence Before the Strike",
+        "duration": "1:31",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 4,
+        "url": "https://www.youtube.com/watch?v=rFHN59Mq-Iw&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=4",
+        "thumbnail": "https://i.ytimg.com/vi/rFHN59Mq-Iw/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYfyATKDowD7gC9xg=&rs=AOn4CLAgA4xK6ed0eJGilhTdlEPTv8emqA"
+      },
+      {
+        "id": "ekrWNcVbADs",
+        "title": "Koko Yard — Sunday Light",
+        "duration": "2:01",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 5,
+        "url": "https://www.youtube.com/watch?v=ekrWNcVbADs&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=5",
+        "thumbnail": "https://i.ytimg.com/vi/ekrWNcVbADs/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvcY&rs=AOn4CLBZug87ozTafc-OoKRYAO_pA88OrA"
+      },
+      {
+        "id": "yU33i4FwQfg",
+        "title": "Koko Yard — The Table My Mother Set",
+        "duration": "2:16",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 6,
+        "url": "https://www.youtube.com/watch?v=yU33i4FwQfg&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=6",
+        "thumbnail": "https://i.ytimg.com/vi/yU33i4FwQfg/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYZSBUKEEwD7gC9xg=&rs=AOn4CLBKXM4tQ-YWAMgMfwG7kkuYDvDa-g"
+      },
+      {
+        "id": "BGMTWGPzt7M",
+        "title": "Dayo Ember — The River Still Knows My Father's Name",
+        "duration": "2:16",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 7,
+        "url": "https://www.youtube.com/watch?v=BGMTWGPzt7M&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=7",
+        "thumbnail": "https://i.ytimg.com/vi/BGMTWGPzt7M/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYciBUKD0wD7gC9xg=&rs=AOn4CLBnqG5SJ57GoY2Aqcow-lER8m_b4Q"
+      },
+      {
+        "id": "zTxMlKdgETI",
+        "title": "Rua Vex — Nerve",
+        "duration": "1:58",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 8,
+        "url": "https://www.youtube.com/watch?v=zTxMlKdgETI&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=8",
+        "thumbnail": "https://i.ytimg.com/vi/zTxMlKdgETI/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYciBSKDYwD7gC9xg=&rs=AOn4CLDoRvnHcMPh1_61lWSCqZxeHdmyVA"
+      },
+      {
+        "id": "w4ylYVmJ4jg",
+        "title": "VÆZURI — The Second Time I Left",
+        "duration": "2:03",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 9,
+        "url": "https://www.youtube.com/watch?v=w4ylYVmJ4jg&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=9",
+        "thumbnail": "https://i.ytimg.com/vi/w4ylYVmJ4jg/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYZSBPKDkwD7gC9xg=&rs=AOn4CLDhSkuevxgwVTpllhDnUvdyD4f6AQ"
+      },
+      {
+        "id": "38UtCWo07eU",
+        "title": "VÆZURI — Velvet Damage",
+        "duration": "1:31",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 10,
+        "url": "https://www.youtube.com/watch?v=38UtCWo07eU&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=10",
+        "thumbnail": "https://i.ytimg.com/vi/38UtCWo07eU/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYciBKKCUwD7gC9xg=&rs=AOn4CLDYRIhfKbZeoYy8PvDvWAmNdA7P4g"
+      },
+      {
+        "id": "L04Zi8iCjxI",
+        "title": "Damián Henao - The Wave On Every Sound",
+        "duration": "1:31",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 11,
+        "url": "https://www.youtube.com/watch?v=L04Zi8iCjxI&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=11",
+        "thumbnail": "https://i.ytimg.com/vi/L04Zi8iCjxI/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYZSBZKEgwD7gC9xg=&rs=AOn4CLAfxemzKpBEemBAlg6weB8v0IGYOg"
+      },
+      {
+        "id": "aev5VmQCues",
+        "title": "Mick Dargo - The House That Learned to Breathe",
+        "duration": "1:07",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 12,
+        "url": "https://www.youtube.com/watch?v=aev5VmQCues&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=12",
+        "thumbnail": "https://i.ytimg.com/vi/aev5VmQCues/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYciBgKEAwD7gC9xg=&rs=AOn4CLACeuxPiDEkKMHdcSeF1MLyyK2ytQ"
+      },
+      {
+        "id": "OcQCnSWW_TQ",
+        "title": "IXØVEL - The Ocean in My Pocket",
+        "duration": "1:31",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 13,
+        "url": "https://www.youtube.com/watch?v=OcQCnSWW_TQ&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=13",
+        "thumbnail": "https://i.ytimg.com/vi/OcQCnSWW_TQ/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYZSBbKFkwD7gC9xg=&rs=AOn4CLAuwFlgZswH8xaA4bRtBOHhKjcmjA"
+      },
+      {
+        "id": "7J89Oynad70",
+        "title": "KINHØᴬᴵ - Wolves at the Bright Edge",
+        "duration": "1:31",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 14,
+        "url": "https://www.youtube.com/watch?v=7J89Oynad70&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=14",
+        "thumbnail": "https://i.ytimg.com/vi/7J89Oynad70/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYRCBMKGUwD7gC9xg=&rs=AOn4CLBYDoMJBfDYMf49tQaXOyjRdf4ORQ"
+      },
+      {
+        "id": "rhHkbN3BB5k",
+        "title": "IXØVEL - The Night I Became No One",
+        "duration": "1:31",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 15,
+        "url": "https://www.youtube.com/watch?v=rhHkbN3BB5k&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=15",
+        "thumbnail": "https://i.ytimg.com/vi/rhHkbN3BB5k/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYfyAhKBMwD7gC9xg=&rs=AOn4CLDKuC5Y7xx6TACV1stRt4F61vQyvA"
+      },
+      {
+        "id": "zWmtTYLL728",
+        "title": "IXØVEL - The Day the Colours Left",
+        "duration": "1:31",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 16,
+        "url": "https://www.youtube.com/watch?v=zWmtTYLL728&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=16",
+        "thumbnail": "https://i.ytimg.com/vi/zWmtTYLL728/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYZSBlKGUwD7gC9xg=&rs=AOn4CLAfUIFXevHFvNzh9KgByi9nZ9uYBQ"
+      },
+      {
+        "id": "hFTt7sYisQ8",
+        "title": "Dayo Ember - The Girl Who Chased Sunrise",
+        "duration": "1:31",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 17,
+        "url": "https://www.youtube.com/watch?v=hFTt7sYisQ8&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=17",
+        "thumbnail": "https://i.ytimg.com/vi/hFTt7sYisQ8/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYNCBcKHIwD7gC9xg=&rs=AOn4CLArBmS4-RLljIfm4xOuoK6qczrDYw"
+      },
+      {
+        "id": "TmHpwuy1Elk",
+        "title": "Rua Vex - Dancing on the Edge",
+        "duration": "1:29",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 18,
+        "url": "https://www.youtube.com/watch?v=TmHpwuy1Elk&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=18",
+        "thumbnail": "https://i.ytimg.com/vi/TmHpwuy1Elk/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYfyAmKBcwD7gC9xg=&rs=AOn4CLAOEJWhd80rolJOuGrJ4YzwSpjzxw"
+      },
+      {
+        "id": "PTDYj2lJIH8",
+        "title": "VÆZURI - Wild Heart Parade",
+        "duration": "1:05",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 19,
+        "url": "https://www.youtube.com/watch?v=PTDYj2lJIH8&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=19",
+        "thumbnail": "https://i.ytimg.com/vi/PTDYj2lJIH8/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYciA4KFowD7gC9xg=&rs=AOn4CLDEoUWYNKxsKWXBL9GUnuWwzzk_rQ"
+      },
+      {
+        "id": "fzCFdS_cR3E",
+        "title": "IXØVEL - Leaving at Violet Hour",
+        "duration": "1:31",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 20,
+        "url": "https://www.youtube.com/watch?v=fzCFdS_cR3E&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=20",
+        "thumbnail": "https://i.ytimg.com/vi/fzCFdS_cR3E/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYMyAeKH8wD7gC9xg=&rs=AOn4CLAErkemOgVsXR900nxgQ7WkhgbfvQ"
+      },
+      {
+        "id": "iAULVVRdOW0",
+        "title": "VÆZURI - Crown of Broken Cels",
+        "duration": "1:02",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 21,
+        "url": "https://www.youtube.com/watch?v=iAULVVRdOW0&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=21",
+        "thumbnail": "https://i.ytimg.com/vi/iAULVVRdOW0/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYQyBBKH8wD7gC9xg=&rs=AOn4CLAnuky-Cuhu8tdxfozqWQ1f1eIz_w"
+      },
+      {
+        "id": "c_ili4KNbGA",
+        "title": "IXØVEL - Maps Drawn in Dust",
+        "duration": "0:59",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 22,
+        "url": "https://www.youtube.com/watch?v=c_ili4KNbGA&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=22",
+        "thumbnail": "https://i.ytimg.com/vi/c_ili4KNbGA/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAKAD4oCDAgAEAEYLyBjKHIwD7gC9xg=&rs=AOn4CLAmXMgPwGBvE8aF91gXiyhDAyceNQ"
+      },
+      {
+        "id": "yXDpdOAZ44E",
+        "title": "KINHØᴬᴵ - She Headbanged the World Away",
+        "duration": "0:43",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 23,
+        "url": "https://www.youtube.com/watch?v=yXDpdOAZ44E&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=23",
+        "thumbnail": "https://i.ytimg.com/vi/yXDpdOAZ44E/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYUiBJKHIwD7gC9xg=&rs=AOn4CLBQZZf-yxOa1Jr_NAs3p1V3Fk68Eg"
+      },
+      {
+        "id": "t8eXrnsW6ow",
+        "title": "KINHØᴬᴵ - Ink Runs Blacker Than Blood",
+        "duration": "1:18",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 24,
+        "url": "https://www.youtube.com/watch?v=t8eXrnsW6ow&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=24",
+        "thumbnail": "https://i.ytimg.com/vi/t8eXrnsW6ow/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYZSBlKGUwD7gC9xg=&rs=AOn4CLAiwyO4c_eGo4GDDRgA0TSyeaXSuQ"
+      },
+      {
+        "id": "qxZ6AnMhar4",
+        "title": "VÆZURI - Hallucinating Your Name",
+        "duration": "1:38",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 25,
+        "url": "https://www.youtube.com/watch?v=qxZ6AnMhar4&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=25",
+        "thumbnail": "https://i.ytimg.com/vi/qxZ6AnMhar4/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYUiBaKGUwD7gC9xg=&rs=AOn4CLD6gatFGnun5jExyRsRuXxS3TjWDQ"
+      },
+      {
+        "id": "O1luI5ez3D8",
+        "title": "Orla Static - The Chorus Never Came",
+        "duration": "1:31",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 26,
+        "url": "https://www.youtube.com/watch?v=O1luI5ez3D8&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=26",
+        "thumbnail": "https://i.ytimg.com/vi/O1luI5ez3D8/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYPiBXKGUwD7gC9xg=&rs=AOn4CLDEkHvcOj-uuqAUmAPdY3L51aN3EA"
+      },
+      {
+        "id": "3YXHFLkQn8I",
+        "title": "Dayo Ember - Echo of a Borrowed Name",
+        "duration": "2:01",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 27,
+        "url": "https://www.youtube.com/watch?v=3YXHFLkQn8I&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=27",
+        "thumbnail": "https://i.ytimg.com/vi/3YXHFLkQn8I/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYOyBWKGUwD7gC9xg=&rs=AOn4CLBzD8bGa5XMX2Wby_wMjsH1Bqc4oQ"
+      },
+      {
+        "id": "CZkRwkJQAO4",
+        "title": "Koko Yard - The Last Map I Drew of You",
+        "duration": "1:26",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 28,
+        "url": "https://www.youtube.com/watch?v=CZkRwkJQAO4&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=28",
+        "thumbnail": "https://i.ytimg.com/vi/CZkRwkJQAO4/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYNyBlKF4wD7gC9xg=&rs=AOn4CLA2GLXsKt9Xd8L6VM0qPPzFl6N_pA"
+      },
+      {
+        "id": "yQ6f7SX0dVs",
+        "title": "Mick Dargo - Just came here to say I quit!",
+        "duration": "0:31",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 29,
+        "url": "https://www.youtube.com/watch?v=yQ6f7SX0dVs&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=29",
+        "thumbnail": "https://i.ytimg.com/vi/yQ6f7SX0dVs/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYNCBUKH8wD7gC9xg=&rs=AOn4CLCDA-oWm2G-CJJBgPQdBbpSGlEPyw"
+      },
+      {
+        "id": "VMiZ7xa4pDc",
+        "title": "VÆZURI - Sugar and Gunpowder",
+        "duration": "0:34",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 30,
+        "url": "https://www.youtube.com/watch?v=VMiZ7xa4pDc&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=30",
+        "thumbnail": "https://i.ytimg.com/vi/VMiZ7xa4pDc/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYZSBLKE4wD7gC9xg=&rs=AOn4CLBoLx1vMkZsa_lSCzZXnH5gdG2ISQ"
+      },
+      {
+        "id": "YS5yj37eauU",
+        "title": "VÆZURI - I Keep Your Voice on Loop",
+        "duration": "0:58",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 31,
+        "url": "https://www.youtube.com/watch?v=YS5yj37eauU&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=31",
+        "thumbnail": "https://i.ytimg.com/vi/YS5yj37eauU/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYVCBZKGUwD7gC9xg=&rs=AOn4CLBnlOcoB8M0quqcX17mWqKYOiOPXA"
+      },
+      {
+        "id": "R31jtl8Mn6s",
+        "title": "Dayo Ember - I Forgot What Real Felt Like",
+        "duration": "2:09",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 32,
+        "url": "https://www.youtube.com/watch?v=R31jtl8Mn6s&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=32",
+        "thumbnail": "https://i.ytimg.com/vi/R31jtl8Mn6s/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvcY&rs=AOn4CLBL2hpcmblW2cgh3LFcvULd8N9IHA"
+      },
+      {
+        "id": "4dqJwE8huL4",
+        "title": "KINHØᴬᴵ - The Printer Won Again",
+        "duration": "1:03",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 33,
+        "url": "https://www.youtube.com/watch?v=4dqJwE8huL4&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=33",
+        "thumbnail": "https://i.ytimg.com/vi/4dqJwE8huL4/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYciA7KDwwD7gC9xg=&rs=AOn4CLAPxNK47u15O-D7xzbaW8rLY5nzrA"
+      },
+      {
+        "id": "QwBlgfKyZuQ",
+        "title": "Orla Static - Amber Transmission",
+        "duration": "0:51",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 34,
+        "url": "https://www.youtube.com/watch?v=QwBlgfKyZuQ&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=34",
+        "thumbnail": "https://i.ytimg.com/vi/QwBlgfKyZuQ/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYZSBeKDswD7gC9xg=&rs=AOn4CLAeRFrC2Tvhd_6FngR-moVCDeYfEQ"
+      },
+      {
+        "id": "tVljGPPLQak",
+        "title": "Nilo Föhn - Orla Static - Kiss Me Where the Signal Dies",
+        "duration": "1:11",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 35,
+        "url": "https://www.youtube.com/watch?v=tVljGPPLQak&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=35",
+        "thumbnail": "https://i.ytimg.com/vi/tVljGPPLQak/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYZSBSKEUwD7gC9xg=&rs=AOn4CLCNGtr5GtGydRB-E3VqKHZiEX2aUQ"
+      },
+      {
+        "id": "HBCTT5KiWdA",
+        "title": "Orla Static - The Prompt You Never Sent",
+        "duration": "1:17",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 36,
+        "url": "https://www.youtube.com/watch?v=HBCTT5KiWdA&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=36",
+        "thumbnail": "https://i.ytimg.com/vi/HBCTT5KiWdA/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYICBbKH8wD7gC9xg=&rs=AOn4CLBvkoTvXswL_sMqBJkcZAdtqZM2Xg"
+      },
+      {
+        "id": "XH5BNXLYcfk",
+        "title": "IXØVEL - Orchid and Oxide",
+        "duration": "0:32",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 37,
+        "url": "https://www.youtube.com/watch?v=XH5BNXLYcfk&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=37",
+        "thumbnail": "https://i.ytimg.com/vi/XH5BNXLYcfk/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYTyBkKGUwD7gC9xg=&rs=AOn4CLDn5LPAcl5tDBVpsCTxUnm3Sk-6YQ"
+      },
+      {
+        "id": "BQ74O4IMnJI",
+        "title": "Damián Henao - Gravity Has a Name",
+        "duration": "2:05",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 38,
+        "url": "https://www.youtube.com/watch?v=BQ74O4IMnJI&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=38",
+        "thumbnail": "https://i.ytimg.com/vi/BQ74O4IMnJI/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAK4CIoCDAgAEAEYEyBRKH8wD7gC9xg=&rs=AOn4CLC8MZyFNAqtEdKfjIz70dZLXy-BAg"
+      },
+      {
+        "id": "mPSfIQI24iY",
+        "title": "IXØVEL - Midnight in the Algorithm",
+        "duration": "2:16",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 39,
+        "url": "https://www.youtube.com/watch?v=mPSfIQI24iY&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=39",
+        "thumbnail": "https://i.ytimg.com/vi/mPSfIQI24iY/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAK4CIoCDAgAEAEYEyBgKH8wD7gC9xg=&rs=AOn4CLC_p12s_BUuKfJ0S9dS0kdFFBembg"
+      },
+      {
+        "id": "Bms8I1hGHqw",
+        "title": "Orla Static - Dayo Ember - City Made of Glass",
+        "duration": "1:48",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 40,
+        "url": "https://www.youtube.com/watch?v=Bms8I1hGHqw&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=40",
+        "thumbnail": "https://i.ytimg.com/vi/Bms8I1hGHqw/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAK4CIoCDAgAEAEYUyBdKGUwD7gC9xg=&rs=AOn4CLBnVFMxumfYbMCjs6JhzIl5GMrawQ"
+      },
+      {
+        "id": "cbczzU8FmJs",
+        "title": "Mick Dargo - Beautiful Malfunction",
+        "duration": "2:16",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 41,
+        "url": "https://www.youtube.com/watch?v=cbczzU8FmJs&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=41",
+        "thumbnail": "https://i.ytimg.com/vi/cbczzU8FmJs/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYSiBcKGUwD7gC9xg=&rs=AOn4CLDqlYqGu5xFg7fVY3wskMWXNsrkHg"
+      },
+      {
+        "id": "dMrgJdf5-L4",
+        "title": "Rua Vex - Wired Into You",
+        "duration": "1:36",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 42,
+        "url": "https://www.youtube.com/watch?v=dMrgJdf5-L4&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=42",
+        "thumbnail": "https://i.ytimg.com/vi/dMrgJdf5-L4/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYEyA2KH8wD7gC9xg=&rs=AOn4CLDgoB4DngBlqnRLon1UqUq6LAYdKQ"
+      },
+      {
+        "id": "4hkhYiNWAPA",
+        "title": "Damián Henao - Ashes and Frequency",
+        "duration": "2:16",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 43,
+        "url": "https://www.youtube.com/watch?v=4hkhYiNWAPA&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=43",
+        "thumbnail": "https://i.ytimg.com/vi/4hkhYiNWAPA/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAK4CIoCDAgAEAEYZSBPKDowD7gC9xg=&rs=AOn4CLAz8JjZEumRNQlRccdpNxITPIWGdQ"
+      },
+      {
+        "id": "WHDWlDrca5g",
+        "title": "KINHØᴬᴵ - The Tide Remembers Everything",
+        "duration": "2:13",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 44,
+        "url": "https://www.youtube.com/watch?v=WHDWlDrca5g&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=44",
+        "thumbnail": "https://i.ytimg.com/vi/WHDWlDrca5g/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAK4CIoCDAgAEAEYSyBlKGEwD7gC9xg=&rs=AOn4CLAOWZNgGGTOQTLVDwCfpPc3N0ewqg"
+      },
+      {
+        "id": "jwl9mUQoBSQ",
+        "title": "VÆZURI - Static Between Heartbeats",
+        "duration": "2:16",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 45,
+        "url": "https://www.youtube.com/watch?v=jwl9mUQoBSQ&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=45",
+        "thumbnail": "https://i.ytimg.com/vi/jwl9mUQoBSQ/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAK4CIoCDAgAEAEYMSBdKHIwD7gC9xg=&rs=AOn4CLBoBuGGIdOocafnMRAXZl70UtUb6w"
+      },
+      {
+        "id": "w0ci1-b9gjY",
+        "title": "Nilo Föhn - The Last Train Out of Nowhere",
+        "duration": "2:16",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 46,
+        "url": "https://www.youtube.com/watch?v=w0ci1-b9gjY&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=46",
+        "thumbnail": "https://i.ytimg.com/vi/w0ci1-b9gjY/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAK4CIoCDAgAEAEYciBYKCUwD7gC9xg=&rs=AOn4CLD18ozMgzTPIgSUO--dByJenEN_uA"
+      },
+      {
+        "id": "Twz9on4vyto",
+        "title": "Koko Yard - Rust and Roses",
+        "duration": "2:16",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 47,
+        "url": "https://www.youtube.com/watch?v=Twz9on4vyto&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=47",
+        "thumbnail": "https://i.ytimg.com/vi/Twz9on4vyto/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAK4CIoCDAgAEAEYZSBUKEAwD7gC9xg=&rs=AOn4CLC_57LA6dXWH2rLQllB0pr8tV5-QA"
+      },
+      {
+        "id": "l5Q7iHwKttA",
+        "title": "Mick Dargo - She Burned the Letter",
+        "duration": "2:46",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 48,
+        "url": "https://www.youtube.com/watch?v=l5Q7iHwKttA&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=48",
+        "thumbnail": "https://i.ytimg.com/vi/l5Q7iHwKttA/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAK4CIoCDAgAEAEYUCBlKGUwD7gC9xg=&rs=AOn4CLAGCWunqVS9fyvHUYdQ_wLCEQCYvg"
+      },
+      {
+        "id": "uEPhWa07zwk",
+        "title": "Koko Yard - Koko Yard - Gold in the Wreckage",
+        "duration": "3:00",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 49,
+        "url": "https://www.youtube.com/watch?v=uEPhWa07zwk&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=49",
+        "thumbnail": "https://i.ytimg.com/vi/uEPhWa07zwk/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAK4CIoCDAgAEAEYfyBcKBkwD7gC9xg=&rs=AOn4CLD3esBHDATOrk8jmFCbLDW_755lxw"
+      },
+      {
+        "id": "xTka9A4awew",
+        "title": "IXØVEL - Neon Ghost",
+        "duration": "1:09",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 50,
+        "url": "https://www.youtube.com/watch?v=xTka9A4awew&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=50",
+        "thumbnail": "https://i.ytimg.com/vi/xTka9A4awew/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAK4CIoCDAgAEAEYZSBZKGEwD7gC9xg=&rs=AOn4CLD1w7VhawEMHbsV_-MvAYbX5G-U1w"
+      },
+      {
+        "id": "RKA67vdRMfw",
+        "title": "Orla Static - Signal Lost",
+        "duration": "2:01",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 51,
+        "url": "https://www.youtube.com/watch?v=RKA67vdRMfw&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=51",
+        "thumbnail": "https://i.ytimg.com/vi/RKA67vdRMfw/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAK4CIoCDAgAEAEYVyBhKGUwD7gC9xg=&rs=AOn4CLAor8NKFY-75QAinVhqwNRtLWLJzg"
+      },
+      {
+        "id": "ERPvJBnyHlI",
+        "title": "IXØVEL - Infinite Take",
+        "duration": "2:02",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 52,
+        "url": "https://www.youtube.com/watch?v=ERPvJBnyHlI&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=52",
+        "thumbnail": "https://i.ytimg.com/vi/ERPvJBnyHlI/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAK4CIoCDAgAEAEYZSBTKEwwD7gC9xg=&rs=AOn4CLBjxTNwTi94Ube7cgduCNtJR882hA"
+      },
+      {
+        "id": "3RQ6uL2YWZg",
+        "title": "IXØVEL - The Mirror Knows My Name",
+        "duration": "1:37",
+        "channel": "Stephen Spielbot Music",
+        "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
+        "channelUrl": "https://www.youtube.com/@SpielbotMusic",
+        "playlistIndex": 53,
+        "url": "https://www.youtube.com/watch?v=3RQ6uL2YWZg&list=UUm0coTP4Ztr91F5ZyYZwXTQ&index=53",
+        "thumbnail": "https://i.ytimg.com/vi/3RQ6uL2YWZg/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAK4CIoCDAgAEAEYOSBVKHIwD7gC9xg=&rs=AOn4CLDc-lUnpE7wVgIeyfIVJkHClDZZqg"
+      }
+    ],
+    "sourceUrl": "https://www.youtube.com/playlist?list=UUm0coTP4Ztr91F5ZyYZwXTQ",
+    "sourceStats": [
+      "53 videos",
+      "1 view",
+      "Updated today"
+    ],
+    "sourceFetchedAt": "2026-11-22T11:55:26.425143+00:00",
+    "verifiedCount": 53,
+    "uniqueVideoCount": 53,
+    "complete": true,
+    "hasContinuation": false,
+    "metadataTitle": "Uploads from Stephen Spielbot Music"
   }
 }

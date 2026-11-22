@@ -56,21 +56,21 @@
   const normalise = value => String(value).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/æ/g, 'ae').replace(/ø/g, 'o');
   const uniqueVideos = entries => [...new Map(entries.map(video => [video.id, video])).values()];
   const thumbnail = id => new URL(`videos/${encodeURIComponent(id)}.jpg?v=${encodeURIComponent(catalogue.generatedAt || catalogue.fetchedAt)}`, assetBase).href;
-  const portrait = source => source.isCollection ? thumbnail(source.imageVideoId) : new URL(`artists/${encodeURIComponent(source.id)}.jpg`, assetBase).href;
+  const portrait = source => source.isCollection || source.isUploads ? thumbnail(source.imageVideoId) : new URL(`artists/${encodeURIComponent(source.id)}.jpg`, assetBase).href;
   const watchUrl = (video, source) => {
     const url = new URL('https://www.youtube.com/watch');
     url.searchParams.set('v', video.id);
-    if (source) url.searchParams.set('list', source.playlistId);
+    if (source && source.playlistId) url.searchParams.set('list', source.playlistId);
     return url.href;
   };
   const shortTitle = (video, source) => {
-    if (!source || source.isCollection) return video.title;
+    if (!source || source.isCollection || source.isUploads) return video.title;
     const escaped = source.name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     return video.title.replace(new RegExp(`^(?:${escaped}\\s*[—–-]\\s*)+`, 'i'), '');
   };
 
   function prepareData(data) {
-    if (!Array.isArray(data.artists) || !data.artists.length) throw new Error('Artist catalogue unavailable');
+    if (!Array.isArray(data.artists)) throw new Error('Artist catalogue unavailable');
     catalogue = data;
     const validVideo = video => /^[a-zA-Z0-9_-]{11}$/.test(video.id) && typeof video.title === 'string';
     for (const artist of data.artists) {
@@ -87,17 +87,22 @@
         videoMap.get(video.id).artistIds.push(artist.id);
       }
     }
-    if (data.collection) {
-      data.collection.isCollection = true;
-      data.collection.videos = uniqueVideos(data.collection.videos.filter(video => validVideo(video) && video.channelId === data.channelId));
-      sourceMap.set(data.collection.id, data.collection);
-      for (const video of data.collection.videos) {
-        if (!videoMap.has(video.id)) videoMap.set(video.id, {...video, artistIds: [], sourceId: data.collection.id});
+    for (const [source, kind] of [[data.collection, 'isCollection'], [data.uploads, 'isUploads']]) {
+      if (!source) continue;
+      source[kind] = true;
+      source.videos = uniqueVideos(source.videos.filter(video => validVideo(video) && video.channelId === data.channelId));
+      sourceMap.set(source.id, source);
+      for (const video of source.videos) {
+        if (!videoMap.has(video.id)) videoMap.set(video.id, {...video, artistIds: [], sourceId: source.id});
       }
     }
+    document.querySelectorAll('[data-open-artist]').forEach(link => {
+      if (!sourceMap.has(link.dataset.openArtist)) link.hidden = true;
+    });
+    document.getElementById('collection').hidden = !data.collection;
     // Interleave artists for discovery while preserving each playlist's song order.
     const orderedIds = new Set();
-    const longestPlaylist = Math.max(...data.artists.map(artist => artist.videos.length));
+    const longestPlaylist = Math.max(0, ...data.artists.map(artist => artist.videos.length));
     for (let index = 0; index < longestPlaylist; index += 1) {
       for (const artist of data.artists) {
         if (artist.videos[index]) orderedIds.add(artist.videos[index].id);
@@ -180,7 +185,7 @@
     selectedSource = source;
     selectedVideo = video;
     document.title = `${source.name} — Stephen Spielbot Music`;
-    document.getElementById('dialog-eyebrow').textContent = source.isCollection ? 'THE COLLECTION' : 'THE ARTIST';
+    document.getElementById('dialog-eyebrow').textContent = source.isUploads ? 'THE CHANNEL' : source.isCollection ? 'THE COLLECTION' : 'THE ARTIST';
     document.getElementById('dialog-title').textContent = source.name;
     document.getElementById('dialog-description').textContent = `${source.videos.length} videos. Find a song. Press play.`;
     const image = document.getElementById('dialog-portrait');

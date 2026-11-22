@@ -38,7 +38,7 @@ jobs:
       - name: Test catalogue refresh and artwork preservation
         run: python -m unittest discover -s tests -p 'test_music_*.py'
 
-      - name: Refresh YouTube playlists and video thumbnails
+      - name: Refresh YouTube playlists, channel uploads and video thumbnails
         run: |
           for attempt in 1 2 3; do
             if python spielbotmusic/_tools/refresh_catalogue.py --refresh --download-thumbnails; then

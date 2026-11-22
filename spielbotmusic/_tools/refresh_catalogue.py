@@ -14,9 +14,10 @@ Without --cache-dir, source HTML lives in a temporary directory that is removed
 after the run. With --cache-dir, cached pages are reused unless --refresh is set.
 Raw source pages must stay outside the served spielbotmusic directory.
 
-This reads public YouTube playlist HTML without credentials, private endpoints,
-or an API key. It refreshes the explicit artist roster below; it does not discover
-new artist playlists. Order, collaborations, repeated entries, Shorts, original
+This reads public YouTube playlist pages without credentials or an API key.
+It refreshes the explicit artist roster below and the channel's uploads playlist;
+it does not discover new artist playlists. Playlists prefixed "Album:" are ignored.
+Order, collaborations, repeated entries, Shorts, original
 titles, and item-level channel evidence are preserved. Missing item metadata may
 be supplemented from the same video in the collection only when that item's
 channel ID matches Spielbot Music.
@@ -25,8 +26,8 @@ Missing or invalid required thumbnails are downloaded before every catalogue
 write. --download-thumbnails additionally refreshes existing video thumbnails
 without downgrading their resolution or replacing curated artist portraits.
 The previous catalogue is left intact if retrieval, parsing, count validation,
-or any required image download fails. Pagination is detected but not followed; a
-larger playlist or a changed YouTube page format requires a parser update.
+or any required image download fails. Public playlist continuations are followed
+and the full count is verified before replacing the catalogue.
 Video thumbnails prefer YouTube's maximum-resolution image, falling back to
 standard/high-quality images and then the playlist source when unavailable.
 Thumbnails are downloaded unmodified, validated as JPEG with usable dimensions,
@@ -37,6 +38,7 @@ No schedule, commits, or deployment are created by this script.
 import argparse
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -44,7 +46,7 @@ import re
 import sys
 import tempfile
 from urllib.parse import urlsplit
-from urllib.request import urlopen
+from urllib.request import Request, urlopen
 
 
 SITE_ROOT = Path(__file__).resolve().parent.parent
@@ -63,8 +65,11 @@ ARTISTS = [
     ("ixovel", "IXØVEL", "PLW48zww8S06s"),
 ]
 COLLECTION = ("ai-music-video-network", "Stephen Spielbot Music", "PLS5WTo4e7mhQ")
+UPLOADS = ("channel-uploads", "Channel uploads", "UU" + CHANNEL_ID[2:])
 MAX_PAGE_BYTES = 20 * 1024 * 1024
 MAX_IMAGE_BYTES = 10 * 1024 * 1024
+MAX_PLAYLIST_PAGES = 100
+MAX_PLAYLIST_ENTRIES = 10000
 VIDEO_ID = re.compile(r"^[A-Za-z0-9_-]{11}$")
 
 
@@ -152,6 +157,108 @@ def read_page(url, cache_path, refresh):
     return data, fetched_at
 
 
+def continuation_context(cache_path):
+    """Read the anonymous browser context supplied in the public source HTML."""
+    html = cache_path.read_text(encoding="utf-8")
+    for assignment in re.finditer(r"ytcfg\.set\s*\(\s*(?=\{)", html):
+        try:
+            config = json.JSONDecoder().raw_decode(html[assignment.end():])[0]
+        except (ValueError, TypeError):
+            continue
+        context = config.get("INNERTUBE_CONTEXT", {})
+        if not isinstance(context, dict):
+            continue
+        client = context.get("client", {})
+        if not isinstance(client, dict):
+            continue
+        if isinstance(client.get("clientName"), str) and isinstance(client.get("clientVersion"), str):
+            # Only the public client context is needed. Never copy API keys,
+            # authentication settings, or unrelated page configuration.
+            allowed = ("clientName", "clientVersion", "hl", "gl", "visitorData", "userAgent")
+            return {"client": {key: client[key] for key in allowed if isinstance(client.get(key), str)}}
+    raise RefreshError("Public playlist continuation context is unavailable")
+
+
+def next_continuation(contents):
+    """Accept one unambiguous public browse continuation, never arbitrary URLs."""
+    items = [("renderer", item) for item in nodes(contents, "continuationItemRenderer")]
+    items.extend(("view-model", item) for item in nodes(contents, "continuationItemViewModel"))
+    if not items:
+        return None
+    if len(items) != 1:
+        raise RefreshError("Multiple playlist continuation commands were found")
+    kind, item = items[0]
+    if not isinstance(item, dict):
+        raise RefreshError("Invalid public playlist continuation command")
+    if kind == "view-model":
+        wrapper = item.get("continuationCommand", {})
+        endpoint = wrapper.get("innertubeCommand", {}) if isinstance(wrapper, dict) else {}
+    else:
+        endpoint = item.get("continuationEndpoint", {})
+    if not isinstance(endpoint, dict):
+        raise RefreshError("Invalid public playlist continuation command")
+    metadata = endpoint.get("commandMetadata", {})
+    command = endpoint.get("continuationCommand", {})
+    if not isinstance(metadata, dict) or not isinstance(command, dict):
+        raise RefreshError("Invalid public playlist continuation command")
+    web_metadata = metadata.get("webCommandMetadata", {})
+    if not isinstance(web_metadata, dict):
+        raise RefreshError("Invalid public playlist continuation command")
+    api_url = web_metadata.get("apiUrl")
+    token = command.get("token")
+    if (api_url not in (None, "/youtubei/v1/browse")
+            or command.get("request") not in (None, "CONTINUATION_REQUEST_TYPE_BROWSE")
+            or not isinstance(token, str) or not 0 < len(token) <= 16384):
+        raise RefreshError("Invalid public playlist continuation command")
+    return token
+
+
+def read_continuation(token, context, cache_path, refresh):
+    """Continue the public web playlist without cookies, credentials or API keys."""
+    if refresh or not cache_path.exists():
+        request = Request(
+            "https://www.youtube.com/youtubei/v1/browse",
+            data=json.dumps({"context": context, "continuation": token}).encode("utf-8"),
+            headers={"Content-Type": "application/json", "Accept": "application/json"},
+            method="POST",
+        )
+        try:
+            with urlopen(request, timeout=30) as response:
+                content = response.read(MAX_PAGE_BYTES + 1)
+            if len(content) > MAX_PAGE_BYTES:
+                raise RefreshError("Playlist continuation exceeds the download limit")
+            data = json.loads(content)
+            if not isinstance(data, dict):
+                raise RefreshError("Invalid public playlist continuation response")
+        except (OSError, UnicodeError, ValueError) as error:
+            raise RefreshError("Cannot retrieve public playlist continuation") from error
+        atomic_write(cache_path, content)
+    else:
+        if cache_path.stat().st_size > MAX_PAGE_BYTES:
+            raise RefreshError("Cached playlist continuation exceeds the download limit")
+        try:
+            data = json.loads(cache_path.read_text(encoding="utf-8"))
+        except (OSError, UnicodeError, ValueError) as error:
+            raise RefreshError("Cannot parse cached playlist continuation") from error
+    if not isinstance(data, dict) or data.get("error"):
+        raise RefreshError("Invalid public playlist continuation response")
+    actions = []
+    for key in ("onResponseReceivedActions", "onResponseReceivedEndpoints", "onResponseReceivedCommands"):
+        actions.extend(nodes(data.get(key, []), "appendContinuationItemsAction"))
+    if len(actions) == 1 and isinstance(actions[0], dict):
+        contents = actions[0].get("continuationItems")
+    elif not actions:
+        legacy = data.get("continuationContents", {})
+        legacy = legacy.get("playlistVideoListContinuation", {}) if isinstance(legacy, dict) else {}
+        contents = legacy.get("contents") if isinstance(legacy, dict) else None
+    else:
+        raise RefreshError("Ambiguous public playlist continuation response")
+    if not isinstance(contents, list):
+        raise RefreshError("Public playlist continuation entries are unavailable")
+    fetched_at = datetime.fromtimestamp(cache_path.stat().st_mtime, timezone.utc).isoformat()
+    return contents, fetched_at
+
+
 def best_thumbnail(sources):
     valid = [source for source in sources if isinstance(source.get("url"), str)]
     return max(valid, key=lambda source: (source.get("width", 0), source.get("height", 0)))["url"] if valid else ""
@@ -218,11 +325,14 @@ def parse_entry(kind, row, playlist_id, fallback_index):
     return result
 
 
-def extract_playlist(spec, cache_dir, refresh):
+def extract_playlist(spec, cache_dir, refresh, exclude_albums=False):
     slug, name, playlist_id = spec
     url = "https://www.youtube.com/playlist?list=" + playlist_id
     data, source_fetched_at = read_page(url, cache_dir / (slug + ".html"), refresh)
     metadata = next(nodes(data, "playlistMetadataRenderer"), {})
+    if exclude_albums and is_album_playlist(metadata.get("title", name)):
+        print("Ignored album playlist: " + metadata.get("title", name), flush=True)
+        return None
     sidebar = next(nodes(data, "playlistSidebarPrimaryInfoRenderer"), {})
     stats = [text(item) for item in sidebar.get("stats", [])]
     reported_count = None
@@ -239,13 +349,41 @@ def extract_playlist(spec, cache_dir, refresh):
             reported_count = int(match.group(1).replace(",", ""))
     if reported_count is None:
         raise RefreshError("Cannot verify the public playlist count: " + name)
+    if reported_count > MAX_PLAYLIST_ENTRIES:
+        raise RefreshError("Incomplete playlist " + name + ": playlist exceeds the entry limit")
     videos = []
-    for kind, row in display_entries(data.get("contents", {})):
-        entry = parse_entry(kind, row, playlist_id, len(videos) + 1)
-        if entry is not None:
-            videos.append(entry)
-    has_continuation = bool(list(nodes(data.get("contents", {}), "continuationItemRenderer")))
-    if has_continuation or len(videos) != reported_count:
+    contents = data.get("contents", {})
+    seen_tokens = set()
+    context = None
+    page_number = 1
+    try:
+        while True:
+            previous_count = len(videos)
+            for kind, row in display_entries(contents):
+                entry = parse_entry(kind, row, playlist_id, len(videos) + 1)
+                if entry is not None:
+                    videos.append(entry)
+                    if len(videos) > reported_count or len(videos) > MAX_PLAYLIST_ENTRIES:
+                        raise RefreshError("Playlist entries exceed the verified count or safety limit")
+            token = next_continuation(contents)
+            if token is None:
+                break
+            if len(videos) == previous_count or len(videos) >= reported_count:
+                raise RefreshError("Playlist continuation does not advance the verified entries")
+            if token in seen_tokens or page_number >= MAX_PLAYLIST_PAGES:
+                raise RefreshError("Playlist continuation repeated or exceeded the page limit")
+            seen_tokens.add(token)
+            if context is None:
+                context = continuation_context(cache_dir / (slug + ".html"))
+            page_number += 1
+            token_hash = hashlib.sha256(token.encode("utf-8")).hexdigest()[:16]
+            page_cache = cache_dir / (slug + "-page-" + str(page_number) + "-" + token_hash + ".json")
+            contents, fetched_at = read_continuation(token, context, page_cache, refresh)
+            source_fetched_at = min(source_fetched_at, fetched_at)
+    except RefreshError as error:
+        raise RefreshError("Incomplete playlist " + name + ": " + str(error)
+                           + "; previous catalogue retained.") from error
+    if len(videos) != reported_count:
         raise RefreshError("Incomplete playlist " + name + ": read " + str(len(videos))
                            + " of " + str(reported_count) + " entries; previous catalogue retained.")
     result = {"id": slug, "name": name, "playlistId": playlist_id, "playlistUrl": url,
@@ -360,7 +498,9 @@ def existing_thumbnail_valid(path):
 
 def download_thumbnails(catalogue, asset_dir, refresh_all=False):
     videos = {video["id"]: video for artist in catalogue["artists"] for video in artist["videos"]}
-    videos.update({video["id"]: video for video in catalogue["collection"]["videos"]})
+    for source in (catalogue.get("collection"), catalogue.get("uploads")):
+        if source:
+            videos.update({video["id"]: video for video in source["videos"]})
     tasks = [(video, asset_dir / "videos" / (video_id + ".jpg")) for video_id, video in videos.items()]
     artist_fallbacks = [(artist["videos"][0]["thumbnail"], asset_dir / "artists" / (artist["id"] + ".jpg"))
                        for artist in catalogue["artists"] if artist["videos"]]
@@ -382,14 +522,32 @@ def download_thumbnails(catalogue, asset_dir, refresh_all=False):
     print("Refreshed " + str(len(tasks) + len(fallback_tasks)) + " JPEG thumbnails; all " + str(len(required)) + " required images verified.")
 
 
+def is_album_playlist(name):
+    return name.lstrip().casefold().startswith("album:")
+
+
+def extract_music_playlist(spec, cache_dir, refresh):
+    # Albums will get a separate release experience later. Do not import them
+    # as artist playlists, including when an existing playlist is renamed.
+    if is_album_playlist(spec[1]):
+        return None
+    return extract_playlist(spec, cache_dir, refresh, exclude_albums=True)
+
+
 def run(options, cache_dir):
     with ThreadPoolExecutor(max_workers=4) as pool:
-        artists = list(pool.map(lambda spec: extract_playlist(spec, cache_dir, options.refresh), ARTISTS))
-    collection = extract_playlist(COLLECTION, cache_dir, options.refresh)
-    lookup = {video["id"]: video for video in collection["videos"]}
+        artists = [artist for artist in pool.map(
+            lambda spec: extract_music_playlist(spec, cache_dir, options.refresh), ARTISTS) if artist]
+    collection = extract_music_playlist(COLLECTION, cache_dir, options.refresh)
+    uploads = extract_playlist(UPLOADS, cache_dir, options.refresh)
+    if any(video.get("channelId") != CHANNEL_ID for video in uploads["videos"]):
+        raise RefreshError("Channel uploads contain unverified ownership; previous catalogue retained.")
+    sources = [source for source in (collection, uploads) if source]
+    lookup = {video["id"]: (video, source["sourceUrl"])
+              for source in sources for video in source["videos"]}
     for artist in artists:
         for video in artist["videos"]:
-            match = lookup.get(video["id"], {})
+            match, source_url = lookup.get(video["id"], ({}, ""))
             if match.get("channelId") == CHANNEL_ID:
                 inherited = False
                 for field in ("duration", "channel", "channelId", "channelUrl"):
@@ -397,13 +555,13 @@ def run(options, cache_dir):
                         video[field] = match[field]
                         inherited = True
                 if inherited:
-                    video["metadataSourceUrl"] = collection["sourceUrl"]
+                    video["metadataSourceUrl"] = source_url
     result = {"schemaVersion": 1, "channel": "Stephen Spielbot Music", "channelUrl": CHANNEL_URL,
               "channelId": CHANNEL_ID,
-              "fetchedAt": min(item["sourceFetchedAt"] for item in artists + [collection]),
+              "fetchedAt": min(item["sourceFetchedAt"] for item in artists + sources),
               "generatedAt": datetime.now(timezone.utc).isoformat(),
-              "sourceMethod": "Public YouTube playlist HTML, ytInitialData playlist entries. Source order preserved.",
-              "artists": artists, "collection": collection}
+              "sourceMethod": "Public YouTube artist, collection and channel uploads playlists. Source order preserved; Album: playlists excluded.",
+              "artists": artists, "collection": collection, "uploads": uploads}
     download_thumbnails(result, options.output.parent, refresh_all=options.download_thumbnails)
     atomic_write(options.output, (json.dumps(result, ensure_ascii=False, indent=2) + "\n").encode("utf-8"))
     print("Catalogue saved to " + str(options.output))
