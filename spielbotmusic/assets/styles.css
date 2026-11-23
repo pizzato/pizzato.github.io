@@ -140,20 +140,21 @@ body.spielbot { margin: 0; background: var(--sb-paper); color: var(--sb-ink); fo
 .spielbot .collection-copy h2 { font-family: var(--sb-display); font-size: clamp(25px, 3vw, 36px); font-weight: 400; letter-spacing: -.05em; }
 .spielbot .collection-copy p:not(.eyebrow) { max-width: 61ch; margin-top: 13px; font-size: 16px; }
 .spielbot .collection-section > .button { flex-shrink: 0; }
-.spielbot .about-section { display: grid; grid-template-columns: .9fr 1.2fr; column-gap: 80px; row-gap: 18px; padding-block: 88px 90px; }
-.spielbot .about-section > .eyebrow { grid-column: 1 / -1; }
-.spielbot .about-section > h2 { grid-column: 1; grid-row: 2 / span 2; max-width: 14ch; font-family: var(--sb-display); font-size: clamp(29px, 3.2vw, 42px); font-weight: 400; line-height: 1.08; letter-spacing: -.05em; }
-.spielbot .about-copy { grid-column: 2; grid-row: 2 / span 2; min-width: 0; }
+.spielbot .about-section { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.2fr); align-items: center; gap: 48px 80px; padding-block: 88px 90px; }
+.spielbot .spielbot-portrait { margin: 0; }
+.spielbot .spielbot-portrait img { display: block; width: 100%; height: auto; border: 2px solid var(--sb-ink); box-shadow: 7px 7px 0 var(--sb-ink); }
+.spielbot .spielbot-portrait figcaption { margin-top: 20px; font-size: 16px; font-weight: 700; }
+.spielbot .about-copy { min-width: 0; }
+.spielbot .about-copy > .eyebrow { font-size: 12px; line-height: 1.4; margin-bottom: 16px; }
+.spielbot .about-copy h2 { max-width: 19ch; margin-bottom: 22px; font-family: var(--sb-display); font-size: clamp(29px, 3.2vw, 42px); font-weight: 400; line-height: 1.08; letter-spacing: -.05em; }
 .spielbot .about-copy > p { max-width: 63ch; font-size: 17px; line-height: 1.65; }
-.spielbot .about-copy > .about-note { margin-top: 22px; font-size: 16px; }
+.spielbot .about-copy > .about-intro { margin-bottom: 18px; font-size: 19px; font-weight: 600; }
 .spielbot .social-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
 .spielbot .social-links .button { font-size: 16px; }
 .spielbot .about-copy > .contact-line { margin-top: 27px; }
 .spielbot .contact-line > span, .spielbot .contact-line > .contact-label { display: block; font-size: 12px; line-height: 1.4; letter-spacing: .09em; font-weight: 700; text-transform: uppercase; }
 .spielbot .contact-line a { display: table; max-width: 100%; margin-top: 6px; padding-bottom: 2px; border-bottom: 2px solid currentColor; font-size: clamp(17px, 2vw, 23px); font-weight: 600; line-height: 1.4; text-decoration: none; overflow-wrap: anywhere; }
 .spielbot .contact-line a:hover { color: #8c2f1c; }
-.spielbot .about-section > p:not(.eyebrow), .spielbot .about-note { grid-column: 2; max-width: 63ch; font-size: 17px; line-height: 1.65; }
-.spielbot .about-note { color: var(--sb-muted); font-size: 16px; }
 .spielbot .about-section a { text-underline-offset: 4px; }
 .spielbot .site-footer { border-top: 2px solid var(--sb-ink); padding-block: 32px 38px; }
 .spielbot .site-footer > .container { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 24px; }
@@ -338,14 +339,13 @@ body.spielbot { margin: 0; background: var(--sb-paper); color: var(--sb-ink); fo
   .spielbot .collection-copy h2 { font-size: 27px; }
   .spielbot .collection-copy p:not(.eyebrow) { font-size: 16px; }
   .spielbot .collection-section > .button { min-height: 46px; font-size: 14px; }
-  .spielbot .about-section { grid-template-columns: 1fr; gap: 19px; padding-block: 60px 55px; }
-  .spielbot .about-section > .eyebrow, .spielbot .about-section > h2, .spielbot .about-section > p:not(.eyebrow), .spielbot .about-note { grid-column: 1; grid-row: auto; }
-  .spielbot .about-copy { grid-column: 1; grid-row: auto; }
+  .spielbot .about-section { grid-template-columns: 1fr; gap: 34px; padding-block: 60px 55px; }
+  .spielbot .spielbot-portrait { max-width: 420px; }
+  .spielbot .about-copy h2 { max-width: 19ch; font-size: 33px; }
   .spielbot .about-copy > p { font-size: 16px; }
+  .spielbot .about-copy > .eyebrow { font-size: 12px; }
+  .spielbot .about-copy > .about-intro { font-size: 18px; }
   .spielbot .about-copy > .contact-line { margin-top: 23px; }
-  .spielbot .about-section > h2 { max-width: 16ch; font-size: 33px; }
-  .spielbot .about-section > p:not(.eyebrow) { font-size: 16px; }
-  .spielbot .about-note { font-size: 16px; }
   .spielbot .site-footer { padding-block: 27px 30px; }
   .spielbot .site-footer > .container { flex-direction: column; align-items: flex-start; gap: 23px; }
   .spielbot .footer-mark { font-size: 27px; }

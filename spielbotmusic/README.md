@@ -63,6 +63,8 @@ Check the gallery, search/filter, playlist selection, direct artist link, close/
 
 ## Artist artwork and branding
 
+The About section introduces Stephen Spielbot as “The machine behind all the videos,” using the supplied portrait in `assets/brand/stephen-spielbot.png`. He represents the project rather than a singer and is kept separate from the artist roster and playlists.
+
 The ten artist portraits were generated on 21 November 2026 using both the main character portrait and turnaround sheet in Spielbot Settings → Characters. Each is a 1024 × 1536 JPEG, with identity and wardrobe guided by those references. The complete prompts are recorded in `_tools/artwork-prompts.json`; they were created with the built-in image-generation tool. The original local character assets remain unchanged.
 
 The supplied transparent Stephen Spielbot Music logo is used in the header and footer, with the supplied white-background version used as the page icon. Both are retained in `assets/brand/`.
