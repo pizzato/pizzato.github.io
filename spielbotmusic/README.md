@@ -6,7 +6,7 @@ This is a complete static HTML document without Jekyll front matter. The existin
 
 ## Content
 
-- `index.html`: artist gallery, contact information and page structure. The contact email `spielbot@pizzato.cc` is visible in About and the footer without JavaScript.
+- `index.html`: artist gallery, contact information and page structure. The contact email `spielbot@pizzato.cc` and links to YouTube, Spotify, Instagram and X are visible in About and the footer without JavaScript.
 - `assets/catalogue.json`: verified public YouTube playlist metadata and source provenance.
 - `assets/app.js`: video search, artist filtering, shareable artist/video links, accessible playlist dialog and click-to-load YouTube player.
 - `assets/styles.css`: responsive Electric Poster design.

@@ -146,6 +146,8 @@ body.spielbot { margin: 0; background: var(--sb-paper); color: var(--sb-ink); fo
 .spielbot .about-copy { grid-column: 2; grid-row: 2 / span 2; min-width: 0; }
 .spielbot .about-copy > p { max-width: 63ch; font-size: 17px; line-height: 1.65; }
 .spielbot .about-copy > .about-note { margin-top: 22px; font-size: 16px; }
+.spielbot .social-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+.spielbot .social-links .button { font-size: 16px; }
 .spielbot .about-copy > .contact-line { margin-top: 27px; }
 .spielbot .contact-line > span, .spielbot .contact-line > .contact-label { display: block; font-size: 12px; line-height: 1.4; letter-spacing: .09em; font-weight: 700; text-transform: uppercase; }
 .spielbot .contact-line a { display: table; max-width: 100%; margin-top: 6px; padding-bottom: 2px; border-bottom: 2px solid currentColor; font-size: clamp(17px, 2vw, 23px); font-weight: 600; line-height: 1.4; text-decoration: none; overflow-wrap: anywhere; }
