@@ -6,7 +6,7 @@ This is a complete static HTML document without Jekyll front matter. The existin
 
 ## Content
 
-- `index.html`: artist gallery, contact information and page structure. The contact email `spielbot@pizzato.cc` is visible in About and the footer without JavaScript.
+- `index.html`: artist gallery, contact information and page structure. The contact email `spielbot@pizzato.cc` and links to YouTube, Spotify, Instagram and X are visible in About and the footer without JavaScript.
 - `assets/catalogue.json`: verified public YouTube playlist metadata and source provenance.
 - `assets/app.js`: video search, artist filtering, shareable artist/video links, accessible playlist dialog and click-to-load YouTube player.
 - `assets/styles.css`: responsive Electric Poster design.
@@ -62,6 +62,8 @@ The **Build Site** workflow runs the music catalogue tests and validates Jekyll 
 Check the gallery, search/filter, playlist selection, direct artist link, close/Escape, contact email, and mobile layout when making further changes. The page's artist links also work directly on YouTube if JavaScript or catalogue loading is unavailable.
 
 ## Artist artwork and branding
+
+The About section introduces Stephen Spielbot as “The machine behind all the videos,” using the supplied portrait in `assets/brand/stephen-spielbot.png`. He represents the project rather than a singer and is kept separate from the artist roster and playlists.
 
 The ten artist portraits were generated on 21 November 2026 using both the main character portrait and turnaround sheet in Spielbot Settings → Characters. Each is a 1024 × 1536 JPEG, with identity and wardrobe guided by those references. The complete prompts are recorded in `_tools/artwork-prompts.json`; they were created with the built-in image-generation tool. The original local character assets remain unchanged.
 
