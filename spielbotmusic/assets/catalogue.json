@@ -3,8 +3,8 @@
   "channel": "Stephen Spielbot Music",
   "channelUrl": "https://www.youtube.com/@SpielbotMusic",
   "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
-  "fetchedAt": "2026-11-25T02:46:57.067257+00:00",
-  "generatedAt": "2026-11-25T02:46:58.411076+00:00",
+  "fetchedAt": "2026-11-26T01:56:39.524565+00:00",
+  "generatedAt": "2026-11-26T01:56:41.091416+00:00",
   "sourceMethod": "Public YouTube artist, collection and channel uploads playlists. Source order preserved; Album: playlists excluded.",
   "artists": [
     {
@@ -25,7 +25,7 @@
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
           "playlistIndex": 1,
           "url": "https://www.youtube.com/watch?v=BGMTWGPzt7M&list=PLHeaGxWVyVp8&index=1",
-          "thumbnail": "https://i.ytimg.com/vi/BGMTWGPzt7M/hqdefault.jpg?sqp=-oaymwE9CNACELwBSFryq4qpAy8IARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYciBUKD0wDw==&rs=AOn4CLBYEop8dvDfceL5jLzHmF6R8np2Rg"
+          "thumbnail": "https://i.ytimg.com/vi/BGMTWGPzt7M/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYciBUKD0wD7gC9xg=&rs=AOn4CLBnqG5SJ57GoY2Aqcow-lER8m_b4Q"
         },
         {
           "id": "hFTt7sYisQ8",
@@ -36,7 +36,7 @@
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
           "playlistIndex": 2,
           "url": "https://www.youtube.com/watch?v=hFTt7sYisQ8&list=PLHeaGxWVyVp8&index=2",
-          "thumbnail": "https://i.ytimg.com/vi/hFTt7sYisQ8/hqdefault.jpg?sqp=-oaymwE9CNACELwBSFryq4qpAy8IARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYNCBcKHIwDw==&rs=AOn4CLC9Nt5u4an3UIM9j5yD0Jgs9wDSBQ"
+          "thumbnail": "https://i.ytimg.com/vi/hFTt7sYisQ8/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYNCBcKHIwD7gC9xg=&rs=AOn4CLArBmS4-RLljIfm4xOuoK6qczrDYw"
         },
         {
           "id": "3YXHFLkQn8I",
@@ -47,7 +47,7 @@
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
           "playlistIndex": 3,
           "url": "https://www.youtube.com/watch?v=3YXHFLkQn8I&list=PLHeaGxWVyVp8&index=3",
-          "thumbnail": "https://i.ytimg.com/vi/3YXHFLkQn8I/hqdefault.jpg?sqp=-oaymwE9CNACELwBSFryq4qpAy8IARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYOyBWKGUwDw==&rs=AOn4CLCh1xM84clesHWuZfEqyhyLyvKq5Q"
+          "thumbnail": "https://i.ytimg.com/vi/3YXHFLkQn8I/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYOyBWKGUwD7gC9xg=&rs=AOn4CLBzD8bGa5XMX2Wby_wMjsH1Bqc4oQ"
         },
         {
           "id": "R31jtl8Mn6s",
@@ -58,7 +58,7 @@
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
           "playlistIndex": 4,
           "url": "https://www.youtube.com/watch?v=R31jtl8Mn6s&list=PLHeaGxWVyVp8&index=4",
-          "thumbnail": "https://i.ytimg.com/vi/R31jtl8Mn6s/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBis_LwSlfS6PdGsrBMtY26IqwNsA"
+          "thumbnail": "https://i.ytimg.com/vi/R31jtl8Mn6s/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAAAAGAElAADIQj0AgKJDeAG4AvcY&rs=AOn4CLBL2hpcmblW2cgh3LFcvULd8N9IHA"
         },
         {
           "id": "Bms8I1hGHqw",
@@ -69,16 +69,16 @@
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
           "playlistIndex": 5,
           "url": "https://www.youtube.com/watch?v=Bms8I1hGHqw&list=PLHeaGxWVyVp8&index=5",
-          "thumbnail": "https://i.ytimg.com/vi/Bms8I1hGHqw/hqdefault.jpg?sqp=-oaymwE9CNACELwBSFryq4qpAy8IARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAK4CIoCDAgAEAEYUyBdKGUwDw==&rs=AOn4CLBIqjSsyxbvQZ59PVe7oPsSn-58vg"
+          "thumbnail": "https://i.ytimg.com/vi/Bms8I1hGHqw/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAK4CIoCDAgAEAEYUyBdKGUwD7gC9xg=&rs=AOn4CLBnVFMxumfYbMCjs6JhzIl5GMrawQ"
         }
       ],
       "sourceUrl": "https://www.youtube.com/playlist?list=PLHeaGxWVyVp8",
       "sourceStats": [
         "5 videos",
         "No views",
-        "Updated 2 days ago"
+        "Updated 3 days ago"
       ],
-      "sourceFetchedAt": "2026-11-25T02:46:57.154426+00:00",
+      "sourceFetchedAt": "2026-11-26T01:56:39.607699+00:00",
       "verifiedCount": 5,
       "uniqueVideoCount": 5,
       "complete": true,
@@ -139,7 +139,7 @@
         "1 view",
         "Last updated on Nov 7, 2026"
       ],
-      "sourceFetchedAt": "2026-11-25T02:46:57.067257+00:00",
+      "sourceFetchedAt": "2026-11-26T01:56:39.567131+00:00",
       "verifiedCount": 3,
       "uniqueVideoCount": 3,
       "complete": true,
@@ -198,9 +198,9 @@
       "sourceStats": [
         "3 videos",
         "2 views",
-        "Updated 2 days ago"
+        "Updated 3 days ago"
       ],
-      "sourceFetchedAt": "2026-11-25T02:46:57.152143+00:00",
+      "sourceFetchedAt": "2026-11-26T01:56:39.524565+00:00",
       "verifiedCount": 3,
       "uniqueVideoCount": 3,
       "complete": true,
@@ -298,9 +298,9 @@
       "sourceStats": [
         "6 videos",
         "3 views",
-        "Updated 2 days ago"
+        "Updated 3 days ago"
       ],
-      "sourceFetchedAt": "2026-11-25T02:46:57.074754+00:00",
+      "sourceFetchedAt": "2026-11-26T01:56:39.571110+00:00",
       "verifiedCount": 6,
       "uniqueVideoCount": 6,
       "complete": true,
@@ -335,7 +335,7 @@
           "format": "short",
           "playlistIndex": 1,
           "url": "https://www.youtube.com/watch?v=w0ci1-b9gjY&list=PLKN9iKS-_8T4&index=1",
-          "thumbnail": "https://i.ytimg.com/vi/w0ci1-b9gjY/hq720.jpg?sqp=-oaymwEYCNAFENAFSFryq4qpAwoIARUAAIhC0AEB&rs=AOn4CLAKCKMA0NGErYs0BmpvhR3bLzpBmA",
+          "thumbnail": "https://i.ytimg.com/vi/w0ci1-b9gjY/hq720.jpg?sqp=-oaymwEYCNAFENAFSFryq4qpAwoIARUAAIhC0AEBovOX_wMOCNiI-tQGGODqBCDgqAE=&rs=AOn4CLCV277ywNf-2dhqYqRtYDQ4IH9Iww&usqp=CBU",
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
@@ -348,7 +348,7 @@
         "No views",
         "Last updated on Sep 25, 2026"
       ],
-      "sourceFetchedAt": "2026-11-25T02:46:57.355060+00:00",
+      "sourceFetchedAt": "2026-11-26T01:56:39.770810+00:00",
       "verifiedCount": 2,
       "uniqueVideoCount": 2,
       "complete": true,
@@ -370,7 +370,7 @@
           "format": "short",
           "playlistIndex": 1,
           "url": "https://www.youtube.com/watch?v=aev5VmQCues&list=PLT9A8FuBHlM8&index=1",
-          "thumbnail": "https://i.ytimg.com/vi/aev5VmQCues/oar2.jpg?sqp=-oaymwEoCIwDENAFSFqQAgHyq4qpAxcIARUAAAAAJQAAyEI9AICiQ3gBuALzGA==&rs=AOn4CLAzSSmVZUvtlM-KtKjznT_nm4wkRw",
+          "thumbnail": "https://i.ytimg.com/vi/aev5VmQCues/oar2.jpg?sqp=-oaymwEkCIwDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLA8A7jvfhTqEKaE4KqbHY99Fe-g0g",
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
@@ -383,7 +383,7 @@
           "format": "short",
           "playlistIndex": 1,
           "url": "https://www.youtube.com/watch?v=yQ6f7SX0dVs&list=PLT9A8FuBHlM8&index=1",
-          "thumbnail": "https://i.ytimg.com/vi/yQ6f7SX0dVs/oar2.jpg?sqp=-oaymwEoCIwDENAFSFqQAgHyq4qpAxcIARUAAAAAJQAAyEI9AICiQ3gBuALzGA==&rs=AOn4CLBSPLCDsZWPtkyM8A7CrfijivXgIA",
+          "thumbnail": "https://i.ytimg.com/vi/yQ6f7SX0dVs/oar2.jpg?sqp=-oaymwEkCIwDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLAHr8Ohr75_QmyVSMToIzcXQ4KDYA",
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
@@ -396,7 +396,7 @@
           "format": "short",
           "playlistIndex": 1,
           "url": "https://www.youtube.com/watch?v=cbczzU8FmJs&list=PLT9A8FuBHlM8&index=1",
-          "thumbnail": "https://i.ytimg.com/vi/cbczzU8FmJs/oar2.jpg?sqp=-oaymwEoCIwDENAFSFqQAgHyq4qpAxcIARUAAAAAJQAAyEI9AICiQ3gBuALzGA==&rs=AOn4CLAPqZPmbGFDnhoc0I-R0VEmIMIR9g",
+          "thumbnail": "https://i.ytimg.com/vi/cbczzU8FmJs/oar2.jpg?sqp=-oaymwEkCIwDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLA4Xm1PFfQZDKwP-vxslJ-KZkTe_w",
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
@@ -409,7 +409,7 @@
           "format": "short",
           "playlistIndex": 1,
           "url": "https://www.youtube.com/watch?v=l5Q7iHwKttA&list=PLT9A8FuBHlM8&index=1",
-          "thumbnail": "https://i.ytimg.com/vi/l5Q7iHwKttA/hq720.jpg?sqp=-oaymwEcCNAFENAFSFryq4qpAw4IARUAAIhC0AEBuALzGA==&rs=AOn4CLCjWkLhFzwuDMlT9cuWhV1ZYu7chw",
+          "thumbnail": "https://i.ytimg.com/vi/l5Q7iHwKttA/hq720.jpg?sqp=-oaymwEYCNAFENAFSFryq4qpAwoIARUAAIhC0AEB&rs=AOn4CLCVHEWwBHt0JMFK6gfrSzEZVfKVgg",
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
@@ -420,9 +420,9 @@
       "sourceStats": [
         "4 videos",
         "2 views",
-        "Updated 2 days ago"
+        "Updated 3 days ago"
       ],
-      "sourceFetchedAt": "2026-11-25T02:46:57.398683+00:00",
+      "sourceFetchedAt": "2026-11-26T01:56:39.896565+00:00",
       "verifiedCount": 4,
       "uniqueVideoCount": 4,
       "complete": true,
@@ -585,9 +585,9 @@
       "sourceStats": [
         "11 videos",
         "32 views",
-        "Updated 4 days ago"
+        "Updated 5 days ago"
       ],
-      "sourceFetchedAt": "2026-11-25T02:46:57.436505+00:00",
+      "sourceFetchedAt": "2026-11-26T01:56:39.945211+00:00",
       "verifiedCount": 11,
       "uniqueVideoCount": 11,
       "complete": true,
@@ -675,7 +675,7 @@
         "2 views",
         "Last updated on Nov 13, 2026"
       ],
-      "sourceFetchedAt": "2026-11-25T02:46:57.431961+00:00",
+      "sourceFetchedAt": "2026-11-26T01:56:39.941736+00:00",
       "verifiedCount": 6,
       "uniqueVideoCount": 5,
       "complete": true,
@@ -697,7 +697,7 @@
           "format": "short",
           "playlistIndex": 1,
           "url": "https://www.youtube.com/watch?v=O1luI5ez3D8&list=PLLtWWI7ELcIs&index=1",
-          "thumbnail": "https://i.ytimg.com/vi/O1luI5ez3D8/oar2.jpg?sqp=-oaymwEkCIwDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLBDWIaRMHjvFs_Z7EzGVZXAgyXTTA",
+          "thumbnail": "https://i.ytimg.com/vi/O1luI5ez3D8/oar2.jpg?sqp=-oaymwEoCIwDENAFSFqQAgHyq4qpAxcIARUAAAAAJQAAyEI9AICiQ3gBuAL3GA==&rs=AOn4CLAW50z-HY80C1skBJH4rRHvyoWc0w",
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
@@ -710,7 +710,7 @@
           "format": "short",
           "playlistIndex": 1,
           "url": "https://www.youtube.com/watch?v=QwBlgfKyZuQ&list=PLLtWWI7ELcIs&index=1",
-          "thumbnail": "https://i.ytimg.com/vi/QwBlgfKyZuQ/oar2.jpg?sqp=-oaymwEkCIwDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLCJu7Jb973c8kXK8aopgpYuI4V1WA",
+          "thumbnail": "https://i.ytimg.com/vi/QwBlgfKyZuQ/oar2.jpg?sqp=-oaymwEoCIwDENAFSFqQAgHyq4qpAxcIARUAAAAAJQAAyEI9AICiQ3gBuAL3GA==&rs=AOn4CLD7QIgTYTXNmClIh2YcpUczOW3iSg",
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
@@ -723,7 +723,7 @@
           "format": "short",
           "playlistIndex": 1,
           "url": "https://www.youtube.com/watch?v=tVljGPPLQak&list=PLLtWWI7ELcIs&index=1",
-          "thumbnail": "https://i.ytimg.com/vi/tVljGPPLQak/oar2.jpg?sqp=-oaymwEkCIwDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLCBXneLkWW1EF1MJUSrjUE1G0b53A",
+          "thumbnail": "https://i.ytimg.com/vi/tVljGPPLQak/oar2.jpg?sqp=-oaymwEoCIwDENAFSFqQAgHyq4qpAxcIARUAAAAAJQAAyEI9AICiQ3gBuAL3GA==&rs=AOn4CLByMiZtsOGvsZLUndjKHeZiPKVRZw",
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
@@ -736,7 +736,7 @@
           "format": "short",
           "playlistIndex": 1,
           "url": "https://www.youtube.com/watch?v=HBCTT5KiWdA&list=PLLtWWI7ELcIs&index=1",
-          "thumbnail": "https://i.ytimg.com/vi/HBCTT5KiWdA/oar2.jpg?sqp=-oaymwEkCIwDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLCLqwIJuz_gnNCSUGgD-vzp7b463w",
+          "thumbnail": "https://i.ytimg.com/vi/HBCTT5KiWdA/oar2.jpg?sqp=-oaymwEoCIwDENAFSFqQAgHyq4qpAxcIARUAAAAAJQAAyEI9AICiQ3gBuAL3GA==&rs=AOn4CLD2NJpwYXpF_xBDPF5qfdqX6LK8-Q",
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
@@ -749,7 +749,7 @@
           "format": "short",
           "playlistIndex": 1,
           "url": "https://www.youtube.com/watch?v=Bms8I1hGHqw&list=PLLtWWI7ELcIs&index=1",
-          "thumbnail": "https://i.ytimg.com/vi/Bms8I1hGHqw/oar2.jpg?sqp=-oaymwEYCNAFENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLBnG-EIX012-S04aI6GOrm8qT59Mw",
+          "thumbnail": "https://i.ytimg.com/vi/Bms8I1hGHqw/oar2.jpg?sqp=-oaymwEcCNAFENAFSFqQAgHyq4qpAwsIARUAAIhCuAL3GA==&rs=AOn4CLB5XK48XG8ydAe4yY959F0nX4WbzQ",
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
@@ -762,7 +762,7 @@
           "format": "short",
           "playlistIndex": 1,
           "url": "https://www.youtube.com/watch?v=RKA67vdRMfw&list=PLLtWWI7ELcIs&index=1",
-          "thumbnail": "https://i.ytimg.com/vi/RKA67vdRMfw/hq720.jpg?sqp=-oaymwEYCNAFENAFSFryq4qpAwoIARUAAIhC0AEBovOX_wMOCJOP-tQGGODqBCDgqAE=&rs=AOn4CLACcIqRBRJF6ETQV_beoorTCj0FiA&usqp=CBU",
+          "thumbnail": "https://i.ytimg.com/vi/RKA67vdRMfw/hq720.jpg?sqp=-oaymwEcCNAFENAFSFryq4qpAw4IARUAAIhC0AEBuAL3GA==&rs=AOn4CLCrzrqAnqWCH9Titn9gJ5HKTd8H1g",
           "channel": "Stephen Spielbot Music",
           "channelId": "UCm0coTP4Ztr91F5ZyYZwXTQ",
           "channelUrl": "https://www.youtube.com/@SpielbotMusic",
@@ -772,10 +772,10 @@
       "sourceUrl": "https://www.youtube.com/playlist?list=PLLtWWI7ELcIs",
       "sourceStats": [
         "6 videos",
-        "No views",
+        "7 views",
         "Last updated on Oct 17, 2026"
       ],
-      "sourceFetchedAt": "2026-11-25T02:46:57.636060+00:00",
+      "sourceFetchedAt": "2026-11-26T01:56:40.036565+00:00",
       "verifiedCount": 6,
       "uniqueVideoCount": 6,
       "complete": true,
@@ -938,9 +938,9 @@
       "sourceStats": [
         "11 videos",
         "10 views",
-        "Updated today"
+        "Updated yesterday"
       ],
-      "sourceFetchedAt": "2026-11-25T02:46:57.666512+00:00",
+      "sourceFetchedAt": "2026-11-26T01:56:40.205791+00:00",
       "verifiedCount": 11,
       "uniqueVideoCount": 11,
       "complete": true,
@@ -1086,7 +1086,7 @@
         "channelUrl": "https://www.youtube.com/@SpielbotMusic",
         "playlistIndex": 12,
         "url": "https://www.youtube.com/watch?v=w0ci1-b9gjY&list=PLS5WTo4e7mhQ&index=12",
-        "thumbnail": "https://i.ytimg.com/vi/w0ci1-b9gjY/hqdefault.jpg?sqp=-oaymwE9CNACELwBSFryq4qpAy8IARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAK4CIoCDAgAEAEYciBYKCUwDw==&rs=AOn4CLCyLzQ3SsfwlQLefpZgOatJaK4UeQ"
+        "thumbnail": "https://i.ytimg.com/vi/w0ci1-b9gjY/hqdefault.jpg?sqp=-oaymwE9CNACELwBSFryq4qpAy8IARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAK4CIoCDAgAEAEYciBYKCUwD6Lzl_8DDgjYiPrUBhjg6gQg4KgB&rs=AOn4CLAm9QoD7K9FBXsHhbkZbskkZOTTRA&usqp=CBU"
       },
       {
         "id": "Twz9on4vyto",
@@ -1108,7 +1108,7 @@
         "channelUrl": "https://www.youtube.com/@SpielbotMusic",
         "playlistIndex": 14,
         "url": "https://www.youtube.com/watch?v=l5Q7iHwKttA&list=PLS5WTo4e7mhQ&index=14",
-        "thumbnail": "https://i.ytimg.com/vi/l5Q7iHwKttA/hqdefault.jpg?sqp=-oaymwE9CNACELwBSFryq4qpAy8IARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAK4CIoCDAgAEAEYUCBlKGUwDw==&rs=AOn4CLDKQvgF5Ef2bNX4Ju9GbxHEkIkImw"
+        "thumbnail": "https://i.ytimg.com/vi/l5Q7iHwKttA/hqdefault.jpg?sqp=-oaymwE9CNACELwBSFryq4qpAy8IARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAK4CIoCDAgAEAEYUCBlKGUwD6Lzl_8DDgiLjvrUBhjg6gQg4KgB&rs=AOn4CLCeaOBnfAc_rPlA5_y9mMJyII_u0Q&usqp=CBU"
       },
       {
         "id": "uEPhWa07zwk",
@@ -1119,7 +1119,7 @@
         "channelUrl": "https://www.youtube.com/@SpielbotMusic",
         "playlistIndex": 15,
         "url": "https://www.youtube.com/watch?v=uEPhWa07zwk&list=PLS5WTo4e7mhQ&index=15",
-        "thumbnail": "https://i.ytimg.com/vi/uEPhWa07zwk/hqdefault.jpg?sqp=-oaymwE9CNACELwBSFryq4qpAy8IARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAK4CIoCDAgAEAEYfyBcKBkwDw==&rs=AOn4CLDmT7QKNlh8aOXleU-uungZx9mA0A"
+        "thumbnail": "https://i.ytimg.com/vi/uEPhWa07zwk/hqdefault.jpg?sqp=-oaymwE9CNACELwBSFryq4qpAy8IARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAK4CIoCDAgAEAEYfyBcKBkwD6Lzl_8DDgjCjvrUBhjg6gQg4KgB&rs=AOn4CLBTjsUzt7PRl4OFiDqnBHJhXHla0g&usqp=CBU"
       },
       {
         "id": "xTka9A4awew",
@@ -1130,7 +1130,7 @@
         "channelUrl": "https://www.youtube.com/@SpielbotMusic",
         "playlistIndex": 16,
         "url": "https://www.youtube.com/watch?v=xTka9A4awew&list=PLS5WTo4e7mhQ&index=16",
-        "thumbnail": "https://i.ytimg.com/vi/xTka9A4awew/hqdefault.jpg?sqp=-oaymwE9CNACELwBSFryq4qpAy8IARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAK4CIoCDAgAEAEYZSBZKGEwDw==&rs=AOn4CLALElGEH17-F5YT3lkF2h3mgHE9sg"
+        "thumbnail": "https://i.ytimg.com/vi/xTka9A4awew/hqdefault.jpg?sqp=-oaymwE9CNACELwBSFryq4qpAy8IARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAK4CIoCDAgAEAEYZSBZKGEwD6Lzl_8DDgirj_rUBhjg6gQg4KgB&rs=AOn4CLDsrxSwDqEL8eyicHfefm8T-CTEJw&usqp=CBU"
       },
       {
         "id": "RKA67vdRMfw",
@@ -1141,7 +1141,7 @@
         "channelUrl": "https://www.youtube.com/@SpielbotMusic",
         "playlistIndex": 17,
         "url": "https://www.youtube.com/watch?v=RKA67vdRMfw&list=PLS5WTo4e7mhQ&index=17",
-        "thumbnail": "https://i.ytimg.com/vi/RKA67vdRMfw/hqdefault.jpg?sqp=-oaymwE9CNACELwBSFryq4qpAy8IARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAK4CIoCDAgAEAEYVyBhKGUwDw==&rs=AOn4CLCz41_ne9f_CKpsOIF8hdqTYB5FOw"
+        "thumbnail": "https://i.ytimg.com/vi/RKA67vdRMfw/hqdefault.jpg?sqp=-oaymwE9CNACELwBSFryq4qpAy8IARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAK4CIoCDAgAEAEYVyBhKGUwD6Lzl_8DDgiTj_rUBhjg6gQg4KgB&rs=AOn4CLDm6Tbcgvh0ywqBHIELwlMJEFdKQQ&usqp=CBU"
       },
       {
         "id": "ERPvJBnyHlI",
@@ -1152,7 +1152,7 @@
         "channelUrl": "https://www.youtube.com/@SpielbotMusic",
         "playlistIndex": 18,
         "url": "https://www.youtube.com/watch?v=ERPvJBnyHlI&list=PLS5WTo4e7mhQ&index=18",
-        "thumbnail": "https://i.ytimg.com/vi/ERPvJBnyHlI/hqdefault.jpg?sqp=-oaymwE9CNACELwBSFryq4qpAy8IARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAK4CIoCDAgAEAEYZSBTKEwwDw==&rs=AOn4CLCBIDENPvxO03zSGe8ZLek6w2Pazg"
+        "thumbnail": "https://i.ytimg.com/vi/ERPvJBnyHlI/hqdefault.jpg?sqp=-oaymwE9CNACELwBSFryq4qpAy8IARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAK4CIoCDAgAEAEYZSBTKEwwD6Lzl_8DDgirw9_UBhjg6gQg4KgB&rs=AOn4CLDKSKfwBzEapWG-PlooHcN58qDXQQ&usqp=CBU"
       },
       {
         "id": "3RQ6uL2YWZg",
@@ -1163,7 +1163,7 @@
         "channelUrl": "https://www.youtube.com/@SpielbotMusic",
         "playlistIndex": 19,
         "url": "https://www.youtube.com/watch?v=3RQ6uL2YWZg&list=PLS5WTo4e7mhQ&index=19",
-        "thumbnail": "https://i.ytimg.com/vi/3RQ6uL2YWZg/hqdefault.jpg?sqp=-oaymwE9CNACELwBSFryq4qpAy8IARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAK4CIoCDAgAEAEYOSBVKHIwDw==&rs=AOn4CLBEUwEBRdZ_VNcIOrppHDP5qWP22A"
+        "thumbnail": "https://i.ytimg.com/vi/3RQ6uL2YWZg/hqdefault.jpg?sqp=-oaymwE9CNACELwBSFryq4qpAy8IARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AbYIgAK4CIoCDAgAEAEYOSBVKHIwD6Lzl_8DDgjVjvrUBhjg6gQg4KgB&rs=AOn4CLBmQGwBB9G8-g1-hAPeNH2Mm5W7vg&usqp=CBU"
       },
       {
         "id": "3YXHFLkQn8I",
@@ -1339,7 +1339,7 @@
         "channelUrl": "https://www.youtube.com/@SpielbotMusic",
         "playlistIndex": 35,
         "url": "https://www.youtube.com/watch?v=TmHpwuy1Elk&list=PLS5WTo4e7mhQ&index=35",
-        "thumbnail": "https://i.ytimg.com/vi/TmHpwuy1Elk/hqdefault.jpg?sqp=-oaymwE9CNACELwBSFryq4qpAy8IARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYfyAmKBcwDw==&rs=AOn4CLBDU2Et1t9xBMP7VpwzUeynqA_XGQ"
+        "thumbnail": "https://i.ytimg.com/vi/TmHpwuy1Elk/hqdefault.jpg?sqp=-oaymwE9CNACELwBSFryq4qpAy8IARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYfyAmKBcwD6Lzl_8DDgimydfWBhjg6gQg4KgB&rs=AOn4CLCxcTJPRarl18LlQvqui7TbWRaAqQ&usqp=CBU"
       },
       {
         "id": "R31jtl8Mn6s",
@@ -1350,7 +1350,7 @@
         "channelUrl": "https://www.youtube.com/@SpielbotMusic",
         "playlistIndex": 36,
         "url": "https://www.youtube.com/watch?v=R31jtl8Mn6s&list=PLS5WTo4e7mhQ&index=36",
-        "thumbnail": "https://i.ytimg.com/vi/R31jtl8Mn6s/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBis_LwSlfS6PdGsrBMtY26IqwNsA"
+        "thumbnail": "https://i.ytimg.com/vi/R31jtl8Mn6s/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAGi85f_Aw4I2JfY1gYY4OoEIOCoAQ==&rs=AOn4CLClEDRb23Dor4w_GTVD6YRQ36PjJQ&usqp=CBU"
       },
       {
         "id": "rhHkbN3BB5k",
@@ -1361,7 +1361,7 @@
         "channelUrl": "https://www.youtube.com/@SpielbotMusic",
         "playlistIndex": 37,
         "url": "https://www.youtube.com/watch?v=rhHkbN3BB5k&list=PLS5WTo4e7mhQ&index=37",
-        "thumbnail": "https://i.ytimg.com/vi/rhHkbN3BB5k/hqdefault.jpg?sqp=-oaymwE9CNACELwBSFryq4qpAy8IARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYfyAhKBMwDw==&rs=AOn4CLDVVNEcMJj3LvnR3maMSxA7tqEOSA"
+        "thumbnail": "https://i.ytimg.com/vi/rhHkbN3BB5k/hqdefault.jpg?sqp=-oaymwE9CNACELwBSFryq4qpAy8IARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYfyAhKBMwD6Lzl_8DDgitlffWBhjg6gQg4KgB&rs=AOn4CLBJQLcKlFVIWo33z5nmtth_aN4teQ&usqp=CBU"
       },
       {
         "id": "ekrWNcVbADs",
@@ -1372,7 +1372,7 @@
         "channelUrl": "https://www.youtube.com/@SpielbotMusic",
         "playlistIndex": 38,
         "url": "https://www.youtube.com/watch?v=ekrWNcVbADs&list=PLS5WTo4e7mhQ&index=38",
-        "thumbnail": "https://i.ytimg.com/vi/ekrWNcVbADs/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCyUAvbiNlpW2iqDAts5jC6ShxlDA"
+        "thumbnail": "https://i.ytimg.com/vi/ekrWNcVbADs/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAGi85f_Aw4Iu4zg1wYY4OoEIOCoAQ==&rs=AOn4CLBP7GLkZxNl_tPHjRlb-TZ81eNFPw&usqp=CBU"
       },
       {
         "id": "38UtCWo07eU",
@@ -1515,7 +1515,7 @@
         "channelUrl": "https://www.youtube.com/@SpielbotMusic",
         "playlistIndex": 51,
         "url": "https://www.youtube.com/watch?v=TmHpwuy1Elk&list=PLS5WTo4e7mhQ&index=51",
-        "thumbnail": "https://i.ytimg.com/vi/TmHpwuy1Elk/hqdefault.jpg?sqp=-oaymwE9CNACELwBSFryq4qpAy8IARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYfyAmKBcwDw==&rs=AOn4CLBDU2Et1t9xBMP7VpwzUeynqA_XGQ"
+        "thumbnail": "https://i.ytimg.com/vi/TmHpwuy1Elk/hqdefault.jpg?sqp=-oaymwE9CNACELwBSFryq4qpAy8IARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYfyAmKBcwD6Lzl_8DDgimydfWBhjg6gQg4KgB&rs=AOn4CLCxcTJPRarl18LlQvqui7TbWRaAqQ&usqp=CBU"
       },
       {
         "id": "VMiZ7xa4pDc",
@@ -1625,7 +1625,7 @@
         "channelUrl": "https://www.youtube.com/@SpielbotMusic",
         "playlistIndex": 61,
         "url": "https://www.youtube.com/watch?v=rhHkbN3BB5k&list=PLS5WTo4e7mhQ&index=61",
-        "thumbnail": "https://i.ytimg.com/vi/rhHkbN3BB5k/hqdefault.jpg?sqp=-oaymwE9CNACELwBSFryq4qpAy8IARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYfyAhKBMwDw==&rs=AOn4CLDVVNEcMJj3LvnR3maMSxA7tqEOSA"
+        "thumbnail": "https://i.ytimg.com/vi/rhHkbN3BB5k/hqdefault.jpg?sqp=-oaymwE9CNACELwBSFryq4qpAy8IARUAAAAAGAElAADIQj0AgKJDeAHwAQH4AZ4IgAKAD4oCDAgAEAEYfyAhKBMwD6Lzl_8DDgitlffWBhjg6gQg4KgB&rs=AOn4CLBJQLcKlFVIWo33z5nmtth_aN4teQ&usqp=CBU"
       },
       {
         "id": "t8eXrnsW6ow",
@@ -1709,9 +1709,9 @@
     "sourceStats": [
       "68 videos",
       "5 views",
-      "Updated 3 days ago"
+      "Updated 4 days ago"
     ],
-    "sourceFetchedAt": "2026-11-25T02:46:58.014025+00:00",
+    "sourceFetchedAt": "2026-11-26T01:56:40.630565+00:00",
     "verifiedCount": 68,
     "uniqueVideoCount": 52,
     "complete": true,
@@ -2325,9 +2325,9 @@
     "sourceStats": [
       "54 videos",
       "1 view",
-      "Updated today"
+      "Updated yesterday"
     ],
-    "sourceFetchedAt": "2026-11-25T02:46:58.356800+00:00",
+    "sourceFetchedAt": "2026-11-26T01:56:41.021244+00:00",
     "verifiedCount": 54,
     "uniqueVideoCount": 54,
     "complete": true,
