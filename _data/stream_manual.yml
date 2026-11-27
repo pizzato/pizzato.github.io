@@ -11,14 +11,17 @@
 #     url:   "https://x.com/luizpizzato/status/..."
 #     date:  "YYYY-MM-DD"
 #
-# A `medium` entry is only needed for unlisted stories — public ones arrive via
-# the RSS feed, and fetch_stream.py dedups by URL if a story is in both.
+# Use a medium entry for stories outside @pizzato's RSS feed.
 #
 # To populate from a platform data export, run:
 #   python scripts/import_archive.py --twitter <path/to/tweets.js>
 #   python scripts/import_archive.py --linkedin <path/to/Share and Comments.csv>
 
 entries:
+- type: medium
+  title: 'The language of customer journeys: inside CommBank C3'
+  url: https://medium.com/@CommBankTechnology/the-language-of-customer-journeys-inside-commbank-c3-d47b4758112d
+  date: '2026-11-26'
 - type: linkedin
   title: Looking forward to speak and participate of the 6 Degrees Media's 6DAI –
     the Future of Tech, Innovation & Work on 15th October at the Hyatt Regency, Sydney.
